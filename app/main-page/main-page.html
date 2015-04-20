@@ -1,0 +1,93 @@
+<header class="container-fluid" ng-cloak>
+    <div class="col-md-12">
+        <nav class="col-md-offset-3 navbar">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">Home</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="http://razbor-poletov.com/">Разбор Полётов</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="https://plus.google.com/+Razbor-poletov/posts" class="navbar-brand">
+                            <img src="../style/image/google-plus.png" alt="Google+"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/razbor-poletov/razbor-poletov.github.com" class="navbar-brand">
+                            <img src="../style/image/github.png" alt="Github"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://gitter.im/razbor-poletov/razbor-poletov.github.com" class="navbar-brand">
+                            <img class="img-circle"
+                                 src="../style/image/gitter.png"
+                                 alt="Gitter"/>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="col-md-12" style="margin-top: 20px; margin-bottom: 20px">
+            <img src="../style/image/Helment-with-shadow.png" class="main-img"/>
+        </div>
+        <div class="col-md-12">
+            <h1 id="header">Young Pilots</h1>
+        </div>
+        <div class="col-md-offset-3 col-md-6" id="header-text">
+            This is the aggregator of the useful links from amazing podcast "Razbor Poletov". On this web page you can
+            find many interesting links that share with us creators and guests of this podcast
+        </div>
+        <div class="col-md-offset-8 col-md-4" style="margin-right: auto; margin-bottom: auto">
+            "Технология - идеальная, а люди - мудаки" © Baruch Sadogursky
+        </div>
+    </div>
+</header>
+<div class="col-md-8 col-md-offset-2">
+    <hr class="style"/>
+</div>
+<section ng-cloak>
+    <div ng-if="!error" style="padding-right: 20px; padding-left: 20px">
+        <div class="col-md-12" style="padding-bottom: 20px">
+            <h1 id="header">Creators & Guests</h1>
+            <span>(Все живут с
+                солнечных городах и
+                штатах)</span>
+        </div>
+        <div ng-repeat="contact in contacts" id="contacts" ng-if="$index != contacts.length - 1">
+            <div class="main-data">
+                <div>
+                    <img src="{{contact.img}}" class="img-circle"/>
+                    <div>
+                        <span ng-if="contact.firstname != '' && contact.lastname != ''" ng-bind="contact.firstname + ', ' + contact.lastname"></span><br/>
+                        <span ng-if="contact.info.location != ''" class="glyphicon glyphicon-map-marker">{{contact.info.location}}</span>
+                        <hr class="style"/>
+                    <span ng-if="contact.info.position != '' || contact.info.job != ''">{{contact.info.position}} at <a
+                            href="{{contact.info.jobWebSite}}">{{contact.info.job}}</a></span>
+                    </div>
+                </div>
+                <p ng-if="contact.info.webSite != ''" class="glyphicon glyphicon-link"> <a
+                        href="{{contact.info.webSite}}">{{contact.info.webSite}}</a></p>
+                <p class="note" ng-if="contact.info.note != ''">{{contact.info.note}}</p>
+            </div>
+            <div class="socials">
+                <span ng-repeat="(index, link) in contact.socials">
+                    <a href="{{link}}" ng-if="link != ''"><img src="{{socialIcons[index].icon}}" alt=""/></a>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div ng-if="error">
+        <div class="col-md-12">
+            <h1 id="header">Oooops</h1>
+        </div>
+    </div>
+</section>
+<footer></footer>

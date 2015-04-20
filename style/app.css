@@ -1,0 +1,153 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+header {
+  background: #2e6da4;
+  background: linear-gradient(to bottom, #2e6da4, white);
+}
+#header {
+  font-family: 'Poiret One', cursive;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 0px;
+}
+
+#header+span {
+  text-align: center;
+  font-size: x-small;
+  display: block;
+  color: #adadad;
+  margin-top: -10px;
+}
+
+#header-text {
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  color: #3c3c3c;
+  font-size: large;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+nav > div > ul > li > a {
+  color: #c7ddef;
+  font-size: larger;
+  text-decoration: none !important;
+}
+
+nav > div > a {
+  color: #c7ddef;
+  font-size: larger;
+  text-decoration: none !important;
+}
+
+.navbar-right > li > a > img {
+  height: 30px;
+  width: 30px;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none !important;
+  background-color: transparent !important;
+}
+.navbar-right > li > a:hover,
+.navbar-right > li > a:focus {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+.main-img {
+  width: 150px;
+  height: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+hr.style {
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+  background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+  background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+  background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+}
+
+#contacts {
+  display: inline-block;
+  max-width: 500px;
+  min-width: 450px;
+  min-height: 260px;
+  font-family: 'Lato', sans-serif;
+  vertical-align: top;
+  padding: 10px;
+}
+
+#contacts .img-circle {
+  width: 100px;
+  height: 100px;
+  display: table-cell
+}
+div > h1 #header {
+  margin-bottom: 0px
+}
+
+.img-circle + div > span:first-child {
+  font-weight: 600;
+  font-size: large;
+}
+#contacts div > span:nth-child(5) {
+  font-size: medium;
+}
+.img-circle + div {
+  display: table-cell; vertical-align: top
+}
+#contacts > div > div {
+  display: table;
+}
+
+#contacts div > hr {
+  margin-top: 0px;
+}
+.socials {
+  display: inline-block;
+}
+.socials img {
+  height: 30px;
+  width: 30px;
+}
+
+.note {
+  height: 50px;
+}
+
+.main-data {
+  min-height: 120px;
+}
