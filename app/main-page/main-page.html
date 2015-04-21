@@ -11,7 +11,7 @@
         </div>
         <div class="collapse navbar-collapse" id="navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li><a href="http://razbor-poletov.com/">Разбор Полётов</a></li>
+                <li><a href="http://razbor-poletov.com/" target="_blank">Разбор Полётов</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li>
@@ -68,11 +68,11 @@
                         <span ng-if="contact.info.location != ''" class="glyphicon glyphicon-map-marker">{{contact.info.location}}</span>
                         <hr class="style"/>
                     <span ng-if="contact.info.position != '' || contact.info.job != ''">{{contact.info.position}} at <a
-                            href="{{contact.info.jobWebSite}}">{{contact.info.job}}</a></span>
+                            href="{{contact.info.jobWebSite}}" target="_blank">{{contact.info.job}}</a></span>
                     </div>
                 </div>
                 <p ng-if="contact.info.webSite != ''" class="glyphicon glyphicon-link"> <a
-                        href="{{contact.info.webSite}}">{{contact.info.webSite}}</a></p>
+                        href="{{contact.info.webSite}}" target="_blank">{{contact.info.webSite}}</a></p>
                 <p class="note" ng-if="contact.info.note != ''">{{contact.info.note}}</p>
             </div>
             <div class="socials">
