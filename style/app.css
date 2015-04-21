@@ -29,8 +29,15 @@
   padding: 0;
 }
 header {
-  background: #2e6da4;
-  background: linear-gradient(to bottom, #2e6da4, white);
+  background: url("../style/image/test-backgroun.jpg");
+  min-height: 500px;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center 0;
+  /*background: #2e6da4;*/
+  /*background: linear-gradient(to bottom, #2e6da4, white);*/
 }
 #header {
   font-family: 'Poiret One', cursive;
@@ -57,13 +64,13 @@ header {
 }
 
 nav > div > ul > li > a {
-  color: #c7ddef;
+  color: #46b8da;
   font-size: larger;
   text-decoration: none !important;
 }
 
 nav > div > a {
-  color: #c7ddef;
+  color: #46b8da;
   font-size: larger;
   text-decoration: none !important;
 }
@@ -83,6 +90,7 @@ nav > div > a {
   -webkit-filter: invert(100%);
   filter: invert(100%);
 }
+
 .main-img {
   width: 150px;
   height: 150px;
@@ -102,7 +110,7 @@ hr.style {
 
 #contacts {
   display: inline-block;
-  max-width: 500px;
+  max-width: 460px;
   min-width: 450px;
   min-height: 260px;
   font-family: 'Lato', sans-serif;
@@ -150,4 +158,13 @@ div > h1 #header {
 
 .main-data {
   min-height: 120px;
+}
+section {
+    padding-top: 40px;
+}
+.quote {
+  position: absolute;
+  bottom: 5px;
+  margin-right: auto;
+  margin-bottom: auto
 }

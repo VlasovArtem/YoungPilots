@@ -4,8 +4,8 @@
 var app = angular.module('main.controllers', ['ngCookies']);
 
 app.controller('MainCtrl', ['$scope', '$http', 'ContactsFactory', function($scope, $http, ContactsFactory) {
-    ContactsFactory.query(function(data) {
-        $scope.contacts = data;
+    ContactsFactory.query({categories: 'active'},function(data) {
+        $scope.activeContacts = data;
     }, function() {
         $scope.error = true;
     });

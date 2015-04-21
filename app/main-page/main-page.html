@@ -1,67 +1,65 @@
-<header class="container-fluid" ng-cloak>
+<header class="container-fluid parallax" ng-cloak >
+    <nav class="col-md-offset-3 navbar">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Home</a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="http://razbor-poletov.com/">Разбор Полётов</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="https://plus.google.com/+Razbor-poletov/posts" class="navbar-brand">
+                        <img src="../style/image/google-plus.png" alt="Google+"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/razbor-poletov/razbor-poletov.github.com" class="navbar-brand">
+                        <img src="../style/image/github.png" alt="Github"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://gitter.im/razbor-poletov/razbor-poletov.github.com" class="navbar-brand">
+                        <img class="img-circle"
+                             src="../style/image/gitter.png"
+                             alt="Gitter"/>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="col-md-12" style="margin-top: 20px; margin-bottom: 20px">
+        <img src="../style/image/Helment-with-shadow.png" class="main-img"/>
+    </div>
     <div class="col-md-12">
-        <nav class="col-md-offset-3 navbar">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="/">Home</a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li><a href="http://razbor-poletov.com/">Разбор Полётов</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="https://plus.google.com/+Razbor-poletov/posts" class="navbar-brand">
-                            <img src="../style/image/google-plus.png" alt="Google+"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/razbor-poletov/razbor-poletov.github.com" class="navbar-brand">
-                            <img src="../style/image/github.png" alt="Github"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://gitter.im/razbor-poletov/razbor-poletov.github.com" class="navbar-brand">
-                            <img class="img-circle"
-                                 src="../style/image/gitter.png"
-                                 alt="Gitter"/>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <div class="col-md-12" style="margin-top: 20px; margin-bottom: 20px">
-            <img src="../style/image/Helment-with-shadow.png" class="main-img"/>
-        </div>
-        <div class="col-md-12">
-            <h1 id="header">Young Pilots</h1>
-        </div>
-        <div class="col-md-offset-3 col-md-6" id="header-text">
-            This is the aggregator of the useful links from amazing podcast "Razbor Poletov". On this web page you can
-            find many interesting links that share with us creators and guests of this podcast
-        </div>
-        <div class="col-md-offset-8 col-md-4" style="margin-right: auto; margin-bottom: auto">
-            "Технология - идеальная, а люди - мудаки" © Baruch Sadogursky
-        </div>
+        <h1 id="header">Young Pilots</h1>
+    </div>
+    <div class="col-md-offset-3 col-md-6" id="header-text">
+        Добрый день, Добрый вечер, Доброй ночи, Доброго утра, вас приветствует сайт Helper для обожаемого вами
+        подкаста "Разбор Полётов".
+    </div>
+    <div class="col-md-offset-8 col-md-4 quote">
+        "Технология - идеальная, а люди - мудаки" © Baruch Sadogursky
     </div>
 </header>
-<div class="col-md-8 col-md-offset-2">
-    <hr class="style"/>
-</div>
-<section ng-cloak>
+<section class="row" ng-cloak>
     <div ng-if="!error" style="padding-right: 20px; padding-left: 20px">
-        <div class="col-md-12" style="padding-bottom: 20px">
+        <div class="col-md-12">
             <h1 id="header">Creators & Guests</h1>
             <span>(Все живут с
                 солнечных городах и
                 штатах)</span>
         </div>
-        <div ng-repeat="contact in contacts" id="contacts" ng-if="$index != contacts.length - 1">
+        <div class="col-md-8 col-md-offset-2">
+            <hr class="style"/>
+        </div>
+        <div ng-repeat="contact in activeContacts" id="contacts">
             <div class="main-data">
                 <div>
                     <img src="{{contact.img}}" class="img-circle"/>

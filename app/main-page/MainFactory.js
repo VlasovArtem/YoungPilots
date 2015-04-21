@@ -4,5 +4,5 @@
 var services = angular.module('main.services', ['ngResource']);
 
 services.factory('ContactsFactory', function($resource) {
-    return $resource('../app/contacts/contacts.json');
+    return $resource('../app/contacts/:categories-contacts.json', {categories: '@categories'});
 });
