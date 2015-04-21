@@ -15,19 +15,19 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a href="https://plus.google.com/+Razbor-poletov/posts" class="navbar-brand">
-                        <img src="../style/image/google-plus.png" alt="Google+"/>
+                    <a href="https://plus.google.com/+Razbor-poletov/posts" class="navbar-brand" target="_blank">
+                        <img src="style/image/google-plus.png" alt="Google+"/>
                     </a>
                 </li>
                 <li>
-                    <a href="https://github.com/razbor-poletov/razbor-poletov.github.com" class="navbar-brand">
-                        <img src="../style/image/github.png" alt="Github"/>
+                    <a href="https://github.com/razbor-poletov/razbor-poletov.github.com" class="navbar-brand" target="_blank">
+                        <img src="style/image/github.png" alt="Github"/>
                     </a>
                 </li>
                 <li>
-                    <a href="https://gitter.im/razbor-poletov/razbor-poletov.github.com" class="navbar-brand">
+                    <a href="https://gitter.im/razbor-poletov/razbor-poletov.github.com" class="navbar-brand" target="_blank">
                         <img class="img-circle"
-                             src="../style/image/gitter.png"
+                             src="style/image/gitter.png"
                              alt="Gitter"/>
                     </a>
                 </li>
@@ -35,7 +35,7 @@
         </div>
     </nav>
     <div class="col-md-12" style="margin-top: 20px; margin-bottom: 20px">
-        <img src="../style/image/Helment-with-shadow.png" class="main-img"/>
+        <img src="style/image/Helment-with-shadow.png" class="main-img"/>
     </div>
     <div class="col-md-12">
         <h1 id="header">Young Pilots</h1>
@@ -48,7 +48,7 @@
         "Технология - идеальная, а люди - мудаки" © Baruch Sadogursky
     </div>
 </header>
-<section class="row" ng-cloak>
+<section class="container-fluid" ng-cloak>
     <div ng-if="!error" style="padding-right: 20px; padding-left: 20px">
         <div class="col-md-12">
             <h1 id="header">Creators & Guests</h1>
@@ -77,7 +77,10 @@
             </div>
             <div class="socials">
                 <span ng-repeat="(index, link) in contact.socials">
-                    <a href="{{link}}" ng-if="link != ''"><img src="{{socialIcons[index].icon}}" alt=""/></a>
+                    <span ng-repeat="(key, value) in link">
+                        <a href="{{value}}" ng-if="value != ''"
+                           target="_blank"><img src="{{socialIcons[key]}}"/></a>
+                    </span>
                 </span>
             </div>
         </div>

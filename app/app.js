@@ -6,7 +6,7 @@ angular.module('youngPilots', [
 ]).
     config(['$routeProvider', function($routeProvider) {
         $routeProvider.when('/', {
-            templateUrl: 'main-page/main-page.html',
+            templateUrl: 'app/main-page/main-page.html',
             controller: 'MainCtrl'
         })
     }]);

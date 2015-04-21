@@ -9,9 +9,9 @@ app.controller('MainCtrl', ['$scope', '$http', 'ContactsFactory', function($scop
     }, function() {
         $scope.error = true;
     });
-    $scope.socialIcons = [
-        {"icon": "../style/image/socials/github.png"},
-        {"icon": "../style/image/socials/twitter.png"},
-        {"icon": "../style/image/socials/linkedin.png"}
-    ];
+    $scope.socialIcons = {
+        "github": "style/image/socials/github.png",
+        "twitter": "style/image/socials/twitter.png",
+        "linkedin": "style/image/socials/linkedin.png"
+    };
 }]);
