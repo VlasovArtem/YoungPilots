@@ -1,68 +1,49 @@
-<header class="container-fluid parallax" ng-cloak >
-    <nav class="col-md-offset-3 navbar">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="/">Home</a>
+<header class="container-fluid parallax" ng-cloak>
+    <div class="parallax-overlay"></div>
+    <div id="content">
+        <nav class="col-md-offset-3 navbar">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#/">Home</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="http://razbor-poletov.com/">Разбор Полётов</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="set-height">
+            <div class="col-md-12" style="text-align: center">
+                <span><img src="style/image/Helment-with-shadow.png" class="main-img"/></span>
+                <span id="header">Young Pilots</span>
+            </div>
+            <div class="col-md-offset-3 col-md-6" id="header-text">
+                Добрый день, Добрый вечер, Доброй ночи, Доброго утра, вас приветствует сайт Helper для обожаемого вами
+                подкаста "Разбор Полётов".
+            </div>
         </div>
-        <div class="collapse navbar-collapse" id="navbar-collapse-1">
-            <ul class="nav navbar-nav">
-                <li><a href="http://razbor-poletov.com/" target="_blank">Разбор Полётов</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a href="https://plus.google.com/+Razbor-poletov/posts" class="navbar-brand" target="_blank">
-                        <img src="style/image/google-plus.png" alt="Google+"/>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/razbor-poletov/razbor-poletov.github.com" class="navbar-brand" target="_blank">
-                        <img src="style/image/github.png" alt="Github"/>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://gitter.im/razbor-poletov/razbor-poletov.github.com" class="navbar-brand" target="_blank">
-                        <img class="img-circle"
-                             src="style/image/gitter.png"
-                             alt="Gitter"/>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <div class="col-md-12" style="margin-top: 20px; margin-bottom: 20px">
-        <img src="style/image/Helment-with-shadow.png" class="main-img"/>
-    </div>
-    <div class="col-md-12">
-        <h1 id="header">Young Pilots</h1>
-    </div>
-    <div class="col-md-offset-3 col-md-6" id="header-text">
-        Добрый день, Добрый вечер, Доброй ночи, Доброго утра, вас приветствует сайт Helper для обожаемого вами
-        подкаста "Разбор Полётов".
-    </div>
-    <div class="col-md-offset-8 col-md-4 quote">
-        "Технология - идеальная, а люди - мудаки" © Baruch Sadogursky
     </div>
 </header>
 <section class="container-fluid" ng-cloak>
-    <div ng-if="!error" style="padding-right: 20px; padding-left: 20px">
-        <div class="col-md-12">
+    <div ng-if="!error" id="contacts-block">
+        <div class="col-md-12" style="padding-left: 0px">
             <h1 id="header">Creators & Guests</h1>
             <span>(Все живут с
                 солнечных городах и
                 штатах)</span>
         </div>
-        <div class="col-md-8 col-md-offset-2">
+        <div class="col-md-8 col-md-offset-2" style="padding-left: 0px">
             <hr class="style"/>
         </div>
         <div ng-repeat="contact in activeContacts" id="contacts">
             <div class="main-data">
                 <div>
-                    <img src="{{contact.img}}" class="img-circle"/>
+                    <img ng-src="{{contact.img}}" class="img-circle"/>
                     <div>
                         <span ng-if="contact.firstname != '' && contact.lastname != ''" ng-bind="contact.firstname + ', ' + contact.lastname"></span><br/>
                         <span ng-if="contact.info.location != ''" class="glyphicon glyphicon-map-marker">{{contact.info.location}}</span>
@@ -79,7 +60,7 @@
                 <span ng-repeat="(index, link) in contact.socials">
                     <span ng-repeat="(key, value) in link">
                         <a href="{{value}}" ng-if="value != ''"
-                           target="_blank"><img src="{{socialIcons[key]}}"/></a>
+                           target="_blank"><img ng-src="{{socialIcons[key]}}"/></a>
                     </span>
                 </span>
             </div>
@@ -91,4 +72,86 @@
         </div>
     </div>
 </section>
-<footer></footer>
+<section class="container-fluid section-parallax parallax" id="quotes-parallax">
+    <div class="parallax-overlay"></div>
+    <div class="col-md-12">
+        <h1 id="header">Clever Thoughts</h1>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <blockquote>
+                <p>"Атишник всегда доожен быть любознательным"</p>
+                <p>© Victor Gamov</p>
+            </blockquote>
+        </div>
+        <div class="col-md-4">
+            <blockquote>
+                <p>"Технология - идеальная, а люди - мудаки"</p>
+                <p>© Baruch Sadogursky</p>
+            </blockquote>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="row">
+        <div class="col-md-3">
+            <h3>O Сайте</h3>
+            YoungPilots - это сайт организатор, одного из лучших ИТ подкастов <a href="http://razbor-poletov.com/" target="_blank"
+                >"Razbor Poletov"</a>. На этом сайте собраны
+            все самые
+            полезные ссылки, которыми деляться создатели и гости проекта. Один из разделов этого сайта будет посвящен
+            ИТ Конференциям по всему миру.
+            <ul class="list-unstyled list-inline socials footer-socials">
+                <li>
+                    <a href="https://plus.google.com/+Razbor-poletov/posts" class="navbar-brand" target="_blank">
+                        <img src="style/image/google-plus-black.png" alt="Google+"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/razbor-poletov/razbor-poletov.github.com" class="navbar-brand" target="_blank">
+                        <img src="style/image/github-black.png" alt="Github"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://gitter.im/razbor-poletov/razbor-poletov.github.com" class="navbar-brand" target="_blank">
+                        <img class="img-circle"
+                             src="style/image/gitter-black.png"
+                             alt="Gitter"/>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-3 author">
+            <h3>Авторы подкаста</h3>
+            <ul class="list-unstyled">
+                <li>Виктор Гамов</li>
+                <li><a href="https://twitter.com/gamussa" target="_blank">Twitter</a></li>
+                <li><a href="https://github.com/gAmUssA" target="_blank">Github</a></li>
+                <li><a href="https://www.linkedin.com/in/vikgamov" target="_blank">Linkedin</a></li>
+                <li>Алексей Абашев</li>
+                <li><a href="https://twitter.com/a_abashev" target="_blank">Twitter</a></li>
+                <li><a href="https://github.com/abashev" target="_blank">Github</a></li>
+                <li><a href="https://www.linkedin.com/in/abashev/ru" target="_blank">Linkedin</a></li>
+            </ul>
+        </div>
+        <div class="col-md-3 author">
+            <h3>Автор сайта</h3>
+            <ul class="list-unstyled">
+                <li>Власов Артём</li>
+                <li><a href="https://twitter.com/" target="_blank">Twitter</a></li>
+                <li><a href="https://github.com/VlasovArtem" target="_blank">Github</a></li>
+                <li><a href="https://ua.linkedin.com/in/vlasovartem" target="_blank">Linkedin</a></li>
+            </ul>
+        </div>
+        <div class="col-md-3">
+            <h3>Полезные ссылки</h3>
+            <ul class="list-unstyled">
+                <li><a href="http://razbor-poletov.com/blog/archives/" target="_blank">Архив подкастов</a></li>
+                <li><a href="https://plus.google.com/+Razbor-poletov/posts" target="_blank">Google +</a></li>
+                <li><a href="http://razbor-poletov.com/broadcast.html" target="_blank">Broadcast Live</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="row"><h4>©2015 <a href="https://github.com/VlasovArtem" target="_blank">vlasovartem
+    </a></h4></div>
+</footer>

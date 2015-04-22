@@ -29,19 +29,22 @@
   padding: 0;
 }
 header {
-  background: url("../style/image/test-backgroun.jpg");
+  background: url("image/header-background.jpg") center fixed no-repeat;
   min-height: 500px;
   position: relative;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center 0;
+}
+#content {
+  color: #fff;
 }
 #header {
   font-family: 'Poiret One', cursive;
   text-align: center;
   vertical-align: middle;
   margin-top: 0px;
+}
+header #header {
+  font-size: 70pt;
 }
 
 #header+span {
@@ -53,9 +56,9 @@ header {
 }
 
 #header-text {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 100;
   text-align: center;
-  color: #3c3c3c;
   font-size: large;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -90,11 +93,11 @@ nav > div > a {
 }
 
 .main-img {
-  width: 150px;
-  height: 150px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  width: 80px;
+  height: 80px;
+  /*display: block;*/
+  /*margin-left: auto;*/
+  /*margin-right: auto;*/
 }
 
 hr.style {
@@ -106,10 +109,14 @@ hr.style {
   background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
 }
 
+#contacts-block {
+  padding-left: 20px;
+  max-width: 1440px;
+}
+
 #contacts {
   display: inline-block;
-  max-width: 460px;
-  min-width: 450px;
+  width: 460px;
   min-height: 260px;
   font-family: 'Lato', sans-serif;
   vertical-align: top;
@@ -133,7 +140,8 @@ div > h1 #header {
   font-size: medium;
 }
 .img-circle + div {
-  display: table-cell; vertical-align: top
+  display: table-cell;
+  vertical-align: top
 }
 #contacts > div > div {
   display: table;
@@ -142,14 +150,18 @@ div > h1 #header {
 #contacts div > hr {
   margin-top: 0px;
 }
-.socials {
-  display: inline-block;
-}
 .socials img {
   height: 30px;
   width: 30px;
 }
-
+.footer-socials a:hover,
+.footer-socials a:focus {
+  -webkit-filter: invert(100%);
+  filter: invert(100%)
+}
+.socials li {
+  width: 50px;
+}
 .note {
   height: 50px;
 }
@@ -158,11 +170,76 @@ div > h1 #header {
   min-height: 120px;
 }
 section {
-    padding-top: 40px;
+  padding-top: 40px;
 }
-.quote {
+
+footer {
+  position: relative;
+  background-color: #7A919B;
+  box-shadow:inset 0 15px 5px -16px #111;
+  height: 350px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 100;
+  color: #C5C2D1;
+  padding: 40px;
+}
+.footer-content {
+  display: table;
+}
+.footer-content > div {
+  display: table-column;
+}
+footer .container-fluid {
+  height: 100%
+}
+footer > div.row:last-child {
+  text-align: center;
+}
+.row > div > h3 {
+  color: #E0E0E0;
+  font-weight: 100;
+}
+footer a[href] {
+  color: #C5C2D1;
+  text-decoration: none;
+}
+footer a[href]:hover,
+footer a[href]:focus {
+  color: #F4F4F4;
+  text-decoration: none;
+}
+.author li:nth-child(4n-3) {
+  font-weight: 400;
+}
+.parallax .parallax-overlay {
   position: absolute;
-  bottom: 5px;
-  margin-right: auto;
-  margin-bottom: auto
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.2);
+}
+.section-parallax {
+  height: 400px;
+}
+
+#quotes-parallax {
+  background: url("image/quotes-black-and-white.jpg") center fixed no-repeat;
+  position: relative;
+  background-size: cover;
+  color: #fff;
+}
+
+#quotes-parallax .parallax-overlay {
+  background-color: rgba(0,0,0,0.6) !important;
+}
+
+blockquote {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 100;
+  max-height: 105px;
+}
+#quotes-parallax > div:nth-child(2) > h1 {
+  padding-left: 0px;
+  padding-bottom: 20px;
 }
