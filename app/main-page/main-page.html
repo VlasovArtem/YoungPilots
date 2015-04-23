@@ -1,7 +1,8 @@
 <header class="container-fluid parallax" ng-cloak>
     <div class="parallax-overlay"></div>
+    <div></div>
     <div id="content">
-        <nav class="col-md-offset-3 navbar">
+        <nav class="col-md-offset-2 navbar navbar-default">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
@@ -13,11 +14,11 @@
             </div>
             <div class="collapse navbar-collapse" id="navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li><a href="http://razbor-poletov.com/">Разбор Полётов</a></li>
+                    <li><a href="http://razbor-poletov.com/" target="_blank">Разбор Полётов</a></li>
                 </ul>
             </div>
         </nav>
-        <div class="set-height">
+        <div id="header-main">
             <div class="col-md-12" style="text-align: center">
                 <span><img src="style/image/Helment-with-shadow.png" class="main-img"/></span>
                 <span id="header">Young Pilots</span>
@@ -25,6 +26,16 @@
             <div class="col-md-offset-3 col-md-6" id="header-text">
                 Добрый день, Добрый вечер, Доброй ночи, Доброго утра, вас приветствует сайт Helper для обожаемого вами
                 подкаста "Разбор Полётов".
+            </div>
+        </div>
+        <div class="col-md-2" id="header-text">
+            <div>
+                <span>Next broadcast:</span><br/>
+                <span>{{broadcastDate | date:"MM/dd/yyyy 'at' HH:mm "}}{{broadcastData.timezone}}</span>
+            </div>
+            <div class="broadcast" broadcast>
+                <span class="glyphicon glyphicon-bullhorn"></span><br/>
+                <span>LIVE</span>
             </div>
         </div>
     </div>
@@ -75,12 +86,12 @@
 <section class="container-fluid section-parallax parallax" id="quotes-parallax">
     <div class="parallax-overlay"></div>
     <div class="col-md-12">
-        <h1 id="header">Clever Thoughts</h1>
+        <h1 id="header">Deep Thoughts</h1>
     </div>
     <div class="row">
         <div class="col-md-4">
             <blockquote>
-                <p>"Атишник всегда доожен быть любознательным"</p>
+                <p>"Айтишник всегда должен быть любознательным"</p>
                 <p>© Victor Gamov</p>
             </blockquote>
         </div>
@@ -92,9 +103,9 @@
         </div>
     </div>
 </section>
-<footer>
+<footer class="container-fluid">
     <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-5">
             <h3>O Сайте</h3>
             YoungPilots - это сайт организатор, одного из лучших ИТ подкастов <a href="http://razbor-poletov.com/" target="_blank"
                 >"Razbor Poletov"</a>. На этом сайте собраны
@@ -134,7 +145,7 @@
                 <li><a href="https://www.linkedin.com/in/abashev/ru" target="_blank">Linkedin</a></li>
             </ul>
         </div>
-        <div class="col-md-3 author">
+        <div class="col-md-2 author">
             <h3>Автор сайта</h3>
             <ul class="list-unstyled">
                 <li>Власов Артём</li>
@@ -143,8 +154,8 @@
                 <li><a href="https://ua.linkedin.com/in/vlasovartem" target="_blank">Linkedin</a></li>
             </ul>
         </div>
-        <div class="col-md-3">
-            <h3>Полезные ссылки</h3>
+        <div class="col-md-2">
+            <h3>Links</h3>
             <ul class="list-unstyled">
                 <li><a href="http://razbor-poletov.com/blog/archives/" target="_blank">Архив подкастов</a></li>
                 <li><a href="https://plus.google.com/+Razbor-poletov/posts" target="_blank">Google +</a></li>
@@ -152,6 +163,8 @@
             </ul>
         </div>
     </div>
-    <div class="row"><h4>©2015 <a href="https://github.com/VlasovArtem" target="_blank">vlasovartem
+    <div><h4>©2015 <a
+            href="https://github.com/VlasovArtem"
+            target="_blank">vlasovartem
     </a></h4></div>
 </footer>

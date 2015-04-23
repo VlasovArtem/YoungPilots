@@ -43,6 +43,11 @@ header {
   vertical-align: middle;
   margin-top: 0px;
 }
+#header-main {
+  height: 350px;
+  display: table-cell;
+  vertical-align: middle;
+}
 header #header {
   font-size: 70pt;
 }
@@ -64,40 +69,69 @@ header #header {
   padding-bottom: 20px;
 }
 
-nav > div > ul > li > a {
+#content > #header-text:last-child {
+  font-size: smaller;
+  font-weight: 400;
+  text-align: left;
+  display: table;
+}
+.broadcast {
+  color: grey;
+  width: 30%;
+}
+#content > #header-text:last-child > div {
+  display: table-cell;
+}
+.broadcast > span:first-child {
+  font-size: medium;
+}
+.broadcast > span:last-child {
+  font-size: x-small;
+}
+.live > span:first-child {
   color: #46b8da;
-  font-size: larger;
-  text-decoration: none !important;
+}
+.live > span:last-child {
+  color: red;
 }
 
-nav > div > a {
-  color: #46b8da;
-  font-size: larger;
-  text-decoration: none !important;
-}
-
-.navbar-right > li > a > img {
-  height: 30px;
-  width: 30px;
-}
-
-.nav > li > a:hover,
-.nav > li > a:focus {
-  text-decoration: none !important;
+.navbar-default {
   background-color: transparent !important;
+  border-color: transparent !important;
 }
-.navbar-right > li > a:hover,
-.navbar-right > li > a:focus {
+
+.navbar-default .navbar-nav > li > a {
+  color: #46b8da;
+  font-size: larger;
+}
+.navbar-default .navbar-brand {
+  color: #46b8da;
+  font-size: larger;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
   -webkit-filter: invert(100%);
   filter: invert(100%);
 }
 
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+.navbar-default .navbar-toggle {
+  border-color: #46b8da;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #46b8da;;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  opacity: 0.2;
+}
 .main-img {
   width: 80px;
   height: 80px;
-  /*display: block;*/
-  /*margin-left: auto;*/
-  /*margin-right: auto;*/
 }
 
 hr.style {
@@ -110,8 +144,10 @@ hr.style {
 }
 
 #contacts-block {
-  padding-left: 20px;
+  padding-left: 10px;
   max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #contacts {
@@ -177,11 +213,10 @@ footer {
   position: relative;
   background-color: #7A919B;
   box-shadow:inset 0 15px 5px -16px #111;
-  height: 350px;
   font-family: 'Roboto Slab', serif;
   font-weight: 100;
   color: #C5C2D1;
-  padding: 40px;
+  padding: 40px 40px 10px 40px;
 }
 .footer-content {
   display: table;
@@ -228,6 +263,9 @@ footer a[href]:focus {
   position: relative;
   background-size: cover;
   color: #fff;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #quotes-parallax .parallax-overlay {
@@ -242,4 +280,17 @@ blockquote {
 #quotes-parallax > div:nth-child(2) > h1 {
   padding-left: 0px;
   padding-bottom: 20px;
+}
+footer+div {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+}
+footer > div {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+footer > div:last-child{
+  text-align: center;
 }
