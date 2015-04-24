@@ -78,6 +78,7 @@ header #header {
 .broadcast {
   color: grey;
   width: 30%;
+
 }
 #content > #header-text:last-child > div {
   display: table-cell;
@@ -111,12 +112,16 @@ header #header {
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
   -webkit-filter: invert(100%);
+  -moz-filter: invert(100%);
+  -o-filter: invert(100%);
   filter: invert(100%);
 }
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
   -webkit-filter: invert(100%);
+  -moz-filter: invert(100%);
+  -o-filter: invert(100%);
   filter: invert(100%);
 }
 .navbar-default .navbar-toggle {
