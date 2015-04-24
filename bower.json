@@ -17,6 +17,7 @@
     "bootstrap": "3.3.x",
     "jquery": "2.1.x",
     "underscore": "1.8.x",
-    "angular-ui-router": "~0.2.13"
+    "angular-ui-router": "~0.2.13",
+    "jquery.scroolly": "~0.0.1"
   }
 }
