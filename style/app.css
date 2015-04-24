@@ -267,10 +267,14 @@ footer a[href]:focus {
   background: url("image/quotes-black-and-white.jpg") center fixed no-repeat;
   position: relative;
   background-size: cover;
+
+}
+#quotes-parallax > div:not(:nth-child(1)) {
   color: #fff;
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
 }
 
 #quotes-parallax .parallax-overlay {
