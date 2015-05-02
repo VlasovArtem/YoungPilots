@@ -407,7 +407,7 @@ footer > div:last-child{
 }
 #useful > .tags {
   vertical-align: bottom;
-  cursor: default;
+  cursor: pointer;
   overflow: hidden;
 }
 .useful-menu {
@@ -417,6 +417,10 @@ footer > div:last-child{
 }
 .useful-menu  > span {
   padding: 5px;
+}
+.useful-menu > span:last-child {
+  cursor: pointer;
+  font-size: large;
 }
 .more-tags {
   font-size: larger;
