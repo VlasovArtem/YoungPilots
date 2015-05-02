@@ -131,7 +131,6 @@ app.directive('broadcast', function($timeout, BroadcastLive, $route) {
             };
             var newBroadcastDateTimeout = null;
             var newDate = function() {
-                console.log("New date timeout");
                 updateLocalDate(new Date());
                 checkLeftTime();
                 timeout = $timeout(newDate, timeoutMillis);
@@ -140,32 +139,36 @@ app.directive('broadcast', function($timeout, BroadcastLive, $route) {
         }
     }
 });
-app.directive('broadcastCountdown', function($timeout) {
+app.directive('countdown', function($timeout) {
     return {
         restrict: 'C',
+        scope: {
+            countdownTime: '=',
+            timezoneOffset: '@'
+        },
         link: function(scope, element, attrs)
         {
-            var broadcastDate = new Date(scope.broadcastDate),
-                broadcastTime = broadcastDate.getTime(),
-                broadcastOffset = -((scope.broadcastData.timezoneOffset * 60) * 60000),
-                broadcastUtcTime = broadcastTime - broadcastOffset;
+            var futureDate = new Date(scope.countdownTime),
+                futureTime = futureDate.getTime(),
+                futureOffset = -((Number(scope.timezoneOffset) * 60) * 60000),
+                futureUtcTime = futureTime - futureOffset;
 
-            var localDate = new Date(),
-                localTime = localDate.getTime(),
-                localOffset = localDate.getTimezoneOffset() * 60000,
-                localUtcTime = localTime + localOffset;
+            var currentDate = new Date(),
+                currentTime = currentDate.getTime(),
+                currentOffset = currentDate.getTimezoneOffset() * 60000,
+                currentUtcTime = currentTime + currentOffset;
             var updateDate = function (date) {
-                localDate = date;
-                localTime = localDate.getTime();
-                localOffset = localDate.getTimezoneOffset() * 60000;
-                localUtcTime = localTime + localOffset;
+                currentDate = date;
+                currentTime = currentDate.getTime();
+                currentOffset = currentDate.getTimezoneOffset() * 60000;
+                currentUtcTime = currentTime + currentOffset;
             };
             var dayMillis = 24 * 60 * 60 * 1000,
                 hourMillis = 60 * 60 * 1000,
                 minuteMillis = 60 * 1000,
                 secondMillis = 1000;
             var updateCountdown = function() {
-                var diff = broadcastUtcTime - localUtcTime;
+                var diff = futureUtcTime - currentUtcTime;
                 var leftDays = Math.floor(diff / dayMillis),
                     leftHours = Math.floor((diff - (leftDays * dayMillis)) / hourMillis),
                     leftMinutes = Math.floor((diff - (leftDays * dayMillis + leftHours * hourMillis)) / minuteMillis),
@@ -176,6 +179,7 @@ app.directive('broadcastCountdown', function($timeout) {
                     "minute": leftMinutes,
                     "second": leftSeconds
                 };
+
             };
             var countdown = function() {
                 updateDate(new Date());
@@ -183,6 +187,30 @@ app.directive('broadcastCountdown', function($timeout) {
                 countdownTimeout = $timeout(countdown, secondMillis);
             };
             var countdownTimeout = $timeout(countdown, secondMillis);
+        },
+        template: '<span>Next conference countdown: <i>Days: {{left.day}}, {{left.hour}}:{{left.minute}}:{{left.second}}</i></span>'
+    }
+});
+app.directive('popup', function() {
+    return {
+        restrict: 'A',
+        scope: {
+            popupContent: '=',
+            textContent: '@'
+        },
+        link: function(scope, element, attrs) {
+            if(!angular.isUndefined(scope.popupContent) || !angular.isUndefined(scope.textContent)) {
+                var data = scope.popupContent != null && (scope.popupContent.length > 110 || !angular.isUndefined(scope.textContent)) ? scope.popupContent : scope.textContent;
+                if(!angular.isUndefined(data)) {
+                    var options = {
+                        content: data,
+                        trigger: 'hover',
+                        placement: 'bottom',
+                        container: 'body'
+                    };
+                    $(element).popover(options);
+                }
+            }
         }
     }
 });

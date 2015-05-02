@@ -1,4 +1,4 @@
-<header class="container-fluid parallax" ng-cloak>
+<header class="container-fluid parallax">
     <div class="parallax-overlay"></div>
     <div></div>
     <div id="content">
@@ -34,14 +34,82 @@
                 <span>{{broadcastDate | date:"MM/dd/yyyy 'at' HH:mm "}}{{broadcastData.timezone}}</span>
             </div>
             <div class="broadcast" broadcast>
-                <span class="glyphicon glyphicon-bullhorn"></span><br/>
-                <span>LIVE</span>
+                <a href="http://razbor-poletov.com/broadcast.html" target="_blank">
+                    <span class="glyphicon glyphicon-bullhorn"></span><br/>
+                    <span>LIVE</span>
+                </a>
             </div>
         </div>
     </div>
 </header>
-<section class="container-fluid" ng-cloak id="contact-section">
-    <div ng-if="!error" id="contacts-block">
+<section class="container-fluid block" id="useful-stuff-section">
+    <div id="block">
+        <div class="col-md-12" style="padding-left: 0px">
+            <h1 class="header">Useful Things</h1>
+            <span>(aka Полезняшки)</span>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2" style="padding-left: 0px">
+                <hr class="style"/>
+            </div>
+        </div>
+        <div class="col-md-12 useful-menu">
+            <span ng-if="filterTag != null && filterTag != ''">Filter: {{filterTag}}</span>
+            <span class="glyphicon glyphicon-erase" style="font-size: large" ng-click="changeFilter('')" popup
+                  text-content="Reset filter"></span>
+        </div>
+        <div class="col-md-12">
+            <div id="useful"
+                 ng-repeat="usefulThing in usefulThings | orderBy: 'podcastId' : true | filter: filterTag | limitTo: 20">
+                <span ng-bind="usefulThing.provider"></span>
+                <a href="{{usefulThing.link}}" target="_blank">Link</a><br/>
+                <div class="description" ng-bind="usefulThing.description" popup
+                     popup-content="usefulThing.description">
+                </div>
+                <div class="tags" ng-if="usefulThing.tags != null">
+                    <span ng-repeat="tag in usefulThing.tags | limitTo: checkTagLimit(usefulThing.tags)">
+                        <span ng-bind="tag" class="label label-primary tag"
+                              ng-click="changeFilter(tag)"></span>
+                    </span>
+                    <span ng-if="checkTagLimit(usefulThing.tags) == 4">
+                        <span class="glyphicon glyphicon-option-horizontal more-tags" popup
+                              popup-content="usefulThing.tags[usefulThing.tags.length - 1]"
+                              text-content="tag"
+                              ng-click="changeFilter(usefulThing.tags[usefulThing.tags.length - 1])"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container-fluid section-parallax parallax" id="conf-section">
+    <div class="parallax-overlay"></div>
+    <div class="row">
+        <h1 class="header">Conferences</h1>
+    </div>
+    <div class="col-md-4 conf" ng-repeat="conference in conferences | orderBy: 'startDate'">
+        <div>
+            <div ng-bind="conference.name"></div>
+            <div id="where-and-when">
+                <span class="glyphicon glyphicon-calendar">{{conference.startDate | date: 'MMM d'}}
+                    {{conference.endDate == null ? '' : ' - ' + (conference.endDate | date: 'd')}}</span>
+                <span class="glyphicon glyphicon-map-marker" ng-bind="conference.location" style="float: right;"></span>
+            </div>
+            <div class="conf-desc" ng-bind="conference.description"></div>
+        </div>
+        <div>
+            <hr/>
+            <a href="{{conference.website}}" target="_blank" style="color: white">{{conference.website}}</a>
+            <br/>
+            <div ng-if="conference.promocode != null">Promocode: {{conference.promocode}}</div>
+        </div>
+    </div>
+    <div class="countdown" ng-repeat="conference in conferences | orderBy: 'startDate' | limitTo: 1"
+         countdown-time="conference.startDate" timezone-offset="3">
+    </div>
+</section>
+<section class="container-fluid block" id="contact-section">
+    <div id="block">
         <div class="col-md-12" style="padding-left: 0px">
             <h1 class="header">Creators & Guests</h1>
             <span>(Все живут с
@@ -77,30 +145,17 @@
             </div>
         </div>
     </div>
-    <div ng-if="error">
-        <div class="col-md-12">
-            <h1 class="header">Oooops</h1>
-        </div>
-    </div>
 </section>
 <section class="container-fluid section-parallax parallax" id="quote-section">
     <div class="parallax-overlay"></div>
     <div class="row">
         <h1 class="header">Deep Thoughts</h1>
     </div>
-    <div class="row">
-        <div class="col-md-4">
-            <blockquote>
-                <p>"Айтишник всегда должен быть любознательным"</p>
-                <p>© Victor Gamov</p>
-            </blockquote>
-        </div>
-        <div class="col-md-4">
-            <blockquote>
-                <p>"Технология - идеальная, а люди - мудаки"</p>
-                <p>© Baruch Sadogursky</p>
-            </blockquote>
-        </div>
+    <div class="col-md-4" ng-repeat="quote in quotes | limitTo: 6">
+        <blockquote>
+            <p ng-bind="quote.quote"></p>
+            <p ng-bind="quote.author"></p>
+        </blockquote>
     </div>
 </section>
 <footer class="container-fluid">
@@ -177,5 +232,5 @@
 <script>
     $('.top-button').click(function() {
         $('html, body').animate({scrollTop: 0}, 500);
-    })
+    });
 </script>

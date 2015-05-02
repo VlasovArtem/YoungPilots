@@ -1,0 +1,1888 @@
+[
+  {
+    "id": 0,
+    "name": null,
+    "date": 1321394400000,
+    "conferences": null,
+    "usefulStuffs": null,
+    "checked": false
+  },
+  {
+    "id": 1,
+    "name": null,
+    "date": 1321999200000,
+    "conferences": null,
+    "usefulStuffs": null,
+    "checked": false
+  },
+  {
+    "id": 2,
+    "name": null,
+    "date": 1323122400000,
+    "conferences": null,
+    "usefulStuffs": [
+      {
+        "link": "http://bitwiseshiftleft.github.com/sjcl/",
+        "provider": "bitwiseshiftleft",
+        "tags": [
+          "Java",
+          "Git",
+          "Mac OSX",
+          "GitHub"
+        ],
+        "checked": false
+      }
+    ],
+    "checked": false
+  },
+  {
+    "id": 3,
+    "name": null,
+    "date": 1323986400000,
+    "conferences": null,
+    "usefulStuffs": null,
+    "checked": false
+  },
+  {
+    "id": 4,
+    "name": null,
+    "date": 1324591200000,
+    "conferences": null,
+    "usefulStuffs": [
+      {
+        "link": "https://engineering.linkedin.com/frontend/leaving-jsps-dust-moving-linkedin-dustjs-client-side-templates",
+        "provider": "engineering",
+        "tags": [
+          "Java",
+          "Web",
+          "Framework",
+          "JSON",
+          "Git",
+          "Google",
+          "REST",
+          "GitHub"
+        ],
+        "checked": false
+      }
+    ],
+    "checked": false
+  },
+  {
+    "id": 5,
+    "name": null,
+    "date": 1325109600000,
+    "conferences": null,
+    "usefulStuffs": [
+      {
+        "link": "http://jodd.org/doc/jerry/index.html",
+        "provider": "jodd",
+        "tags": [
+          "Java",
+          "Web",
+          "Framework",
+          "JSON",
+          "Google"
+        ],
+        "checked": false
+      }
+    ],
+    "checked": false
+  },
+  {
+    "id": 6,
+    "name": null,
+    "date": 1325887200000,
+    "conferences": null,
+    "usefulStuffs": null,
+    "checked": false
+  },
+  {
+    "id": 7,
+    "name": null,
+    "date": 1326837600000,
+    "conferences": null,
+    "usefulStuffs": null,
+    "checked": false
+  },
+  {
+    "id": 8,
+    "name": null,
+    "date": 1327874400000,
+    "conferences": null,
+    "usefulStuffs": [],
+    "checked": false
+  },
+  {
+    "id": 9,
+    "name": null,
+    "date": 1328479200000,
+    "conferences": null,
+    "usefulStuffs": [
+      {
+        "link": "https://github.com/vesln/issues",
+        "provider": "github",
+        "tags": [
+          "Java",
+          "Web",
+          "Git",
+          "DB",
+          "REST",
+          "GitHub"
+        ],
+        "checked": false
+      }
+    ],
+    "checked": false
+  },
+  {
+    "id": 10,
+    "name": null,
+    "date": 1329343200000,
+    "conferences": null,
+    "usefulStuffs": [],
+    "checked": false
+  },
+  {
+    "id": 11,
+    "name": null,
+    "date": 1330034400000,
+    "conferences": null,
+    "usefulStuffs": null,
+    "checked": false
+  },
+  {
+    "id": 12,
+    "name": null,
+    "date": 1330639200000,
+    "conferences": null,
+    "usefulStuffs": [
+      {
+        "link": "http://www.sparkjava.com/readme.html",
+        "provider": "sparkjava",
+        "tags": ["Java"],
+        "checked": false
+      }
+    ],
+    "checked": false
+  },
+  {
+    "id": 13,
+    "name": null,
+    "date": 1331244000000,
+    "conferences": null,
+    "usefulStuffs": [
+      {
+        "link": "http://icedtea.classpath.org/wiki/Thermostat",
+        "provider": "icedtea",
+        "tags": [
+          "Java",
+          "Web",
+          "JVM",
+          "DB"
+        ],
+        "checked": false
+      },
+      {
+        "link": "http://www.opennet.ru/opennews/art.shtml?num=33169",
+        "provider": "opennet",
+        "tags": [
+          "Java",
+          "Google",
+          "Mac OSX"
+        ],
+        "checked": false
+      }
+    ],
+    "checked": false
+  },
+  {
+    "id": 14,
+    "name": null,
+    "date": 1332540000000,
+    "conferences": null,
+    "usefulStuffs": [
+      {
+        "link": "http://code.google.com/p/adbcj/",
+        "provider": "code",
+        "tags": [
+          "Java",
+          "Git",
+          "Apache",
+          "Google",
+          "DB",
+          "GitHub"
+        ],
+        "checked": false
+      }
+    ],
+    "checked": false
+  },
+  {
+    "id": 14,
+    "name": null,
+    "date": 1333746000000,
+    "conferences": null,
+    "usefulStuffs": [
+      {
+        "link": "https://github.com/goldmansachs",
+        "provider": "github",
+        "tags": [
+          "Java",
+          "Git",
+          "Google",
+          "GitHub"
+        ],
+        "checked": false
+      },
+      {
+        "link": "http://sourceforge.net/projects/javaconcurrenta/",
+        "provider": "sourceforge",
+        "tags": [
+          "Java",
+          "Web",
+          "Google",
+          "DB"
+        ],
+        "checked": false
+      }
+    ],
+    "checked": false
+  },
+  {
+    "id": 15,
+    "name": null,
+    "date": 1334350800000,
+    "conferences": null,
+    "usefulStuffs": null,
+    "checked": false
+  },
+  {
+    "id": 16,
+    "name": null,
+    "date": 1334955600000,
+    "conferences": null,
+    "usefulStuffs": [
+      {
+        "link": "http://stackapps.com/questions/3099/stacktrace-for-ipad",
+        "provider": "stackapps",
+        "tags": [
+          "Java",
+          "Web",
+          "Android",
+          "Google",
+          "DB",
+          "REST"
+        ],
+        "checked": false
+      },
+      {
+        "link": "http://mosh.mit.edu/",
+        "provider": "mosh",
+        "tags": [],
+        "checked": false
+      }
+    ],
+    "checked": false
+  },
+  {
+    "id": 17,
+    "name": null,
+    "date": 1336770000000,
+    "conferences": null,
+    "usefulStuffs": [
+      {
+        "link": "http://vertx.io/",
+        "provider": "vertx",
+        "tags": [
+          "Java",
+          "Web",
+          "Maven",
+          "Git",
+          "Open source",
+          "Apache",
+          "Google",
+          "GitHub",
+          "Ruby"
+        ],
+        "checked": false
+      },
+      {
+        "link": "https://github.com/purplefox/vert.x",
+        "provider": "github",
+        "tags": [
+          "Web",
+          "Framework",
+          "Git",
+          "DB",
+          "GitHub"
+        ],
+        "checked": false
+      },
+      {
+        "link": "http://www.jumperz.net/index.php?i=2&a=0&b=9",
+        "provider": "jumperz",
+        "tags": [
+          "Java",
+          "Web",
+          "JSON",
+          "Google",
+          "DB",
+          "Mac OSX"
+        ],
+        "checked": false
+      }
+    ],
+    "checked": false
+  },
+  {
+    "id": 18,
+    "name": null,
+    "date": 1337634000000,
+    "conferences": null,
+    "usefulStuffs": null,
+    "checked": false
+  },
+  {
+    "id": 19,
+    "name": null,
+    "date": 1338411600000,
+    "conferences": null,
+    "usefulStuffs": [
+      {
+        "link": "http://dillinger.io/",
+        "provider": "dillinger",
+        "tags": [
+          "Java",
+          "Git",
+          "Google",
+          "DB",
+          "GitHub"
+        ],
+        "checked": false
+      }
+    ],
+    "checked": false
+  },
+  {
+    "id": 20,
+    "name": null,
+    "date": 1339189200000,
+    "conferences": null,
+    "usefulStuffs": [
+      {
+        "link": "https://github.com/foursquare/fongo",
+        "provider": "github",
+        "tags": [
+          "Java",
+          "Web",
+          "Framework",
+          "Git",
+          "DB",
+          "GitHub"
+        ],
+        "checked": false
+      },
+      {
+        "link": "https://github.com/cbeams/distyles",
+        "provider": "github",
+        "tags": [
+          "Java",
+          "Web",
+          "Framework",
+          "Gradle",
+          "JSON",
+          "Git",
+          "Spring",
+          "DB",
+          "bash",
+          "GitHub"
+        ],
+        "checked": false
+      },
+      {
+        "link": "http://www.manning.com/walls4/",
+        "provider": "manning",
+        "tags": [
+          "Java",
+          "Web",
+          "Framework",
+          "Spring",
+          "Google",
+          "REST"
+        ],
+        "checked": false
+      }
+    ],
+    "checked": false
+  },
+  {
+    "id": 21,
+    "name": null,
+    "date": 1339275600000,
+    "conferences": null,
+    "usefulStuffs": [
+      {
+        "link": "http://metrics.codahale.com/",
+        "provider": "metrics",
+        "tags": [
+          "Git",
+          "GitHub"
+        ],
+        "checked": false
+      },
+      {
+        "link": "http://engineering.twitter.com/2012/06/distributed-systems-tracing-with-zipkin.html",
+        "provider": "engineering",
+        "tags": [],
+        "checked": false
+      }
+    ],
+    "checked": false
+  },
+  {
+    "id": 22,
+    "name": null,
+    "date": 1341176400000,
+    "conferences": null,
+    "usefulStuffs": [
+      {
+        "link": "http://jaxenter.com/java-class-reloader-javeleon-hits-2-0-release-43149.html",
+        "provider": "jaxenter",
+        "tags": [
+          "Java",
+          "Web",
+          "Framework",
+          "Android",
+          "JSON",
+          "JVM",
+          "Spring",
+          "Google",
+          "REST",
+          "Ruby"
+        ],
+        "checked": false
+      },
+      {
+        "link": "https://bitbucket.org/dfa/dollar/wiki/Home",
+        "provider": "bitbucket",
+        "tags": [
+          "Web",
+          "Git",
+          "Google",
+          "DB",
+          "Mac OSX",
+          "REST",
+          "GitHub"
+        ],
+        "checked": false
+      }
+    ],
+    "checked": false
+  },
+  {
+    "id": 23,
+    "name": null,
+    "date": 1342472400000,
+    "conferences": null,
+    "usefulStuffs": [
+      {
+        "link": "http://code.google.com/p/chromedevtools/",
+        "provider": "code",
+        "tags": [
+          "Java",
+          "Git",
+          "Google",
+          "DB",
+          "GitHub"
+        ],
+        "checked": false
+      }
+    ],
+    "checked": false
+  },
+  {
+    "id": 24,
+    "name": null,
+    "date": 1347310800000,
+    "conferences": null,
+    "usefulStuffs": [],
+    "checked": false
+  },
+  {
+    "id": 25,
+    "name": null,
+    "date": 1349211600000,
+    "conferences": null,
+    "usefulStuffs": null,
+    "checked": false
+  },
+  {
+    "id": 26,
+    "name": null,
+    "date": 1349298000000,
+    "conferences": null,
+    "usefulStuffs": null,
+    "checked": false
+  },
+  {
+    "id": 27,
+    "name": null,
+    "date": 1350939600000,
+    "conferences": null,
+    "usefulStuffs": [],
+    "checked": false
+  },
+  {
+    "id": 28,
+    "name": null,
+    "date": 1353189600000,
+    "conferences": null,
+    "usefulStuffs": [
+      {
+        "link": "http://www.textasticapp.com",
+        "provider": "textasticapp",
+        "tags": [
+          "Java",
+          "Web",
+          "DB",
+          "Mac OSX"
+        ],
+        "checked": false
+      },
+      {
+        "link": "http://blog.geekli.st/post/34361344887/how-to-crack-the-toughest-coding-interviews-by-gayle",
+        "provider": "blog",
+        "tags": [
+          "Java",
+          "Web",
+          "Android",
+          "Git",
+          "Google",
+          "DB",
+          "GitHub",
+          "Ruby"
+        ],
+        "checked": false
+      },
+      {
+        "link": "http://it-sobytie.ru",
+        "provider": "it-sobytie",
+        "tags": [
+          "Java",
+          "Web",
+          "Android",
+          "Git",
+          "DB"
+        ],
+        "checked": false
+      }
+    ],
+    "checked": false
+  },
+  {
+    "id": 29,
+    "name": null,
+    "date": 1354658400000,
+    "conferences": null,
+    "usefulStuffs": [
+      {
+        "link": "http://anti-code.com/devtools-cheatsheet/",
+        "provider": "anti-code",
+        "tags": [
+          "Java",
+          "Web",
+          "Git",
+          "Google",
+          "Mac OSX",
+          "GitHub"
+        ],
+        "checked": false
+      }
+    ],
+    "checked": false
+  },
+  {
+    "id": 30,
+    "name": null,
+    "date": 1356127200000,
+    "conferences": null,
+    "usefulStuffs": [
+      {
+        "link": "http://www.git-legit.org",
+        "provider": "git-legit",
+        "tags": [
+          "Java",
+          "Git",
+          "Mac OSX",
+          "REST",
+          "GitHub"
+        ],
+        "checked": false
+      }
+    ],
+    "checked": false
+  },
+  {
+    "id": 31,
+    "name": null,
+    "date": 1358287200000,
+    "conferences": null,
+    "usefulStuffs": [
+      {
+        "link": "http://lviggiano.github.com/owner/",
+        "provider": "lviggiano",
+        "tags": [
+          "Java",
+          "Git",
+          "Google",
+          "GitHub"
+        ],
+        "checked": false
+      },
+      {
+        "link": "http://msgpack.org",
+        "provider": "msgpack",
+        "tags": [
+          "Java",
+          "Web",
+          "Framework",
+          "Maven",
+          "JSON",
+          "Git",
+          "Open source",
+          "Apache",
+          "Google",
+          "DB",
+          "REST",
+          "bash",
+          "GitHub",
+          "Ruby"
+        ],
+        "checked": false
+      }
+    ],
+    "checked": false
+  },
+  {
+    "id": 32,
+    "name": null,
+    "date": 1359237600000,
+    "conferences": null,
+    "usefulStuffs": null,
+    "checked": false
+  },
+  {
+    "id": 34,
+    "name": null,
+    "date": 1361311200000,
+    "conferences": null,
+    "usefulStuffs": [
+      {
+        "link": "https://github.com/alvins82/java-mini-profiler-core",
+        "provider": "github",
+        "tags": [
+          "Java",
+          "Web",
+          "Framework",
+          "Maven",
+          "SQL",
+          "Git",
+          "Spring",
+          "DB",
+          "GitHub"
+        ],
+        "checked": false
+      },
+      {
+        "link": "https://saucelabs.com",
+        "provider": "saucelabs",
+        "tags": [
+          "Java",
+          "Web",
+          "Framework",
+          "Android",
+          "Google"
+        ],
+        "checked": false
+      },
+      {
+        "link": "http://squash.io",
+        "provider": "squash",
+        "tags": [
+          "Java",
+          "Web",
+          "Git",
+          "Google",
+          "DB",
+          "GitHub"
+        ],
+        "checked": false
+      }
+    ],
+    "checked": false
+  },
+  {
+    "id": 35,
+    "name": null,
+    "date": 1362348000000,
+    "conferences": null,
+    "usefulStuffs": [
+      {
+        "link": "http://tin.cr/",
+        "provider": "tin",
+        "tags": [
+          "Java",
+          "Mac OSX"
+        ],
+        "checked": false
+      },
+      {
+        "link": "https://github.com/google/tracing-framework",
+        "provider": "github",
+        "tags": [
+          "Java",
+          "Web",
+          "Framework",
+          "Git",
+          "Google",
+          "DB",
+          "GitHub"
+        ],
+        "checked": false
+      },
+      {
+        "link": "http://www.jetbrains.com/webstorm/nextversion/index.html",
+        "provider": "jetbrains",
+        "tags": [
+          "Java",
+          "Web",
+          "Google",
+          "Ruby"
+        ],
+        "checked": false
+      }
+    ],
+    "checked": false
+  },
+  {
+    "id": 36,
+    "name": null,
+    "date": 1364421600000,
+    "conferences": null,
+    "usefulStuffs": [
+      {
+        "link": "https://github.com/alexruiz/fest-assert-2.x",
+        "provider": "github",
+        "tags": [
+          "Java",
+          "Web",
+          "Framework",
+          "Git",
+          "DB",
+          "GitHub"
+        ],
+        "checked": false
+      },
+      {
+        "link": "http://paulrouget.com/e/fxterminalv3/",
+        "provider": "paulrouget",
+        "tags": [
+          "Java",
+          "Git",
+          "GitHub"
+        ],
+        "checked": false
+      },
+      {
+        "link": "https://github.com/paulrouget/firefox-jsterm",
+        "provider": "github",
+        "tags": [
+          "Java",
+          "Web",
+          "Git",
+          "DB",
+          "GitHub"
+        ],
+        "checked": false
+      }
+    ],
+    "checked": false
+  },
+  {
+    "id": 37,
+    "name": null,
+    "date": 1364680800000,
+    "conferences": null,
+    "usefulStuffs": [
+      {
+        "link": "https://github.com/huan/",
+        "provider": "github",
+        "tags": [
+          "Framework",
+          "Git",
+          "Google",
+          "DB",
+          "GitHub",
+          "Ruby"
+        ],
+        "checked": false
+      }
+    ],
+    "checked": false
+  },
+  {
+    "id": 38,
+    "name": null,
+    "date": 1366578000000,
+    "conferences": null,
+    "usefulStuffs": [
+      {
+        "link": "https://github.com/facebook/buck",
+        "provider": "github",
+        "tags": [
+          "Java",
+          "Web",
+          "Android",
+          "Git",
+          "Apache",
+          "Google",
+          "DB",
+          "REST",
+          "bash",
+          "GitHub"
+        ],
+        "checked": false
+      },
+      {
+        "link": "http://facebook.github.io/buck/",
+        "provider": "facebook",
+        "tags": [],
+        "checked": false
+      },
+      {
+        "link": "http://google-engtools.blogspot.com/2011/08/build-in-cloud-how-build-system-works.html",
+        "provider": "google-engtools",
+        "tags": [
+          "Java",
+          "Web",
+          "Google"
+        ],
+        "checked": false
+      },
+      {
+        "link": "http://tools.android.com/tech-docs/new-build-system/user-guide",
+        "provider": "tools",
+        "tags": [
+          "Java",
+          "Web",
+          "Gradle",
+          "Maven",
+          "Android",
+          "Git",
+          "Google",
+          "DB"
+        ],
+        "checked": false
+      },
+      {
+        "link": "http://logstash.net/",
+        "provider": "logstash",
+        "tags": [
+          "Web",
+          "Google"
+        ],
+        "checked": false
+      }
+    ],
+    "checked": false
+  },
+  {
+    "id": 39,
+    "name": null,
+    "date": 1368478800000,
+    "conferences": null,
+    "usefulStuffs": [
+      {
+        "link": "https://github.com/visionmedia/git-extras",
+        "provider": "github",
+        "tags": [
+          "Web",
+          "Framework",
+          "Git",
+          "DB",
+          "GitHub"
+        ],
+        "checked": false
+      },
+      {
+        "link": "https://vimeo.com/45506445",
+        "provider": "vimeo",
+        "tags": [
+          "Java",
+          "Android",
+          "JSON",
+          "Git",
+          "Google",
+          "DB",
+          "GitHub"
+        ],
+        "checked": false
+      },
+      {
+        "link": "http://cloc.sourceforge.net/",
+        "provider": "cloc",
+        "tags": [
+          "Java",
+          "Web",
+          "Framework",
+          "Maven",
+          "JSON",
+          "SQL",
+          "Git",
+          "Google",
+          "DB",
+          "Mac OSX",
+          "REST",
+          "bash",
+          "Ruby"
+        ],
+        "checked": false
+      },
+      {
+        "link": "http://gitignore.io/",
+        "provider": "gitignore",
+        "tags": [],
+        "checked": false
+      }
+    ],
+    "checked": false
+  },
+  {
+    "id": 40,
+    "name": null,
+    "date": 1369861200000,
+    "conferences": null,
+    "usefulStuffs": null,
+    "checked": false
+  },
+  {
+    "id": 41,
+    "name": null,
+    "date": 1371330000000,
+    "conferences": null,
+    "usefulStuffs": null,
+    "checked": false
+  },
+  {
+    "id": 42,
+    "name": null,
+    "date": 1376514000000,
+    "conferences": null,
+    "usefulStuffs": [
+      {
+        "link": "http://www.togglz.org/quickstart.html",
+        "provider": "togglz",
+        "tags": [
+          "Java",
+          "Web",
+          "Google"
+        ],
+        "checked": false
+      },
+      {
+        "link": "http://martinfowler.com/bliki/FeatureToggle.html",
+        "provider": "martinfowler",
+        "tags": [
+          "Java",
+          "Web",
+          "SQL",
+          "Google",
+          "DB"
+        ],
+        "checked": false
+      }
+    ],
+    "checked": false
+  },
+  {
+    "id": 43,
+    "name": null,
+    "date": 1377205200000,
+    "conferences": null,
+    "usefulStuffs": null,
+    "checked": false
+  },
+  {
+    "id": 44,
+    "name": null,
+    "date": 1379278800000,
+    "conferences": null,
+    "usefulStuffs": null,
+    "checked": false
+  },
+  {
+    "id": 45,
+    "name": null,
+    "date": 1379970000000,
+    "conferences": null,
+    "usefulStuffs": null,
+    "checked": false
+  },
+  {
+    "id": 46,
+    "name": null,
+    "date": 1380056400000,
+    "conferences": null,
+    "usefulStuffs": null,
+    "checked": false
+  },
+  {
+    "id": 47,
+    "name": null,
+    "date": 1380142800000,
+    "conferences": null,
+    "usefulStuffs": null,
+    "checked": false
+  },
+  {
+    "id": 48,
+    "name": null,
+    "date": 1383861600000,
+    "conferences": null,
+    "usefulStuffs": null,
+    "checked": false
+  },
+  {
+    "id": 49,
+    "name": null,
+    "date": 1384639200000,
+    "conferences": null,
+    "usefulStuffs": null,
+    "checked": false
+  },
+  {
+    "id": 50,
+    "name": null,
+    "date": 1385848800000,
+    "conferences": null,
+    "usefulStuffs": null,
+    "checked": false
+  },
+  {
+    "id": 51,
+    "name": null,
+    "date": 1387058400000,
+    "conferences": null,
+    "usefulStuffs": null,
+    "checked": false
+  },
+  {
+    "id": 52,
+    "name": null,
+    "date": 1387663200000,
+    "conferences": null,
+    "usefulStuffs": null,
+    "checked": false
+  },
+  {
+    "id": 53,
+    "name": null,
+    "date": 1389477600000,
+    "conferences": null,
+    "usefulStuffs": null,
+    "checked": false
+  },
+  {
+    "id": 54,
+    "name": null,
+    "date": 1390687200000,
+    "conferences": null,
+    "usefulStuffs": null,
+    "checked": false
+  },
+  {
+    "id": 55,
+    "name": null,
+    "date": 1392501600000,
+    "conferences": null,
+    "usefulStuffs": [
+      {
+        "link": "https://code.google.com/p/concurrentlinkedhashmap/wiki/Design",
+        "provider": "code",
+        "tags": [
+          "Java",
+          "Framework",
+          "Git",
+          "Google",
+          "DB",
+          "GitHub"
+        ],
+        "checked": false
+      },
+      {
+        "link": "http://sysadmincasts.com/",
+        "provider": "sysadmincasts",
+        "tags": [],
+        "checked": false
+      },
+      {
+        "link": "https://github.com/dinedal/textql",
+        "provider": "github",
+        "tags": [
+          "Web",
+          "Framework",
+          "SQL",
+          "Git",
+          "DB",
+          "bash",
+          "GitHub"
+        ],
+        "checked": false
+      }
+    ],
+    "checked": false
+  },
+  {
+    "id": 56,
+    "name": null,
+    "date": 1393711200000,
+    "conferences": null,
+    "usefulStuffs": [
+      {
+        "link": "http://direnv.net/",
+        "provider": "direnv",
+        "tags": [
+          "Git",
+          "GitHub"
+        ],
+        "checked": false
+      },
+      {
+        "link": "https://github.com/sindresorhus/pageres",
+        "provider": "github",
+        "tags": [
+          "Java",
+          "Web",
+          "Framework",
+          "Git",
+          "Google",
+          "DB",
+          "GitHub"
+        ],
+        "checked": false
+      },
+      {
+        "link": "https://github.com/alloy/terminal-notifier",
+        "provider": "github",
+        "tags": [
+          "Web",
+          "Git",
+          "DB",
+          "Mac OSX",
+          "REST",
+          "Homebrew",
+          "GitHub",
+          "Ruby"
+        ],
+        "checked": false
+      },
+      {
+        "link": "https://github.com/rombert/desktop-maven-notifier",
+        "provider": "github",
+        "tags": [
+          "Java",
+          "Web",
+          "Maven",
+          "Git",
+          "DB",
+          "Mac OSX",
+          "GitHub"
+        ],
+        "checked": false
+      },
+      {
+        "link": "http://www.jworks.nl/2014/02/26/quick-introduction-assertj/",
+        "provider": "jworks",
+        "tags": [
+          "Java",
+          "Web",
+          "Framework",
+          "JSON",
+          "Git",
+          "Google",
+          "DB",
+          "REST",
+          "GitHub"
+        ],
+        "checked": false
+      },
+      {
+        "link": "https://code.google.com/p/rest-assured/",
+        "provider": "code",
+        "tags": [
+          "Java",
+          "JSON",
+          "Git",
+          "Spring",
+          "Google",
+          "DB",
+          "REST",
+          "GitHub",
+          "Ruby"
+        ],
+        "checked": false
+      }
+    ],
+    "checked": false
+  },
+  {
+    "id": 57,
+    "name": null,
+    "date": 1394920800000,
+    "conferences": null,
+    "usefulStuffs": [
+      {
+        "link": "http://gabrielecirulli.github.io/2048/",
+        "provider": "gabrielecirulli",
+        "tags": [
+          "Web",
+          "Android",
+          "Git",
+          "Google",
+          "REST",
+          "GitHub"
+        ],
+        "checked": false
+      },
+      {
+        "link": "https://segment.io/",
+        "provider": "segment",
+        "tags": [
+          "Web",
+          "Android",
+          "SQL"
+        ],
+        "checked": false
+      },
+      {
+        "link": "http://blog.jetbrains.com/idea/2014/03/try-chronon-debugger-with-intellij-idea-13-1-eap/",
+        "provider": "blog",
+        "tags": [
+          "Java",
+          "Web",
+          "Maven",
+          "JVM",
+          "Git",
+          "Spring",
+          "Google",
+          "DB",
+          "Mac OSX",
+          "REST"
+        ],
+        "checked": false
+      }
+    ],
+    "checked": false
+  },
+  {
+    "id": 58,
+    "name": null,
+    "date": 1395525600000,
+    "conferences": null,
+    "usefulStuffs": null,
+    "checked": false
+  },
+  {
+    "id": 59,
+    "name": null,
+    "date": 1396731600000,
+    "conferences": null,
+    "usefulStuffs": null,
+    "checked": false
+  },
+  {
+    "id": 60,
+    "name": null,
+    "date": 1400360400000,
+    "conferences": null,
+    "usefulStuffs": null,
+    "checked": false
+  },
+  {
+    "id": 61,
+    "name": null,
+    "date": 1402174800000,
+    "conferences": null,
+    "usefulStuffs": null,
+    "checked": false
+  },
+  {
+    "id": 62,
+    "name": null,
+    "date": 1403384400000,
+    "conferences": null,
+    "usefulStuffs": [
+      {
+        "link": "http://pragprog.com/book/bhtmux/tmux",
+        "provider": "pragprog",
+        "tags": [],
+        "checked": false
+      },
+      {
+        "link": "http://www.syntevo.com/smartgithg/",
+        "provider": "syntevo",
+        "tags": [
+          "Java",
+          "Web",
+          "Git",
+          "Mac OSX",
+          "GitHub"
+        ],
+        "checked": false
+      }
+    ],
+    "checked": false
+  },
+  {
+    "id": 63,
+    "name": null,
+    "date": 1405371600000,
+    "conferences": null,
+    "usefulStuffs": null,
+    "checked": false
+  },
+  {
+    "id": 64,
+    "name": null,
+    "date": 1406494800000,
+    "conferences": null,
+    "usefulStuffs": [
+      {
+        "link": "http://www.mattstine.com/microservices",
+        "provider": "mattstine",
+        "tags": [
+          "Java",
+          "Web",
+          "Spring",
+          "Google",
+          "REST"
+        ],
+        "checked": false
+      },
+      {
+        "link": "https://github.com/vladmihalcea/flexy-pool",
+        "provider": "github",
+        "tags": [
+          "Web",
+          "Framework",
+          "Maven",
+          "Git",
+          "Apache",
+          "DB",
+          "GitHub"
+        ],
+        "checked": false
+      },
+      {
+        "link": "https://github.com/brettwooldridge/HikariCP/wiki/About-Pool-Sizing",
+        "provider": "github",
+        "tags": [
+          "Web",
+          "Framework",
+          "SQL",
+          "Git",
+          "Apache",
+          "Spring",
+          "DB",
+          "REST",
+          "GitHub"
+        ],
+        "checked": false
+      }
+    ],
+    "checked": false
+  },
+  {
+    "id": 65,
+    "name": null,
+    "date": 1407963600000,
+    "conferences": null,
+    "usefulStuffs": [
+      {
+        "link": "https://github.com/jeluard/semantic-versioning",
+        "provider": "github",
+        "tags": [
+          "Java",
+          "Web",
+          "Framework",
+          "Maven",
+          "Git",
+          "Apache",
+          "DB",
+          "GitHub"
+        ],
+        "checked": false
+      },
+      {
+        "link": "https://github.com/zafarkhaja/java-semver",
+        "provider": "github",
+        "tags": [
+          "Java",
+          "Web",
+          "Git",
+          "GitHub"
+        ],
+        "checked": false
+      }
+    ],
+    "checked": false
+  },
+  {
+    "id": 66,
+    "name": null,
+    "date": 1409086800000,
+    "conferences": null,
+    "usefulStuffs": [
+      {
+        "link": "http://www.jcabi.com/index.html",
+        "provider": "jcabi",
+        "tags": [
+          "Java",
+          "Maven",
+          "Git",
+          "Apache",
+          "Google",
+          "DB",
+          "GitHub"
+        ],
+        "checked": false
+      }
+    ],
+    "checked": false
+  },
+  {
+    "id": 67,
+    "name": null,
+    "date": 1409950800000,
+    "conferences": null,
+    "usefulStuffs": null,
+    "checked": false
+  },
+  {
+    "id": 68,
+    "name": null,
+    "date": 1410642000000,
+    "conferences": null,
+    "usefulStuffs": null,
+    "checked": false
+  },
+  {
+    "id": 69,
+    "name": null,
+    "date": 1412024400000,
+    "conferences": null,
+    "usefulStuffs": null,
+    "checked": false
+  },
+  {
+    "id": 70,
+    "name": null,
+    "date": 1412110800000,
+    "conferences": null,
+    "usefulStuffs": null,
+    "checked": false
+  },
+  {
+    "id": 71,
+    "name": null,
+    "date": 1413925200000,
+    "conferences": null,
+    "usefulStuffs": null,
+    "checked": false
+  },
+  {
+    "id": 72,
+    "name": null,
+    "date": 1415570400000,
+    "conferences": null,
+    "usefulStuffs": [
+      {
+        "link": "http://githut.info/",
+        "provider": "githut",
+        "tags": [
+          "Web",
+          "Git",
+          "Google",
+          "GitHub"
+        ],
+        "checked": false
+      },
+      {
+        "link": "https://github.com/tripit/slate",
+        "provider": "github",
+        "tags": [
+          "Java",
+          "Web",
+          "Framework",
+          "Git",
+          "DB",
+          "Mac OSX",
+          "REST",
+          "GitHub",
+          "Ruby"
+        ],
+        "checked": false
+      },
+      {
+        "link": "http://brackets.io/",
+        "provider": "brackets",
+        "tags": [
+          "Java",
+          "Web",
+          "Android",
+          "JSON",
+          "Git",
+          "Open source",
+          "Google",
+          "Mac OSX",
+          "GitHub"
+        ],
+        "checked": false
+      }
+    ],
+    "checked": false
+  },
+  {
+    "id": 73,
+    "name": null,
+    "date": 1417298400000,
+    "conferences": null,
+    "usefulStuffs": null,
+    "checked": false
+  },
+  {
+    "id": 74,
+    "name": null,
+    "date": 1419717600000,
+    "conferences": null,
+    "usefulStuffs": null,
+    "checked": false
+  },
+  {
+    "id": 75,
+    "name": null,
+    "date": 1420927200000,
+    "conferences": null,
+    "usefulStuffs": null,
+    "checked": false
+  },
+  {
+    "id": 76,
+    "name": null,
+    "date": 1422136800000,
+    "conferences": null,
+    "usefulStuffs": null,
+    "checked": false
+  },
+  {
+    "id": 77,
+    "name": null,
+    "date": 1423346400000,
+    "conferences": [
+      {
+        "startDate": 1433970000000,
+        "endDate": 1434056400000,
+        "name": "GeekOut",
+        "location": "Tallinn, Estonia",
+        "description": "The focus of the conference is on Java, the JVM, covering developer tooling, solution architecture, programming methodologies, continuous delivery and programming languages for the JVM platform.",
+        "promocode": null,
+        "website": "http://2015.geekout.ee/",
+        "checked": true
+      },
+      {
+        "startDate": 1432242000000,
+        "endDate": 1432328400000,
+        "name": "JEEConf",
+        "location": "Kiev, Ukraine",
+        "description": "Conference for Java practitioners in Ukraine",
+        "promocode": null,
+        "website": "http://jeeconf.com",
+        "checked": true
+      },
+      {
+        "startDate": 1434229200000,
+        "endDate": null,
+        "name": "JavaDay Lviv",
+        "location": "Lviv, Ukraine",
+        "description": "Every JavaDay attendee is unique, but they all have one thing in common: the passion for knowledge and desire to learn new things. Here's the list of topics you will listen to.",
+        "promocode": null,
+        "website": "http://javaday.org.ua/lviv/",
+        "checked": true
+      }
+    ],
+    "usefulStuffs": [
+      {
+        "link": "http://www.noisli.com/",
+        "provider": "noisli",
+        "tags": [
+          "Java",
+          "Web",
+          "JSON",
+          "Google",
+          "DB",
+          "REST"
+        ],
+        "checked": false
+      },
+      {
+        "link": "http://noiz.io",
+        "provider": "noiz",
+        "tags": [
+          "Java",
+          "Web",
+          "Google",
+          "Mac OSX"
+        ],
+        "checked": false
+      },
+      {
+        "link": "https://itunes.apple.com/us/app/brain-wave-32-advanced-binaural/id307219387",
+        "provider": "itunes",
+        "tags": [
+          "Java",
+          "Web",
+          "Framework",
+          "JSON",
+          "Git",
+          "DB",
+          "Mac OSX",
+          "REST"
+        ],
+        "checked": false
+      },
+      {
+        "link": "https://github.com/fusesource/jansi",
+        "provider": "github",
+        "tags": [
+          "Java",
+          "Web",
+          "Maven",
+          "Git",
+          "DB",
+          "GitHub"
+        ],
+        "checked": false
+      },
+      {
+        "link": "http://bliker.github.io/cmder/",
+        "provider": "bliker",
+        "tags": [
+          "Java",
+          "Git",
+          "Google",
+          "GitHub"
+        ],
+        "checked": false
+      },
+      {
+        "link": "http://blog.jetbrains.com/idea/2015/02/intellij-idea-14-1-eap-is-available/",
+        "provider": "blog",
+        "tags": [
+          "Java",
+          "Web",
+          "Gradle",
+          "Git",
+          "Spring",
+          "Google",
+          "DB",
+          "Mac OSX",
+          "REST",
+          "bash"
+        ],
+        "checked": false
+      }
+    ],
+    "checked": false
+  },
+  {
+    "id": 78,
+    "name": null,
+    "date": 1424556000000,
+    "conferences": null,
+    "usefulStuffs": [
+      {
+        "link": "http://websocketd.com/",
+        "provider": "websocketd",
+        "tags": [
+          "Java",
+          "Web",
+          "WebSocket",
+          "Git",
+          "Google",
+          "Mac OSX",
+          "bash",
+          "GitHub",
+          "Ruby"
+        ],
+        "checked": true
+      },
+      {
+        "link": "https://github.com/HubPress/hubpress.io",
+        "provider": "github",
+        "tags": [
+          "Java",
+          "Web",
+          "Android",
+          "JSON",
+          "Git",
+          "Open source",
+          "Google",
+          "DB",
+          "GitHub"
+        ],
+        "checked": true
+      },
+      {
+        "link": "https://jitpack.io/",
+        "provider": "jitpack",
+        "tags": [
+          "Framework",
+          "Gradle",
+          "Maven",
+          "Android",
+          "Git",
+          "Google",
+          "GitHub"
+        ],
+        "checked": true
+      },
+      {
+        "link": "https://github.com/yaronn/blessed-contrib",
+        "provider": "github",
+        "tags": [
+          "Java",
+          "Web",
+          "JSON",
+          "Git",
+          "DB",
+          "Mac OSX",
+          "GitHub"
+        ],
+        "checked": true
+      }
+    ],
+    "checked": true
+  },
+  {
+    "id": 79,
+    "name": null,
+    "date": 1425765600000,
+    "conferences": null,
+    "usefulStuffs": null,
+    "checked": false
+  },
+  {
+    "id": 80,
+    "name": null,
+    "date": 1426456800000,
+    "conferences": null,
+    "usefulStuffs": null,
+    "checked": true
+  },
+  {
+    "id": 81,
+    "name": null,
+    "date": 1427580000000,
+    "conferences": null,
+    "usefulStuffs": [
+      {
+        "link": "http://jodd.org/",
+        "provider": "jodd",
+        "tags": [
+          "Java",
+          "Web",
+          "Framework",
+          "JSON",
+          "JVM",
+          "Git",
+          "Spring",
+          "Google",
+          "DB",
+          "GitHub"
+        ],
+        "checked": false
+      },
+      {
+        "link": "http://www.ninjaframework.org",
+        "provider": "ninjaframework",
+        "tags": [
+          "Java",
+          "Web",
+          "Framework",
+          "Maven",
+          "JSON",
+          "Git",
+          "Apache",
+          "Google",
+          "DB",
+          "GitHub"
+        ],
+        "checked": false
+      },
+      {
+        "link": "http://arhipov.blogspot.com/2015/03/packaging-java-application-for-mac-os.html",
+        "provider": "arhipov",
+        "tags": [
+          "Java",
+          "Mac OSX"
+        ],
+        "checked": false
+      },
+      {
+        "link": "http://docs.oracle.com/javase/8/docs/technotes/guides/deploy/self-contained-packaging.html",
+        "provider": "docs",
+        "tags": [
+          "Java",
+          "Web",
+          "JVM",
+          "DB",
+          "Mac OSX",
+          "bash"
+        ],
+        "checked": false
+      },
+      {
+        "link": "https://github.com/KeyboardFire/mkcast",
+        "provider": "github",
+        "tags": [
+          "Web",
+          "Git",
+          "DB",
+          "bash",
+          "GitHub"
+        ],
+        "checked": false
+      },
+      {
+        "link": "http://stedolan.github.io/jq/",
+        "provider": "stedolan",
+        "tags": [
+          "Web",
+          "Git",
+          "Mac OSX",
+          "GitHub"
+        ],
+        "checked": false
+      }
+    ],
+    "checked": true
+  },
+  {
+    "id": 82,
+    "name": null,
+    "date": 1428786000000,
+    "conferences": null,
+    "usefulStuffs": null,
+    "checked": true
+  }
+]
