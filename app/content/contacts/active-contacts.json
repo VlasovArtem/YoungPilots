@@ -1,0 +1,116 @@
+[
+  {
+    "firstname": "Victor",
+    "lastname": "Gamov",
+    "socials": [
+      {"github": "https://github.com/gAmUssA"},
+      {"twitter": "https://twitter.com/gamussa"},
+      {"linkedin": "https://www.linkedin.com/in/vikgamov"}
+    ],
+    "info": {
+      "position": "Solutions Architect",
+      "job": "Hazelcast",
+      "jobWebSite": "http://hazelcast.com/",
+      "webSite": "http://next.javaheadbrain.com/",
+      "location": "NY, USA",
+      "note": "He is the Creator on one of the mastermind of this project. Master of contribution on Github."
+    },
+    "img": "style/image/contacts-img/gamov.jpeg",
+    "role": "Creator"
+  },
+  {
+    "firstname": "Alexey",
+    "lastname": "Abashev",
+    "socials": [
+      {"github": "https://github.com/abashev"},
+      {"twitter": "https://twitter.com/a_abashev"},
+      {"linkedin": "https://www.linkedin.com/in/abashev/ru"}
+    ],
+    "info": {
+      "position": "VP of Engineering",
+      "job": "Paktor",
+      "jobWebSite": "http://gopaktor.com/",
+      "webSite": "http://razbor-poletov.com/",
+      "location": "Moscow, Russia",
+      "note": "He is the Creator on one of the mastermind of this project."
+    },
+    "img": "style/image/contacts-img/abashev.jpeg",
+    "role": "Creator"
+  },
+  {
+    "firstname": "Anton",
+    "lastname": "Arhipov",
+    "socials": [
+      {"github": "https://github.com/antonarhipov"},
+      {"twitter": "https://twitter.com/antonarhipov"},
+      {"linkedin": "http://ee.linkedin.com/in/antonarhipov"}
+    ],
+    "info": {
+      "position": "Product manager",
+      "job": "ZeroTurnaround",
+      "jobWebSite": "http://zeroturnaround.com/",
+      "webSite": "arhipov.blogspot.com",
+      "location": "Tallinn, Estonia",
+      "note": "Java Champion since 2014."
+    },
+    "img": "style/image/contacts-img/arhipov.jpeg",
+    "role": "Guest"
+  },
+  {
+    "firstname": "Dmirty",
+    "lastname": "Churbanov",
+    "socials": [
+      {"github": "https://github.com/dmitryc"},
+      {"twitter": "https://twitter.com/dzmitryc"},
+      {"linkedin": "https://www.linkedin.com/in/dmitrychurbanov"}
+    ],
+    "info": {
+      "position": "Senior Software Engineer",
+      "job": "Google",
+      "jobWebSite": "https://www.google.com/",
+      "webSite": "http://www.churbanov.com/blog/",
+      "location": "Bay Area, USA",
+      "note": "Happy husband, father and Googler"
+    },
+    "img": "style/image/contacts-img/churbanov.jpeg",
+    "role": "Guest"
+  },
+  {
+    "firstname": "Baruch",
+    "lastname": "Sadogursky",
+    "socials": [
+      {"github": "https://github.com/jbaruch"},
+      {"twitter": "https://twitter.com/jbaruch"},
+      {"linkedin": "https://www.linkedin.com/in/jbaruch"}
+    ],
+    "info": {
+      "position": "Developer Advocate",
+      "job": "JFrog",
+      "jobWebSite": "http://www.jfrog.com/",
+      "webSite": "http://www.jfrog.com/blog/",
+      "location": "Netanya, Israel",
+      "note": "Developer Advocate of JFrog, the creators of Artifactory Binary Repository, the home of Bintray, and JavaOne 2011 Duke Choice Awards winner."
+    },
+    "img": "style/image/contacts-img/baruch.jpeg",
+    "role": "Guest"
+  },
+  {
+    "firstname": "Kirill",
+    "lastname": "Tolkachev",
+    "socials": [
+      {"github": "https://github.com/lavcraft"},
+      {"twitter": "https://twitter.com/tolkv"},
+      {"linkedin": "https://www.linkedin.com/pub/%D0%BA%D0%B8%D1%80%D0%B8%D0%BB%D0%BB-%D1%82%D0%BE%D0%BB%D0%BA%D0%B0%D1%87%D1%91%D0%B2/58/455/715"}
+    ],
+    "info": {
+      "position": "Lead Developer",
+      "job": "Alfa Bank",
+      "jobWebSite": "https://alfabank.ru/",
+      "webSite": "",
+      "location": "Moscow, Russia",
+      "note": ""
+    },
+    "img": "style/image/contacts-img/tolkachev.jpeg",
+    "role": "Guest"
+  }
+]

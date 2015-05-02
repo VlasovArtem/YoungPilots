@@ -3,15 +3,41 @@
  */
 var app = angular.module('main.controllers', ['ngCookies']);
 
-app.controller('MainCtrl', ['$scope', '$http', 'ContactsFactory', function($scope, $http, ContactsFactory) {
-    ContactsFactory.query({categories: 'active'},function(data) {
-        $scope.activeContacts = data;
-    }, function() {
-        $scope.error = true;
-    });
-    $scope.socialIcons = {
-        "github": "style/image/socials/github.png",
-        "twitter": "style/image/socials/twitter.png",
-        "linkedin": "style/image/socials/linkedin.png"
-    };
-}]);
+app.controller('MainCtrl', ['broadcastDate', 'activeContacts', 'usefulThings', 'conferences', 'quotes', '$scope',
+    function(broadcastDate, activeContacts, usefulThings, conferences, quotes, $scope) {
+        $scope.usefulThings = usefulThings;
+        $scope.activeContacts = activeContacts;
+        $scope.broadcastData = broadcastDate;
+        $scope.conferences = conferences;
+        $scope.quotes = quotes;
+        $scope.broadcastDate = new Date($scope.broadcastData.date.year, $scope.broadcastData.date.month - 1, $scope.broadcastData.date.day, $scope.broadcastData.date.hour, 0, 0, 0);
+        $scope.socialIcons = {
+            "github": "style/image/socials/github.png",
+            "twitter": "style/image/socials/twitter.png",
+            "linkedin": "style/image/socials/linkedin.png"
+        };
+        $scope.filterTag = '';
+        $scope.changeFilter = function(tag) {
+            $scope.filterTag = tag;
+        };
+        $scope.checkTagLimit = function(tags) {
+            if(tags.length < 5) {
+                return 5;
+            } else {
+                var tagsLength = 0;
+                var lastTagLength = 0;
+                _.each(tags, function(tag, index) {
+                    if(_.isEqual(index, tags.length - 1)) {
+                        lastTagLength = tag.length;
+                    }
+                    tagsLength += tag.length;
+                });
+                if(tagsLength >= 25) {
+                    return 4;
+                } else {
+                    return 5;
+                }
+            }
+        }
+    }
+]);

@@ -1,0 +1,135 @@
+[
+  {
+    "firstname": "Victor",
+    "lastname": "Gamov",
+    "socials": [
+      {"github": "https://github.com/gAmUssA"},
+      {"twitter": "https://twitter.com/gamussa"},
+      {"linkedin": "https://www.linkedin.com/in/vikgamov"}
+    ],
+    "info": {
+      "position": "Solutions Architect",
+      "job": "Hazelcast",
+      "jobWebSite": "http://hazelcast.com/",
+      "webSite": "http://next.javaheadbrain.com/",
+      "location": "NY, USA",
+      "note": "He is the Creator on one of the mastermind of this project. Master of contribution on Github."
+    },
+    "img": "../style/image/contacts-img/gamov.jpeg",
+    "role": "Creator"
+  },
+  {
+    "firstname": "Alexey",
+    "lastname": "Abashev",
+    "socials": [
+      {"github": "https://github.com/abashev"},
+      {"twitter": "https://twitter.com/a_abashev"},
+      {"linkedin": "https://www.linkedin.com/in/abashev/ru"}
+    ],
+    "info": {
+      "position": "VP of Engineering",
+      "job": "Paktor",
+      "jobWebSite": "http://gopaktor.com/",
+      "webSite": "http://razbor-poletov.com/",
+      "location": "Moscow, Russia",
+      "note": "He is the Creator on one of the mastermind of this project."
+    },
+    "img": "../style/image/contacts-img/abashev.jpeg",
+    "role": "Creator"
+  },
+  {
+    "firstname": "Anton",
+    "lastname": "Arhipov",
+    "socials": [
+      {"github": "https://github.com/antonarhipov"},
+      {"twitter": "https://twitter.com/antonarhipov"},
+      {"linkedin": "http://ee.linkedin.com/in/antonarhipov"}
+    ],
+    "info": {
+      "position": "Product manager",
+      "job": "ZeroTurnaround",
+      "jobWebSite": "http://zeroturnaround.com/",
+      "webSite": "arhipov.blogspot.com",
+      "location": "Tallinn, Estonia",
+      "note": "Java Champion since 2014."
+    },
+    "img": "../style/image/contacts-img/arhipov.jpeg",
+    "role": "Guest"
+  },
+  {
+    "firstname": "Kirill",
+    "lastname": "Tolkachev",
+    "socials": [
+      {"github": "https://github.com/lavcraft"},
+      {"twitter": "https://twitter.com/tolkv"},
+      {"linkedin": ""}
+    ],
+    "info": {
+      "position": "",
+      "job": "",
+      "jobWebSite": "",
+      "webSite": "",
+      "location": "",
+      "note": ""
+    },
+    "img": "../style/image/contacts-img/tolkachev.jpeg",
+    "role": "Guest"
+  },
+  {
+    "firstname": "Aleksey",
+    "lastname": "Shipilëv",
+    "socials": [
+      {"github": "https://github.com/shipilev"},
+      {"twitter": "https://twitter.com/shipilev"},
+      {"linkedin": "https://www.linkedin.com/in/alekseyshipilev"}
+    ],
+    "info": {
+      "position": "Java Performance Geek",
+      "job": "Oracle",
+      "jobWebSite": "http://www.oracle.com/en/index.html",
+      "webSite": "http://shipilev.net/",
+      "location": "Puschino, Moscow",
+      "note": ""
+    },
+    "img": "../style/image/contacts-img/shipilev.png",
+    "role": "Guest"
+  },
+  {
+    "firstname": "",
+    "lastname": "",
+    "socials": [
+      {"github": ""},
+      {"twitter": ""},
+      {"linkedin": ""}
+    ],
+    "info": {
+      "position": "",
+      "job": "",
+      "jobWebSite": "",
+      "webSite": "",
+      "location": "",
+      "note": ""
+    },
+    "img": "../style/image/contacts-img/",
+    "role": ""
+  },
+  {
+    "firstname": "",
+    "lastname": "",
+    "socials": [
+      {"github": ""},
+      {"twitter": ""},
+      {"linkedin": ""}
+    ],
+    "info": {
+      "position": "",
+      "job": "",
+      "jobWebSite": "",
+      "webSite": "",
+      "location": "",
+      "note": ""
+    },
+    "img": "../style/image/contacts-img/",
+    "role": ""
+  }
+]
