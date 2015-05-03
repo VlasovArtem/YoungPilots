@@ -2,7 +2,7 @@
     <div class="parallax-overlay"></div>
     <div></div>
     <div id="content">
-        <nav class="col-md-offset-2 navbar navbar-default">
+        <nav class="navbar navbar-default main-nav-menu">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
@@ -15,6 +15,7 @@
             <div class="collapse navbar-collapse" id="navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li><a href="http://razbor-poletov.com/" target="_blank">Разбор Полётов</a></li>
+                    <li><a href="#useful">Полезняшки</a></li>
                 </ul>
             </div>
         </nav>
@@ -44,19 +45,20 @@
 </header>
 <section class="container-fluid block" id="useful-things-section">
     <div id="block">
-        <div class="col-md-12" style="padding-left: 0px">
+        <div class="col-md-12">
             <h1 class="header">Useful Things</h1>
             <span>(aka Полезняшки)</span>
         </div>
         <div class="row">
-            <div class="col-md-8 col-md-offset-2" style="padding-left: 0px">
+            <div class="col-md-8 col-md-offset-2">
                 <hr class="style"/>
             </div>
         </div>
-        <div class="col-md-12 useful-menu">
-            <span ng-if="filterTag != null && filterTag != ''">Filter: {{filterTag}}</span>
-            <span class="glyphicon glyphicon-erase"  ng-click="changeFilter('')" popup
-                  text-content="Reset filter"></span>
+        <div class="row">
+            <div class="col-md-offset-4 col-sm-offset-4 col-xs-offset-4 col-md-4 col-sm-5 col-xs-5 input-group">
+                <input type="search" ng-model="filterTag" placeholder="Filter" class="form-control filter"/>
+                <span class="glyphicon glyphicon-remove input-group-addon" ng-click="filterTag = ''"></span>
+            </div>
         </div>
         <div class="col-md-12">
             <div id="useful"
@@ -87,7 +89,7 @@
     <div class="row">
         <h1 class="header">Conferences</h1>
     </div>
-    <div class="col-md-4 conf" ng-repeat="conference in conferences | orderBy: 'startDate'">
+    <div class="col-md-4 conf" ng-repeat="conference in conferences | orderBy: 'startDate' | limitTo: 3">
         <div>
             <div ng-bind="conference.name"></div>
             <div id="where-and-when">
@@ -110,16 +112,16 @@
 </section>
 <section class="container-fluid block" id="contact-section">
     <div id="block">
-        <div class="col-md-12" style="padding-left: 0px">
+        <div class="col-md-12">
             <h1 class="header">Creators & Guests</h1>
             <span>(Все живут с
                 солнечных городах и
                 штатах)</span>
         </div>
-        <div class="col-md-8 col-md-offset-2" style="padding-left: 0px">
+        <div class="col-md-8 col-md-offset-2">
             <hr class="style"/>
         </div>
-        <div ng-repeat="contact in activeContacts" id="contacts">
+        <div ng-repeat="contact in activeContacts" id="contacts" class="col-md-4 col-xs-12 col-sm-6">
             <div class="main-data">
                 <div>
                     <img ng-src="{{contact.img}}" class="img-circle"/>
@@ -153,8 +155,7 @@
     </div>
     <div class="col-md-4" ng-repeat="quote in quotes | limitTo: 6">
         <blockquote>
-            <p ng-bind="quote.quote"></p>
-            <p ng-bind="quote.author"></p>
+            <p> {{quote.quote }}<br/>{{quote.author}}</p>
         </blockquote>
     </div>
 </section>

@@ -188,7 +188,7 @@ app.directive('countdown', function($timeout) {
             };
             var countdownTimeout = $timeout(countdown, secondMillis);
         },
-        template: '<span>Next conference countdown: <i>Days: {{left.day}}, {{left.hour}}:{{left.minute}}:{{left.second}}</i></span>'
+        template: '<span>Next conference: <i>Days: {{left.day}}, <span ng-if="left.hour < 10">0</span>{{left.hour}}:<span ng-if="left.minute < 10">0</span>{{left.minute}}:<span ng-if="left.second < 10">0</span>{{left.second}}</i></span>'
     }
 });
 app.directive('popup', function() {

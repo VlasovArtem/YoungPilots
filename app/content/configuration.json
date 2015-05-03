@@ -1,0 +1,9 @@
+{
+  "orderByTag": "podcastId",
+  "order": {
+    "desc": true,
+    "asc": false
+  },
+  "ascentClass": "sort-ascent",
+  "descentClass": "sort-descent"
+}
