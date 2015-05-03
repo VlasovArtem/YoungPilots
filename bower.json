@@ -19,8 +19,7 @@
     "underscore": "1.8.x",
     "angular-ui-router": "~0.2.13",
     "jquery.scroolly": "~0.0.1",
-    "angular-bootstrap": "~0.12.1",
-    "jQuery.dotdotdot": "~1.7.2"
+    "angular-bootstrap": "~0.12.1"
   },
   "resolutions": {
     "angular": "1.3.15"

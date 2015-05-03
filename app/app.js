@@ -2,7 +2,7 @@
 
 // Declare app level module which depends on views, and components
 angular.module('youngPilots', [
-    'ngRoute', 'main.controllers', 'main.services', 'main.directives', 'underscore', 'ui.bootstrap'
+    'ngRoute', 'main.controllers', 'main.services', 'main.directives', 'useful.controllers', 'useful.directives', 'underscore', 'ui.bootstrap'
 ]).
     config(['$routeProvider', function($routeProvider) {
         $routeProvider.when('/', {
@@ -25,5 +25,15 @@ angular.module('youngPilots', [
                     return ContentFactory.query({folder: "quotes", filename: "quotes.json"}).$promise
                 }
             }
+        }).when('/useful', {
+            templateUrl: 'app/useful-things-page/useful-things-page.html',
+            controller: 'UsefulThinsCtrl',
+            resolve: {
+                usefulThings: function(ContentFactory) {
+                    return ContentFactory.query({folder: "useful-things", filename: "useful-things.json"}).$promise
+                }
+            }
+        }).otherwise({
+            redirectTo: '/'
         })
     }]);

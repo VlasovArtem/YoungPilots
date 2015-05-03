@@ -84,7 +84,7 @@
       "Git",
       "Web",
       "GitHub",
-      "bash"
+      "Bash"
     ],
     "checked": true,
     "podcastId": 16,
@@ -206,7 +206,7 @@
   },
   {
     "link": "http://anti-code.com/devtools-cheatsheet/",
-    "provider": "Chrome Devtools Cheatsheet",
+    "provider": "chrome devtools cheatsheet",
     "tags": [
       "Java",
       "Google",
@@ -220,7 +220,7 @@
   },
   {
     "link": "http://www.git-legit.org",
-    "provider": "git-legit",
+    "provider": "legit",
     "tags": [
       "Git",
       "GitHub",
@@ -259,7 +259,7 @@
   },
   {
     "link": "https://github.com/alvins82/java-mini-profiler-core",
-    "provider": "java-mini-profiler-core",
+    "provider": "java mini profiler",
     "tags": [
       "Java",
       "SQL",
@@ -401,7 +401,7 @@
     "link": "http://direnv.net/",
     "provider": "direnv",
     "tags": [
-      "bash"
+      "Bash"
     ],
     "checked": true,
     "podcastId": 56,
@@ -434,7 +434,7 @@
   },
   {
     "link": "https://github.com/rombert/desktop-maven-notifier",
-    "provider": "desktop-maven-notifier",
+    "provider": "desktop maven notifier",
     "tags": [
       "Maven",
       "Java",
@@ -526,7 +526,7 @@
   },
   {
     "link": "https://github.com/jeluard/semantic-versioning",
-    "provider": "semantic-versioning",
+    "provider": "semantic versioning",
     "tags": [
       "Java",
       "Maven",
@@ -538,7 +538,7 @@
   },
   {
     "link": "https://github.com/zafarkhaja/java-semver",
-    "provider": "java-semver",
+    "provider": "java semver",
     "tags": [
       "Java",
       "Maven",
