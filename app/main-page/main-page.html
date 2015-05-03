@@ -29,7 +29,7 @@
                 подкаста "Разбор Полётов".
             </div>
         </div>
-        <div class="col-md-2 header-text">
+        <div class="col-md-2 header-text" ng-if="broadcastDate">
             <div>
                 <span>Next broadcast:</span><br/>
                 <span>{{broadcastDate | date:"MM/dd/yyyy 'at' HH:mm "}}{{broadcastData.timezone}}</span>

@@ -22,23 +22,31 @@ app.directive('align', function() {
         }
     }
 });
-app.directive('broadcast', function($timeout, BroadcastLive, $route) {
+app.directive('broadcast', function($timeout, BroadcastLive, $route, Broadcast) {
     return {
         restrict: 'A',
         link: function(scope, element, attrs) {
             var timeoutMillis = 60 * 1000;
-            var broadcastDate = new Date(scope.broadcastDate);
-            var broadcastTime = broadcastDate.getTime();
-            var broadcastOffset = -((scope.broadcastData.timezoneOffset * 60) * 60000);
-            var broadcastUtcTime = broadcastTime - broadcastOffset;
-
-            var updateLocalDate = function(localDate) {
-                var localTime = localDate.getTime();
-                var localOffset = localDate.getTimezoneOffset() * 60000;
-                scope.localUtcTime = localTime + localOffset;
+            var broadcastUtcTime,
+                localUtcTime;
+            var getUTCTime = function(time, offset) {
+                return time + (offset * 60000)
             };
-
-            var dateDiff = function(futureUtcTime, currentUtcTime, returnFormat) {
+            var getBroadcastData = function() {
+                Broadcast.get(function(broadcastData) {
+                    scope.broadcastData = broadcastData;
+                    scope.broadcastDate = new Date(broadcastData.date.year, broadcastData.date.month - 1, broadcastData.date.day, broadcastData.date.hour, 0, 0, 0);
+                    broadcastUtcTime = getUTCTime(scope.broadcastDate.getTime(),
+                        broadcastData.timezoneOffsetFromUTCInMinutes);
+                }, function() {
+                    throw new Error("Broadcast file is not available");
+                });
+            };
+            getBroadcastData();
+            var dateDiff = function(returnFormat) {
+                if(_.isNull(broadcastUtcTime) || _.isUndefined(broadcastUtcTime)) {
+                    throw new Error("Broadcast date is undefined");
+                }
                 var formats = [
                     ["d", "day", "days"],
                     ["h", "hour", "hours"],
@@ -46,15 +54,15 @@ app.directive('broadcast', function($timeout, BroadcastLive, $route) {
                     ["s", "second", "seconds"]];
                 var correctFormat = null;
                 _.some(formats,
-                    function(format) {
-                        if(_.contains(format, returnFormat)) {
+                    function (format) {
+                        if (_.contains(format, returnFormat)) {
                             correctFormat = format[1];
                             return true;
                         }
                         return false;
                     }
                 );
-                var diff = futureUtcTime - currentUtcTime;
+                var diff = broadcastUtcTime - localUtcTime;
                 var leftTime = null;
                 switch (correctFormat) {
                     case 'day':
@@ -76,68 +84,60 @@ app.directive('broadcast', function($timeout, BroadcastLive, $route) {
                 }
                 return leftTime
             };
-            var leftTime = {
-                "oneDayLeft": false,
-                "threeHoursLeft": false,
-                "oneHourLeft": false,
-                "tenMinutesLeft": false
-            };
             var broadcastLiveTimeout = true;
             var checkLeftTime = function() {
-                if(dateDiff(broadcastUtcTime, scope.localUtcTime, 'd') <= 1 && !leftTime.oneDayLeft) {
+                if(dateDiff('d') <= 1 && dateDiff('h') > 3) {
                     timeoutMillis = 3 * 60 * 60 * 1000;
-                    leftTime.oneDayLeft = true;
-                } else if(dateDiff(broadcastUtcTime, scope.localUtcTime, 'h') <= 3 && !leftTime.threeHoursLeft) {
+                } else if(dateDiff('h') <= 3 && dateDiff('m') > 60) {
                     timeoutMillis = 60 * 60 * 1000;
-                    leftTime.threeHoursLeft = true;
-                } else if(dateDiff(broadcastUtcTime, scope.localUtcTime, 'm') <= 60 && !leftTime.oneHourLeft) {
+                } else if(dateDiff('m') <= 60 && dateDiff('m') > 10) {
                     timeoutMillis = 10 * 60 * 1000;
-                    leftTime.oneHourLeft = true;
-                } else if(dateDiff(broadcastUtcTime, scope.localUtcTime, 'm') <= 10 && !leftTime.tenMinutesLeft) {
+                } else if(dateDiff('m') <= 10 && dateDiff('s') > 0) {
                     timeoutMillis = 60 * 1000;
-                    leftTime.tenMinutesLeft = true;
-                } else if(dateDiff(broadcastUtcTime, scope.localUtcTime, 's') <= 0) {
+                } else if(dateDiff('s') <= 0) {
                     BroadcastLive.get(function() {
                         element.addClass('live');
                         $timeout.cancel(timeout);
                         timeoutMillis = 60 * 1000;
-                        _.each(_.keys(leftTime), function(key) {
-                            leftTime[key] = true;
-                        }) ;
                         broadcastLiveTimeout = false;
                         newBroadcastDateTimeout = $timeout(newBroadcastDate, 2 * 60 * 60 * 1000);
-                        console.log(leftTime);
                         console.log(timeoutMillis + ' (default: 86400000');
                     }, function() {
-                        if(dateDiff(broadcastUtcTime, localUtcTime, 'm') < -60) {
-                            $timeout.cancel(timeout);
+                        if(dateDiff('m') < -60) {
+                            broadcastUtcTime = null;
+                            timeout = $timeout(newDate, 60 * 60 * 1000);
                             broadcastLiveTimeout = false;
-                            console.log(new Date(scope.localUtcTime) + ' - Broadcast is not starting')
+                            console.log(new Date(localUtcTime) + ' - Broadcast is not starting')
                         }
                     });
                 } else {
                     timeoutMillis = 24 * 60 * 60 * 1000;
+                    console.log('One day millis');
                 }
             };
             var newBroadcastDate = function() {
                 console.log('New broadcast date timeout');
-                BroadcastLive.get(function(data) {
-                    if(!angular.equals(data, scope.broadcastData)) {
-                        $route.reload();
-                    }
-
+                BroadcastLive.get(function() {}, function() {
+                    $route.reload();
                 });
                 newBroadcastDateTimeout = $timeout(newBroadcastDate, 2 * 60 * 60 * 1000);
             };
             var newBroadcastDateTimeout = null;
             var newDate = function() {
-                updateLocalDate(new Date());
-                checkLeftTime();
+                var newDate = new Date();
+                localUtcTime = getUTCTime(newDate.getTime(), newDate.getTimezoneOffset());
+                if(broadcastUtcTime < localUtcTime) {
+                    scope.broadcastDate = null;
+                    timeoutMillis = 2 * 60 * 60 * 1000;
+                    getBroadcastData();
+                } else {
+                    checkLeftTime();
+                }
                 timeout = $timeout(newDate, timeoutMillis);
             };
             var timeout = $timeout(newDate, timeoutMillis);
         }
-    }
+    };
 });
 app.directive('countdown', function($timeout) {
     return {

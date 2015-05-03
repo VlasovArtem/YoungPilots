@@ -9,9 +9,6 @@ angular.module('youngPilots', [
             templateUrl: 'app/main-page/main-page.html',
             controller: 'MainCtrl',
             resolve: {
-                broadcastDate: function (Broadcast) {
-                    return Broadcast.get().$promise;
-                },
                 activeContacts: function(ContentFactory) {
                     return ContentFactory.query({folder: "contacts", filename: "active-contacts.json"}).$promise
                 },

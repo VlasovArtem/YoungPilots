@@ -7,5 +7,5 @@
     "minute": "00 "
   },
   "timezone": "MSK",
-  "timezoneOffset": "+3"
+  "timezoneOffsetFromUTCInMinutes": "-180"
 }
