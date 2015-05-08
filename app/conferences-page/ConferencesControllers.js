@@ -14,7 +14,7 @@ app.controller('ConferenceCtrl', ['conferences', '$scope', '$filter',
             "blog": "style/image/socials/conference-socials/blog-icon.png"
         };
         $scope.getDateMillis = function(conf) {
-            return $filter('dateMillis')(conf.startDate, conf.timezoneOffset);
+            return $filter('dateMillis')(conf.date.startDate, conf.date.timezone);
         };
     }
 ]);

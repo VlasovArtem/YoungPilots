@@ -178,6 +178,9 @@ header .header {
 .contact-block {
   display: table;
 }
+.outer-contact-block {
+  height: 125px;
+}
 
 /*Footer Section*/
 .img-circle + div > span:first-child {

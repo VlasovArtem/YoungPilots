@@ -17,7 +17,7 @@
                     <h2 ng-bind="conference.name"></h2>
                     <p><strong>Location:</strong> {{conference.location.city}}, {{conference.location.country}}</p>
                     <p><strong>Date:</strong> {{conference | confStartDate:'MMM d'}}
-                        {{conference.endDate == null ? '' : ' - ' + (conference | confEndDate: 'd')}}</p>
+                        {{conference.date.endDate == null ? '' : ' - ' + (conference | confEndDate: 'd')}}</p>
                     <p class="links">
                         <a href="{{conference.links.website}}"
                            target="_blank"><span class="glyphicon glyphicon-globe" ng-if="conference.links.website"
@@ -41,7 +41,8 @@
                         <p ng-if="conference.promocode"><strong>Promocode<sup>*</sup>:</strong> {{conference.promocode}}</p>
                     </div>
                     <div socials="conference.socials" socials-img="socialsImg"></div>
-                    <div id="bottom" ng-if="conference.promocode"><sup>*</sup>All promocodes are provided by authors Razbor Poletov podcasts.</div>
+                    <div id="bottom" ng-if="conference.promocode"><sup>*</sup>All promocodes are provided by authors
+                        of podcast "Razbor Poletov."</div>
                 </div>
             </div>
         </div>

@@ -222,16 +222,18 @@ app.directive('contacts', function() {
         },
         template:
         '<div class="main-data">' +
-            '<div class="contact-block"> ' +
-                '<img ng-src="{{contact.img}}" class="img-circle"/> ' +
-                '<div> ' +
-                    '<span ng-if="personalData" ng-bind="personalData"></span><br/> ' +
-                    '<span class="glyphicon glyphicon-map-marker">{{contact.info.location}}</span>' +
-                    '<hr class="style"/> ' +
-                    '<span>{{contact.info.position}} at <a href="{{contact.info.jobWebSite}}">{{contact.info.job}}</a></span> ' +
+            '<div class="outer-contact-block">' +
+                '<div class="contact-block"> ' +
+                    '<img ng-src="{{contact.img}}" class="img-circle"/> ' +
+                    '<div> ' +
+                        '<span ng-if="personalData" ng-bind="personalData"></span><br/> ' +
+                        '<span class="glyphicon glyphicon-map-marker">{{contact.info.location}}</span>' +
+                        '<hr class="style"/> ' +
+                        '<span>{{contact.info.position}} at <a href="{{contact.info.jobWebSite}}">{{contact.info.job}}</a></span> ' +
+                    '</div> ' +
                 '</div> ' +
-            '</div> ' +
-            '<p class="glyphicon glyphicon-link" ng-if="contact.info.webSite"> <a href="{{contact.info.webSite}}">{{contact.info.webSite}}</a></p> ' +
+                '<p class="glyphicon glyphicon-link" ng-if="contact.info.webSite"> <a href="{{contact.info.webSite}}">{{contact.info.webSite}}</a></p> ' +
+            '</div>' +
             '<p class="note" ng-if="contact.info.note">{{contact.info.note}}</p> ' +
         '</div> ' +
         '<div class="socials"> ' +
