@@ -2,11 +2,11 @@
   {
     "firstname": "Victor",
     "lastname": "Gamov",
-    "socials": [
-      {"github": "https://github.com/gAmUssA"},
-      {"twitter": "https://twitter.com/gamussa"},
-      {"linkedin": "https://www.linkedin.com/in/vikgamov"}
-    ],
+    "socials": {
+      "github": "https://github.com/gAmUssA",
+      "twitter": "https://twitter.com/gamussa",
+      "linkedin": "https://www.linkedin.com/in/vikgamov"
+    },
     "info": {
       "position": "Solutions Architect",
       "job": "Hazelcast",
@@ -21,11 +21,11 @@
   {
     "firstname": "Alexey",
     "lastname": "Abashev",
-    "socials": [
-      {"github": "https://github.com/abashev"},
-      {"twitter": "https://twitter.com/a_abashev"},
-      {"linkedin": "https://www.linkedin.com/in/abashev/ru"}
-    ],
+    "socials": {
+      "github": "https://github.com/abashev",
+      "twitter": "https://twitter.com/a_abashev",
+      "linkedin": "https://www.linkedin.com/in/abashev/ru"
+    },
     "info": {
       "position": "VP of Engineering",
       "job": "Paktor",
@@ -40,11 +40,11 @@
   {
     "firstname": "Anton",
     "lastname": "Arhipov",
-    "socials": [
-      {"github": "https://github.com/antonarhipov"},
-      {"twitter": "https://twitter.com/antonarhipov"},
-      {"linkedin": "http://ee.linkedin.com/in/antonarhipov"}
-    ],
+    "socials": {
+      "github": "https://github.com/antonarhipov",
+      "twitter": "https://twitter.com/antonarhipov",
+      "linkedin": "http://ee.linkedin.com/in/antonarhipov"
+    },
     "info": {
       "position": "Product manager",
       "job": "ZeroTurnaround",
@@ -59,11 +59,11 @@
   {
     "firstname": "Dmirty",
     "lastname": "Churbanov",
-    "socials": [
-      {"github": "https://github.com/dmitryc"},
-      {"twitter": "https://twitter.com/dzmitryc"},
-      {"linkedin": "https://www.linkedin.com/in/dmitrychurbanov"}
-    ],
+    "socials": {
+      "github": "https://github.com/dmitryc",
+      "twitter": "https://twitter.com/dzmitryc",
+      "linkedin": "https://www.linkedin.com/in/dmitrychurbanov"
+    },
     "info": {
       "position": "Senior Software Engineer",
       "job": "Google",
@@ -78,11 +78,11 @@
   {
     "firstname": "Baruch",
     "lastname": "Sadogursky",
-    "socials": [
-      {"github": "https://github.com/jbaruch"},
-      {"twitter": "https://twitter.com/jbaruch"},
-      {"linkedin": "https://www.linkedin.com/in/jbaruch"}
-    ],
+    "socials": {
+      "github": "https://github.com/jbaruch",
+      "twitter": "https://twitter.com/jbaruch",
+      "linkedin": "https://www.linkedin.com/in/jbaruch"
+    },
     "info": {
       "position": "Developer Advocate",
       "job": "JFrog",
@@ -97,18 +97,18 @@
   {
     "firstname": "Kirill",
     "lastname": "Tolkachev",
-    "socials": [
-      {"github": "https://github.com/lavcraft"},
-      {"twitter": "https://twitter.com/tolkv"},
-      {"linkedin": "https://www.linkedin.com/pub/%D0%BA%D0%B8%D1%80%D0%B8%D0%BB%D0%BB-%D1%82%D0%BE%D0%BB%D0%BA%D0%B0%D1%87%D1%91%D0%B2/58/455/715"}
-    ],
+    "socials": {
+      "github": "https://github.com/lavcraft",
+      "twitter": "https://twitter.com/tolkv",
+      "linkedin": "https://www.linkedin.com/pub/%D0%BA%D0%B8%D1%80%D0%B8%D0%BB%D0%BB-%D1%82%D0%BE%D0%BB%D0%BA%D0%B0%D1%87%D1%91%D0%B2/58/455/715"
+    },
     "info": {
       "position": "Lead Developer",
       "job": "Alfa Labs",
       "jobWebSite": "http://habrahabr.ru/special/alfabank/labhunt/",
       "webSite": "",
       "location": "Moscow, Russia",
-      "note": ""
+      "note": "Gradle and Spring fan. Passionate about Groovy and ReactiveX"
     },
     "img": "style/image/contacts-img/tolkachev.jpeg",
     "role": "Guest"

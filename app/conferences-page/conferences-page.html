@@ -1,0 +1,49 @@
+<div class="nav-menu" ng-include="'app/additional/navigation-menu.html'"></div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="col-md-6 col-sm-6 search-box">
+                <search-form></search-form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="col-md-6 col-sm-6 conf-grid"
+                 ng-repeat="conference in conferences | orderBy: getDateMillis | matchDate:filteredMonth">
+                <div class="col-md-10 col-md-offset-1 conference">
+                    <h2 ng-bind="conference.name"></h2>
+                    <p><strong>Location:</strong> {{conference.location.city}}, {{conference.location.country}}</p>
+                    <p><strong>Date:</strong> {{conference | confStartDate:'MMM d'}}
+                        {{conference.endDate == null ? '' : ' - ' + (conference | confEndDate: 'd')}}</p>
+                    <p class="links">
+                        <a href="{{conference.links.website}}"
+                           target="_blank"><span class="glyphicon glyphicon-globe" ng-if="conference.links.website"
+                                                 tooltip="Website"
+                                                 tooltip-placement="bottom"
+                                                 tooltip-trigger="mouseenter">
+
+                        </span></a>
+                        <a href="{{conference.links.schedule}}"
+                           target="_blank"><span class="glyphicon glyphicon-calendar"
+                                                 ng-if="conference.links.schedule"
+                                                 tooltip="Schedule"
+                                                 tooltip-placement="bottom"
+                                                 tooltip-trigger="mouseenter"></span></a>
+                    </p>
+                    <div id="conf-content">
+                        <div id="description">
+                            <h4>Description</h4>
+                            <p ng-bind="conference.description"></p>
+                        </div>
+                        <p ng-if="conference.promocode"><strong>Promocode<sup>*</sup>:</strong> {{conference.promocode}}</p>
+                    </div>
+                    <div socials="conference.socials" socials-img="socialsImg"></div>
+                    <div id="bottom" ng-if="conference.promocode"><sup>*</sup>All promocodes are provided by authors Razbor Poletov podcasts.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,10 +1,14 @@
 'use strict';
 
 // Declare app level module which depends on views, and components
-angular.module('youngPilots', [
-    'ngRoute', 'main.controllers', 'main.services', 'main.directives', 'useful.controllers', 'useful.directives', 'underscore', 'ui.bootstrap'
-]).
-    config(['$routeProvider', function($routeProvider) {
+var app = angular.module('youngPilots', [
+    'ngRoute', 'underscore', 'ui.bootstrap', 'base64',
+    'main.controllers', 'main.directives', 'main.services', 'main.filters',
+    'useful.controllers', 'useful.directives',
+    'conference.controllers', 'conference.directives', 'conference.filters', 'conference.services'
+]);
+app.config(['$routeProvider',
+    function($routeProvider) {
         $routeProvider.when('/', {
             templateUrl: 'app/main-page/main-page.html',
             controller: 'MainCtrl',
@@ -30,7 +34,14 @@ angular.module('youngPilots', [
                     return ContentFactory.query({folder: "useful-things", filename: "useful-things.json"}).$promise
                 }
             }
-        }).otherwise({
-            redirectTo: '/'
-        })
-    }]);
+        }).when('/conference', {
+            templateUrl: 'app/conferences-page/conferences-page.html',
+            controller: 'ConferenceCtrl',
+            resolve: {
+                conferences: function(ContentFactory) {
+                    return ContentFactory.query({folder: "conferences", filename: "conferences.json"}).$promise
+                }
+            }
+        }).otherwise({redirectTo: '/'})
+    }
+]);

@@ -1,4 +1,4 @@
-<div class="nav-menu" ng-include="'app/additional-html-content/navigation-menu.html'"></div>
+<div class="nav-menu" ng-include="'app/additional/navigation-menu.html'"></div>
 <div class="container-fluid" id="usefulThings-page">
     <div class="row">
         <div class="col-md-offset-8 col-sm-offset-7 col-xs-offset-7 col-md-4 col-sm-5 col-xs-5 input-group">
@@ -13,14 +13,12 @@
                     <th style="width: 15%;" sort="provider">Name</th>
                     <th style="width: 52%;" sort="description">Description</th>
                     <th sort="tags">Tags</th>
-                    <th style="width: 3%;">Link</th>
-                    <th style="width: 8%;" sort="podcastId">Podcast</th>
+                    <th style="width: 8%;" sort="podcastId" default="true">Podcast</th>
                 </tr>
                 <tr ng-repeat="usefulThing in usefulThings | orderBy: orderByTag : order | filter: usefulThingsFilter">
-                    <td ng-bind="usefulThing.provider"></td>
+                    <td><a href="{{usefulThing.link}}" target="_blank">{{usefulThing.provider}}</a></td>
                     <td ng-bind="usefulThing.description"></td>
                     <td tags="usefulThing.tags" tag-converter></td>
-                    <td><a href="{{usefulThing.link}}">Link</a></td>
                     <td ng-bind="usefulThing.podcastId"></td>
                 </tr>
             </table>

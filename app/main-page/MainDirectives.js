@@ -2,6 +2,7 @@
  * Created by artemvlasov on 22/04/15.
  */
 var app = angular.module('main.directives',[]);
+
 app.directive('align', function() {
     return {
         restrict: 'A',
@@ -33,14 +34,9 @@ app.directive('broadcast', function($timeout, BroadcastLive, $route, Broadcast) 
                 return time + (offset * 60000)
             };
             var getBroadcastData = function() {
-                Broadcast.get(function(broadcastData) {
-                    scope.broadcastData = broadcastData;
-                    scope.broadcastDate = new Date(broadcastData.date.year, broadcastData.date.month - 1, broadcastData.date.day, broadcastData.date.hour, 0, 0, 0);
-                    broadcastUtcTime = getUTCTime(scope.broadcastDate.getTime(),
-                        broadcastData.timezoneOffsetFromUTCInMinutes);
-                }, function() {
-                    throw new Error("Broadcast file is not available");
-                });
+                scope.broadcastData = broadcastData;
+                broadcastUtcTime = getUTCTime(new Date(scope.broadcastData.date).getTime(),
+                    scope.broadcastData.timezoneOffsetFromUTCInMinutes);
             };
             getBroadcastData();
             var dateDiff = function(returnFormat) {
@@ -139,36 +135,26 @@ app.directive('broadcast', function($timeout, BroadcastLive, $route, Broadcast) 
         }
     };
 });
-app.directive('countdown', function($timeout) {
+app.directive('countdown', function($timeout, $filter) {
     return {
         restrict: 'C',
         scope: {
-            countdownTime: '=',
-            timezoneOffset: '@'
+            date: '=',
+            offset: '='
         },
-        link: function(scope, element, attrs)
-        {
-            var futureDate = new Date(scope.countdownTime),
-                futureTime = futureDate.getTime(),
-                futureOffset = -((Number(scope.timezoneOffset) * 60) * 60000),
-                futureUtcTime = futureTime - futureOffset;
+        link: function(scope, element, attrs) {
 
-            var currentDate = new Date(),
-                currentTime = currentDate.getTime(),
-                currentOffset = currentDate.getTimezoneOffset() * 60000,
-                currentUtcTime = currentTime + currentOffset;
-            var updateDate = function (date) {
-                currentDate = date;
-                currentTime = currentDate.getTime();
-                currentOffset = currentDate.getTimezoneOffset() * 60000;
-                currentUtcTime = currentTime + currentOffset;
+            var futureUTCTime = $filter('convertDate')(scope.date, scope.offset);
+            var currentUTCTime = new Date().getTime();
+            var updateDate = function () {
+                currentUTCTime = new Date().getTime();
             };
             var dayMillis = 24 * 60 * 60 * 1000,
                 hourMillis = 60 * 60 * 1000,
                 minuteMillis = 60 * 1000,
                 secondMillis = 1000;
             var updateCountdown = function() {
-                var diff = futureUtcTime - currentUtcTime;
+                var diff = futureUTCTime - currentUTCTime;
                 var leftDays = Math.floor(diff / dayMillis),
                     leftHours = Math.floor((diff - (leftDays * dayMillis)) / hourMillis),
                     leftMinutes = Math.floor((diff - (leftDays * dayMillis + leftHours * hourMillis)) / minuteMillis),
@@ -179,16 +165,19 @@ app.directive('countdown', function($timeout) {
                     "minute": leftMinutes,
                     "second": leftSeconds
                 };
-
             };
             var countdown = function() {
-                updateDate(new Date());
+                updateDate();
                 updateCountdown();
                 countdownTimeout = $timeout(countdown, secondMillis);
             };
             var countdownTimeout = $timeout(countdown, secondMillis);
         },
-        template: '<span>Next conference: <i>Days: {{left.day}}, <span ng-if="left.hour < 10">0</span>{{left.hour}}:<span ng-if="left.minute < 10">0</span>{{left.minute}}:<span ng-if="left.second < 10">0</span>{{left.second}}</i></span>'
+        template: '<span>Next conference: <i>Days: {{left.day}}, ' +
+        '<span ng-if="left.hour < 10">0</span>{{left.hour}}:' +
+        '<span ng-if="left.minute < 10">0</span>{{left.minute}}:' +
+        '<span ng-if="left.second < 10">0</span>{{left.second}}</i>' +
+        '</span>'
     }
 });
 app.directive('popup', function() {
@@ -212,5 +201,43 @@ app.directive('popup', function() {
                 }
             }
         }
+    }
+});
+app.directive('contacts', function() {
+    return {
+        restrict: 'E',
+        require: '^ngModel',
+        link: function(scope, element, attrs) {
+            var contact = scope.$eval(attrs.ngModel);
+            var socialIcons = {
+                "github": "style/image/socials/github.png",
+                "twitter": "style/image/socials/twitter.png",
+                "linkedin": "style/image/socials/linkedin.png"
+            };
+            scope.personalData = contact.lastname != null ? (contact.firstname + ", " + contact.lastname) : contact.firstname;
+            scope.contactSocials = {};
+            _.each(contact.socials, function(value, key) {
+                scope.contactSocials[socialIcons[key]] = value;
+            })
+        },
+        template:
+        '<div class="main-data">' +
+            '<div class="contact-block"> ' +
+                '<img ng-src="{{contact.img}}" class="img-circle"/> ' +
+                '<div> ' +
+                    '<span ng-if="personalData" ng-bind="personalData"></span><br/> ' +
+                    '<span class="glyphicon glyphicon-map-marker">{{contact.info.location}}</span>' +
+                    '<hr class="style"/> ' +
+                    '<span>{{contact.info.position}} at <a href="{{contact.info.jobWebSite}}">{{contact.info.job}}</a></span> ' +
+                '</div> ' +
+            '</div> ' +
+            '<p class="glyphicon glyphicon-link" ng-if="contact.info.webSite"> <a href="{{contact.info.webSite}}">{{contact.info.webSite}}</a></p> ' +
+            '<p class="note" ng-if="contact.info.note">{{contact.info.note}}</p> ' +
+        '</div> ' +
+        '<div class="socials"> ' +
+            '<span ng-repeat="(key, value) in contactSocials"> ' +
+                '<a href="{{value}}" target="_blank"><img ng-src="{{key}}"/></a> ' +
+            '</span> ' +
+        '</div>'
     }
 });

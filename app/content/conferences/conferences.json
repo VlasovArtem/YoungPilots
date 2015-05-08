@@ -1,35 +1,145 @@
 [
   {
-    "startDate": 1433970000000,
-    "endDate": 1434056400000,
+    "startDate": {
+      "date": "June 11 2015",
+      "time": "09:00"
+    },
+    "endDate": {
+      "date": "June 12 2015",
+      "time": "17:30"
+    },
+    "timezoneOffset": 3,
     "name": "GeekOut",
-    "location": "Tallinn, Estonia",
+    "location": {
+      "city": "Tallinn",
+      "country": "Estonia"
+    },
     "description": "The focus of the conference is on Java, the JVM, covering developer tooling, solution architecture, programming methodologies, continuous delivery and programming languages for the JVM platform.",
     "promocode": null,
-    "website": "http://2015.geekout.ee/",
+    "links": {
+      "website": "http://2015.geekout.ee/",
+      "schedule": "http://2015.geekout.ee/schedule/"
+    },
     "checked": true,
-    "img": "style/image/conferences/GeekOut.png"
+    "socials": {
+      "twitter": "https://twitter.com/geekout_ee",
+      "facebook": "https://www.facebook.com/GeekOut.ee"
+    },
+    "complete": false
   },
   {
-    "startDate": 1432274400000,
-    "endDate": 1432328400000,
+    "startDate": {
+      "date": "May 22 2015",
+      "time": "09:00"
+    },
+    "endDate": {
+      "date": "May 23 2015",
+      "time": "18:20"
+    },
+    "timezoneOffset": 3,
     "name": "JEEConf",
-    "location": "Kiev, Ukraine",
+    "location": {
+      "city": "Kiev",
+      "country": "Ukraine"
+    },
     "description": "Is the largest conference in Ukraine entirely devoted to development using Java platform. JEEConf is the annual conference, which is aimed to bring together all those who use Java technologies for application development.",
     "promocode": null,
-    "website": "http://jeeconf.com",
+    "links": {
+      "website": "http://jeeconf.com",
+      "schedule": "http://jeeconf.com/program/"
+    },
     "checked": true,
-    "img": "style/image/conferences/JEEConf.png"
+    "socials": {
+      "twitter": "http://twitter.com/jeeconf",
+      "facebook": "http://www.facebook.com/pages/JEE-Conf/117336918340075",
+      "linkedin": "http://www.linkedin.com/groups?mostPopular=&gid=3756491",
+      "googleplus": "https://plus.google.com/104337707707625858900/posts"
+    },
+    "complete": false
   },
   {
-    "startDate": 1434229200000,
-    "endDate": null,
+    "startDate": {
+      "date": "June 14 2015",
+      "time": "10:00"
+    },
+    "endDate": {
+      "date": "June 14 2015",
+      "time": "20:00"
+    },
+    "timezoneOffset": 3,
     "name": "JavaDay",
-    "location": "Lviv, Ukraine",
+    "location": {
+      "city": "Lviv",
+      "country": "Ukraine"
+    },
     "description": "Every JavaDay attendee is unique, but they all have one thing in common: the passion for knowledge and desire to learn new things. Here's the list of topics you will listen to.",
     "promocode": null,
-    "website": "http://javaday.org.ua/lviv/",
+    "links": {
+      "website": "http://javaday.org.ua/lviv/"
+    },
     "checked": true,
-    "img": "style/image/conferences/JavaDay.jpg"
+    "socials": {
+      "twitter": "https://twitter.com/JavaDayUkraine",
+      "facebook": "https://www.facebook.com/events/1414950945475379/"
+    },
+    "complete": false
+  },
+  {
+    "startDate": {
+      "date": "October 25 2015",
+      "time": "09:00"
+    },
+    "endDate": {
+      "date": "October 29 2015",
+      "time": "20:00"
+    },
+    "timezoneOffset": -7,
+    "name": "JavaOne",
+    "location": {
+      "city": "San Francisco",
+      "country": "USA"
+    },
+    "description": "The Most Innovative and Diverse Java Content on the Planet—All in One Place. Make plans now to attend JavaOne 2015. Get the breadth and depth of information you need from sessions, BOFs, hands-on labs, and community members from around the globe.",
+    "promocode": null,
+    "links": {
+      "website": "https://www.oracle.com/javaone/index.html",
+      "schedule": "https://www.oracle.com/javaone/agenda/index.html"
+    },
+    "checked": true,
+    "socials": {
+      "twitter": "https://twitter.com/JavaOneConf/",
+      "facebook": "https://www.facebook.com/javaone",
+      "linkedin": "https://www.linkedin.com/groups/JavaOne-Conference-1749197",
+      "blog": "https://blogs.oracle.com/javaone/"
+    },
+    "complete": false
+  },
+  {
+    "startDate": {
+      "date": "May 28 2015",
+      "time": "08:00"
+    },
+    "endDate": {
+      "date": "May 29 2015",
+      "time": "15:00"
+    },
+    "timezoneOffset": -7,
+    "name": "Google I/O",
+    "location": {
+      "city": "San Francisco",
+      "country": "USA"
+    },
+    "description": "Google I/O is for developers—the creative coders who are building what's next. Together we'll explore the latest in tech, mobile & beyond. Join us to learn about product and platform innovations at Google, starting with a live kickoff from our Senior Vice-President of Products, Sundar Pichai.",
+    "promocode": null,
+    "links": {
+      "website": "https://events.google.com/io2015/#",
+      "schedule": "https://events.google.com/io2015/schedule#day1"
+    },
+    "checked": true,
+    "socials": {
+      "twitter": "https://twitter.com/googledevs",
+      "googleplus": "https://plus.google.com/+GoogleDevelopers"
+    },
+    "complete": false
   }
 ]

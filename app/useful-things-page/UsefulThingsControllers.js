@@ -1,4 +1,4 @@
-var app = angular.module('useful.controllers', ['ngCookies']);
+var app = angular.module('useful.controllers', []);
 
 app.controller('UsefulThinsCtrl', ['usefulThings', '$scope',
     function(usefulThings, $scope) {

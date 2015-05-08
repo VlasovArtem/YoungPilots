@@ -3,8 +3,8 @@
  */
 var app = angular.module('main.controllers', ['ngCookies']);
 
-app.controller('MainCtrl', ['activeContacts', 'usefulThings', 'conferences', 'quotes', '$scope',
-    function(activeContacts, usefulThings, conferences, quotes, $scope) {
+app.controller('MainCtrl', ['activeContacts', 'usefulThings', 'conferences', 'quotes','Broadcast', 'Twitter', 'TimeZoneFactory', 'LatLngFactory', '$scope', '$filter',
+    function(activeContacts, usefulThings, conferences, quotes, Broadcast, Twitter, TimeZoneFactory, LatLngFactory, $scope, $filter) {
         $scope.usefulThings = usefulThings;
         $scope.activeContacts = activeContacts;
         $scope.conferences = conferences;
@@ -13,6 +13,19 @@ app.controller('MainCtrl', ['activeContacts', 'usefulThings', 'conferences', 'qu
             "github": "style/image/socials/github.png",
             "twitter": "style/image/socials/twitter.png",
             "linkedin": "style/image/socials/linkedin.png"
+        };
+        Broadcast.get(function(data) {
+            $scope.broadcastData = data.date < new Date().getTime() ? null : data;
+        }, function() {
+            $scope.broadcastData = null;
+        });
+        $scope.isComplete = function() {
+            return function(query) {
+                return !query.complete;
+            }
+        };
+        $scope.getDateMillis = function(conf) {
+            return $filter('dateMillis')(conf.startDate, conf.timezoneOffset);
         };
         $scope.filterTag = '';
         $scope.changeFilter = function(tag) {
@@ -36,6 +49,6 @@ app.controller('MainCtrl', ['activeContacts', 'usefulThings', 'conferences', 'qu
                     return 5;
                 }
             }
-        }
+        };
     }
 ]);

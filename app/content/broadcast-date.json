@@ -1,11 +1,5 @@
 {
-  "date": {
-    "year": "2015",
-    "month": "5",
-    "day": "3",
-    "hour": "23",
-    "minute": "00 "
-  },
+  "date": 1430683200000,
   "timezone": "MSK",
   "timezoneOffsetFromUTCInMinutes": "-180"
 }
