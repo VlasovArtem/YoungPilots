@@ -1,2 +1,14 @@
 = Introduction
+
+Author <vlasovartem21@gmail.com>
+
 This project is dedicated to IT podcast "Razbor Poletov". All of the useful link collected on a single page. This page contains two useful sections such as Useful Stuff (aka Полезняшки) and Conferences.
+
+== Content
+
+* *Conferences* - All coming conference of IT world.
+* *Contacts* - Creators and most frequent visitors on the waves of the podcast.
+* *Podcast* - Podcasts in json format parsed from "Razbor Poletov" GitHub repository.
+* *Quotes* - Creators and their guests is wellknown in IT world and they have ton of amazing quotes.
+* *Useful Things* - It is the most interesting content of the podcasts. Almost every broadcasting, creators is sharing with all listeners some mount of useful things, that can help programmers he increase performance of their code.
+
