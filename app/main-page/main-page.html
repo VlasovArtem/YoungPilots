@@ -96,7 +96,7 @@
             <div ng-bind="conference.name"></div>
             <div id="where-and-when">
                 <span class="glyphicon glyphicon-calendar">{{conference | confStartDate:'MMM d'}}
-                    {{conference.endDate == null ? '' : ' - ' + (conference | confEndDate: 'd')}}</span>
+                    {{conference.date.endDate == null ? '' : ' - ' + (conference | confEndDate: 'd')}}</span>
                 <span class="glyphicon glyphicon-map-marker" ng-bind="conference.location.city + ', ' + conference.location.country"
                       style="float: right;"></span>
             </div>
@@ -111,7 +111,7 @@
     </div>
     <div class="countdown"
          ng-repeat="conference in conferences | orderBy: getDateMillis | filter: isComplete() | limitTo: 1"
-         date="conference.startDate" offset="conference.timezoneOffset">
+         date="conference.date.startDate" offset="conference.date.timezone">
     </div>
 </section>
 <section class="container-fluid block" id="contact-section">

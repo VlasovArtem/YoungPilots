@@ -9,7 +9,7 @@ app.filter('matchDate', function($filter) {
             if(_.isUndefined(month)) {
                 return true;
             }
-            var _date = $filter('date')(new Date(conf.startDate), 'MMM');
+            var _date = $filter('date')(new Date(conf.date.startDate), 'MMM');
             return angular.equals(_date, month.value);
         })
     }
