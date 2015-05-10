@@ -2,22 +2,14 @@
 .block {
   min-height: 700px;
 }
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus,
-.tag:hover,
-.tag:focus,
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus,
-.top-button:hover,
-.top-button:focus,
-.footer-socials a:hover,
-.footer-socials a:focus,
-.more-tags:hover,
-.more-tags:focus,
-.reset-month:hover,
-.reset-month:focus,
-.links > span:hover,
-.links > span:focus {
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus,
+.tag:hover, .tag:focus,
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus,
+.top-button:hover, .top-button:focus,
+.footer-socials a:hover, .footer-socials a:focus,
+.more-tags:hover, .more-tags:focus,
+.reset-month:hover, .reset-month:focus,
+.links > span:hover, .links > span:focus {
   -webkit-filter: invert(100%);
   -moz-filter: invert(100%);
   -o-filter: invert(100%);
@@ -34,11 +26,9 @@ hr.style {
 #block {
   padding-left: 10px;
   max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
 }
 div > h1 .header {
-  margin-bottom: 0px
+  margin-bottom: 0
 }
 section {
   padding-top: 40px;
@@ -63,6 +53,27 @@ section {
 #block > div:last-child > div {
   text-align: left;
 }
+.contact-block, .footer-content {
+  display: table;
+}
+footer > div.row:last-child,
+footer > div:last-child,
+#useful-things-section > #block > div:last-child,
+.useful-table tr:nth-child(1n+1) > td:last-child,
+.conference > h2,
+#conf-content #description > h4,
+.container-fluid tr:first-child > th:last-child {
+  text-align: center;
+}
+#block, footer + div,
+#quote-section > div:not(:nth-child(1)),
+#conf-section > div:not(:nth-child(1)),
+.conf > div,
+.conf > div > div,
+.conference {
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /*Header Section*/
 header {
@@ -78,7 +89,7 @@ header {
   font-family: 'Poiret One', cursive;
   text-align: center;
   vertical-align: middle;
-  margin-top: 0px;
+  margin-top: 0;
 }
 #header-main {
   height: 350px;
@@ -136,19 +147,12 @@ header .header {
   background-color: transparent !important;
   border-color: transparent !important;
 }
-  .main-nav-menu .navbar-nav > li > a {
+  .main-nav-menu .navbar-nav > li > a, .main-nav-menu .navbar-brand {
     color: #46b8da;
     font-size: larger;
   }
-  .main-nav-menu .navbar-brand {
-    color: #46b8da;
-    font-size: larger;
-  }
-  .navbar-default .navbar-toggle {
+  .navbar-default .navbar-toggle, .navbar-default .navbar-toggle .icon-bar {
     border-color: #46b8da;
-  }
-  .navbar-default .navbar-toggle .icon-bar {
-    background-color: #46b8da;;
   }
   .navbar-default .navbar-toggle:hover,
   .navbar-default .navbar-toggle:focus {
@@ -175,9 +179,6 @@ header .header {
   #contacts div > span:nth-child(5) {
     font-size: medium;
   }
-.contact-block {
-  display: table;
-}
 .outer-contact-block {
   height: 125px;
 }
@@ -210,9 +211,6 @@ footer {
   footer .container-fluid {
     height: 100%
   }
-  footer > div.row:last-child {
-    text-align: center;
-  }
   footer a[href] {
     color: #C5C2D1;
     text-decoration: none;
@@ -228,20 +226,12 @@ footer {
   }
   footer+div {
     max-width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
     padding-bottom: 20px;
   }
   footer > div {
     margin-left: auto !important;
     margin-right: auto !important;
   }
-  footer > div:last-child{
-    text-align: center;
-  }
-.footer-content {
-  display: table;
-}
   .footer-content > div {
     display: table-column;
   }
@@ -266,8 +256,6 @@ footer {
   #quote-section > div:not(:nth-child(1)) {
     color: #fff;
     max-width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
     position: relative;
   }
   #quote-section .parallax-overlay {
@@ -282,7 +270,6 @@ blockquote {
   font-weight: 100;
   max-height: 105px;
 }
-
 
 /*Useful Things section*/
 #useful {
@@ -314,9 +301,6 @@ blockquote {
     cursor: pointer;
     overflow: hidden;
   }
-  #useful-things-section > #block > div:last-child {
-      text-align: center;
-  }
 .more-tags {
   font-size: larger;
   vertical-align: middle;
@@ -334,8 +318,6 @@ blockquote {
   #conf-section > div:not(:nth-child(1)) {
     color: #fff;
     max-width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
     position: relative;
   }
   #conf-section > div:last-child {
@@ -346,13 +328,10 @@ blockquote {
 .conf {
   font-family: 'Roboto Slab', serif;
   font-weight: 100;
-  /*border: 2px solid grey;*/
 }
   .conf > div {
     height: 140px;
     width: 80%;
-    margin-left: auto;
-    margin-right: auto;
   }
   .conf > div:last-child {
     height: 80px;
@@ -361,10 +340,6 @@ blockquote {
     font-weight: 500;
     font-size: larger;
     text-align: center;
-  }
-  .conf > div > div {
-    margin-left: auto;
-    margin-right: auto;
   }
   .conf-desc {
     text-align: justify;
@@ -415,9 +390,6 @@ label {
 .useful-table tr:nth-child(1n+1) > td:first-child {
   text-transform: capitalize;
 }
-.useful-table tr:nth-child(1n+1) > td:last-child {
-  text-align: center;
-}
 .sort-ascent:before{
   content: '\25B2';
 }
@@ -438,22 +410,14 @@ th[sort] {
   padding: 0 10px 20px 10px;
   margin-bottom: 30px;
   float: none;
-  margin-left: auto;
-  margin-right: auto;
   border-radius: 4px;
 }
-  .conference > h2 {
-    text-align: center;
-  }
 #conf-content {
   height: 170px;
 }
   #conf-content #description {
     height: 140px;
     overflow: hidden;
-  }
-  #conf-content #description > h4{
-    text-align: center;
   }
   #conf-content #description > p {
     text-align: justify;
@@ -528,7 +492,7 @@ th[sort] {
     padding-right: 10px;
   }
   #useful {
-    margin: 10px 10px 10px 0px;
+    margin: 10px 10px 10px 0;
   }
   #block > div:nth-child(3) {
     padding-right: 15px;
@@ -542,12 +506,12 @@ th[sort] {
 
 /*Undefiend*/
 #contacts div > hr {
-  margin-top: 0px;
+  margin-top: 0;
 }
 .note {
   height: 60px;
   overflow: hidden;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 .main-data {
   min-height: 185px;
@@ -555,9 +519,6 @@ th[sort] {
 }
 .filter {
   height: 25px;
-}
-.container-fluid tr:first-child > th:last-child {
-  text-align: center;
 }
 #search {
   margin-bottom: 20px;
@@ -574,7 +535,7 @@ th[sort] {
   display: table;
   padding: 10px;
   height: 110px;
-  margin: 10px 0 10px 0px;
+  margin: 10px 0 10px 0;
 }
 .tweet > div > div > div{
   display: table-cell;

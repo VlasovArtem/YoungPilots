@@ -3,8 +3,8 @@
  */
 var app = angular.module('main.controllers', ['ngCookies']);
 
-app.controller('MainCtrl', ['activeContacts', 'usefulThings', 'conferences', 'quotes','Broadcast', 'Twitter', 'TimeZoneFactory', 'LatLngFactory', '$scope', '$filter',
-    function(activeContacts, usefulThings, conferences, quotes, Broadcast, Twitter, TimeZoneFactory, LatLngFactory, $scope, $filter) {
+app.controller('MainCtrl', ['activeContacts', 'usefulThings', 'conferences', 'quotes','Broadcast', 'socket', '$scope', '$filter',
+    function(activeContacts, usefulThings, conferences, quotes, Broadcast, socket, $scope, $filter) {
         $scope.usefulThings = usefulThings;
         $scope.activeContacts = activeContacts;
         $scope.conferences = conferences;
@@ -24,6 +24,11 @@ app.controller('MainCtrl', ['activeContacts', 'usefulThings', 'conferences', 'qu
                 return !query.complete;
             }
         };
+        $scope.tweets = [];
+        socket.on('tweets', function(data) {
+            console.log(data);
+            $scope.tweets = $scope.tweets.concat(data);
+        });
         $scope.getDateMillis = function(conf) {
             return $filter('dateMillis')(conf.date.startDate, conf.date.timezone);
         };
