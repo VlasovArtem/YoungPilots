@@ -12,9 +12,11 @@
     <div class="row">
         <div class="col-md-12">
             <div class="col-md-6 col-sm-6 conf-grid"
-                 ng-repeat="conference in conferences | orderBy: getDateMillis | matchDate:filteredMonth">
+                 ng-repeat="conference in conferences | orderBy: getDateMillis | matchDate: filteredMonth">
                 <div class="col-md-10 col-md-offset-1 conference">
                     <h2 ng-bind="conference.name"></h2>
+                    <img ng-src="style/image/conferences/join-us.png" class="img-circle"
+                         ng-if="conference.joinUs"/>
                     <p><strong>Location:</strong> {{conference.location.city}}, {{conference.location.country}}</p>
                     <p><strong>Date:</strong> {{conference | confStartDate:'MMM d'}}
                         {{conference.date.endDate == null ? '' : ' - ' + (conference | confEndDate: 'd')}}</p>
@@ -38,10 +40,11 @@
                             <h4>Description</h4>
                             <p ng-bind="conference.description"></p>
                         </div>
-                        <p ng-if="conference.promocode"><strong>Promocode<sup>*</sup>:</strong> {{conference.promocode}}</p>
+                        <p ng-if="conference.promoCode">Promo code<sup>*</sup>:
+                            <strong>{{conference.promoCode}}</strong></p>
                     </div>
                     <div socials="conference.socials" socials-img="socialsImg"></div>
-                    <div id="bottom" ng-if="conference.promocode"><sup>*</sup>All promocodes are provided by authors
+                    <div id="bottom" ng-if="conference.promoCode"><sup>*</sup>All Promo codes are provided by authors
                         of podcast "Razbor Poletov."</div>
                 </div>
             </div>

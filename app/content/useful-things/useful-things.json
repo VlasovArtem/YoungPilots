@@ -1,7 +1,7 @@
 [
   {
     "link": "http://bitwiseshiftleft.github.com/sjcl/",
-    "provider": "bitwiseshiftleft",
+    "name": "bitwiseshiftleft",
     "tags": [
       "Java",
       "Git",
@@ -14,7 +14,7 @@
   },
   {
     "link": "https://github.com/vesln/issues",
-    "provider": "issues",
+    "name": "issues",
     "tags": [
       "Git",
       "GitHub",
@@ -26,7 +26,7 @@
   },
   {
     "link": "http://sparkjava.com/",
-    "provider": "sparkjava",
+    "name": "sparkjava",
     "tags": [
       "Java",
       "REST",
@@ -39,7 +39,8 @@
   },
   {
     "link": "http://code.google.com/p/adbcj/",
-    "provider": "adbcj",
+
+    "name": "adbcj",
     "tags": [
       "DB",
       "Java",
@@ -53,7 +54,7 @@
   },
   {
     "link": "https://github.com/goldmansachs",
-    "provider": "goldmansachs",
+    "name": "goldmansachs",
     "tags": [
       "Java",
       "Framework",
@@ -66,7 +67,7 @@
   },
   {
     "link": "http://sourceforge.net/projects/javaconcurrenta/",
-    "provider": "java concurrenta",
+    "name": "java concurrenta",
     "tags": [
       "Java",
       "Web",
@@ -78,7 +79,7 @@
   },
   {
     "link": "http://mosh.mit.edu/",
-    "provider": "mosh",
+    "name": "mosh",
     "tags": [
       "Android",
       "Git",
@@ -92,7 +93,7 @@
   },
   {
     "link": "http://vertx.io/",
-    "provider": "vertx",
+    "name": "vertx",
     "tags": [
       "Java",
       "Maven",
@@ -106,7 +107,7 @@
   },
   {
     "link": "http://dillinger.io/",
-    "provider": "dillinger",
+    "name": "dillinger",
     "tags": [
       "Git",
       "Google",
@@ -118,7 +119,7 @@
   },
   {
     "link": "https://github.com/fakemongo/fongo",
-    "provider": "fongo",
+    "name": "fongo",
     "tags": [
       "MongoDB"
     ],
@@ -128,7 +129,7 @@
   },
   {
     "link": "https://github.com/cbeams/distyles",
-    "provider": "distyles",
+    "name": "distyles",
     "tags": [
       "Spring",
       "Web",
@@ -140,7 +141,7 @@
   },
   {
     "link": "http://www.manning.com/walls4/",
-    "provider": "Spring in Action",
+    "name": "Spring in Action",
     "tags": [
       "Spring",
       "Book",
@@ -154,7 +155,7 @@
   },
   {
     "link": "http://metrics.codahale.com/",
-    "provider": "metrics",
+    "name": "metrics",
     "tags": [
       "Java",
       "JVM",
@@ -168,7 +169,7 @@
   },
   {
     "link": "http://engineering.twitter.com/2012/06/distributed-systems-tracing-with-zipkin.html",
-    "provider": "zipkin",
+    "name": "zipkin",
     "tags": [
       "SQL",
       "Java",
@@ -182,7 +183,7 @@
   },
   {
     "link": "https://bitbucket.org/",
-    "provider": "bitbucket",
+    "name": "bitbucket",
     "tags": [
       "Git"
     ],
@@ -192,7 +193,7 @@
   },
   {
     "link": "http://www.textasticapp.com",
-    "provider": "textasticapp",
+    "name": "textasticapp",
     "tags": [
       "Web",
       "Java",
@@ -206,7 +207,7 @@
   },
   {
     "link": "http://anti-code.com/devtools-cheatsheet/",
-    "provider": "chrome devtools cheatsheet",
+    "name": "chrome devtools cheatsheet",
     "tags": [
       "Java",
       "Google",
@@ -220,7 +221,7 @@
   },
   {
     "link": "http://www.git-legit.org",
-    "provider": "legit",
+    "name": "legit",
     "tags": [
       "Git",
       "GitHub",
@@ -233,7 +234,7 @@
   },
   {
     "link": "http://lviggiano.github.com/owner/",
-    "provider": "lviggiano",
+    "name": "lviggiano",
     "tags": [
       "Git",
       "GitHub",
@@ -245,7 +246,7 @@
   },
   {
     "link": "http://msgpack.org",
-    "provider": "msgpack",
+    "name": "msgpack",
     "tags": [
       "JSON",
       "Ruby",
@@ -259,7 +260,7 @@
   },
   {
     "link": "https://github.com/alvins82/java-mini-profiler-core",
-    "provider": "java mini profiler",
+    "name": "java mini profiler",
     "tags": [
       "Java",
       "SQL",
@@ -273,7 +274,7 @@
   },
   {
     "link": "https://saucelabs.com",
-    "provider": "saucelabs",
+    "name": "saucelabs",
     "tags": [
       "Java",
       "Android",
@@ -286,7 +287,7 @@
   },
   {
     "link": "http://squash.io",
-    "provider": "squash",
+    "name": "squash",
     "tags": [
       "Java",
       "Web",
@@ -299,7 +300,7 @@
   },
   {
     "link": "http://tin.cr/",
-    "provider": "tin",
+    "name": "tin",
     "tags": [
       "Java",
       "Mac OSX"
@@ -310,7 +311,7 @@
   },
   {
     "link": "https://github.com/google/tracing-framework",
-    "provider": "tracing framework",
+    "name": "tracing framework",
     "tags": [
       "Web",
       "Framework",
@@ -324,7 +325,7 @@
   },
   {
     "link": "https://github.com/alexruiz/fest-assert-2.x",
-    "provider": "fest assert",
+    "name": "fest assert",
     "tags": [
       "Java",
       "Android"
@@ -335,7 +336,7 @@
   },
   {
     "link": "https://github.com/facebook/buck",
-    "provider": "buck",
+    "name": "buck",
     "tags": [
       "Apache"
     ],
@@ -345,7 +346,7 @@
   },
   {
     "link": "http://logstash.net/",
-    "provider": "logstash",
+    "name": "logstash",
     "tags": [
       "Apache",
       "Web",
@@ -357,7 +358,7 @@
   },
   {
     "link": "https://github.com/visionmedia/git-extras",
-    "provider": "git extras",
+    "name": "git extras",
     "tags": ["Git"],
     "checked": true,
     "podcastId": 39,
@@ -365,7 +366,7 @@
   },
   {
     "link": "http://gitignore.io/",
-    "provider": "gitignore",
+    "name": "gitignore",
     "tags": ["Git"],
     "checked": true,
     "podcastId": 39,
@@ -373,7 +374,7 @@
   },
   {
     "link": "http://www.togglz.org/quickstart.html",
-    "provider": "togglz",
+    "name": "togglz",
     "tags": [
       "Java",
       "Spring",
@@ -387,7 +388,7 @@
   },
   {
     "link": "https://github.com/dinedal/textql",
-    "provider": "textql",
+    "name": "textql",
     "tags": [
       "SQL",
       "DB",
@@ -399,7 +400,7 @@
   },
   {
     "link": "http://direnv.net/",
-    "provider": "direnv",
+    "name": "direnv",
     "tags": [
       "Bash"
     ],
@@ -409,7 +410,7 @@
   },
   {
     "link": "https://github.com/sindresorhus/pageres",
-    "provider": "pageres",
+    "name": "pageres",
     "tags": [
       "Google",
       "Web"
@@ -420,7 +421,7 @@
   },
   {
     "link": "https://github.com/alloy/terminal-notifier",
-    "provider": "terminal notifier",
+    "name": "terminal notifier",
     "tags": [
       "Ruby",
       "Homebrew",
@@ -434,7 +435,7 @@
   },
   {
     "link": "https://github.com/rombert/desktop-maven-notifier",
-    "provider": "desktop maven notifier",
+    "name": "desktop maven notifier",
     "tags": [
       "Maven",
       "Java",
@@ -446,7 +447,7 @@
   },
   {
     "link": "https://code.google.com/p/rest-assured/",
-    "provider": "code",
+    "name": "code",
     "tags": [
       "Java",
       "REST",
@@ -460,7 +461,7 @@
   },
   {
     "link": "https://segment.io/",
-    "provider": "segment",
+    "name": "segment",
     "tags": [
       "SQL",
       "Web",
@@ -474,7 +475,7 @@
   },
   {
     "link": "http://pragprog.com/book/bhtmux/tmux",
-    "provider": "pragprog",
+    "name": "pragprog",
     "tags": [
       "Book",
       "Ruby",
@@ -488,7 +489,7 @@
   },
   {
     "link": "http://www.syntevo.com/smartgithg/",
-    "provider": "syntevo",
+    "name": "syntevo",
     "tags": [
       "Git",
       "GitHub",
@@ -501,7 +502,7 @@
   },
   {
     "link": "http://www.mattstine.com/microservices",
-    "provider": "mattstine",
+    "name": "mattstine",
     "tags": [
       "Java",
       "Spring",
@@ -514,7 +515,7 @@
   },
   {
     "link": "https://github.com/vladmihalcea/flexy-pool",
-    "provider": "flexy pool",
+    "name": "flexy pool",
     "tags": [
       "Apache",
       "DB",
@@ -526,7 +527,7 @@
   },
   {
     "link": "https://github.com/jeluard/semantic-versioning",
-    "provider": "semantic versioning",
+    "name": "semantic versioning",
     "tags": [
       "Java",
       "Maven",
@@ -538,7 +539,7 @@
   },
   {
     "link": "https://github.com/zafarkhaja/java-semver",
-    "provider": "java semver",
+    "name": "java semver",
     "tags": [
       "Java",
       "Maven",
@@ -550,7 +551,7 @@
   },
   {
     "link": "http://www.jcabi.com/index.html",
-    "provider": "jcabi",
+    "name": "jcabi",
     "tags": [
       "Maven",
       "Java",
@@ -564,7 +565,7 @@
   },
   {
     "link": "http://githut.info/",
-    "provider": "githut",
+    "name": "githut",
     "tags": [
       "Git",
       "GitHub",
@@ -576,7 +577,7 @@
   },
   {
     "link": "https://github.com/tripit/slate",
-    "provider": "slate",
+    "name": "slate",
     "tags": [
       "Ruby",
       "Framework",
@@ -589,7 +590,7 @@
   },
   {
     "link": "http://brackets.io/",
-    "provider": "brackets",
+    "name": "brackets",
     "tags": [
       "Google",
       "Java",
@@ -601,7 +602,7 @@
   },
   {
     "link": "http://www.noisli.com/",
-    "provider": "noisli",
+    "name": "noisli",
     "tags": [
       "Google",
       "REST",
@@ -613,7 +614,7 @@
   },
   {
     "link": "http://noiz.io",
-    "provider": "noiz",
+    "name": "noiz",
     "tags": [
       "Book",
       "Mac OSX",
@@ -625,7 +626,7 @@
   },
   {
     "link": "https://github.com/fusesource/jansi",
-    "provider": "jansi",
+    "name": "jansi",
     "tags": [
       "Java"
     ],
@@ -635,9 +636,9 @@
   },
   {
     "link": "http://bliker.github.io/cmder/",
-    "provider": "bliker",
+    "name": "bliker",
     "tags": [
-      "Ruby",
+      "Windows",
       "Mac OSX"
     ],
     "checked": true,
@@ -646,7 +647,7 @@
   },
   {
     "link": "http://websocketd.com/",
-    "provider": "websocketd",
+    "name": "websocketd",
     "tags": [
       "Web",
       "WebSocket",
@@ -658,7 +659,7 @@
   },
   {
     "link": "https://github.com/HubPress/hubpress.io",
-    "provider": "hubpress.io",
+    "name": "hubpress.io",
     "tags": [
       "Android",
       "Google",
@@ -670,7 +671,7 @@
   },
   {
     "link": "https://jitpack.io/",
-    "provider": "jitpack",
+    "name": "jitpack",
     "tags": [
       "Maven",
       "Gradle",
@@ -682,7 +683,7 @@
   },
   {
     "link": "https://github.com/yaronn/blessed-contrib",
-    "provider": "blessed-contrib",
+    "name": "blessed-contrib",
     "tags": [
       "Java",
       "Mac OSX"
@@ -693,7 +694,7 @@
   },
   {
     "link": "http://jodd.org/",
-    "provider": "jodd",
+    "name": "jodd",
     "tags": [
       "Java",
       "Web",
@@ -707,7 +708,7 @@
   },
   {
     "link": "http://www.ninjaframework.org",
-    "provider": "ninjaframework",
+    "name": "ninjaframework",
     "tags": [
       "Java",
       "Maven",
@@ -720,7 +721,7 @@
   },
   {
     "link": "https://github.com/KeyboardFire/mkcast",
-    "provider": "mkcast",
+    "name": "mkcast",
     "tags": ["Web"],
     "checked": true,
     "podcastId": 81,
@@ -728,7 +729,7 @@
   },
   {
     "link": "http://stedolan.github.io/jq/",
-    "provider": "stedolan",
+    "name": "stedolan",
     "tags": [
       "JSON",
       "Web",

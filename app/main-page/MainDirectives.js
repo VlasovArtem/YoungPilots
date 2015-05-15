@@ -23,22 +23,19 @@ app.directive('align', function() {
         }
     }
 });
-app.directive('broadcast', function($timeout, BroadcastLive, $route, Broadcast) {
+app.directive('broadcast', function($timeout, BroadcastLive, $route, Broadcast, $filter) {
     return {
         restrict: 'A',
         link: function(scope, element, attrs) {
             var timeoutMillis = 60 * 1000;
             var broadcastUtcTime,
                 localUtcTime;
+            Broadcast.get(function(data) {
+                broadcastUtcTime = $filter('dateMillis')(data.date.startDate, data.date.timezone);
+            });
             var getUTCTime = function(time, offset) {
                 return time + (offset * 60000)
             };
-            var getBroadcastData = function() {
-                scope.broadcastData = broadcastData;
-                broadcastUtcTime = getUTCTime(new Date(scope.broadcastData.date).getTime(),
-                    scope.broadcastData.timezoneOffsetFromUTCInMinutes);
-            };
-            getBroadcastData();
             var dateDiff = function(returnFormat) {
                 if(_.isNull(broadcastUtcTime) || _.isUndefined(broadcastUtcTime)) {
                     throw new Error("Broadcast date is undefined");
@@ -112,7 +109,6 @@ app.directive('broadcast', function($timeout, BroadcastLive, $route, Broadcast) 
                 }
             };
             var newBroadcastDate = function() {
-                console.log('New broadcast date timeout');
                 BroadcastLive.get(function() {}, function() {
                     $route.reload();
                 });
@@ -125,7 +121,6 @@ app.directive('broadcast', function($timeout, BroadcastLive, $route, Broadcast) 
                 if(broadcastUtcTime < localUtcTime) {
                     scope.broadcastDate = null;
                     timeoutMillis = 2 * 60 * 60 * 1000;
-                    getBroadcastData();
                 } else {
                     checkLeftTime();
                 }

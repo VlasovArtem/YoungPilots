@@ -33,7 +33,7 @@
         <div class="col-md-2 header-text" ng-if="broadcastData">
             <div>
                 <span>Next broadcast:</span><br/>
-                <span>{{broadcastData.date | date:"MM/dd/yyyy 'at' HH:mm "}}{{broadcastData.timezone}}</span>
+                <span>{{broadcastData | confStartDate:"MM/dd/yyyy 'at' HH:mm"}}</span>
             </div>
             <div class="broadcast" broadcast>
                 <a href="http://razbor-poletov.com/broadcast.html" target="_blank">
@@ -57,21 +57,23 @@
         </div>
         <div class="row">
             <div class="col-md-offset-4 col-sm-offset-4 col-xs-offset-4 col-md-4 col-sm-5 col-xs-5 input-group">
-                <input type="search" ng-model="filterTag" placeholder="Filter" class="form-control filter"/>
+                <input type="search" ng-model="filterTag" ng-model-options="{debounce: 750}"
+                       placeholder="Filter"
+                       class="form-control filter"/>
                 <span class="glyphicon glyphicon-remove input-group-addon" ng-click="filterTag = ''"></span>
             </div>
         </div>
         <div class="col-md-12">
             <div id="useful"
-                 ng-repeat="usefulThing in usefulThings | orderBy: 'podcastId' : true | filter: filterTag | limitTo: 20">
-                <span ng-bind="usefulThing.provider"></span>
+                 ng-repeat="usefulThing in usefulThings| orderBy: 'podcastId' : true | utFilter: filterTag | limitTo: utLimit">
+                <span ng-bind="::usefulThing.name"></span>
                 <a href="{{usefulThing.link}}" target="_blank">Link</a><br/>
-                <div class="description" ng-bind="usefulThing.description" popup
+                <div class="description" ng-bind="::usefulThing.description" popup
                      popup-content="usefulThing.description">
                 </div>
                 <div class="tags" ng-if="usefulThing.tags != null">
-                    <span ng-repeat="tag in usefulThing.tags | limitTo: checkTagLimit(usefulThing.tags)">
-                        <span ng-bind="tag" class="label label-primary tag"
+                    <span ng-repeat="tag in ::usefulThing.tags | limitTo: checkTagLimit(usefulThing.tags)">
+                        <span ng-bind="::tag" class="label label-primary tag"
                               ng-click="changeFilter(tag)"></span>
                     </span>
                     <span ng-if="checkTagLimit(usefulThing.tags) == 4">
@@ -91,9 +93,9 @@
         <h1 class="header">Conferences</h1>
     </div>
     <div class="col-md-4 col-sm-6 conf"
-         ng-repeat="conference in conferences | orderBy: getDateMillis | filter: isComplete() | limitTo: 3 ">
+         ng-repeat="conference in ::conferences | orderBy: getDateMillis | filter: isComplete() | limitTo: 3">
         <div>
-            <div ng-bind="conference.name"></div>
+            <div ng-bind="::conference.name"></div>
             <div id="where-and-when">
                 <span class="glyphicon glyphicon-calendar">{{conference | confStartDate:'MMM d'}}
                     {{conference.date.endDate == null ? '' : ' - ' + (conference | confEndDate: 'd')}}</span>
@@ -104,9 +106,11 @@
         </div>
         <div>
             <hr/>
-            <a href="{{conference.links.website}}" target="_blank" style="color: white">{{conference.links.website}}</a>
+            <a href="{{::conference.links.website}}" target="_blank">{{::conference.links
+                .website}}</a>
+            <p ng-if="conference.promoCode">Promo code: <strong>{{::conference
+                .promoCode}}</strong></p>
             <br/>
-            <div ng-if="conference.promocode != null">Promocode: {{conference.promocode}}</div>
         </div>
     </div>
     <div class="countdown"
@@ -125,7 +129,7 @@
         <div class="col-md-8 col-md-offset-2">
             <hr class="style"/>
         </div>
-        <div ng-repeat="contact in activeContacts" id="contacts" class="col-md-4 col-xs-12 col-sm-6">
+        <div ng-repeat="contact in activeContacts | limitTo: contacsLimit" id="contacts" class="col-md-4 col-xs-12 col-sm-6">
             <contacts ng-model="contact"></contacts>
         </div>
     </div>
@@ -135,9 +139,9 @@
     <div class="row">
         <h1 class="header">Deep Thoughts</h1>
     </div>
-    <div class="col-md-4" ng-repeat="quote in quotes | limitTo: 6">
+    <div class="col-md-4" ng-repeat="quote in quotes | limitTo: quotesLimit">
         <blockquote>
-            <p> {{quote.quote }}<br/>{{quote.author}}</p>
+            <p>{{quote}}</p>
         </blockquote>
     </div>
 </section>
@@ -151,7 +155,7 @@
             YoungPilots - это сайт организатор, одного из лучших ИТ подкастов <a href="http://razbor-poletov.com/" target="_blank"
                 >"Razbor Poletov"</a>. На этом сайте собраны
             все самые
-            полезные ссылки, которыми деляться создатели и гости проекта. Один из разделов этого сайта будет посвящен
+            полезные ссылки, которыми делятся создатели и гости проекта. Один из разделов этого сайта посвящен
             ИТ Конференциям по всему миру.
             <ul class="list-unstyled list-inline socials footer-socials">
                 <li>

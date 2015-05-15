@@ -2,7 +2,8 @@
 <div class="container-fluid" id="usefulThings-page">
     <div class="row">
         <div class="col-md-offset-8 col-sm-offset-7 col-xs-offset-7 col-md-4 col-sm-5 col-xs-5 input-group">
-            <input type="search" ng-model="usefulThingsFilter" placeholder="Filter" class="form-control filter"/>
+            <input type="search" ng-model="usefulThingsFilter" ng-model-options="{debounce: 750}" placeholder="Filter"
+                   class="form-control filter"/>
             <span class="glyphicon glyphicon-remove input-group-addon" ng-click="usefulThingsFilter = ''"></span>
         </div>
     </div>
@@ -10,16 +11,16 @@
         <div class="col-md-12">
             <table class="table useful-table">
                 <tr>
-                    <th style="width: 15%;" sort="provider">Name</th>
+                    <th style="width: 15%;" sort="name">Name</th>
                     <th style="width: 52%;" sort="description">Description</th>
                     <th sort="tags">Tags</th>
                     <th style="width: 8%;" sort="podcastId" default="true">Podcast</th>
                 </tr>
-                <tr ng-repeat="usefulThing in usefulThings | orderBy: orderByTag : order | filter: usefulThingsFilter">
-                    <td><a href="{{usefulThing.link}}" target="_blank">{{usefulThing.provider}}</a></td>
-                    <td ng-bind="usefulThing.description"></td>
+                <tr ng-repeat="usefulThing in usefulThings | orderBy: orderByTag : order | utFilter: usefulThingsFilter">
+                    <td><a href="{{::usefulThing.link}}" target="_blank">{{::usefulThing.name}}</a></td>
+                    <td ng-bind="::usefulThing.description"></td>
                     <td tags="usefulThing.tags" tag-converter></td>
-                    <td ng-bind="usefulThing.podcastId"></td>
+                    <td ng-bind="::usefulThing.podcastId"></td>
                 </tr>
             </table>
         </div>

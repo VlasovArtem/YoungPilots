@@ -181,6 +181,9 @@ header .header {
 .outer-contact-block {
   height: 125px;
 }
+#contacts div > hr {
+  margin: 0 0 10px 0;
+}
 
 /*Footer Section*/
 .img-circle + div > span:first-child {
@@ -283,9 +286,9 @@ blockquote {
   max-height: 105px;
 }
 
-
 /*Useful Things section*/
 #useful {
+  font-family: 'Lato', sans-serif;
   display: inline-block;
   border: 1px solid rgba(0, 0, 0, .1);
   -webkit-background-clip: padding-box; /* for Safari */
@@ -357,6 +360,13 @@ blockquote {
   .conf > div:last-child {
     height: 80px;
   }
+  .conf > div:last-child > a {
+    color: white;
+  }
+  .conf > div:last-child > p {
+    margin-top: 10px;
+    text-align: center;
+  }
   .conf > div > div:first-child {
     font-weight: 500;
     font-size: larger;
@@ -365,6 +375,9 @@ blockquote {
   .conf > div > div {
     margin-left: auto;
     margin-right: auto;
+  }
+  .conf > div > hr {
+    margin-bottom: 5px;
   }
   .conf-desc {
     text-align: justify;
@@ -442,9 +455,6 @@ th[sort] {
   margin-right: auto;
   border-radius: 4px;
 }
-  .conference > h2 {
-    text-align: center;
-  }
 #conf-content {
   height: 170px;
 }
@@ -458,7 +468,7 @@ th[sort] {
   #conf-content #description > p {
     text-align: justify;
   }
-#conf-content > #bottom {
+#bottom {
   position: absolute;
   bottom: 1px;
   color: grey;
@@ -478,6 +488,16 @@ th[sort] {
 }
   .links > a {
     text-decoration: none;
+  }
+  .conference > img {
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    width: 50px;
+    height: 50px;
+  }
+  .conference > h2 {
+    text-align: center;
   }
 
 /*Media Css*/
@@ -508,6 +528,12 @@ th[sort] {
     width: 30px;
     height: 30px;
     margin: 0 10px 0 0;
+  }
+  .conference > img {
+    width: 30px;
+    height: 30px;
+    left: -10px;
+    top: -10px;
   }
 }
 @media screen and (max-width: 1314px) {
@@ -541,9 +567,6 @@ th[sort] {
 }
 
 /*Undefiend*/
-#contacts div > hr {
-  margin-top: 0px;
-}
 .note {
   height: 60px;
   overflow: hidden;

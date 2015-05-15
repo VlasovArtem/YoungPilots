@@ -17,7 +17,7 @@
       "country": "Estonia"
     },
     "description": "The focus of the conference is on Java, the JVM, covering developer tooling, solution architecture, programming methodologies, continuous delivery and programming languages for the JVM platform.",
-    "promocode": null,
+    "promoCode": null,
     "links": {
       "website": "http://2015.geekout.ee/",
       "schedule": "http://2015.geekout.ee/schedule/"
@@ -27,7 +27,8 @@
       "twitter": "https://twitter.com/geekout_ee",
       "facebook": "https://www.facebook.com/GeekOut.ee"
     },
-    "complete": false
+    "complete": false,
+    "joinUs": false
   },
   {
 
@@ -48,7 +49,7 @@
       "country": "Ukraine"
     },
     "description": "Is the largest conference in Ukraine entirely devoted to development using Java platform. JEEConf is the annual conference, which is aimed to bring together all those who use Java technologies for application development.",
-    "promocode": null,
+    "promoCode": null,
     "links": {
       "website": "http://jeeconf.com",
       "schedule": "http://jeeconf.com/program/"
@@ -60,7 +61,8 @@
       "linkedin": "http://www.linkedin.com/groups?mostPopular=&gid=3756491",
       "googleplus": "https://plus.google.com/104337707707625858900/posts"
     },
-    "complete": false
+    "complete": false,
+    "joinUs": false
   },
   {
     "date": {
@@ -80,7 +82,7 @@
       "country": "Ukraine"
     },
     "description": "Every JavaDay attendee is unique, but they all have one thing in common: the passion for knowledge and desire to learn new things. Here's the list of topics you will listen to.",
-    "promocode": null,
+    "promoCode": null,
     "links": {
       "website": "http://javaday.org.ua/lviv/"
     },
@@ -89,7 +91,8 @@
       "twitter": "https://twitter.com/JavaDayUkraine",
       "facebook": "https://www.facebook.com/events/1414950945475379/"
     },
-    "complete": false
+    "complete": false,
+    "joinUs": false
   },
   {
     "date": {
@@ -109,7 +112,7 @@
       "country": "USA"
     },
     "description": "The Most Innovative and Diverse Java Content on the Planet—All in One Place. Make plans now to attend JavaOne 2015. Get the breadth and depth of information you need from sessions, BOFs, hands-on labs, and community members from around the globe.",
-    "promocode": null,
+    "promoCode": null,
     "links": {
       "website": "https://www.oracle.com/javaone/index.html",
       "schedule": "https://www.oracle.com/javaone/agenda/index.html"
@@ -121,7 +124,8 @@
       "linkedin": "https://www.linkedin.com/groups/JavaOne-Conference-1749197",
       "blog": "https://blogs.oracle.com/javaone/"
     },
-    "complete": false
+    "complete": false,
+    "joinUs": true
   },
   {
     "date": {
@@ -141,7 +145,7 @@
       "country": "USA"
     },
     "description": "Google I/O is for developers—the creative coders who are building what's next. Together we'll explore the latest in tech, mobile & beyond. Join us to learn about product and platform innovations at Google, starting with a live kickoff from our Senior Vice-President of Products, Sundar Pichai.",
-    "promocode": null,
+    "promoCode": null,
     "links": {
       "website": "https://events.google.com/io2015/#",
       "schedule": "https://events.google.com/io2015/schedule#day1"
@@ -151,6 +155,37 @@
       "twitter": "https://twitter.com/googledevs",
       "googleplus": "https://plus.google.com/+GoogleDevelopers"
     },
-    "complete": false
+    "complete": false,
+    "joinUs": false
+  },
+  {
+    "date": {
+      "startDate": {
+        "date": "Sep 14 2015",
+        "time": "15:00"
+      },
+      "endDate": {
+        "date": "Sep 17 2015",
+        "time": "14:15"
+      },
+      "timezone": "GMT-0400"
+    },
+    "name": "SpringOne 2GX",
+    "location": {
+      "city": "Washington DC",
+      "country": "USA"
+    },
+    "description": "Spring is coming. All that you are interested in Spring framework can be found at one of the conference",
+    "promoCode": null,
+    "links": {
+      "website": "http://springone2gx.com/",
+      "schedule": "https://2015.event.springone2gx.com/schedule/2015-09-15"
+    },
+    "checked": true,
+    "socials": {
+      "twitter": "https://twitter.com/springone2gx"
+    },
+    "complete": false,
+    "joinUs": true
   }
 ]
