@@ -4,7 +4,7 @@
 var app = angular.module('youngPilots', [
     'ngRoute', 'underscore', 'ui.bootstrap', 'base64',
     'main.controllers', 'main.directives', 'main.services', 'main.filters',
-    'useful.controllers', 'useful.directives',
+    'useful.controllers', 'useful.directives', 'useful.filters',
     'conference.controllers', 'conference.directives', 'conference.filters', 'conference.services'
 ]);
 app.config(['$routeProvider',

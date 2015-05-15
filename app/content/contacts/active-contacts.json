@@ -15,7 +15,7 @@
       "location": "NY, USA",
       "note": "Creator and one of the mastermind of podcast 'Razbor Poletov'. Master of contribution on Github. I develop the software that helps people to run their business."
     },
-    "img": "style/image/contacts-img/gamov.jpeg",
+    "img": "style/image/contacts-img/gamov.png",
     "role": "Creator"
   },
   {
@@ -34,7 +34,7 @@
       "location": "Moscow, Russia",
       "note": "Creator and one of the mastermind of podcast 'Razbor Poletov'"
     },
-    "img": "style/image/contacts-img/abashev.jpeg",
+    "img": "style/image/contacts-img/abashev.png",
     "role": "Creator"
   },
   {
@@ -53,7 +53,7 @@
       "location": "Tallinn, Estonia",
       "note": "Java Champion since 2014."
     },
-    "img": "style/image/contacts-img/arhipov.jpeg",
+    "img": "style/image/contacts-img/arhipov.png",
     "role": "Guest"
   },
   {
@@ -72,7 +72,7 @@
       "location": "Bay Area, USA",
       "note": "Happy husband, father and Googler"
     },
-    "img": "style/image/contacts-img/churbanov.jpeg",
+    "img": "style/image/contacts-img/churbanov.png",
     "role": "Guest"
   },
   {
@@ -91,7 +91,7 @@
       "location": "Netanya, Israel",
       "note": "Developer Advocate of JFrog, the creators of Artifactory Binary Repository, the home of Bintray, and JavaOne 2011 Duke Choice Awards winner."
     },
-    "img": "style/image/contacts-img/baruch.jpeg",
+    "img": "style/image/contacts-img/baruch.png",
     "role": "Guest"
   },
   {
@@ -110,7 +110,7 @@
       "location": "Moscow, Russia",
       "note": "Gradle and Spring fan. Passionate about Groovy and ReactiveX"
     },
-    "img": "style/image/contacts-img/tolkachev.jpeg",
+    "img": "style/image/contacts-img/tolkachev.png",
     "role": "Guest"
   }
 ]
