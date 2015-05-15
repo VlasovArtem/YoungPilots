@@ -10,8 +10,6 @@
 .navbar-default .navbar-nav > li > a:focus,
 .top-button:hover,
 .top-button:focus,
-.footer-socials a:hover,
-.footer-socials a:focus,
 .more-tags:hover,
 .more-tags:focus,
 .reset-month:hover,
@@ -51,15 +49,13 @@ section {
   left: 0;
   background-color: rgba(0,0,0,0.2);
 }
-#block > div:nth-child(3) {
-  padding-right: 45px;
-}
+
 #block > div:nth-child(2) > div {
   padding-left: 0;
 }
-#block > div:first-child {
-  padding-left: 0;
-}
+/*#block > div:first-child {*/
+  /*padding-left: 0;*/
+/*}*/
 #block > div:last-child > div {
   text-align: left;
 }
@@ -82,9 +78,11 @@ header {
 }
 #header-main {
   height: 350px;
-  display: table-cell;
-  vertical-align: middle;
+  padding-top: 50px;
 }
+  #header-main > div:first-child {
+    text-align: center;
+  }
 header .header {
   font-size: 70pt;
 }
@@ -107,11 +105,11 @@ header .header {
   font-size: smaller;
   font-weight: 400;
   text-align: left;
-  display: table;
+  display: inline-block;
 }
 .broadcast {
   color: grey;
-  width: 30%;
+  padding-left: 10px;
 }
   .broadcast > a {
     text-decoration: none;
@@ -184,6 +182,16 @@ header .header {
 #contacts div > hr {
   margin: 0 0 10px 0;
 }
+.note {
+  height: 60px;
+  overflow: hidden;
+  margin-bottom: 0px;
+  text-align: justify;
+}
+.main-data {
+  min-height: 185px;
+  margin-bottom: 10px;
+}
 
 /*Footer Section*/
 .img-circle + div > span:first-child {
@@ -213,9 +221,6 @@ footer {
   footer .container-fluid {
     height: 100%
   }
-  footer > div.row:last-child {
-    text-align: center;
-  }
   footer a[href] {
     color: #C5C2D1;
     text-decoration: none;
@@ -235,11 +240,7 @@ footer {
     margin-right: auto;
     padding-bottom: 20px;
   }
-  footer > div {
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
-  footer > div:last-child{
+  footer > #block > div:last-child{
     text-align: center;
   }
 .footer-content {
@@ -264,7 +265,6 @@ footer {
   background: url("image/quotes-black-and-white.jpg") center fixed no-repeat;
   position: relative;
   background-size: cover;
-
 }
   #quote-section > div:not(:nth-child(1)) {
     color: #fff;
@@ -330,18 +330,12 @@ blockquote {
   background: url("image/conferences/backgroud/conference1.jpg") center fixed no-repeat;
   position: relative;
   background-size: cover;
+  color: #fff;
 }
   #conf-section .parallax-overlay {
     background-color: rgba(0,0,0,0.8) !important;
   }
-  #conf-section > div:not(:nth-child(1)) {
-    color: #fff;
-    max-width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-  }
-  #conf-section > div:last-child {
+  #conf-section > #block > div:last-child {
     position: absolute;
     width: 80%;
     bottom: 10px;
@@ -565,17 +559,13 @@ th[sort] {
     font-size: small;
   }
 }
+@media screen and (max-width: 523px) {
+  #header-main {
+    height: auto;
+  }
+}
 
 /*Undefiend*/
-.note {
-  height: 60px;
-  overflow: hidden;
-  margin-bottom: 0px;
-}
-.main-data {
-  min-height: 185px;
-  margin-bottom: 10px;
-}
 .filter {
   height: 25px;
 }

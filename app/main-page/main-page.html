@@ -1,6 +1,5 @@
 <header class="container-fluid parallax">
     <div class="parallax-overlay"></div>
-    <div></div>
     <div id="content">
         <nav class="navbar navbar-default main-nav-menu">
             <div class="navbar-header">
@@ -14,15 +13,14 @@
             </div>
             <div class="collapse navbar-collapse" id="navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li><a href="http://razbor-poletov.com/" target="_blank">Разбор Полётов</a></li>
-                    <li><a href="#useful">Полезняшки</a></li>
-                    <li><a href="#conference">Конференции</a></li>
+                    <li><a href="http://razbor-poletov.com/" target="_blank">Razbor Poletov</a></li>
+                    <li><a href="#useful">Useful Things</a></li>
+                    <li><a href="#conference">Conferences</a></li>
                 </ul>
             </div>
         </nav>
         <div id="header-main">
-            <div class="col-md-12" style="text-align: center">
-                <!--<span><img src="style/image/Helment-with-shadow.png" class="main-img"/></span>-->
+            <div class="col-md-12">
                 <span class="header">Young Pilots</span>
             </div>
             <div class="col-md-offset-3 col-md-6 header-text">
@@ -89,33 +87,35 @@
 </section>
 <section class="container-fluid section-parallax parallax" id="conf-section">
     <div class="parallax-overlay"></div>
-    <div class="row">
-        <h1 class="header">Conferences</h1>
-    </div>
-    <div class="col-md-4 col-sm-6 conf"
-         ng-repeat="conference in ::conferences | orderBy: getDateMillis | filter: isComplete() | limitTo: 3">
-        <div>
-            <div ng-bind="::conference.name"></div>
-            <div id="where-and-when">
+    <div id="block">
+        <div class="col-md-12">
+            <h1 class="header">Conferences</h1>
+        </div>
+        <div class="col-md-4 col-sm-6 conf"
+             ng-repeat="conference in ::conferences | orderBy: getDateMillis | filter: isComplete() | limitTo: 3">
+            <div>
+                <div ng-bind="::conference.name"></div>
+                <div id="where-and-when">
                 <span class="glyphicon glyphicon-calendar">{{conference | confStartDate:'MMM d'}}
                     {{conference.date.endDate == null ? '' : ' - ' + (conference | confEndDate: 'd')}}</span>
                 <span class="glyphicon glyphicon-map-marker" ng-bind="conference.location.city + ', ' + conference.location.country"
                       style="float: right;"></span>
+                </div>
+                <div class="conf-desc" ng-bind="conference.description"></div>
             </div>
-            <div class="conf-desc" ng-bind="conference.description"></div>
+            <div>
+                <hr/>
+                <a href="{{::conference.links.website}}" target="_blank">{{::conference.links
+                    .website}}</a>
+                <p ng-if="conference.promoCode">Promo code: <strong>{{::conference
+                    .promoCode}}</strong></p>
+                <br/>
+            </div>
         </div>
-        <div>
-            <hr/>
-            <a href="{{::conference.links.website}}" target="_blank">{{::conference.links
-                .website}}</a>
-            <p ng-if="conference.promoCode">Promo code: <strong>{{::conference
-                .promoCode}}</strong></p>
-            <br/>
+        <div class="countdown"
+             ng-repeat="conference in conferences | orderBy: getDateMillis | filter: isComplete() | limitTo: 1"
+             date="conference.date.startDate" offset="conference.date.timezone">
         </div>
-    </div>
-    <div class="countdown"
-         ng-repeat="conference in conferences | orderBy: getDateMillis | filter: isComplete() | limitTo: 1"
-         date="conference.date.startDate" offset="conference.date.timezone">
     </div>
 </section>
 <section class="container-fluid block" id="contact-section">
@@ -136,84 +136,90 @@
 </section>
 <section class="container-fluid section-parallax parallax" id="quote-section">
     <div class="parallax-overlay"></div>
-    <div class="row">
-        <h1 class="header">Deep Thoughts</h1>
-    </div>
-    <div class="col-md-4" ng-repeat="quote in quotes | limitTo: quotesLimit">
-        <blockquote>
-            <p>{{quote}}</p>
-        </blockquote>
+    <div id="block">
+        <div class="col-md-12">
+            <h1 class="header">Deep Thoughts</h1>
+        </div>
+        <div class="col-md-4" ng-repeat="quote in quotes | limitTo: quotesLimit">
+            <blockquote>
+                <p>{{quote}}</p>
+            </blockquote>
+        </div>
     </div>
 </section>
 <footer class="container-fluid">
-    <div class="row">
-        <img src="style/image/top-button.png" class="top-button"/>
-    </div>
-    <div class="row">
-        <div class="col-md-5">
-            <h3>O Сайте</h3>
-            YoungPilots - это сайт организатор, одного из лучших ИТ подкастов <a href="http://razbor-poletov.com/" target="_blank"
-                >"Razbor Poletov"</a>. На этом сайте собраны
-            все самые
-            полезные ссылки, которыми делятся создатели и гости проекта. Один из разделов этого сайта посвящен
-            ИТ Конференциям по всему миру.
-            <ul class="list-unstyled list-inline socials footer-socials">
-                <li>
-                    <a href="https://plus.google.com/+Razbor-poletov/posts" class="navbar-brand" target="_blank">
-                        <img src="style/image/google-plus-black.png" alt="Google+"/>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/razbor-poletov/razbor-poletov.github.com" class="navbar-brand" target="_blank">
-                        <img src="style/image/github-black.png" alt="Github"/>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://gitter.im/razbor-poletov/razbor-poletov.github.com" class="navbar-brand" target="_blank">
-                        <img class="img-circle"
-                             src="style/image/gitter-black.png"
-                             alt="Gitter"/>
-                    </a>
-                </li>
-            </ul>
+    <div id="block">
+        <div class="col-md-12 col-sm-12 col-xs-12 button">
+            <img src="style/image/top-button.png" class="top-button"/>
         </div>
-        <div class="col-md-3 author">
-            <h3>Авторы подкаста</h3>
-            <ul class="list-unstyled">
-                <li>Виктор Гамов</li>
-                <li><a href="https://twitter.com/gamussa" target="_blank">Twitter</a></li>
-                <li><a href="https://github.com/gAmUssA" target="_blank">Github</a></li>
-                <li><a href="https://www.linkedin.com/in/vikgamov" target="_blank">Linkedin</a></li>
-                <li>Алексей Абашев</li>
-                <li><a href="https://twitter.com/a_abashev" target="_blank">Twitter</a></li>
-                <li><a href="https://github.com/abashev" target="_blank">Github</a></li>
-                <li><a href="https://www.linkedin.com/in/abashev/ru" target="_blank">Linkedin</a></li>
-            </ul>
+        <div class="col-md-12 col-sm-12 col-xs-12 content">
+            <div class="col-md-5 col-sm-5 col-xs-12">
+                <h3>About</h3>
+                YoungPilots - это сайт организатор, одного из лучших ИТ подкастов <a href="http://razbor-poletov.com/" target="_blank"
+                    >"Razbor Poletov"</a>. На этом сайте собраны
+                все самые
+                полезные ссылки, которыми делятся создатели и гости проекта. Один из разделов этого сайта посвящен
+                ИТ Конференциям по всему миру.
+                <ul class="list-unstyled list-inline socials footer-socials">
+                    <li>
+                        <a href="https://plus.google.com/+Razbor-poletov/posts" class="navbar-brand" target="_blank">
+                            <img src="style/image/google-plus-black.png" alt="Google+"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/razbor-poletov/razbor-poletov.github.com" class="navbar-brand" target="_blank">
+                            <img src="style/image/github-black.png" alt="Github"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://gitter.im/razbor-poletov/razbor-poletov.github.com" class="navbar-brand" target="_blank">
+                            <img class="img-circle"
+                                 src="style/image/gitter-black.png"
+                                 alt="Gitter"/>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-12 author">
+                <h3>Podcast Authors</h3>
+                <ul class="list-unstyled">
+                    <li>Виктор Гамов</li>
+                    <li><a href="https://twitter.com/gamussa" target="_blank">Twitter</a></li>
+                    <li><a href="https://github.com/gAmUssA" target="_blank">Github</a></li>
+                    <li><a href="https://www.linkedin.com/in/vikgamov" target="_blank">Linkedin</a></li>
+                    <li>Алексей Абашев</li>
+                    <li><a href="https://twitter.com/a_abashev" target="_blank">Twitter</a></li>
+                    <li><a href="https://github.com/abashev" target="_blank">Github</a></li>
+                    <li><a href="https://www.linkedin.com/in/abashev/ru" target="_blank">Linkedin</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-6 author">
+                <h3>Author</h3>
+                <ul class="list-unstyled">
+                    <li>Власов Артём</li>
+                    <li><a href="https://twitter.com/" target="_blank">Twitter</a></li>
+                    <li><a href="https://github.com/VlasovArtem" target="_blank">Github</a></li>
+                    <li><a href="https://ua.linkedin.com/in/vlasovartem" target="_blank">Linkedin</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-6">
+                <h3>Links</h3>
+                <ul class="list-unstyled">
+                    <li><a href="http://razbor-poletov.com/" target="_blank">Razbor Poletov</a></li>
+                    <li><a href="http://razbor-poletov.com/blog/archives/" target="_blank">Podcasts Archive</a></li>
+                    <li><a href="http://razbor-poletov.com/broadcast.html" target="_blank">Broadcast Live</a></li>
+                    <li><a href="http://feeds.feedburner.com/razbor-podcast" target="_blank">RSS</a></li>
+                    <li><a href="https://plus.google.com/+Razbor-poletov/posts" target="_blank">Google +</a></li>
+                    <li><a href="https://play.google.com/store/apps/details?id=com.shonenfactory.razborpoletov" target="_blank">Google Play</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="col-md-2 author">
-            <h3>Автор сайта</h3>
-            <ul class="list-unstyled">
-                <li>Власов Артём</li>
-                <li><a href="https://twitter.com/" target="_blank">Twitter</a></li>
-                <li><a href="https://github.com/VlasovArtem" target="_blank">Github</a></li>
-                <li><a href="https://ua.linkedin.com/in/vlasovartem" target="_blank">Linkedin</a></li>
-            </ul>
+        <div>
+            <h4>©2015 <a
+                    href="https://github.com/VlasovArtem"
+                    target="_blank">vlasovartem
+            </a></h4>
         </div>
-        <div class="col-md-2">
-            <h3>Links</h3>
-            <ul class="list-unstyled">
-                <li><a href="http://razbor-poletov.com/blog/archives/" target="_blank">Архив подкастов</a></li>
-                <li><a href="https://plus.google.com/+Razbor-poletov/posts" target="_blank">Google +</a></li>
-                <li><a href="http://razbor-poletov.com/broadcast.html" target="_blank">Broadcast Live</a></li>
-                <li><a href="https://play.google.com/store/apps/details?id=com.shonenfactory.razborpoletov" target="_blank">Google Play</a></li>
-            </ul>
-        </div>
-    </div>
-    <div>
-        <h4>©2015 <a
-                href="https://github.com/VlasovArtem"
-                target="_blank">vlasovartem
-        </a></h4>
     </div>
 </footer>
 <script>
