@@ -45,7 +45,7 @@ app.directive('searchForm', function($filter) {
                     }
                     return false
                 })
-            })
+            });
         },
         template:
         '<form class="form-inline col-md-offset-1 col-md-10" id="search"> ' +
