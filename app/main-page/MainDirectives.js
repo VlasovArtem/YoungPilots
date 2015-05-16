@@ -3,26 +3,6 @@
  */
 var app = angular.module('main.directives',[]);
 
-app.directive('align', function() {
-    return {
-        restrict: 'A',
-        compile: function(element, attrs) {
-            console.log(element);
-            var verticalAlignAttrs = ["baseline", "bottom", "middle", "sub", "super", "text-bottom", "text-top", "top", "inherit"];
-            var align = _.contains(verticalAlignAttrs, attrs['align']) ? attrs['align'] : "baseline";
-            var headerHeight = element[0].offsetParent.offsetHeight;
-            var allContentHeight = null;
-            var contentHeight = element[0].offsetHeight;
-            for(var i = 0; i < element[0].offsetParent.children.length; i++) {
-                if(!_.isEqual(element[0].offsetParent.children[i].className, 'parallax-overlay')) {
-                    allContentHeight += element[0].offsetParent.children[i].offsetHeight;
-                }
-            }
-            var finalHeight = (headerHeight - allContentHeight) + contentHeight;
-            element.css({'height': finalHeight, 'vertical-align': align, 'display': 'table-cell'});
-        }
-    }
-});
 app.directive('broadcast', function($timeout, BroadcastLive, $route, Broadcast, $filter) {
     return {
         restrict: 'A',
@@ -105,7 +85,6 @@ app.directive('broadcast', function($timeout, BroadcastLive, $route, Broadcast, 
                     });
                 } else {
                     timeoutMillis = 24 * 60 * 60 * 1000;
-                    console.log('One day millis');
                 }
             };
             var newBroadcastDate = function() {

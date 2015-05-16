@@ -1,7 +1,7 @@
 /**
  * Created by artemvlasov on 19/04/15.
  */
-var app = angular.module('main.controllers', ['ngCookies']);
+var app = angular.module('main.controllers', []);
 
 app.controller('MainCtrl', ['activeContacts', 'usefulThings', 'conferences', 'quotes', '$scope', '$filter', 'Broadcast',
     function(activeContacts, usefulThings, conferences, quotes, $scope, $filter, Broadcast) {

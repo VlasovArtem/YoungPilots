@@ -1,11 +1,10 @@
 'use strict';
 
-// Declare app level module which depends on views, and components
 var app = angular.module('youngPilots', [
-    'ngRoute', 'underscore', 'ui.bootstrap', 'base64',
+    'ngRoute', 'underscore', 'ui.bootstrap',
     'main.controllers', 'main.directives', 'main.services', 'main.filters',
     'useful.controllers', 'useful.directives', 'useful.filters',
-    'conference.controllers', 'conference.directives', 'conference.filters', 'conference.services'
+    'conference.controllers', 'conference.directives', 'conference.filters'
 ]);
 app.config(['$routeProvider',
     function($routeProvider) {
