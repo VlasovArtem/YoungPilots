@@ -12,7 +12,7 @@
     <div class="row">
         <div class="col-md-12">
             <div class="col-md-6 col-sm-6 conf-grid"
-                 ng-repeat="conference in ::conferences | orderBy: getDateMillis | matchDate: filteredMonth">
+                 ng-repeat="conference in conferences | orderBy: getDateMillis | matchDate: filteredMonth">
                 <div class="col-md-10 col-md-offset-1 conference">
                     <h2 ng-bind="conference.name"></h2>
                     <img ng-src="style/image/conferences/join-us.png" class="img-circle"
