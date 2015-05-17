@@ -1,8 +1,4 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html lang="en" ng-app="youngPilots" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html lang="en" ng-app="youngPilots" class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html lang="en" ng-app="youngPilots" class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en" ng-app="youngPilots" class="no-js"> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,29 +14,11 @@
   <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:100,400&subset=latin,cyrillic' rel='stylesheet'
         type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
-  <script src="app/bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
 <body>
 <div ng-view></div>
+<script src="app/bower_components/requirejs/require.js" data-main="app/main.js"></script>
 </body>
-<script src="app/bower_components/jquery/dist/jquery.js"></script>
-<script src="app/bower_components/angular/angular.js"></script>
-<script src="app/bower_components/angular-route/angular-route.js"></script>
-<script src="app/js/app.js"></script>
-<script src="app/main-page/MainControllers.js"></script>
-<script src="app/main-page/MainServices.js"></script>
-<script src="app/main-page/MainDirectives.js"></script>
-<script src="app/main-page/MainFilters.js"></script>
-<script src="app/useful-things-page/UsefulThingsControllers.js"></script>
-<script src="app/useful-things-page/UsefulThingsDirectives.js"></script>
-<script src="app/useful-things-page/UsefulThingsFilters.js"></script>
-<script src="app/conferences-page/ConferencesControllers.js"></script>
-<script src="app/conferences-page/ConferencesDirectives.js"></script>
-<script src="app/conferences-page/ConferencesFilters.js"></script>
-<script src="app/bower_components/bootstrap/dist/js/bootstrap.js"></script>
-<script src="app/bower_components/angular-resource/angular-resource.js"></script>
-<script src="app/bower_components/underscore/underscore.js"></script>
-<script src="app/bower_components/angular-underscore-module/angular-underscore-module.js"></script>
-<script src="app/bower_components/angular-bootstrap/ui-bootstrap.js"></script>
-<script src="app/bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
 </html>
+
+
