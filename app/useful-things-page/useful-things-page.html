@@ -14,7 +14,7 @@
                     <th style="width: 15%;" sort="name">Name</th>
                     <th style="width: 52%;" sort="description">Description</th>
                     <th sort="tags">Tags</th>
-                    <th style="width: 8%;" sort="podcastId" default="true">Podcast</th>
+                    <th style="width: 8%;" sort="podcastId" init="true">Podcast</th>
                 </tr>
                 <tr ng-repeat="usefulThing in usefulThings | orderBy: orderByTag : order | utFilter: usefulThingsFilter">
                     <td><a href="{{::usefulThing.link}}" target="_blank">{{::usefulThing.name}}</a></td>
