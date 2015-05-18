@@ -57,18 +57,31 @@ section {
   padding-left: 0;
 }
 /*#block > div:first-child {*/
-  /*padding-left: 0;*/
+/*padding-left: 0;*/
 /*}*/
 #block > div:last-child > div {
   text-align: left;
 }
+nav {
+  font-size: medium;
+}
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  -webkit-filter: invert(0%);
+  -moz-filter: invert(0%);
+  -o-filter: invert(0%);
+  filter: invert(0%);
+}
 
 /*Header Section*/
 header {
-  background: url("image/header-background.jpg") center fixed no-repeat;
+  background: url("image/header-background-final2.jpg") center fixed no-repeat;
   min-height: 500px;
   position: relative;
   background-size: cover;
+}
+header .parallax-overlay {
+  background-color: rgba(0,0,0,0.5) !important;
 }
 #content {
   color: #fff;
@@ -83,9 +96,9 @@ header {
   height: 350px;
   padding-top: 50px;
 }
-  #header-main > div:first-child {
-    text-align: center;
-  }
+#header-main > div:first-child {
+  text-align: center;
+}
 header .header {
   font-size: 70pt;
 }
@@ -97,7 +110,6 @@ header .header {
   margin-top: -10px;
 }
 .header-text {
-  font-family: 'Roboto Slab', serif;
   font-weight: 100;
   text-align: center;
   font-size: large;
@@ -114,10 +126,10 @@ header .header {
   color: grey;
   padding-left: 10px;
 }
-  .broadcast > a {
-    text-decoration: none;
-    color: inherit;
-  }
+.broadcast > a {
+  text-decoration: none;
+  color: inherit;
+}
 #content > .header-text:last-child > div {
   display: table-cell;
 }
@@ -137,24 +149,24 @@ header .header {
   background-color: transparent !important;
   border-color: transparent !important;
 }
-  .main-nav-menu .navbar-nav > li > a {
-    color: #46b8da;
-    font-size: larger;
-  }
-  .main-nav-menu .navbar-brand {
-    color: #46b8da;
-    font-size: larger;
-  }
-  .navbar-default .navbar-toggle {
-    border-color: #46b8da;
-  }
-  .navbar-default .navbar-toggle .icon-bar {
-    background-color: #46b8da;;
-  }
-  .navbar-default .navbar-toggle:hover,
-  .navbar-default .navbar-toggle:focus {
-    opacity: 0.2;
-  }
+.main-nav-menu .navbar-nav > li > a {
+  color: #46b8da;
+  /*font-size: larger;*/
+}
+.main-nav-menu .navbar-brand {
+  color: #46b8da;
+  font-size: larger;
+}
+.navbar-default .navbar-toggle {
+  border-color: #46b8da;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #46b8da;;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  opacity: 0.2;
+}
 .main-img {
   width: 80px;
   height: 80px;
@@ -164,18 +176,17 @@ header .header {
 #contacts {
   display: inline-block;
   min-height: 260px;
-  font-family: 'Lato', sans-serif;
   vertical-align: top;
   padding: 10px 10px 20px 10px;
 }
-  #contacts .img-circle {
-    width: 100px;
-    height: 100px;
-    display: table-cell
-  }
-  #contacts div > span:nth-child(5) {
-    font-size: medium;
-  }
+#contacts .img-circle {
+  width: 100px;
+  height: 100px;
+  display: table-cell
+}
+#contacts div > span:nth-child(5) {
+  font-size: medium;
+}
 .contact-block {
   display: table;
 }
@@ -216,44 +227,42 @@ footer {
   position: relative;
   background-color: #7A919B;
   box-shadow:inset 0 15px 5px -16px #111;
-  font-family: 'Roboto Slab', serif;
-  font-weight: 100;
-  color: #C5C2D1;
+  font-weight: 300;
+  color: #d2d4d6;
   padding: 10px 40px 10px 40px;
 }
-  footer .container-fluid {
-    height: 100%
-  }
-  footer a[href] {
-    color: #C5C2D1;
-    text-decoration: none;
-  }
-  footer a[href]:hover,
-  footer a[href]:focus {
-    color: #F4F4F4;
-    text-decoration: none;
-  }
-  footer .row > div > h3 {
-    color: #E0E0E0;
-    font-weight: 100;
-  }
-  footer+div {
-    max-width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 20px;
-  }
-  footer > #block > div:last-child{
-    text-align: center;
-  }
+footer .container-fluid {
+  height: 100%
+}
+footer a[href] {
+  color: #C5C2D1;
+  text-decoration: none;
+}
+footer a[href]:hover,
+footer a[href]:focus {
+  color: #F4F4F4;
+  text-decoration: none;
+}
+footer .row > div > h3 {
+  color: #E0E0E0;
+}
+footer+div {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+}
+footer > #block > div:last-child{
+  text-align: center;
+}
 .footer-content {
   display: table;
 }
-  .footer-content > div {
-    display: table-column;
-  }
+.footer-content > div {
+  display: table-column;
+}
 .author li:nth-child(4n-3) {
-  font-weight: 400;
+  font-weight: 700;
 }
 .top-button {
   vertical-align: middle;
@@ -265,33 +274,32 @@ footer {
 
 /*Quotes Section*/
 #quote-section {
-  background: url("image/quotes-black-and-white.jpg") center fixed no-repeat;
+  background: url("image/quotes-black-and-white-final.jpg") center fixed no-repeat;
   position: relative;
   background-size: cover;
 }
-  #quote-section > div:not(:nth-child(1)) {
-    color: #fff;
-    max-width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-  }
-  #quote-section .parallax-overlay {
-    background-color: rgba(0,0,0,0.6) !important;
-  }
-  #quote-section > div:nth-child(2) > h1 {
-    padding-left: 0;
-    padding-bottom: 20px;
-  }
+#quote-section > div:not(:nth-child(1)) {
+  color: #fff;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+#quote-section .parallax-overlay {
+  background-color: rgba(0,0,0,0.5) !important;
+}
+#quote-section > div:nth-child(2) > h1 {
+  padding-left: 0;
+  padding-bottom: 20px;
+}
 blockquote {
-  font-family: 'Roboto Slab', serif;
   font-weight: 100;
   max-height: 105px;
 }
 
 /*Useful Things section*/
 #useful {
-  font-family: 'Lato', sans-serif;
+  font-weight: 400;
   display: inline-block;
   border: 1px solid rgba(0, 0, 0, .1);
   -webkit-background-clip: padding-box; /* for Safari */
@@ -303,26 +311,26 @@ blockquote {
   height: 110px;
   vertical-align: top;
 }
-  #useful > span {
-    font-weight: 700;
-    text-transform: capitalize;
-  }
-  #useful > a {
-    float:right;
-  }
-  #useful > .description {
-    height: 60px;
-    overflow: hidden;
-    white-space: normal;
-  }
-  #useful > .tags {
-    vertical-align: bottom;
-    cursor: pointer;
-    overflow: hidden;
-  }
-  #useful-things-section > #block > div:last-child {
-      text-align: center;
-  }
+#useful > span {
+  font-weight: 700;
+  text-transform: capitalize;
+}
+#useful > a {
+  float:right;
+}
+#useful > .description {
+  height: 60px;
+  overflow: hidden;
+  white-space: normal;
+}
+#useful > .tags {
+  vertical-align: bottom;
+  cursor: pointer;
+  overflow: hidden;
+}
+#useful-things-section > #block > div:last-child {
+  text-align: center;
+}
 .more-tags {
   font-size: larger;
   vertical-align: middle;
@@ -330,68 +338,69 @@ blockquote {
 
 /*Conference Section*/
 #conf-section {
-  background: url("image/conferences/backgroud/conference1.jpg") center fixed no-repeat;
+  background: url("image/conferences/backgroud/conference-final.jpg") center fixed no-repeat;
   position: relative;
   background-size: cover;
   color: #fff;
 }
-  #conf-section .parallax-overlay {
-    background-color: rgba(0,0,0,0.8) !important;
-  }
-  #conf-section > #block > div:last-child {
-    position: absolute;
-    width: 80%;
-    bottom: 10px;
-  }
+#conf-section .parallax-overlay {
+  background-color: rgba(0,0,0,0.8) !important;
+}
+.countdown {
+  position: absolute;
+  width: 80%;
+  top: 10px;
+}
 .conf {
-  font-family: 'Roboto Slab', serif;
-  font-weight: 100;
+  font-weight: 200;
   /*border: 2px solid grey;*/
 }
-  .conf > div {
-    height: 140px;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .conf > div:last-child {
-    height: 80px;
-  }
-  .conf > div:last-child > a {
-    color: white;
-  }
-  .conf > div:last-child > p {
-    margin-top: 10px;
-    text-align: center;
-  }
-  .conf > div > div:first-child {
-    font-weight: 500;
-    font-size: larger;
-    text-align: center;
-  }
-  .conf > div > div {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .conf > div > hr {
-    margin-bottom: 5px;
-  }
-  .conf-desc {
-    text-align: justify;
-    overflow: hidden;
-    height: 80px;
-  }
+.conf > div {
+  height: 180px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.conf > div:last-child {
+  height: 80px;
+}
+.conf > div:last-child > a {
+  color: white;
+}
+.conf > div:last-child > p {
+  margin-top: 10px;
+  text-align: center;
+  font-size: medium;
+}
+.conf > div > div:first-child {
+  font-weight: 400;
+  font-size: x-large;
+  text-align: center;
+}
+.conf > div > div {
+  margin-left: auto;
+  margin-right: auto;
+}
+.conf > div > hr {
+  margin-bottom: 5px;
+}
+.conf-desc {
+  text-align: justify;
+  overflow: hidden;
+  height: 110px;
+  font-size: medium;
+}
 label {
   color: #23527c !important;
 }
 #where-and-when {
-  font-size: medium;
+  font-size: large;
   font-weight: 300;
   padding-bottom: 5px;
 }
-  #where-and-when > span {
-    line-height: 2;
-  }
+#where-and-when > span {
+  line-height: 2;
+}
 
 /*Useful Things Page*/
 .filter {
@@ -402,23 +411,23 @@ label {
   box-shadow: none;
   border-radius: 0;
 }
-  .filter:focus {
-    border-color: #66afe9;
-    outline: 0;
-    -webkit-box-shadow: 0 0 0 0 rgba(102, 175, 233, .6);
-    box-shadow: 0 0 0 0 rgba(102, 175, 233, .6);
-  }
-  .filter + .input-group-addon {
-    border: 0;
-    border-radius: 0;
-    background: transparent;
-    color: #ccc;
-    opacity: .8;
-  }
-  .filter + .input-group-addon:focus,
-  .filter + .input-group-addon:hover {
-    color: #66afe9;
-  }
+.filter:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 0 rgba(102, 175, 233, .6);
+  box-shadow: 0 0 0 0 rgba(102, 175, 233, .6);
+}
+.filter + .input-group-addon {
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: #ccc;
+  opacity: .8;
+}
+.filter + .input-group-addon:focus,
+.filter + .input-group-addon:hover {
+  color: #66afe9;
+}
 #usefulThings-page > .row:first-child > div {
   margin-bottom: 10px;
 }
@@ -455,16 +464,24 @@ th[sort] {
 #conf-content {
   height: 170px;
 }
-  #conf-content #description {
-    height: 140px;
-    overflow: hidden;
-  }
-  #conf-content #description > h4{
-    text-align: center;
-  }
-  #conf-content #description > p {
-    text-align: justify;
-  }
+#conf-content #description {
+  height: 140px;
+  overflow: hidden;
+}
+#conf-content #description > h4{
+  text-align: center;
+  font-size: large;
+  font-weight: 400;
+}
+#conf-content #description > p {
+  text-align: justify;
+  font-size: medium;
+  overflow: hidden;
+  max-height: 90px;
+}
+#conf-content > p {
+  font-size: large;
+}
 #bottom {
   position: absolute;
   bottom: 1px;
@@ -475,27 +492,43 @@ th[sort] {
 .conf-socials {
   display: inline;
 }
-  .conf-socials > a > img {
-    width: 50px;
-    height: 50px;
-    margin: 0 15px 0 0;
-  }
+.conf-socials > a > img {
+  width: 50px;
+  height: 50px;
+  margin: 0 15px 0 0;
+}
 .links > a > span {
   font-size: x-large;
 }
-  .links > a {
-    text-decoration: none;
-  }
-  .conference > img {
-    position: absolute;
-    left: -20px;
-    top: -20px;
-    width: 50px;
-    height: 50px;
-  }
-  .conference > h2 {
-    text-align: center;
-  }
+.links > a {
+  text-decoration: none;
+}
+.conference > img {
+  position: absolute;
+  left: -20px;
+  top: -20px;
+  width: 50px;
+  height: 50px;
+}
+.conference > h2 {
+  text-align: center;
+}
+
+/*About Page*/
+.about h1 {
+  text-align: center;
+}
+.about .description {
+  font-size: large;
+  text-align: justify;
+}
+.about ul {
+  font-size: large;
+  text-align: justify;
+}
+.about ul > li > span {
+  font-weight: 700;
+}
 
 /*Media Css*/
 @media screen and (min-width: 1200px) {
@@ -521,6 +554,10 @@ th[sort] {
   }
 }
 @media screen and (max-width: 450px){
+  .join-us {
+    width: 40px !important;
+    height: 40px !important;
+  }
   .conf-socials > a > img {
     width: 30px;
     height: 30px;
@@ -535,17 +572,10 @@ th[sort] {
 }
 @media screen and (max-width: 1314px) {
   .conf > div {
-    height: 140px;
     width: 100%;
   }
   blockquote {
     max-height: none;
-  }
-  #where-and-when > span {
-    word-spacing: -11px;
-  }
-  #where-and-when > span:first-child {
-    width: 40%;
   }
   #content > .header-text:last-child > div {
     padding-right: 10px;
@@ -604,5 +634,5 @@ th[sort] {
 }
 /*Useful Things Page Css*/
 /*.glyphicon-bullhorn {*/
-  /*-webkit-animation: pulse .9s ease 1.6s infinite alternate-reverse;*/
+/*-webkit-animation: pulse .9s ease 1.6s infinite alternate-reverse;*/
 /*}*/

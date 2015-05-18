@@ -16,3 +16,19 @@ services.factory('ContactsFactory', ["$resource", function($resource) {
 }]).factory('ContentFactory', ["$resource", function($resource) {
     return $resource('app/content/:folder/:filename', {folder: '@folder', filename: '@filename'});
 }]);
+
+services.factory('UsefulThingsLimit', function() {
+    var initialWindowInnerWidth = window.innerWidth;
+    var initialUsefulThingsLimit = 20;
+    return {
+        getLimit: function() {
+            if(initialWindowInnerWidth >= 850) {
+                return initialUsefulThingsLimit;
+            } else if(initialWindowInnerWidth >= 590 && initialWindowInnerWidth < 850) {
+                return initialUsefulThingsLimit/2
+            } else {
+                return (initialUsefulThingsLimit/2)/2
+            }
+        }
+    }
+});

@@ -3,8 +3,8 @@
  */
 var app = angular.module('main.controllers', []);
 
-app.controller('MainCtrl', ['activeContacts', 'usefulThings', 'conferences', 'quotes', '$scope', '$filter', 'Broadcast', 'BroadcastLive',
-    function(activeContacts, usefulThings, conferences, quotes, $scope, $filter, Broadcast, BroadcastLive) {
+app.controller('MainCtrl', ['activeContacts', 'usefulThings', 'conferences', 'quotes', '$scope', '$filter', 'Broadcast', 'BroadcastLive', 'UsefulThingsLimit',
+    function(activeContacts, usefulThings, conferences, quotes, $scope, $filter, Broadcast, BroadcastLive, UsefulThingsLimit) {
         $scope.usefulThings = usefulThings;
         $scope.activeContacts = activeContacts;
         $scope.conferences = conferences;
@@ -13,13 +13,14 @@ app.controller('MainCtrl', ['activeContacts', 'usefulThings', 'conferences', 'qu
             var broadcastDateMillis = $filter('dateMillis')(data.date.startDate, data.date.timezone);
             var currentDateMillis = new Date().getTime();
             if(broadcastDateMillis <= currentDateMillis) {
-                BroadcastLive.get(function(data) {
-                    console.log('Success');
-                    $scope.broadcastData = data;
-                }, function() {
-                    console.log('Error');
-                    $scope.broadcastData = null;
-                })
+                $scope.broadcastData = null;
+                //BroadcastLive.get(function(data) {
+                //    console.log('Success');
+                //    $scope.broadcastData = data;
+                //}, function() {
+                //    console.log('Error');
+                //    $scope.broadcastData = null;
+                //})
             } else {
                 $scope.broadcastData = data;
             }
@@ -29,10 +30,9 @@ app.controller('MainCtrl', ['activeContacts', 'usefulThings', 'conferences', 'qu
             "twitter": "style/image/socials/twitter.png",
             "linkedin": "style/image/socials/linkedin.png"
         };
-        var initialUlLimit = 20;
         var initialContactsLimit = 6;
         var initialQuotesLimit = 12;
-        $scope.utLimit = window.innerWidth < 590 ? initialUlLimit/2 : initialUlLimit;
+        $scope.utLimit = UsefulThingsLimit.getLimit();
         $scope.contacsLimit = window.innerWidth < 590 ? initialContactsLimit/2 : initialContactsLimit;
         $scope.quotesLimit = window.innerWidth < 590 ? initialQuotesLimit/2 : initialQuotesLimit;
         $scope.isComplete = function() {
