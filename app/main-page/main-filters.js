@@ -12,20 +12,20 @@ app.filter('convertDate', function() {
         return new Date(fullDate.join(" "));
     }
 });
-app.filter('dateMillis', function($filter) {
+app.filter('dateMillis', ["$filter", function($filter) {
     return function(date, offset) {
         return $filter('convertDate')(date, offset).getTime();
     }
-});
-app.filter('confStartDate', function($filter) {
+}]);
+app.filter('confStartDate', ["$filter", function($filter) {
     return function(conf, format) {
         var convertedDate = $filter('convertDate')(conf.date.startDate, conf.date.timezone);
         return $filter('date')(convertedDate, format);
     }
-});
-app.filter('confEndDate', function($filter) {
+}]);
+app.filter('confEndDate', ["$filter", function($filter) {
     return function(conf, format) {
         var convertedDate = $filter('convertDate')(conf.date.endDate, conf.date.timezone);
         return $filter('date')(convertedDate, format);
     }
-});
+}]);

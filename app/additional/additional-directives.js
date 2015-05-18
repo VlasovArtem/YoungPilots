@@ -2,7 +2,7 @@
  * Created by artemvlasov on 17/05/15.
  */
 var app = angular.module('additional.directives',[]);
-app.directive('active', function($location) {
+app.directive('active', ["$location", function($location) {
     return {
         restrict: 'A',
         link: function(scope, element, attrs) {
@@ -10,4 +10,4 @@ app.directive('active', function($location) {
             element[0].lastChild.href.indexOf(url) > -1 ? element.addClass('active') : element.removeClass('active');
         }
     }
-});
+}]);

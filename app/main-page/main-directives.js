@@ -3,7 +3,7 @@
  */
 var app = angular.module('main.directives',[]);
 
-app.directive('broadcast', function($timeout, BroadcastLive, $route, Broadcast, $filter) {
+app.directive('broadcast', ["$timeout", "BroadcastLive", "$route", "Broadcast", "$filter", function($timeout, BroadcastLive, $route, Broadcast, $filter) {
     return {
         restrict: 'A',
         link: function(scope, element, attrs) {
@@ -108,8 +108,8 @@ app.directive('broadcast', function($timeout, BroadcastLive, $route, Broadcast, 
             var timeout = $timeout(newDate, timeoutMillis);
         }
     };
-});
-app.directive('countdown', function($timeout, $filter) {
+}]);
+app.directive('countdown', ["$timeout", "$filter", function($timeout, $filter) {
     return {
         restrict: 'C',
         scope: {
@@ -153,7 +153,7 @@ app.directive('countdown', function($timeout, $filter) {
         '<span ng-if="left.second < 10">0</span>{{left.second}}</i>' +
         '</span>'
     }
-});
+}]);
 app.directive('popup', function() {
     return {
         restrict: 'A',
@@ -196,24 +196,24 @@ app.directive('contacts', function() {
         },
         template:
         '<div class="main-data">' +
-            '<div class="outer-contact-block">' +
-                '<div class="contact-block"> ' +
-                    '<img ng-src="{{contact.img}}" class="img-circle"/> ' +
-                    '<div> ' +
-                        '<span ng-if="personalData" ng-bind="personalData"></span><br/> ' +
-                        '<span class="glyphicon glyphicon-map-marker">{{contact.info.location}}</span>' +
-                        '<hr class="style"/> ' +
-                        '<span>{{contact.info.position}} at <a href="{{contact.info.jobWebSite}}">{{contact.info.job}}</a></span> ' +
-                    '</div> ' +
-                '</div> ' +
-                '<p class="glyphicon glyphicon-link" ng-if="contact.info.webSite"> <a href="{{contact.info.webSite}}">{{contact.info.webSite}}</a></p> ' +
-            '</div>' +
-            '<p class="note" ng-if="contact.info.note">{{contact.info.note}}</p> ' +
+        '<div class="outer-contact-block">' +
+        '<div class="contact-block"> ' +
+        '<img ng-src="{{contact.img}}" class="img-circle"/> ' +
+        '<div> ' +
+        '<span ng-if="personalData" ng-bind="personalData"></span><br/> ' +
+        '<span class="glyphicon glyphicon-map-marker">{{contact.info.location}}</span>' +
+        '<hr class="style"/> ' +
+        '<span>{{contact.info.position}} at <a href="{{contact.info.jobWebSite}}">{{contact.info.job}}</a></span> ' +
+        '</div> ' +
+        '</div> ' +
+        '<p class="glyphicon glyphicon-link" ng-if="contact.info.webSite"> <a href="{{contact.info.webSite}}">{{contact.info.webSite}}</a></p> ' +
+        '</div>' +
+        '<p class="note" ng-if="contact.info.note">{{contact.info.note}}</p> ' +
         '</div> ' +
         '<div class="socials"> ' +
-            '<span ng-repeat="(key, value) in contactSocials"> ' +
-                '<a href="{{value}}" target="_blank"><img ng-src="{{key}}"/></a> ' +
-            '</span> ' +
+        '<span ng-repeat="(key, value) in contactSocials"> ' +
+        '<a href="{{value}}" target="_blank"><img ng-src="{{key}}"/></a> ' +
+        '</span> ' +
         '</div>'
     }
 });

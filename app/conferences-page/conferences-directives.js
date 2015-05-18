@@ -16,7 +16,7 @@ app.directive('socials', function() {
         '</div>'
     }
 });
-app.directive('searchForm', function($filter) {
+app.directive('searchForm', ["$filter", function($filter) {
     return {
         restrict: 'E',
         replace: true,
@@ -49,11 +49,11 @@ app.directive('searchForm', function($filter) {
         },
         template:
         '<form class="form-inline col-md-offset-1 col-md-10" id="search"> ' +
-            '<div class="form-group"> ' +
-                '<label for="month-search">Search by month:</label> ' +
-                '<select id="month-search" ng-options="month.label for month in activeMonth" ng-model="filteredMonth" class="form-control"></select> ' +
-                '<span class="glyphicon glyphicon-remove reset-month" ng-click="filteredMonth = undefined"></span> ' +
-            '</div> ' +
+        '<div class="form-group"> ' +
+        '<label for="month-search">Search by month:</label> ' +
+        '<select id="month-search" ng-options="month.label for month in activeMonth" ng-model="filteredMonth" class="form-control"></select> ' +
+        '<span class="glyphicon glyphicon-remove reset-month" ng-click="filteredMonth = undefined"></span> ' +
+        '</div> ' +
         '</form>'
     }
-});
+}]);

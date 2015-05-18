@@ -3,16 +3,16 @@
  */
 var services = angular.module('main.services', ['ngResource']);
 
-services.factory('ContactsFactory', function($resource) {
+services.factory('ContactsFactory', ["$resource", function($resource) {
     return $resource('app/content/contacts/:categories-contacts.json', {categories: '@categories'});
-}).factory('BroadcastLive', function($resource) {
+}]).factory('BroadcastLive', ["$resource", function($resource) {
     return $resource('http://stardust.wavestreamer.com:8062/live/;stream/1');
-}).factory('Broadcast', function($resource) {
+}]).factory('Broadcast', ["$resource", function($resource) {
     return $resource('app/content/broadcast-date.json');
-}).factory('ConferencesFactory', function($resource) {
+}]).factory('ConferencesFactory', ["$resource", function($resource) {
     return $resource('app/content/conferences/conferences.json');
-}).factory('QuotesFactory', function($resource) {
+}]).factory('QuotesFactory', ["$resource", function($resource) {
     return $resource('app/content/quotes/quotes.json');
-}).factory('ContentFactory', function($resource) {
+}]).factory('ContentFactory', ["$resource", function($resource) {
     return $resource('app/content/:folder/:filename', {folder: '@folder', filename: '@filename'});
-});
+}]);

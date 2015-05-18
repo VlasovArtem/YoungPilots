@@ -18,7 +18,7 @@ app.directive('tagConverter', function() {
         template: '<td ng-bind="convertedTags"></td>'
     }
 });
-app.directive('sort', function($http) {
+app.directive('sort', ["$http", function($http) {
     return {
         restrict: 'A',
         link: function(scope, element, attrs) {
@@ -63,4 +63,4 @@ app.directive('sort', function($http) {
             })
         }
     }
-});
+}]);

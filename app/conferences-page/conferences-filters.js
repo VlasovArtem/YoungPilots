@@ -3,7 +3,7 @@
  */
 var app = angular.module('conference.filters', []);
 
-app.filter('matchDate', function($filter) {
+app.filter('matchDate', ["$filter", function($filter) {
     return function(confs, month) {
         return confs.filter(function(conf) {
             if(_.isUndefined(month)) {
@@ -13,4 +13,4 @@ app.filter('matchDate', function($filter) {
             return angular.equals(_date, month.value);
         })
     }
-});
+}]);
