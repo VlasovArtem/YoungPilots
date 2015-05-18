@@ -201,12 +201,12 @@ app.directive('contacts', function() {
         '<img ng-src="{{contact.img}}" class="img-circle"/> ' +
         '<div> ' +
         '<span ng-if="personalData" ng-bind="personalData"></span><br/> ' +
-        '<span class="glyphicon glyphicon-map-marker">{{contact.info.location}}</span>' +
+        '<span class="glyphicon glyphicon-map-marker"></span><span ng-bind="contact.info.location"></span>' +
         '<hr class="style"/> ' +
         '<span>{{contact.info.position}} at <a href="{{contact.info.jobWebSite}}">{{contact.info.job}}</a></span> ' +
         '</div> ' +
         '</div> ' +
-        '<p class="glyphicon glyphicon-link" ng-if="contact.info.webSite"> <a href="{{contact.info.webSite}}">{{contact.info.webSite}}</a></p> ' +
+        '<p ng-if="contact.info.webSite"><span class="glyphicon glyphicon-link"></span><a href="{{contact.info.webSite}}">{{contact.info.webSite}}</a></p>' +
         '</div>' +
         '<p class="note" ng-if="contact.info.note">{{contact.info.note}}</p> ' +
         '</div> ' +
