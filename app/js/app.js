@@ -4,7 +4,8 @@ var app = angular.module('youngPilots', [
     'ngRoute', 'underscore', 'ui.bootstrap',
     'main.controllers', 'main.directives', 'main.services', 'main.filters',
     'useful.controllers', 'useful.directives', 'useful.filters',
-    'conference.controllers', 'conference.directives', 'conference.filters'
+    'conference.controllers', 'conference.directives', 'conference.filters',
+    'additional.directives'
 ]);
 app.config(['$routeProvider',
     function($routeProvider) {
@@ -33,7 +34,7 @@ app.config(['$routeProvider',
                     return ContentFactory.query({folder: "useful-things", filename: "useful-things.json"}).$promise
                 }
             }
-        }).when('/conference', {
+        }).when('/conferences', {
             templateUrl: 'app/conferences-page/conferences-page.html',
             controller: 'ConferenceCtrl',
             resolve: {
@@ -41,6 +42,8 @@ app.config(['$routeProvider',
                     return ContentFactory.query({folder: "conferences", filename: "conferences.json"}).$promise
                 }
             }
+        }).when('/about', {
+            templateUrl: 'app/additional/about.html',
         }).otherwise({redirectTo: '/'})
     }
 ]);

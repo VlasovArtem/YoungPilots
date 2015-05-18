@@ -6,7 +6,7 @@ var services = angular.module('main.services', ['ngResource']);
 services.factory('ContactsFactory', function($resource) {
     return $resource('app/content/contacts/:categories-contacts.json', {categories: '@categories'});
 }).factory('BroadcastLive', function($resource) {
-    return $resource('http://volksmusiknetradio.ice.infomaniak.ch/volksmusiknetradio-128.mp3');
+    return $resource('http://stardust.wavestreamer.com:8062/live/;stream/1');
 }).factory('Broadcast', function($resource) {
     return $resource('app/content/broadcast-date.json');
 }).factory('ConferencesFactory', function($resource) {

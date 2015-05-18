@@ -15,11 +15,14 @@
                  ng-repeat="conference in conferences | orderBy: getDateMillis | matchDate: filteredMonth">
                 <div class="col-md-10 col-md-offset-1 conference">
                     <h2 ng-bind="conference.name"></h2>
-                    <img ng-src="style/image/conferences/join-us.png" class="img-circle"
+                    <img ng-src="style/image/conferences/join-us.png" class="img-circle join-us"
                          ng-if="conference.joinUs"/>
-                    <p><strong>Location:</strong> {{conference.location.city}}, {{conference.location.country}}</p>
-                    <p><strong>Date:</strong> {{conference | confStartDate:'MMM d'}}
-                        {{conference.date.endDate == null ? '' : ' - ' + (conference | confEndDate: 'd')}}</p>
+                    <div id="where-and-when">
+                        <p class=""><strong>Location:</strong> {{conference.location.city}}, {{conference.location
+                            .country}}</p>
+                        <p><strong>Date:</strong> {{conference | confStartDate:'MMM d'}}
+                            {{conference.date.endDate == null ? '' : ' - ' + (conference | confEndDate: 'd')}}</p>
+                    </div>
                     <p class="links">
                         <a href="{{conference.links.website}}"
                            target="_blank"><span class="glyphicon glyphicon-globe" ng-if="conference.links.website"

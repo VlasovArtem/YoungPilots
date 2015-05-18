@@ -13,9 +13,10 @@
             </div>
             <div class="collapse navbar-collapse" id="navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li><a href="http://razbor-poletov.com/" target="_blank">Razbor Poletov</a></li>
-                    <li><a href="#useful">Useful Things</a></li>
-                    <li><a href="#conference">Conferences</a></li>
+                    <li><a href="http://razbor-poletov.com/" target="_blank">Разбор Полётов</a></li>
+                    <li><a href="#useful">Полезняшки</a></li>
+                    <li><a href="#conferences">Конференции</a></li>
+                    <li><a href="#about">О Сайте</a></li>
                 </ul>
             </div>
         </nav>
@@ -24,8 +25,7 @@
                 <span class="header">Young Pilots</span>
             </div>
             <div class="col-md-offset-3 col-md-6 header-text">
-                Добрый день, Добрый вечер, Доброй ночи, Доброго утра, вас приветствует сайт Helper для обожаемого вами
-                подкаста "Разбор Полётов".
+                Добрый день, Добрый вечер, Доброй ночи, Доброго утра, вас приветствует сайт-спутник популярного в узких кругах подкаста «Разбор Полётов». На сайте собраны самые полезные материалы, которыми создатели и гости проекта регулярно делятся со слушателями.
             </div>
         </div>
         <div class="col-md-2 header-text" ng-if="broadcastData">
@@ -96,10 +96,12 @@
             <div>
                 <div ng-bind="::conference.name"></div>
                 <div id="where-and-when">
-                <span class="glyphicon glyphicon-calendar">{{conference | confStartDate:'MMM d'}}
+                <span class="glyphicon glyphicon-calendar"></span><span>{{conference | confStartDate:'MMM d'}}
                     {{conference.date.endDate == null ? '' : ' - ' + (conference | confEndDate: 'd')}}</span>
-                <span class="glyphicon glyphicon-map-marker" ng-bind="conference.location.city + ', ' + conference.location.country"
-                      style="float: right;"></span>
+                    <span style="float: right;">
+                        <span class="glyphicon glyphicon-map-marker"></span>
+                        <span ng-bind="conference.location.city + ', ' + conference.location.country"></span>
+                    </span>
                 </div>
                 <div class="conf-desc" ng-bind="conference.description"></div>
             </div>
@@ -154,7 +156,7 @@
         </div>
         <div class="col-md-12 col-sm-12 col-xs-12 content">
             <div class="col-md-5 col-sm-5 col-xs-12">
-                <h3>About</h3>
+                <h3>О Сайте</h3>
                 YoungPilots - это сайт организатор, одного из лучших ИТ подкастов <a href="http://razbor-poletov.com/" target="_blank"
                     >"Razbor Poletov"</a>. На этом сайте собраны
                 все самые
@@ -181,7 +183,7 @@
                 </ul>
             </div>
             <div class="col-md-3 col-sm-3 col-xs-12 author">
-                <h3>Podcast Authors</h3>
+                <h3>Авторы подкаста</h3>
                 <ul class="list-unstyled">
                     <li>Виктор Гамов</li>
                     <li><a href="https://twitter.com/gamussa" target="_blank">Twitter</a></li>
@@ -194,7 +196,7 @@
                 </ul>
             </div>
             <div class="col-md-2 col-sm-2 col-xs-6 author">
-                <h3>Author</h3>
+                <h3>Автор сайта</h3>
                 <ul class="list-unstyled">
                     <li>Власов Артём</li>
                     <li><a href="https://twitter.com/" target="_blank">Twitter</a></li>

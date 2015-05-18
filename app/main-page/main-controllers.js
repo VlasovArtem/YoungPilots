@@ -3,8 +3,8 @@
  */
 var app = angular.module('main.controllers', []);
 
-app.controller('MainCtrl', ['activeContacts', 'usefulThings', 'conferences', 'quotes', '$scope', '$filter', 'Broadcast',
-    function(activeContacts, usefulThings, conferences, quotes, $scope, $filter, Broadcast) {
+app.controller('MainCtrl', ['activeContacts', 'usefulThings', 'conferences', 'quotes', '$scope', '$filter', 'Broadcast', 'BroadcastLive',
+    function(activeContacts, usefulThings, conferences, quotes, $scope, $filter, Broadcast, BroadcastLive) {
         $scope.usefulThings = usefulThings;
         $scope.activeContacts = activeContacts;
         $scope.conferences = conferences;
@@ -12,7 +12,17 @@ app.controller('MainCtrl', ['activeContacts', 'usefulThings', 'conferences', 'qu
         Broadcast.get(function(data) {
             var broadcastDateMillis = $filter('dateMillis')(data.date.startDate, data.date.timezone);
             var currentDateMillis = new Date().getTime();
-            $scope.broadcastData = broadcastDateMillis > currentDateMillis ? data : null;
+            if(broadcastDateMillis <= currentDateMillis) {
+                BroadcastLive.get(function(data) {
+                    console.log('Success');
+                    $scope.broadcastData = data;
+                }, function() {
+                    console.log('Error');
+                    $scope.broadcastData = null;
+                })
+            } else {
+                $scope.broadcastData = data;
+            }
         });
         $scope.socialIcons = {
             "github": "style/image/socials/github.png",

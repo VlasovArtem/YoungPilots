@@ -30,7 +30,7 @@ app.directive('sort', function($http) {
                 defaultData = data;
                 ascentClass = data.ascentClass;
                 descentClass = data.descentClass;
-                if(attrs.default) {
+                if(attrs.init) {
                     index = 1;
                     scope.orderByTag = attrs.sort;
                     scope.order = data.order.desc;

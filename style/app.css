@@ -1,4 +1,7 @@
 /*General*/
+body {
+  font-family: 'Roboto Slab', serif;
+}
 .block {
   min-height: 700px;
 }
@@ -59,6 +62,16 @@ section {
 #block > div:last-child > div {
   text-align: left;
 }
+nav {
+  font-size: medium;
+}
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  -webkit-filter: invert(0%);
+  -moz-filter: invert(0%);
+  -o-filter: invert(0%);
+  filter: invert(0%);
+}
 
 /*Header Section*/
 header {
@@ -94,7 +107,6 @@ header .header {
   margin-top: -10px;
 }
 .header-text {
-  font-family: 'Roboto Slab', serif;
   font-weight: 100;
   text-align: center;
   font-size: large;
@@ -136,7 +148,7 @@ header .header {
 }
   .main-nav-menu .navbar-nav > li > a {
     color: #46b8da;
-    font-size: larger;
+    /*font-size: larger;*/
   }
   .main-nav-menu .navbar-brand {
     color: #46b8da;
@@ -161,7 +173,6 @@ header .header {
 #contacts {
   display: inline-block;
   min-height: 260px;
-  font-family: 'Lato', sans-serif;
   vertical-align: top;
   padding: 10px 10px 20px 10px;
 }
@@ -213,9 +224,8 @@ footer {
   position: relative;
   background-color: #7A919B;
   box-shadow:inset 0 15px 5px -16px #111;
-  font-family: 'Roboto Slab', serif;
-  font-weight: 100;
-  color: #C5C2D1;
+  font-weight: 300;
+  color: #d2d4d6;
   padding: 10px 40px 10px 40px;
 }
   footer .container-fluid {
@@ -232,7 +242,6 @@ footer {
   }
   footer .row > div > h3 {
     color: #E0E0E0;
-    font-weight: 100;
   }
   footer+div {
     max-width: 1440px;
@@ -250,7 +259,7 @@ footer {
     display: table-column;
   }
 .author li:nth-child(4n-3) {
-  font-weight: 400;
+  font-weight: 700;
 }
 .top-button {
   vertical-align: middle;
@@ -274,21 +283,20 @@ footer {
     position: relative;
   }
   #quote-section .parallax-overlay {
-    background-color: rgba(0,0,0,0.6) !important;
+    background-color: rgba(0,0,0,0.8) !important;
   }
   #quote-section > div:nth-child(2) > h1 {
     padding-left: 0;
     padding-bottom: 20px;
   }
 blockquote {
-  font-family: 'Roboto Slab', serif;
   font-weight: 100;
   max-height: 105px;
 }
 
 /*Useful Things section*/
 #useful {
-  font-family: 'Lato', sans-serif;
+  font-weight: 400;
   display: inline-block;
   border: 1px solid rgba(0, 0, 0, .1);
   -webkit-background-clip: padding-box; /* for Safari */
@@ -335,18 +343,17 @@ blockquote {
   #conf-section .parallax-overlay {
     background-color: rgba(0,0,0,0.8) !important;
   }
-  #conf-section > #block > div:last-child {
+  .countdown {
     position: absolute;
     width: 80%;
-    bottom: 10px;
+    top: 10px;
   }
 .conf {
-  font-family: 'Roboto Slab', serif;
-  font-weight: 100;
+  font-weight: 300;
   /*border: 2px solid grey;*/
 }
   .conf > div {
-    height: 140px;
+    height: 180px;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
@@ -360,10 +367,11 @@ blockquote {
   .conf > div:last-child > p {
     margin-top: 10px;
     text-align: center;
+    font-size: medium;
   }
   .conf > div > div:first-child {
-    font-weight: 500;
-    font-size: larger;
+    font-weight: 400;
+    font-size: x-large;
     text-align: center;
   }
   .conf > div > div {
@@ -376,13 +384,14 @@ blockquote {
   .conf-desc {
     text-align: justify;
     overflow: hidden;
-    height: 80px;
+    height: 110px;
+    font-size: medium;
   }
 label {
   color: #23527c !important;
 }
 #where-and-when {
-  font-size: medium;
+  font-size: large;
   font-weight: 300;
   padding-bottom: 5px;
 }
@@ -458,9 +467,17 @@ th[sort] {
   }
   #conf-content #description > h4{
     text-align: center;
+    font-size: large;
+    font-weight: 400;
   }
   #conf-content #description > p {
     text-align: justify;
+    font-size: medium;
+    overflow: hidden;
+    max-height: 90px;
+  }
+  #conf-content > p {
+    font-size: large;
   }
 #bottom {
   position: absolute;
@@ -494,6 +511,19 @@ th[sort] {
     text-align: center;
   }
 
+/*About Page*/
+.about h1 {
+  text-align: center;
+}
+.about .description {
+  font-size: large;
+  text-align: justify;
+}
+.about ul {
+  font-size: large;
+  text-align: justify;
+}
+
 /*Media Css*/
 @media screen and (min-width: 1200px) {
   .section-parallax {
@@ -518,6 +548,10 @@ th[sort] {
   }
 }
 @media screen and (max-width: 450px){
+  .join-us {
+    width: 40px !important;
+    height: 40px !important;
+  }
   .conf-socials > a > img {
     width: 30px;
     height: 30px;
@@ -532,17 +566,10 @@ th[sort] {
 }
 @media screen and (max-width: 1314px) {
   .conf > div {
-    height: 140px;
     width: 100%;
   }
   blockquote {
     max-height: none;
-  }
-  #where-and-when > span {
-    word-spacing: -11px;
-  }
-  #where-and-when > span:first-child {
-    width: 40%;
   }
   #content > .header-text:last-child > div {
     padding-right: 10px;
