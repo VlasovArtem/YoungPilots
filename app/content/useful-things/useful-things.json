@@ -631,7 +631,7 @@
     ],
     "checked": true,
     "podcastId": 84,
-    "description": "The new Jline"
+    "description": "JDK 9 REPL: Getting Started"
   },
   {
     "link": "http://javaslang.com/",
@@ -661,7 +661,7 @@
     ],
     "checked": true,
     "podcastId": 84,
-    "description": null
+    "description": "WildFly Swarm: Building Microservices with Java EE"
   },
   {
     "link": "https://github.com/oracle",
@@ -672,7 +672,7 @@
     ],
     "checked": true,
     "podcastId": 84,
-    "description": null
+    "description": "Official Oracle GitHub page"
   },
   {
     "link": "https://www.jetbrains.com/cpp-today-oreilly/",
@@ -683,6 +683,6 @@
     ],
     "checked": true,
     "podcastId": 84,
-    "description": null
+    "description": "In this O′Reilly report, you′ll learn why C++ is once again the preferred choice across several diverse industries, after taking a backseat to Java during the 2000s."
   }
 ]
