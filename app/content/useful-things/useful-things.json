@@ -2,12 +2,7 @@
   {
     "link": "http://bitwiseshiftleft.github.com/sjcl/",
     "name": "bitwiseshiftleft",
-    "tags": [
-      "Java",
-      "Git",
-      "GitHub",
-      "Mac OSX"
-    ],
+    "tags": null,
     "checked": true,
     "podcastId": 2,
     "description": "Stanford Javascript Crypto Library"
@@ -16,9 +11,8 @@
     "link": "https://github.com/vesln/issues",
     "name": "issues",
     "tags": [
-      "Git",
       "GitHub",
-      "REST"
+      "terminal"
     ],
     "checked": true,
     "podcastId": 9,
@@ -39,14 +33,11 @@
   },
   {
     "link": "http://code.google.com/p/adbcj/",
-
     "name": "adbcj",
     "tags": [
       "DB",
       "Java",
-      "SQL",
-      "Git",
-      "Apache"
+      "SQL"
     ],
     "checked": true,
     "podcastId": 14,
@@ -57,9 +48,7 @@
     "name": "goldmansachs",
     "tags": [
       "Java",
-      "Framework",
-      "Git",
-      "GitHub"
+      "Framework"
     ],
     "checked": true,
     "podcastId": 14,
@@ -69,9 +58,7 @@
     "link": "http://sourceforge.net/projects/javaconcurrenta/",
     "name": "java concurrenta",
     "tags": [
-      "Java",
-      "Web",
-      "Apache"
+      "Java"
     ],
     "checked": true,
     "podcastId": 14,
@@ -81,10 +68,6 @@
     "link": "http://mosh.mit.edu/",
     "name": "mosh",
     "tags": [
-      "Android",
-      "Git",
-      "Web",
-      "GitHub",
       "Bash"
     ],
     "checked": true,
@@ -96,10 +79,7 @@
     "name": "vertx",
     "tags": [
       "Java",
-      "Maven",
-      "Ruby",
-      "Web",
-      "WebSocket"
+      "JVM"
     ],
     "checked": true,
     "podcastId": 17,
@@ -109,9 +89,9 @@
     "link": "http://dillinger.io/",
     "name": "dillinger",
     "tags": [
-      "Git",
-      "Google",
-      "GitHub"
+      "AngularJS", 
+      "HTML5", 
+      "Markdown"
     ],
     "checked": true,
     "podcastId": 19,
@@ -131,9 +111,7 @@
     "link": "https://github.com/cbeams/distyles",
     "name": "distyles",
     "tags": [
-      "Spring",
-      "Web",
-      "Gradle"
+      "Spring"
     ],
     "checked": true,
     "podcastId": 20,
@@ -145,9 +123,7 @@
     "tags": [
       "Spring",
       "Book",
-      "Java",
-      "REST",
-      "Web"
+      "Java"
     ],
     "checked": true,
     "podcastId": 20,
@@ -158,25 +134,16 @@
     "name": "metrics",
     "tags": [
       "Java",
-      "JVM",
-      "Git",
-      "Apache",
-      "GitHub"
+      "JVM"
     ],
     "checked": true,
     "podcastId": 21,
     "description": "Capturing JVM- and application-level metrics. So you know what's going on."
   },
   {
-    "link": "http://engineering.twitter.com/2012/06/distributed-systems-tracing-with-zipkin.html",
+    "link": "http://twitter.github.io/zipkin/",
     "name": "zipkin",
-    "tags": [
-      "SQL",
-      "Java",
-      "Git",
-      "Google",
-      "Ruby"
-    ],
+    "tags": null,
     "checked": true,
     "podcastId": 21,
     "description": "Zipkin is a distributed tracing system"
@@ -194,13 +161,7 @@
   {
     "link": "http://www.textasticapp.com",
     "name": "textasticapp",
-    "tags": [
-      "Web",
-      "Java",
-      "SQL",
-      "DB",
-      "Mac OSX"
-    ],
+    "tags": null,
     "checked": true,
     "podcastId": 28,
     "description": "Powerful and fast text editor for iPad"
@@ -209,11 +170,8 @@
     "link": "http://anti-code.com/devtools-cheatsheet/",
     "name": "chrome devtools cheatsheet",
     "tags": [
-      "Java",
-      "Google",
-      "Web",
-      "Mac OSX",
-      "Ruby"
+      "Chrome",
+      "Google"
     ],
     "checked": true,
     "podcastId": 29,
@@ -223,10 +181,7 @@
     "link": "http://www.git-legit.org",
     "name": "legit",
     "tags": [
-      "Git",
-      "GitHub",
-      "Mac OSX",
-      "REST"
+      "Git"
     ],
     "checked": true,
     "podcastId": 30,
@@ -236,8 +191,6 @@
     "link": "http://lviggiano.github.com/owner/",
     "name": "lviggiano",
     "tags": [
-      "Git",
-      "GitHub",
       "Java"
     ],
     "checked": true,
@@ -247,13 +200,7 @@
   {
     "link": "http://msgpack.org",
     "name": "msgpack",
-    "tags": [
-      "JSON",
-      "Ruby",
-      "Git",
-      "Java",
-      "Framework"
-    ],
+    "tags": null,
     "checked": true,
     "podcastId": 31,
     "description": "It's like JSON, but fast and small."
@@ -263,10 +210,7 @@
     "name": "java mini profiler",
     "tags": [
       "Java",
-      "SQL",
-      "Spring",
-      "DB",
-      "Web"
+      "SQL"
     ],
     "checked": true,
     "podcastId": 34,
@@ -289,10 +233,8 @@
     "link": "http://squash.io",
     "name": "squash",
     "tags": [
-      "Java",
       "Web",
-      "Git",
-      "DB"
+      "Open source"
     ],
     "checked": true,
     "podcastId": 34,
@@ -302,8 +244,8 @@
     "link": "http://tin.cr/",
     "name": "tin",
     "tags": [
-      "Java",
-      "Mac OSX"
+      "Google",
+      "Chrome"
     ],
     "checked": true,
     "podcastId": 35,
@@ -315,9 +257,7 @@
     "tags": [
       "Web",
       "Framework",
-      "Google",
-      "Git",
-      "GitHub"
+      "Google"
     ],
     "checked": true,
     "podcastId": 35,
@@ -327,8 +267,7 @@
     "link": "https://github.com/alexruiz/fest-assert-2.x",
     "name": "fest assert",
     "tags": [
-      "Java",
-      "Android"
+      "Java"
     ],
     "checked": true,
     "podcastId": 36,
@@ -338,7 +277,7 @@
     "link": "https://github.com/facebook/buck",
     "name": "buck",
     "tags": [
-      "Apache"
+      "Facebook"
     ],
     "checked": true,
     "podcastId": 38,
@@ -347,11 +286,7 @@
   {
     "link": "http://logstash.net/",
     "name": "logstash",
-    "tags": [
-      "Apache",
-      "Web",
-      "Open source"
-    ],
+    "tags": null,
     "checked": true,
     "podcastId": 38,
     "description": "logstash - logs/event transport, processing, management, search."
@@ -373,14 +308,10 @@
     "description": ".gitignore generator for your project"
   },
   {
-    "link": "http://www.togglz.org/quickstart.html",
+    "link": "http://www.togglz.org/",
     "name": "togglz",
     "tags": [
-      "Java",
-      "Spring",
-      "Web",
-      "Framework",
-      "DB"
+      "Java"
     ],
     "checked": true,
     "podcastId": 42,
@@ -391,8 +322,7 @@
     "name": "textql",
     "tags": [
       "SQL",
-      "DB",
-      "Mac OSX"
+      "terminal"
     ],
     "checked": true,
     "podcastId": 55,
@@ -412,7 +342,6 @@
     "link": "https://github.com/sindresorhus/pageres",
     "name": "pageres",
     "tags": [
-      "Google",
       "Web"
     ],
     "checked": true,
@@ -423,10 +352,7 @@
     "link": "https://github.com/alloy/terminal-notifier",
     "name": "terminal notifier",
     "tags": [
-      "Ruby",
-      "Homebrew",
-      "Book",
-      "Web",
+      "terminal"
       "Mac OSX"
     ],
     "checked": true,
@@ -438,8 +364,7 @@
     "name": "desktop maven notifier",
     "tags": [
       "Maven",
-      "Java",
-      "Mac OSX"
+      "Java"
     ],
     "checked": true,
     "podcastId": 56,
@@ -450,10 +375,7 @@
     "name": "code",
     "tags": [
       "Java",
-      "REST",
-      "Git",
-      "Google",
-      "GitHub"
+      "REST"
     ],
     "checked": true,
     "podcastId": 56,
