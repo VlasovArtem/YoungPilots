@@ -1,6 +1,10 @@
 /*General*/
+html {
+  font-size: 1.375em;
+}
 body {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
 }
 .block {
   min-height: 700px;
@@ -293,13 +297,11 @@ footer > #block > div:last-child{
   padding-bottom: 20px;
 }
 blockquote {
-  font-weight: 300;
   max-height: 105px;
 }
 
 /*Useful Things section*/
 #useful {
-  font-weight: 400;
   display: inline-block;
   border: 1px solid rgba(0, 0, 0, .1);
   -webkit-background-clip: padding-box; /* for Safari */
@@ -312,8 +314,8 @@ blockquote {
   vertical-align: top;
 }
 #useful > span {
-  font-weight: 700;
   text-transform: capitalize;
+  font-weight: 700;
 }
 #useful > a {
   float:right;
@@ -351,10 +353,6 @@ blockquote {
   width: 80%;
   top: 10px;
 }
-.conf {
-  font-weight: 300;
-  /*border: 2px solid grey;*/
-}
 .conf > div {
   height: 180px;
   width: 80%;
@@ -372,9 +370,9 @@ blockquote {
   text-align: center;
   font-size: medium;
 }
-.conf > div > div:first-child {
-  font-weight: 400;
-  font-size: x-large;
+.conf .conf-name {
+  font-weight: 700;
+  font-size: 1.414em;
   text-align: center;
 }
 .conf > div > div {
@@ -394,8 +392,8 @@ label {
   color: #23527c !important;
 }
 #where-and-when {
-  font-size: large;
-  font-weight: 400;
+  font-weight: 700;
+  font-size: 1.2em;
   padding-bottom: 5px;
 }
 #where-and-when > span {
@@ -471,7 +469,7 @@ th[sort] {
 #conf-content #description > h4{
   text-align: center;
   font-size: large;
-  font-weight: 400;
+  font-weight: 700;
 }
 #conf-content #description > p {
   text-align: justify;
@@ -512,6 +510,9 @@ th[sort] {
 }
 .conference > h2 {
   text-align: center;
+}
+.conf-grid #where-and-when {
+  font-weight: 400;
 }
 
 /*About Page*/
@@ -593,8 +594,19 @@ th[sort] {
   }
 }
 @media screen and (max-width: 346px){
-  #where-and-when {
-    font-size: 13px;
+  .main-info #where-and-when {
+    font-size: 1em;
+  }
+  .conf-desc {
+    font-size: 1.11em;
+  }
+  .promo-code {
+    font-size: 1em !important;
+  }
+}
+@media screen and (max-width: 340px) {
+  .search-box > form {
+    font-size: 0.9em;
   }
 }
 @media screen and (max-width: 523px) {
