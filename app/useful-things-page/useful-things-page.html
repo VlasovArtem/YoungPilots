@@ -14,13 +14,13 @@
                     <th style="width: 15%;" sort="name">Name</th>
                     <th style="width: 52%;" sort="description">Description</th>
                     <th sort="tags">Tags</th>
-                    <th style="width: 8%;" sort="podcastId" init="true" ng-if="!ignore">Podcast</th>
+                    <th style="width: 8%;" sort="podcastId" init="true" ng-hide="ignore">Podcast</th>
                 </tr>
                 <tr ng-repeat="usefulThing in usefulThings | orderBy: orderByTag : order | utFilter: usefulThingsFilter">
                     <td><a href="{{::usefulThing.link}}" target="_blank">{{::usefulThing.name}}</a></td>
                     <td ng-bind="::usefulThing.description"></td>
                     <td tags="usefulThing.tags" tag-converter></td>
-                    <td ng-bind="::usefulThing.podcastId" ng-if="!ignore"></td>
+                    <td ng-bind="::usefulThing.podcastId" ng-hide="ignore"></td>
                 </tr>
             </table>
         </div>
