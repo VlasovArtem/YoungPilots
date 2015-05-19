@@ -43,8 +43,8 @@
                             <h4>Description</h4>
                             <p ng-bind="conference.description"></p>
                         </div>
-                        <p ng-if="conference.promoCode">Promo code<sup>*</sup>:
-                            <strong>{{conference.promoCode}}</strong></p>
+                        <p ng-if="conference.promoCode" class="promo-code"><strong>Promo code<sup>*</sup>:</strong>
+                            {{conference.promoCode}}</p>
                     </div>
                     <div socials="conference.socials" socials-img="socialsImg"></div>
                     <div id="bottom" ng-if="conference.promoCode"><sup>*</sup>All Promo codes are provided by authors
