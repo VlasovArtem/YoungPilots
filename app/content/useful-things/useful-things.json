@@ -627,7 +627,8 @@
     "link": "http://blog.arungupta.me/jdk9-repl-getting-started/",
     "name": "JDK 9 REPL",
     "tags": [
-      "Java"
+      "Java",
+      "Article"
     ],
     "checked": true,
     "podcastId": 84,
