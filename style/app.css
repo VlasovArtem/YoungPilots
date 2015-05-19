@@ -110,7 +110,7 @@ header .header {
   margin-top: -10px;
 }
 .header-text {
-  font-weight: 100;
+  font-weight: 300;
   text-align: center;
   font-size: large;
   padding-top: 20px;
@@ -293,7 +293,7 @@ footer > #block > div:last-child{
   padding-bottom: 20px;
 }
 blockquote {
-  font-weight: 100;
+  font-weight: 300;
   max-height: 105px;
 }
 
@@ -352,7 +352,7 @@ blockquote {
   top: 10px;
 }
 .conf {
-  font-weight: 200;
+  font-weight: 300;
   /*border: 2px solid grey;*/
 }
 .conf > div {
@@ -395,7 +395,7 @@ label {
 }
 #where-and-when {
   font-size: large;
-  font-weight: 300;
+  font-weight: 400;
   padding-bottom: 5px;
 }
 #where-and-when > span {
