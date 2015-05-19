@@ -622,5 +622,67 @@
     "checked": true,
     "podcastId": 81,
     "description": "Command-line JSON processor"
+  },
+  {
+    "link": "http://blog.arungupta.me/jdk9-repl-getting-started/",
+    "name": "JDK 9 REPL",
+    "tags": [
+      "Java"
+    ],
+    "checked": true,
+    "podcastId": 84,
+    "description": "The new Jline"
+  },
+  {
+    "link": "http://javaslang.com/",
+    "name": "javaslang",
+    "tags": [
+      "Java"
+    ],
+    "checked": true,
+    "podcastId": 84,
+    "description": "Functional component library for Java 8+."
+  },
+  {
+    "link": "https://softwaremill.com/mqperf/",
+    "name": "mqperf",
+    "tags": [],
+    "checked": true,
+    "podcastId": 84,
+    "description": "Evaluating persistent, replicated message queues"
+  },
+  {
+    "link": "http://blog.arungupta.me/wildfly-swarm-microservices-javaee/",
+    "name": "Wildfly Swarm",
+    "tags": [
+      "Java",
+      "WildFly",
+      "Article"
+    ],
+    "checked": true,
+    "podcastId": 84,
+    "description": null
+  },
+  {
+    "link": "https://github.com/oracle",
+    "name": "oracle",
+    "tags": [
+      "Java",
+      "Oracle"
+    ],
+    "checked": true,
+    "podcastId": 84,
+    "description": null
+  },
+  {
+    "link": "https://www.jetbrains.com/cpp-today-oreilly/",
+    "name": "C++ today",
+    "tags": [
+      "Book",
+      "C++"
+    ],
+    "checked": true,
+    "podcastId": 84,
+    "description": null
   }
 ]
