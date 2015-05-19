@@ -352,7 +352,7 @@
     "link": "https://github.com/alloy/terminal-notifier",
     "name": "terminal notifier",
     "tags": [
-      "terminal"
+      "terminal",
       "Mac OSX"
     ],
     "checked": true,
