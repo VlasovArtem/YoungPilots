@@ -10,10 +10,12 @@ app.directive('tagConverter', function() {
         },
         replace: true,
         link: function(scope, element, attrs) {
-            scope.tags.sort();
-            scope.convertedTags = scope.tags.toString().replace(/,/g, function() {
-                return ", ";
-            });
+            if(!_.isNull(scope.tags)) {
+                scope.tags.sort();
+                scope.convertedTags = scope.tags.toString().replace(/,/g, function () {
+                    return ", ";
+                });
+            }
         },
         template: '<td ng-bind="convertedTags"></td>'
     }
