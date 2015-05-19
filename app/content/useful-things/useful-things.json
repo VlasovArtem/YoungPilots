@@ -464,10 +464,7 @@
     "name": "segment",
     "tags": [
       "SQL",
-      "Web",
-      "Android",
-      "Book",
-      "Open source"
+      "Web"
     ],
     "checked": true,
     "podcastId": 57,
@@ -477,11 +474,7 @@
     "link": "http://pragprog.com/book/bhtmux/tmux",
     "name": "pragprog",
     "tags": [
-      "Book",
-      "Ruby",
-      "Java",
-      "Web",
-      "Android"
+      "Book"
     ],
     "checked": true,
     "podcastId": 62,
@@ -492,9 +485,7 @@
     "name": "syntevo",
     "tags": [
       "Git",
-      "GitHub",
-      "Web",
-      "Mac OSX"
+      "GitHub"
     ],
     "checked": true,
     "podcastId": 62,
@@ -506,8 +497,7 @@
     "tags": [
       "Java",
       "Spring",
-      "Book",
-      "REST"
+      "Book"
     ],
     "checked": true,
     "podcastId": 64,
@@ -529,9 +519,7 @@
     "link": "https://github.com/jeluard/semantic-versioning",
     "name": "semantic versioning",
     "tags": [
-      "Java",
-      "Maven",
-      "Apache"
+      "Java"
     ],
     "checked": true,
     "podcastId": 65,
@@ -541,9 +529,7 @@
     "link": "https://github.com/zafarkhaja/java-semver",
     "name": "java semver",
     "tags": [
-      "Java",
-      "Maven",
-      "REST"
+      "Java"
     ],
     "checked": true,
     "podcastId": 65,
@@ -556,8 +542,7 @@
       "Maven",
       "Java",
       "DB",
-      "Git",
-      "SQL"
+      "Git"
     ],
     "checked": true,
     "podcastId": 66,
@@ -568,8 +553,7 @@
     "name": "githut",
     "tags": [
       "Git",
-      "GitHub",
-      "Google"
+      "GitHub"
     ],
     "checked": true,
     "podcastId": 72,
@@ -578,12 +562,7 @@
   {
     "link": "https://github.com/tripit/slate",
     "name": "slate",
-    "tags": [
-      "Ruby",
-      "Framework",
-      "Mac OSX",
-      "REST"
-    ],
+    "tags": null,
     "checked": true,
     "podcastId": 72,
     "description": "Beautiful static documentation for your API"
@@ -592,8 +571,6 @@
     "link": "http://brackets.io/",
     "name": "brackets",
     "tags": [
-      "Google",
-      "Java",
       "Web"
     ],
     "checked": true,
@@ -603,11 +580,7 @@
   {
     "link": "http://www.noisli.com/",
     "name": "noisli",
-    "tags": [
-      "Google",
-      "REST",
-      "Book"
-    ],
+    "tags": null,
     "checked": true,
     "podcastId": 77,
     "description": "Improve focus and boost your productivity. Mix different sounds and create your perfect environment."
@@ -615,11 +588,7 @@
   {
     "link": "http://noiz.io",
     "name": "noiz",
-    "tags": [
-      "Book",
-      "Mac OSX",
-      "REST"
-    ],
+    "tags": null,
     "checked": true,
     "podcastId": 77,
     "description": "Nice sound"
@@ -638,8 +607,7 @@
     "link": "http://bliker.github.io/cmder/",
     "name": "bliker",
     "tags": [
-      "Windows",
-      "Mac OSX"
+      "Windows"
     ],
     "checked": true,
     "podcastId": 77,
@@ -661,9 +629,8 @@
     "link": "https://github.com/HubPress/hubpress.io",
     "name": "hubpress.io",
     "tags": [
-      "Android",
-      "Google",
-      "DB"
+      "GitHub",
+      "Web"
     ],
     "checked": true,
     "podcastId": 78,
@@ -675,7 +642,8 @@
     "tags": [
       "Maven",
       "Gradle",
-      "Android"
+      "Android",
+      "GitHub"
     ],
     "checked": true,
     "podcastId": 78,
@@ -685,8 +653,7 @@
     "link": "https://github.com/yaronn/blessed-contrib",
     "name": "blessed-contrib",
     "tags": [
-      "Java",
-      "Mac OSX"
+      "terminal"
     ],
     "checked": true,
     "podcastId": 78,
@@ -699,7 +666,7 @@
       "Java",
       "Web",
       "JSON",
-      "JVM",
+      "MVC",
       "SQL"
     ],
     "checked": true,
@@ -712,8 +679,7 @@
     "tags": [
       "Java",
       "Maven",
-      "Apache",
-      "REST"
+      "Web"
     ],
     "checked": true,
     "podcastId": 81,
@@ -722,7 +688,7 @@
   {
     "link": "https://github.com/KeyboardFire/mkcast",
     "name": "mkcast",
-    "tags": ["Web"],
+    "tags": ["terminal"],
     "checked": true,
     "podcastId": 81,
     "description": "A tool for creating GIF screencasts of a terminal, with key presses overlaid."
@@ -730,11 +696,7 @@
   {
     "link": "http://stedolan.github.io/jq/",
     "name": "stedolan",
-    "tags": [
-      "JSON",
-      "Web",
-      "Mac OSX"
-    ],
+    "tags": ["JSON"],
     "checked": true,
     "podcastId": 81,
     "description": "Command-line JSON processor"
