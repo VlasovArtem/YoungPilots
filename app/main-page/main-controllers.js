@@ -43,9 +43,12 @@ app.controller('MainCtrl', ['activeContacts', 'usefulThings', 'conferences', 'qu
         $scope.getDateMillis = function(conf) {
             return $filter('dateMillis')(conf.date.startDate, conf.date.timezone);
         };
-        $scope.filterTag = '';
+        $scope.filterText = '';
         $scope.changeFilter = function(tag) {
-            $scope.filterTag = tag;
+            $scope.filterText = {
+                "text": tag,
+                "tag": true
+            };
         };
         $scope.checkTagLimit = function(tags) {
             if(tags.length < 5) {

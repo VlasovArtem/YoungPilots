@@ -319,6 +319,29 @@ label {
 }
 
 
+/*Quotes Section*/
+#quote-section {
+  background: url("image/quotes-black-and-white-final.jpg") center fixed no-repeat;
+  position: relative;
+  background-size: cover;
+}
+#quote-section > div:not(:nth-child(1)) {
+  color: #fff;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+#quote-section .parallax-overlay {
+  background-color: rgba(0,0,0,0.5) !important;
+}
+#quote-section > div:nth-child(2) > h1 {
+  padding-left: 0;
+  padding-bottom: 20px;
+}
+blockquote {
+  max-height: 105px;
+}
 
 /*Footer Section*/
 .img-circle + div {
@@ -374,39 +397,15 @@ footer > #block > div:last-child{
   font-weight: 700;
 }
 .top-button {
-  vertical-align: middle;
-  float: right;
   width: 30px;
   height: 30px;
   opacity: 0.6;
+  float: right;
+}
+.copyright {
+  text-align: center;
 }
 
-
-
-
-/*Quotes Section*/
-#quote-section {
-  background: url("image/quotes-black-and-white-final.jpg") center fixed no-repeat;
-  position: relative;
-  background-size: cover;
-}
-#quote-section > div:not(:nth-child(1)) {
-  color: #fff;
-  max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-}
-#quote-section .parallax-overlay {
-  background-color: rgba(0,0,0,0.5) !important;
-}
-#quote-section > div:nth-child(2) > h1 {
-  padding-left: 0;
-  padding-bottom: 20px;
-}
-blockquote {
-  max-height: 105px;
-}
 
 /*Useful Things Page*/
 .filter {
@@ -451,6 +450,9 @@ blockquote {
 }
 th[sort] {
   cursor: default;
+}
+.useful-tags {
+  cursor: pointer;
 }
 
 
@@ -630,6 +632,9 @@ th[sort] {
   }
   .contact-personal-data {
     font-size: medium;
+  }
+  .footer-content h3 {
+    font-size: 20px;
   }
 }
 

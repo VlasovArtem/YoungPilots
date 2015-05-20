@@ -55,22 +55,22 @@
         </div>
         <div class="row">
             <div class="col-md-offset-4 col-sm-offset-4 col-xs-offset-4 col-md-4 col-sm-5 col-xs-5 input-group">
-                <input type="search" ng-model="filterTag" ng-model-options="{debounce: 750}"
+                <input type="search" ng-model="filterText.text" ng-model-options="{debounce: 750}"
                        placeholder="Filter"
                        class="form-control filter"/>
-                <span class="glyphicon glyphicon-remove input-group-addon" ng-click="filterTag = ''"></span>
+                <span class="glyphicon glyphicon-remove input-group-addon" ng-click="filterText = ''"></span>
             </div>
         </div>
         <div class="col-md-12">
             <div id="useful"
-                 ng-repeat="usefulThing in usefulThings| orderBy: 'podcastId' : true | utFilter: filterTag | limitTo: utLimit">
+                 ng-repeat="usefulThing in usefulThings| orderBy: 'podcastId' : true | utFilter: filterText | limitTo: utLimit">
                 <span ng-bind="::usefulThing.name"></span>
                 <a href="{{usefulThing.link}}" target="_blank">Link</a><br/>
                 <div class="description" ng-bind="::usefulThing.description" popup
                      popup-content="usefulThing.description">
                 </div>
                 <div class="tags" ng-if="usefulThing.tags != null">
-                    <span ng-repeat="tag in ::usefulThing.tags | limitTo: checkTagLimit(usefulThing.tags)">
+                    <span ng-repeat="tag in ::usefulThing.tags | limitTo: checkTagLimit(usefulThing.tags) | orderBy: ''">
                         <span ng-bind="::tag" class="label label-primary tag"
                               ng-click="changeFilter(tag)"></span>
                     </span>
@@ -96,7 +96,7 @@
             <div class="main-info">
                 <div class="conf-name" ng-bind="::conference.name"></div>
                 <div id="where-and-when">
-                <span class="glyphicon glyphicon-calendar"></span><span>{{conference | confStartDate:'MMM d'}}
+                    <span class="glyphicon glyphicon-calendar"></span><span>{{conference | confStartDate:'MMM d'}}
                     {{conference.date.endDate == null ? '' : ' - ' + (conference | confEndDate: 'd')}}</span>
                     <span style="float: right;">
                         <span class="glyphicon glyphicon-map-marker"></span>
@@ -150,11 +150,9 @@
     </div>
 </section>
 <footer class="container-fluid" ng-cloak>
-    <div id="block">
-        <div class="col-md-12 col-sm-12 col-xs-12 button">
-            <img src="style/image/top-button.png" class="top-button"/>
-        </div>
-        <div class="col-md-12 col-sm-12 col-xs-12 content">
+    <div id="block" class="row">
+        <img src="style/image/top-button.png" class="top-button"/>
+        <div class="col-md-11 col-sm-11 col-xs-11 footer-content">
             <div class="col-md-5 col-sm-5 col-xs-12">
                 <h3>О Сайте</h3>
                 YoungPilots - это сайт организатор, одного из лучших ИТ подкастов <a href="http://razbor-poletov.com/" target="_blank"
@@ -182,18 +180,21 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-md-3 col-sm-3 col-xs-12 author">
+            <div class="col-md-3 col-sm-3 col-xs-6 author">
                 <h3>Авторы подкаста</h3>
                 <ul class="list-unstyled">
                     <li>Виктор Гамов</li>
                     <li><a href="https://twitter.com/gamussa" target="_blank">Twitter</a></li>
                     <li><a href="https://github.com/gAmUssA" target="_blank">Github</a></li>
                     <li><a href="https://www.linkedin.com/in/vikgamov" target="_blank">Linkedin</a></li>
+                </ul>
+                <ul class="list-unstyled">
                     <li>Алексей Абашев</li>
                     <li><a href="https://twitter.com/a_abashev" target="_blank">Twitter</a></li>
                     <li><a href="https://github.com/abashev" target="_blank">Github</a></li>
                     <li><a href="https://www.linkedin.com/in/abashev/ru" target="_blank">Linkedin</a></li>
                 </ul>
+
             </div>
             <div class="col-md-2 col-sm-2 col-xs-6 author">
                 <h3>Автор сайта</h3>
@@ -216,12 +217,10 @@
                 </ul>
             </div>
         </div>
-        <div>
-            <h4>©2015 <a
-                    href="https://github.com/VlasovArtem"
-                    target="_blank">vlasovartem
-            </a></h4>
-        </div>
+        <h4 class="copyright col-md-12 col-xs-12 col-sm-12"><span class="glyphicon glyphicon-copyright-mark"></span>2015 <a
+                href="https://github.com/VlasovArtem"
+                target="_blank">vlasovartem
+        </a></h4>
     </div>
 </footer>
 <script>

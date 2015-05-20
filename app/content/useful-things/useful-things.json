@@ -12,7 +12,7 @@
     "name": "issues",
     "tags": [
       "GitHub",
-      "terminal"
+      "Terminal"
     ],
     "checked": true,
     "podcastId": 9,
@@ -72,7 +72,7 @@
     ],
     "checked": true,
     "podcastId": 16,
-    "description": "Remote terminal application"
+    "description": "Remote Terminal application"
   },
   {
     "link": "http://vertx.io/",
@@ -322,7 +322,7 @@
     "name": "textql",
     "tags": [
       "SQL",
-      "terminal"
+      "Terminal"
     ],
     "checked": true,
     "podcastId": 55,
@@ -349,10 +349,10 @@
     "description": "Capture website screenshots"
   },
   {
-    "link": "https://github.com/alloy/terminal-notifier",
-    "name": "terminal notifier",
+    "link": "https://github.com/alloy/Terminal-notifier",
+    "name": "Terminal notifier",
     "tags": [
-      "terminal",
+      "Terminal",
       "Mac OSX"
     ],
     "checked": true,
@@ -575,11 +575,11 @@
     "link": "https://github.com/yaronn/blessed-contrib",
     "name": "blessed-contrib",
     "tags": [
-      "terminal"
+      "Terminal"
     ],
     "checked": true,
     "podcastId": 78,
-    "description": "Build terminal dashboards using ascii/ansi art and javascript"
+    "description": "Build Terminal dashboards using ascii/ansi art and javascript"
   },
   {
     "link": "http://jodd.org/",
@@ -610,10 +610,10 @@
   {
     "link": "https://github.com/KeyboardFire/mkcast",
     "name": "mkcast",
-    "tags": ["terminal"],
+    "tags": ["Terminal"],
     "checked": true,
     "podcastId": 81,
-    "description": "A tool for creating GIF screencasts of a terminal, with key presses overlaid."
+    "description": "A tool for creating GIF screencasts of a Terminal, with key presses overlaid."
   },
   {
     "link": "http://stedolan.github.io/jq/",
@@ -647,7 +647,7 @@
   {
     "link": "https://softwaremill.com/mqperf/",
     "name": "mqperf",
-    "tags": [],
+    "tags": null,
     "checked": true,
     "podcastId": 84,
     "description": "Evaluating persistent, replicated message queues"

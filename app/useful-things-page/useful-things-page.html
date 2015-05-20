@@ -2,7 +2,7 @@
 <div class="container-fluid" id="usefulThings-page" ng-cloak>
     <div class="row">
         <div class="col-md-offset-8 col-sm-offset-7 col-xs-offset-7 col-md-4 col-sm-5 col-xs-5 input-group">
-            <input type="search" ng-model="usefulThingsFilter" ng-model-options="{debounce: 750}" placeholder="Filter"
+            <input type="search" ng-model="usefulThingsFilter.text" ng-model-options="{debounce: 750}" placeholder="Filter"
                    class="form-control filter"/>
             <span class="glyphicon glyphicon-remove input-group-addon" ng-click="usefulThingsFilter = ''"></span>
         </div>
@@ -19,7 +19,14 @@
                 <tr ng-repeat="usefulThing in usefulThings | orderBy: orderByTag : order | utFilter: usefulThingsFilter">
                     <td><a href="{{::usefulThing.link}}" target="_blank">{{::usefulThing.name}}</a></td>
                     <td ng-bind="::usefulThing.description"></td>
-                    <td tags="usefulThing.tags" tag-converter></td>
+                    <td>
+                        <div class="useful-tags" ng-if="usefulThing.tags != null">
+                            <span ng-repeat="tag in ::usefulThing.tags | orderBy: ''">
+                                <span ng-bind="::tag" class="label label-primary tag"
+                                    ng-click="changeFilter(tag)"></span>
+                            </span>
+                        </div>
+                    </td>
                     <td ng-bind="::usefulThing.podcastId" ng-hide="ignore"></td>
                 </tr>
             </table>
