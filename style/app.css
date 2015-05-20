@@ -287,10 +287,14 @@ label {
   vertical-align: top;
   padding: 10px 10px 20px 10px;
 }
-#contacts .img-circle {
+.contact-img {
   width: 100px;
   height: 100px;
   display: table-cell
+}
+.contact-personal-data {
+  font-weight: 600;
+  font-size: large;
 }
 #contacts div > span:nth-child(5) {
   font-size: medium;
@@ -317,10 +321,6 @@ label {
 
 
 /*Footer Section*/
-.img-circle + div > span:first-child {
-  font-weight: 600;
-  font-size: large;
-}
 .img-circle + div {
   display: table-cell;
   vertical-align: top
@@ -627,6 +627,9 @@ th[sort] {
 @media screen and (max-width: 590px) {
   #contacts {
     min-height: inherit;
+  }
+  .contact-personal-data {
+    font-size: medium;
   }
 }
 
