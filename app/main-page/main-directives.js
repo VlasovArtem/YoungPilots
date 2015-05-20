@@ -198,9 +198,9 @@ app.directive('contacts', function() {
         '<div class="main-data">' +
         '<div class="outer-contact-block">' +
         '<div class="contact-block"> ' +
-        '<img ng-src="{{contact.img}}" class="img-circle"/> ' +
+        '<img ng-src="{{contact.img}}" class="contact-img img-circle"/> ' +
         '<div> ' +
-        '<span ng-if="personalData" ng-bind="personalData"></span><br/> ' +
+        '<span ng-if="personalData" ng-bind="personalData" class="contact-personal-data"></span><br/> ' +
         '<span class="glyphicon glyphicon-map-marker"></span><span ng-bind="contact.info.location"></span>' +
         '<hr class="style"/> ' +
         '<span>{{contact.info.position}} at <a href="{{contact.info.jobWebSite}}">{{contact.info.job}}</a></span> ' +
@@ -208,7 +208,7 @@ app.directive('contacts', function() {
         '</div> ' +
         '<p ng-if="contact.info.webSite"><span class="glyphicon glyphicon-link"></span><a href="{{contact.info.webSite}}">{{contact.info.webSite}}</a></p>' +
         '</div>' +
-        '<p class="note" ng-if="contact.info.note">{{contact.info.note}}</p> ' +
+        '<p class="note" ng-if="contact.info.note && !mobile">{{contact.info.note}}</p> ' +
         '</div> ' +
         '<div class="socials"> ' +
         '<span ng-repeat="(key, value) in contactSocials"> ' +

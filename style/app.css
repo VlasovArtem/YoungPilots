@@ -60,9 +60,6 @@ section {
 #block > div:nth-child(2) > div {
   padding-left: 0;
 }
-/*#block > div:first-child {*/
-/*padding-left: 0;*/
-/*}*/
 #block > div:last-child > div {
   text-align: left;
 }
@@ -76,6 +73,8 @@ nav {
   -o-filter: invert(0%);
   filter: invert(0%);
 }
+
+
 
 /*Header Section*/
 header {
@@ -155,7 +154,6 @@ header .header {
 }
 .main-nav-menu .navbar-nav > li > a {
   color: #46b8da;
-  /*font-size: larger;*/
 }
 .main-nav-menu .navbar-brand {
   color: #46b8da;
@@ -176,129 +174,7 @@ header .header {
   height: 80px;
 }
 
-/*Contacts Section*/
-#contacts {
-  display: inline-block;
-  min-height: 260px;
-  vertical-align: top;
-  padding: 10px 10px 20px 10px;
-}
-#contacts .img-circle {
-  width: 100px;
-  height: 100px;
-  display: table-cell
-}
-#contacts div > span:nth-child(5) {
-  font-size: medium;
-}
-.contact-block {
-  display: table;
-}
-.outer-contact-block {
-  height: 125px;
-}
-#contacts div > hr {
-  margin: 0 0 10px 0;
-}
-.note {
-  height: 60px;
-  overflow: hidden;
-  margin-bottom: 0px;
-  text-align: justify;
-}
-.main-data {
-  min-height: 185px;
-  margin-bottom: 10px;
-}
 
-/*Footer Section*/
-.img-circle + div > span:first-child {
-  font-weight: 600;
-  font-size: large;
-}
-.img-circle + div {
-  display: table-cell;
-  vertical-align: top
-}
-.socials img {
-  height: 30px;
-  width: 30px;
-}
-.socials li {
-  width: 50px;
-}
-footer {
-  position: relative;
-  background-color: #7A919B;
-  box-shadow:inset 0 15px 5px -16px #111;
-  font-weight: 300;
-  color: #d2d4d6;
-  padding: 10px 40px 10px 40px;
-}
-footer .container-fluid {
-  height: 100%
-}
-footer a[href] {
-  color: #C5C2D1;
-  text-decoration: none;
-}
-footer a[href]:hover,
-footer a[href]:focus {
-  color: #F4F4F4;
-  text-decoration: none;
-}
-footer .row > div > h3 {
-  color: #E0E0E0;
-}
-footer+div {
-  max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 20px;
-}
-footer > #block > div:last-child{
-  text-align: center;
-}
-.footer-content {
-  display: table;
-}
-.footer-content > div {
-  display: table-column;
-}
-.author li:nth-child(4n-3) {
-  font-weight: 700;
-}
-.top-button {
-  vertical-align: middle;
-  float: right;
-  width: 30px;
-  height: 30px;
-  opacity: 0.6;
-}
-
-/*Quotes Section*/
-#quote-section {
-  background: url("image/quotes-black-and-white-final.jpg") center fixed no-repeat;
-  position: relative;
-  background-size: cover;
-}
-#quote-section > div:not(:nth-child(1)) {
-  color: #fff;
-  max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-}
-#quote-section .parallax-overlay {
-  background-color: rgba(0,0,0,0.5) !important;
-}
-#quote-section > div:nth-child(2) > h1 {
-  padding-left: 0;
-  padding-bottom: 20px;
-}
-blockquote {
-  max-height: 105px;
-}
 
 /*Useful Things section*/
 #useful {
@@ -337,6 +213,8 @@ blockquote {
   font-size: larger;
   vertical-align: middle;
 }
+
+
 
 /*Conference Section*/
 #conf-section {
@@ -400,6 +278,135 @@ label {
   line-height: 2;
 }
 
+
+
+/*Contacts Section*/
+#contacts {
+  display: inline-block;
+  min-height: 260px;
+  vertical-align: top;
+  padding: 10px 10px 20px 10px;
+}
+.contact-img {
+  width: 100px;
+  height: 100px;
+  display: table-cell
+}
+.contact-personal-data {
+  font-weight: 600;
+  font-size: large;
+}
+#contacts div > span:nth-child(5) {
+  font-size: medium;
+}
+.contact-block {
+  display: table;
+}
+.outer-contact-block {
+  height: 125px;
+}
+#contacts div > hr {
+  margin: 0 0 10px 0;
+}
+.note {
+  height: 60px;
+  overflow: hidden;
+  margin-bottom: 0;
+  text-align: justify;
+}
+.main-data {
+  margin-bottom: 10px;
+}
+
+
+/*Quotes Section*/
+#quote-section {
+  background: url("image/quotes-black-and-white-final.jpg") center fixed no-repeat;
+  position: relative;
+  background-size: cover;
+}
+#quote-section > div:not(:nth-child(1)) {
+  color: #fff;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+#quote-section .parallax-overlay {
+  background-color: rgba(0,0,0,0.5) !important;
+}
+#quote-section > div:nth-child(2) > h1 {
+  padding-left: 0;
+  padding-bottom: 20px;
+}
+blockquote {
+  max-height: 105px;
+}
+
+/*Footer Section*/
+.img-circle + div {
+  display: table-cell;
+  vertical-align: top
+}
+.socials img {
+  height: 30px;
+  width: 30px;
+}
+.socials li {
+  width: 50px;
+}
+footer {
+  position: relative;
+  background-color: #7A919B;
+  box-shadow:inset 0 15px 5px -16px #111;
+  font-weight: 300;
+  color: #d2d4d6;
+  padding: 10px 40px 10px 40px;
+}
+footer .container-fluid {
+  height: 100%
+}
+footer a[href] {
+  color: #C5C2D1;
+  text-decoration: none;
+}
+footer a[href]:hover,
+footer a[href]:focus {
+  color: #F4F4F4;
+  text-decoration: none;
+}
+footer .row > div > h3 {
+  color: #E0E0E0;
+}
+footer+div {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+}
+footer > #block > div:last-child{
+  text-align: center;
+}
+.footer-content {
+  display: table;
+}
+.footer-content > div {
+  display: table-column;
+}
+.author li:nth-child(4n-3) {
+  font-weight: 700;
+}
+.top-button {
+  width: 30px;
+  height: 30px;
+  opacity: 0.6;
+  float: right;
+}
+.copyright {
+  text-align: center;
+}
+
+
 /*Useful Things Page*/
 .filter {
   border: none;
@@ -444,6 +451,11 @@ label {
 th[sort] {
   cursor: default;
 }
+.useful-tags {
+  cursor: pointer;
+}
+
+
 
 /*Conference page*/
 .conference {
@@ -582,7 +594,7 @@ th[sort] {
     padding-right: 10px;
   }
   #useful {
-    margin: 10px 10px 10px 0px;
+    margin: 10px 10px 10px 0;
   }
   #block > div:nth-child(3) {
     padding-right: 15px;
@@ -612,6 +624,17 @@ th[sort] {
 @media screen and (max-width: 523px) {
   #header-main {
     height: auto;
+  }
+}
+@media screen and (max-width: 590px) {
+  #contacts {
+    min-height: inherit;
+  }
+  .contact-personal-data {
+    font-size: medium;
+  }
+  .footer-content h3 {
+    font-size: 20px;
   }
 }
 

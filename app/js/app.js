@@ -28,7 +28,7 @@ app.config(['$routeProvider',
             }
         }).when('/useful', {
             templateUrl: 'app/useful-things-page/useful-things-page.html',
-            controller: 'UsefulThinsCtrl',
+            controller: 'UsefulThingsCtrl',
             resolve: {
                 usefulThings: ["ContentFactory", function(ContentFactory) {
                     return ContentFactory.query({folder: "useful-things", filename: "useful-things.json"}).$promise
