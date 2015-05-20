@@ -60,9 +60,6 @@ section {
 #block > div:nth-child(2) > div {
   padding-left: 0;
 }
-/*#block > div:first-child {*/
-/*padding-left: 0;*/
-/*}*/
 #block > div:last-child > div {
   text-align: left;
 }
@@ -76,6 +73,8 @@ nav {
   -o-filter: invert(0%);
   filter: invert(0%);
 }
+
+
 
 /*Header Section*/
 header {
@@ -155,7 +154,6 @@ header .header {
 }
 .main-nav-menu .navbar-nav > li > a {
   color: #46b8da;
-  /*font-size: larger;*/
 }
 .main-nav-menu .navbar-brand {
   color: #46b8da;
@@ -175,6 +173,112 @@ header .header {
   width: 80px;
   height: 80px;
 }
+
+
+
+/*Useful Things section*/
+#useful {
+  display: inline-block;
+  border: 1px solid rgba(0, 0, 0, .1);
+  -webkit-background-clip: padding-box; /* for Safari */
+  background-clip: padding-box;
+  border-radius: 5px;
+  margin: 10px;
+  width: 250px;
+  padding: 5px;
+  height: 110px;
+  vertical-align: top;
+}
+#useful > span {
+  text-transform: capitalize;
+  font-weight: 700;
+}
+#useful > a {
+  float:right;
+}
+#useful > .description {
+  height: 60px;
+  overflow: hidden;
+  white-space: normal;
+}
+#useful > .tags {
+  vertical-align: bottom;
+  cursor: pointer;
+  overflow: hidden;
+}
+#useful-things-section > #block > div:last-child {
+  text-align: center;
+}
+.more-tags {
+  font-size: larger;
+  vertical-align: middle;
+}
+
+
+
+/*Conference Section*/
+#conf-section {
+  background: url("image/conferences/backgroud/conference-final.jpg") center fixed no-repeat;
+  position: relative;
+  background-size: cover;
+  color: #fff;
+}
+#conf-section .parallax-overlay {
+  background-color: rgba(0,0,0,0.8) !important;
+}
+.countdown {
+  position: absolute;
+  width: 80%;
+  top: 10px;
+}
+.conf > div {
+  height: 180px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.conf > div:last-child {
+  height: 80px;
+}
+.conf > div:last-child > a {
+  color: white;
+}
+.conf > div:last-child > p {
+  margin-top: 10px;
+  text-align: center;
+  font-size: medium;
+}
+.conf .conf-name {
+  font-weight: 700;
+  font-size: 1.414em;
+  text-align: center;
+}
+.conf > div > div {
+  margin-left: auto;
+  margin-right: auto;
+}
+.conf > div > hr {
+  margin-bottom: 5px;
+}
+.conf-desc {
+  text-align: justify;
+  overflow: hidden;
+  height: 110px;
+  font-size: medium;
+}
+label {
+  color: #23527c !important;
+}
+#where-and-when {
+  font-weight: 700;
+  font-size: 1.2em;
+  padding-bottom: 5px;
+}
+#where-and-when > span {
+  line-height: 2;
+}
+
+
 
 /*Contacts Section*/
 #contacts {
@@ -203,13 +307,14 @@ header .header {
 .note {
   height: 60px;
   overflow: hidden;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   text-align: justify;
 }
 .main-data {
-  min-height: 185px;
   margin-bottom: 10px;
 }
+
+
 
 /*Footer Section*/
 .img-circle + div > span:first-child {
@@ -276,6 +381,9 @@ footer > #block > div:last-child{
   opacity: 0.6;
 }
 
+
+
+
 /*Quotes Section*/
 #quote-section {
   background: url("image/quotes-black-and-white-final.jpg") center fixed no-repeat;
@@ -298,106 +406,6 @@ footer > #block > div:last-child{
 }
 blockquote {
   max-height: 105px;
-}
-
-/*Useful Things section*/
-#useful {
-  display: inline-block;
-  border: 1px solid rgba(0, 0, 0, .1);
-  -webkit-background-clip: padding-box; /* for Safari */
-  background-clip: padding-box;
-  border-radius: 5px;
-  margin: 10px;
-  width: 250px;
-  padding: 5px;
-  height: 110px;
-  vertical-align: top;
-}
-#useful > span {
-  text-transform: capitalize;
-  font-weight: 700;
-}
-#useful > a {
-  float:right;
-}
-#useful > .description {
-  height: 60px;
-  overflow: hidden;
-  white-space: normal;
-}
-#useful > .tags {
-  vertical-align: bottom;
-  cursor: pointer;
-  overflow: hidden;
-}
-#useful-things-section > #block > div:last-child {
-  text-align: center;
-}
-.more-tags {
-  font-size: larger;
-  vertical-align: middle;
-}
-
-/*Conference Section*/
-#conf-section {
-  background: url("image/conferences/backgroud/conference-final.jpg") center fixed no-repeat;
-  position: relative;
-  background-size: cover;
-  color: #fff;
-}
-#conf-section .parallax-overlay {
-  background-color: rgba(0,0,0,0.8) !important;
-}
-.countdown {
-  position: absolute;
-  width: 80%;
-  top: 10px;
-}
-.conf > div {
-  height: 180px;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-}
-.conf > div:last-child {
-  height: 80px;
-}
-.conf > div:last-child > a {
-  color: white;
-}
-.conf > div:last-child > p {
-  margin-top: 10px;
-  text-align: center;
-  font-size: medium;
-}
-.conf .conf-name {
-  font-weight: 700;
-  font-size: 1.414em;
-  text-align: center;
-}
-.conf > div > div {
-  margin-left: auto;
-  margin-right: auto;
-}
-.conf > div > hr {
-  margin-bottom: 5px;
-}
-.conf-desc {
-  text-align: justify;
-  overflow: hidden;
-  height: 110px;
-  font-size: medium;
-}
-label {
-  color: #23527c !important;
-}
-#where-and-when {
-  font-weight: 700;
-  font-size: 1.2em;
-  padding-bottom: 5px;
-}
-#where-and-when > span {
-  line-height: 2;
 }
 
 /*Useful Things Page*/
@@ -444,6 +452,8 @@ label {
 th[sort] {
   cursor: default;
 }
+
+
 
 /*Conference page*/
 .conference {
@@ -582,7 +592,7 @@ th[sort] {
     padding-right: 10px;
   }
   #useful {
-    margin: 10px 10px 10px 0px;
+    margin: 10px 10px 10px 0;
   }
   #block > div:nth-child(3) {
     padding-right: 15px;
@@ -612,6 +622,11 @@ th[sort] {
 @media screen and (max-width: 523px) {
   #header-main {
     height: auto;
+  }
+}
+@media screen and (max-width: 590px) {
+  #contacts {
+    min-height: inherit;
   }
 }
 

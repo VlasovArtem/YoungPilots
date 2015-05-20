@@ -38,25 +38,6 @@
     "role": "Creator"
   },
   {
-    "firstname": "Anton",
-    "lastname": "Arhipov",
-    "socials": {
-      "github": "https://github.com/antonarhipov",
-      "twitter": "https://twitter.com/antonarhipov",
-      "linkedin": "http://ee.linkedin.com/in/antonarhipov"
-    },
-    "info": {
-      "position": "Product manager",
-      "job": "ZeroTurnaround",
-      "jobWebSite": "http://zeroturnaround.com/",
-      "webSite": "arhipov.blogspot.com",
-      "location": "Tallinn, Estonia",
-      "note": "Java Champion since 2014. Working on JRebel and XRebel tools as a product manager. In the spare time I'm involved with Devclub developers community."
-    },
-    "img": "style/image/contacts-img/arhipov.png",
-    "role": "Guest"
-  },
-  {
     "firstname": "Dmirty",
     "lastname": "Churbanov",
     "socials": {
@@ -73,6 +54,25 @@
       "note": "Happy husband, father and Googler"
     },
     "img": "style/image/contacts-img/churbanov.png",
+    "role": "Guest"
+  },
+  {
+    "firstname": "Anton",
+    "lastname": "Arhipov",
+    "socials": {
+      "github": "https://github.com/antonarhipov",
+      "twitter": "https://twitter.com/antonarhipov",
+      "linkedin": "http://ee.linkedin.com/in/antonarhipov"
+    },
+    "info": {
+      "position": "Product manager",
+      "job": "ZeroTurnaround",
+      "jobWebSite": "http://zeroturnaround.com/",
+      "webSite": "arhipov.blogspot.com",
+      "location": "Tallinn, Estonia",
+      "note": "Java Champion since 2014. Working on JRebel and XRebel tools as a product manager. In the spare time I'm involved with Devclub developers community."
+    },
+    "img": "style/image/contacts-img/arhipov.png",
     "role": "Guest"
   },
   {

@@ -30,10 +30,10 @@ app.controller('MainCtrl', ['activeContacts', 'usefulThings', 'conferences', 'qu
             "twitter": "style/image/socials/twitter.png",
             "linkedin": "style/image/socials/linkedin.png"
         };
-        var initialContactsLimit = 6;
         var initialQuotesLimit = 12;
         $scope.utLimit = UsefulThingsLimit.getLimit();
-        $scope.contacsLimit = window.innerWidth < 590 ? initialContactsLimit/2 : initialContactsLimit;
+        $scope.contacsLimit = 6;
+        $scope.mobile = window.innerWidth < 590;
         $scope.quotesLimit = window.innerWidth < 590 ? initialQuotesLimit/2 : initialQuotesLimit;
         $scope.isComplete = function() {
             return function(query) {

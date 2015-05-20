@@ -208,7 +208,7 @@ app.directive('contacts', function() {
         '</div> ' +
         '<p ng-if="contact.info.webSite"><span class="glyphicon glyphicon-link"></span><a href="{{contact.info.webSite}}">{{contact.info.webSite}}</a></p>' +
         '</div>' +
-        '<p class="note" ng-if="contact.info.note">{{contact.info.note}}</p> ' +
+        '<p class="note" ng-if="contact.info.note && !mobile">{{contact.info.note}}</p> ' +
         '</div> ' +
         '<div class="socials"> ' +
         '<span ng-repeat="(key, value) in contactSocials"> ' +
