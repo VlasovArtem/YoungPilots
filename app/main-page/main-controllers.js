@@ -3,11 +3,11 @@
  */
 var app = angular.module('main.controllers', []);
 
-app.controller('MainCtrl', ['activeContacts', 'usefulThings', 'conferences', 'quotes', '$scope', '$filter', 'Broadcast', 'BroadcastLive', 'UsefulThingsLimit',
-    function(activeContacts, usefulThings, conferences, quotes, $scope, $filter, Broadcast, BroadcastLive, UsefulThingsLimit) {
+app.controller('MainCtrl', ['activeContacts', 'usefulThings', 'conferences', 'quotes', '$scope', '$filter', 'Broadcast', 'BroadcastLive', 'UsefulThingsLimit', 'ContentFactory',
+    function(activeContacts, usefulThings, conferences, quotes, $scope, $filter, Broadcast, BroadcastLive, UsefulThingsLimit, ContentFactory) {
         $scope.usefulThings = usefulThings;
         $scope.activeContacts = activeContacts;
-        $scope.conferences = conferences;
+        $scope.conferences = $filter("complete")(conferences);
         $scope.quotes = quotes;
         Broadcast.get(function(data) {
             var broadcastDateMillis = $filter('dateMillis')(data.date.startDate, data.date.timezone);
@@ -35,6 +35,13 @@ app.controller('MainCtrl', ['activeContacts', 'usefulThings', 'conferences', 'qu
         $scope.contacsLimit = 6;
         $scope.mobile = window.innerWidth < 590;
         $scope.quotesLimit = window.innerWidth < 590 ? initialQuotesLimit/2 : initialQuotesLimit;
+        $scope.setComplete = function(conf) {
+            _.some($scope.conferences, function(conference) {
+                if(_.isEqual(conf, conference)) {
+                    conference.complete = true;
+                }
+            })
+        };
         $scope.isComplete = function() {
             return function(query) {
                 return !query.complete;

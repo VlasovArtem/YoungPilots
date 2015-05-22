@@ -112,14 +112,10 @@ app.directive('broadcast', ["$timeout", "BroadcastLive", "$route", "Broadcast", 
 app.directive('countdown', ["$timeout", "$filter", function($timeout, $filter) {
     return {
         restrict: 'C',
-        scope: {
-            date: '=',
-            offset: '='
-        },
         link: function(scope, element, attrs) {
-
-            var futureUTCTime = $filter('convertDate')(scope.date, scope.offset);
-            var currentUTCTime = new Date().getTime();
+            var conference = scope.$eval(attrs.conf);
+            var futureUTCTime = $filter('convertDate')(conference.date.startDate, conference.date.timezone);
+            var currentUTCTime = new Date();
             var updateDate = function () {
                 currentUTCTime = new Date().getTime();
             };
@@ -143,6 +139,9 @@ app.directive('countdown', ["$timeout", "$filter", function($timeout, $filter) {
             var countdown = function() {
                 updateDate();
                 updateCountdown();
+                if(futureUTCTime < currentUTCTime) {
+                    scope.setComplete(conference);
+                }
                 countdownTimeout = $timeout(countdown, secondMillis);
             };
             var countdownTimeout = $timeout(countdown, secondMillis);

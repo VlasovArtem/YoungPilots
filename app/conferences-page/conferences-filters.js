@@ -14,3 +14,12 @@ app.filter('matchDate', ["$filter", function($filter) {
         })
     }
 }]);
+app.filter('complete', ["$filter", function($filter) {
+    return function(confs) {
+        return confs.filter(function(conf) {
+            var confStartDate = $filter("convertDate")(conf.date.startDate, conf.date.timezone);
+            var currentDate = new Date();
+            return confStartDate > currentDate;
+        })
+    }
+}]);

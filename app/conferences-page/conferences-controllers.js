@@ -6,7 +6,7 @@ var app = angular.module('conference.controllers', []);
 
 app.controller('ConferenceCtrl', ['conferences', '$scope', '$filter',
     function(conferences, $scope, $filter) {
-        $scope.conferences = conferences;
+        $scope.conferences = $filter("complete")(conferences);
         $scope.socialsImg = {
             "twitter": "style/image/socials/conference-socials/twitter-icon.png",
             "facebook": "style/image/socials/conference-socials/facebook-icon.png",
