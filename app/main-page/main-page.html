@@ -115,9 +115,9 @@
             </div>
         </div>
         <div class="countdown"
-             ng-repeat="conference in conferences | orderBy: getDateMillis | filter: isComplete() | limitTo: 1"
-             date="conference.date.startDate" offset="conference.date.timezone">
+             ng-repeat="conference in conferences | orderBy: getDateMillis | filter: isComplete() | limitTo: 1" conf="conference">
         </div>
+        <!--date="conference.date.startDate" offset="conference.date.timezone"-->
     </div>
 </section>
 <section class="container-fluid block" id="contact-section" ng-cloak>
