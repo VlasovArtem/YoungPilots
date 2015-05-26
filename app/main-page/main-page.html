@@ -131,7 +131,11 @@
         <div class="col-md-8 col-md-offset-2">
             <hr class="style"/>
         </div>
-        <div ng-repeat="contact in activeContacts | limitTo: contacsLimit" id="contacts" class="col-md-4 col-xs-12 col-sm-6">
+        <div ng-repeat="contact in activeContacts | limitTo: contacsLimit"
+             id="contacts"
+             class="col-md-4 col-xs-12 col-sm-6 hiding animated"
+             data-animation="fadeInUp"
+             data-appear-top-offset="-50">
             <contacts ng-model="contact"></contacts>
         </div>
     </div>
@@ -226,6 +230,15 @@
 <script>
     $('.top-button').click(function() {
         $('html, body').animate({scrollTop: 0}, 500);
+    });
+    $(function() {
+        $('.animated').appear();
+        $(document.body).on('appear', '.animated', function() {
+            var element = $(this);
+            var animation = element.data('animation');
+            element.addClass(animation + " visible");
+            element.removeClass('hiding');
+        })
     });
 </script>
 <script>
