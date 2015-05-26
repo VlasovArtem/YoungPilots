@@ -317,6 +317,12 @@ label {
 .main-data {
   margin-bottom: 10px;
 }
+.visible {
+  opacity: 1;
+}
+.hiding {
+  opacity: 0;
+}
 
 
 /*Quotes Section*/
