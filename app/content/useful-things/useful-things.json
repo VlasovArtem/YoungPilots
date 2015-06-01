@@ -685,5 +685,92 @@
     "checked": true,
     "podcastId": 84,
     "description": "In this O′Reilly report, you′ll learn why C++ is once again the preferred choice across several diverse industries, after taking a backseat to Java during the 2000s."
+  },
+  {
+    "link": "https://github.com/raydac/jute",
+    "name": "jute",
+    "tags": [
+      "Maven",
+      "JUnit",
+      "Test"
+    ],
+    "checked": true,
+    "podcastId": 85,
+    "description": "Small maven plugin allows to execute JUnit tests as separated external processes."
+  },
+  {
+    "link": "http://javalibs.com/charts",
+    "name": "javalibs",
+    "tags": [],
+    "checked": true,
+    "podcastId": 85,
+    "description": "Comparison of popular libraries"
+  },
+  {
+    "link": "http://devrates.com/",
+    "name": "devrates",
+    "tags": [
+      "Java",
+      "MVC",
+      "Framework",
+      "SQL",
+      "Ruby"
+    ],
+    "checked": true,
+    "podcastId": 85,
+    "description": "Developer libraries rating"
+  },
+  {
+    "link": "http://www.javadeathmatch.com/",
+    "name": "javadeathmatch",
+    "tags": [
+      "Java"
+    ],
+    "checked": true,
+    "podcastId": 85,
+    "description": "See how good you are in Java"
+  },
+  {
+    "link": "https://github.com/mkarneim/pojobuilder",
+    "name": "pojobuilder",
+    "tags": [
+      "Java"
+    ],
+    "checked": true,
+    "podcastId": 85,
+    "description": "A Java Code Generator for Pojo Builders"
+  },
+  {
+    "link": "https://projectlombok.org",
+    "name": "projectlombok",
+    "tags": [
+      "Java"
+    ],
+    "checked": true,
+    "podcastId": 85,
+    "description": "Very spicy additions to the Java programming language"
+  },
+  {
+    "link": "http://news.dartlang.org/2012/02/method-cascades-in-dart-posted-by-gilad.html",
+    "name": "news",
+    "tags": [
+      "Article",
+      "Dart"
+    ],
+    "checked": true,
+    "podcastId": 85,
+    "description": "Method Cascades in Dart"
+  },
+  {
+    "link": "https://developers.google.com/protocol-buffers/docs/proto3",
+    "name": "Proto3",
+    "tags": [
+      "Java",
+      "Google",
+      "Serializer"
+    ],
+    "checked": true,
+    "podcastId": 85,
+    "description": "Language Guide (proto3)"
   }
 ]
