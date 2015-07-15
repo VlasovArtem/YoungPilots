@@ -772,5 +772,48 @@
     "checked": true,
     "podcastId": 85,
     "description": "Language Guide (proto3)"
+  },
+  {
+    "link": "http://jooby.org",
+    "name": "jooby",
+    "tags": [
+      "Java",
+      "Java 8"
+    ],
+    "checked": true,
+    "podcastId": 86,
+    "description": "A minimalist web framework for Java 8"
+  },
+  {
+    "link": "https://github.com/airlift/airlift",
+    "name": "airlift",
+    "tags": [
+    	"Java",
+    	"REST"
+    ],
+    "checked": true,
+    "podcastId": 86,
+    "description": "Airlift framework for building REST services"
+  },
+  {
+    "link": "http://kangax.github.io/compat-table/es6/",
+    "name": "kangax",
+    "tags": [
+      "ECMAScript"
+    ],
+    "checked": true,
+    "podcastId": 86,
+    "description": "ECMAScript compatibility table"
+  },
+  {
+    "link": "https://zarkzork.com/servasm.html",
+    "name": "zarkzork",
+    "tags": [
+      "Webserver",
+      "Assembly"
+    ],
+    "checked": true,
+    "podcastId": 86,
+    "description": "X86_64 Linux webserver in assembler"
   }
 ]
