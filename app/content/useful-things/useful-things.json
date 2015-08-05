@@ -815,5 +815,58 @@
     "checked": true,
     "podcastId": 86,
     "description": "X86_64 Linux webserver in assembler"
+  },
+  {
+    "link": "http://www.javacodegeeks.com/2012/02/high-performance-libraries-in-java.html",
+    "name": "High performance libraries",
+    "tags": [
+      "Java",
+      "Article"
+    ],
+    "checked": true,
+    "podcastId": 87,
+    "description": "There is an increasing number of libraries which are described as high performance and have benchmarks to back that claim up. Here is a selection that I am aware of."
+  },
+  {
+    "link": "https://github.com/typicode/json-server",
+    "name": "json-server",
+    "tags": [
+    	"JSON",
+    	"REST"
+    ],
+    "checked": true,
+    "podcastId": 87,
+    "description": "Get a full fake REST API with zero coding in less than 30 seconds (seriously)"
+  },
+  {
+    "link": "https://github.com/square/leakcanary",
+    "name": "leakcanary",
+    "tags": [
+      "Android",
+      "Java"
+    ],
+    "checked": true,
+    "podcastId": 87,
+    "description": "A memory leak detection library for Android and Java."
+  },
+  {
+    "link": "http://shop.oreilly.com/product/0636920030713.do",
+    "name": "Java 8 Lambdas",
+    "tags": [
+      "Book"
+    ],
+    "checked": true,
+    "podcastId": 87,
+    "description": "You’ll learn through code examples, exercises, and fluid explanations how these anonymous functions will help you write simple, clean, library-level code that solves business problems."
+  },
+  {
+    "link": "http://www.amazon.com/RxJava-Essentials-Ivan-Morgillo/dp/1784399108/",
+    "name": "RxJava Essentials",
+    "tags": [
+      "Book"
+    ],
+    "checked": true,
+    "podcastId": 87,
+    "description": "Create interactive Android apps with Java Reactive Extensions, Learn Reactive Programming through real-life examples that you can use in your Android app."
   }
 ]
