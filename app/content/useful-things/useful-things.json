@@ -878,7 +878,7 @@
 	"checked": true,
     "podcastId": 89,
     "description": "Cheat sheet"
-},
+  },
   {
     "link": "https://github.com/Froussios/Intro-To-RxJava",
     "name": "Intro-To-RxJava",
@@ -973,8 +973,7 @@
   {
     "link": "http://learnxinyminutes.com",
     "name": "Learn X in Y minutes",
-    "tags": [
-   ],
+    "tags": [],
     "checked": true,
     "podcastId": 90,
     "description": "Take a whirlwind tour of your next favorite language. Community-driven!"
