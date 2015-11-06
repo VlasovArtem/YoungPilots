@@ -184,7 +184,7 @@
     "socials": {
       "twitter": "https://twitter.com/springone2gx"
     },
-    "complete": false,
+    "complete": true,
     "joinUs": true
   },
   {
@@ -215,7 +215,7 @@
       "twitter": "https://twitter.com/jugru",
       "facebook": "https://www.facebook.com/jokerconf"
     },
-    "complete": false,
+    "complete": true,
     "joinUs": false
   },
   {
@@ -245,6 +245,35 @@
     "socials": {
       "twitter": "https://twitter.com/jetconf",
       "facebook": "https://facebook.com/jetconf"
+    },
+    "complete": true,
+    "joinUs": true
+  },
+  {
+    "date": {
+      "startDate": {
+        "date": "May 19 2016",
+        "time": "09:00"
+      },
+      "endDate": {
+        "date": "May 20 2016",
+        "time": "18:00"
+      },
+      "timezone": "GMT+0100"
+    },
+    "name": "Spring I/O 2016",
+    "location": {
+      "city": "Barcelona",
+      "country": "Spain"
+    },
+    "description": "The perfect place to obtain critical skills to help you build, run and manage tomorrow's software solutions.",
+    "promoCode": null,
+    "links": {
+      "website": "www.springio.net"
+    },
+    "checked": true,
+    "socials": {
+      "twitter": "https://twitter.com/spring_io"
     },
     "complete": false,
     "joinUs": true
