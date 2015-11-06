@@ -868,5 +868,226 @@
     "checked": true,
     "podcastId": 87,
     "description": "Create interactive Android apps with Java Reactive Extensions, Learn Reactive Programming through real-life examples that you can use in your Android app."
+  },
+  {
+	"link": "http://emacs.sexy/img/How-to-Learn-Emacs-v2-Large.png",
+	"name": "Emacs - sexy",
+	"tags": [
+		"Emacs"
+	],
+	"checked": true,
+    "podcastId": 89,
+    "description": "Cheat sheet"
+}
+  {
+    "link": "https://github.com/Froussios/Intro-To-RxJava",
+    "name": "Intro-To-RxJava",
+    "tags": [
+      "RxJava",
+      "Java"
+    ],
+    "checked": true,
+    "podcastId": 89,
+    "description": "An extensive tutorial on RxJava"
+  },
+  {
+    "link": "http://wiremock.org/java-usage.html#the-client",
+    "name": "Wiremock",
+    "tags": [
+      "Mock"
+      "Java"
+    ],
+    "checked": true,
+    "podcastId": 89,
+    "description": "A tool for mocking HTTP services"
+  },
+  {
+    "link": "http://macradar.ru/software/crax-commander-luchshaya-alternativa-total-commander-dlya-os-x/",
+    "name": "CRAX Commander",
+    "tags": [
+      "Mac OSX"
+    ],
+    "checked": true,
+    "podcastId": 89,
+    "description": "Total commander alternative on Mac OS"
+  },
+  {
+    "link": "http://bytecodeviewer.com",
+    "name": "Bytecode viewer",
+    "tags": [
+      "Java"
+    ],
+    "checked": true,
+    "podcastId": 89,
+    "description": "A Java 8 Jar & Android APK Reverse Engineering Suite (Decompiler, Editor, Debugger & More)"
+  },
+  {
+    "link": "https://msdn.microsoft.com/en-us/library/jj554200.aspx",
+    "name": "CQRS Journey",
+    "tags": [
+      "CQRS",
+      "Book"
+    ],
+    "checked": true,
+    "podcastId": 89,
+    "description": "Exploring CQRS and Event Sourcing"
+  },
+  {
+    "link": "http://binary-repositories-comparison.github.io/",
+    "name": "Binary repositories comparison",
+    "tags": [],
+    "checked": true,
+    "podcastId": 89,
+    "description": "Binary Repository Manager Feature Matrix"
+  },
+  {
+    "link": "https://github.com/nvbn/thefuck",
+    "name": "thefuck",
+    "tags": [
+      "Bash"
+    ],
+    "checked": true,
+    "podcastId": 89,
+    "description": "Magnificent app which corrects your previous console command."
+  },
+  {
+    "link": "http://dev.yorhel.nl/ncdu",
+    "name": "ncdu",
+    "tags": [
+      "Mac OSX"
+    ],
+    "checked": true,
+    "podcastId": 89,
+    "description": "NCurses Disk Usage"
+  },
+  {
+    "link": "https://openport.io",
+    "name": "Openport",
+    "tags": [
+      "SSH"
+    ],
+    "checked": true,
+    "podcastId": 89,
+    "description": "A free cloud-based reverse SSH service."
+  },
+  {
+    "link": "http://learnxinyminutes.com",
+    "name": "Learn X in Y minutes",
+    "tags": [
+   ],
+    "checked": true,
+    "podcastId": 90,
+    "description": "Take a whirlwind tour of your next favorite language. Community-driven!"
+  },
+  {
+    "link": "https://iterm2.com/shell_integration.html",
+    "name": "iTerm 2",
+    "tags": [
+      "Mac OSX"
+    ],
+    "checked": true,
+    "podcastId": 91,
+    "description": "iTerm2 is a terminal emulator for Mac OS X that does amazing things."
+  },
+  {
+    "link": "http://zeroturnaround.com/rebellabs/5-command-line-tools-you-should-be-using/",
+    "name": "5 command line tools",
+    "tags": [
+      "Mac OSX",
+      "Article"
+    ],
+    "checked": true,
+    "podcastId": 91,
+    "description": "5 command line tools you should be using"
+  },
+  {
+    "link": "https://github.com/yudai/gotty",
+    "name": "Gotty",
+    "tags": [
+      "Mac OSX"
+    ],
+    "checked": true,
+    "podcastId": 91,
+    "description": "Share your terminal as a web application"
+  },
+  {
+    "link": "https://asciinema.org/",
+    "name": "Asciinema",
+    "tags": [
+      "Terminal"
+    ],
+    "checked": true,
+    "podcastId": 91,
+    "description": "Record and share your terminal sessions, the right way"
+  },
+  {
+    "link": "http://gitup.co/",
+    "name": "GitUp",
+    "tags": [
+      "Open source",
+      "Mac OSX",
+      "Git"
+    ],
+    "checked": true,
+    "podcastId": 91,
+    "description": "The Git interface you've been missing all your life has finally arrived"
+  },
+  {
+    "link": "https://classroom.github.com/",
+    "name": "Github Classroom",
+    "tags": [
+      "Open source",
+      "Github"
+    ],
+    "checked": true,
+    "podcastId": 92,
+    "description": "Classroom for GitHub automates repository creation and access control."
+  },
+  {
+    "link": "https://github.com/JetBrains/gradle-intellij-plugin",
+    "name": "Gradle Intellij plugin",
+    "tags": [
+    	"Gradle",
+    	"Intellij Idea"
+    ],
+    "checked": true,
+    "podcastId": 92,
+    "description": "Plugin for building plugins for IntelliJ IDEs"
+  },
+  {
+    "link": "https://github.com/Yelp/elastalert",
+    "name": "elastalert",
+    "tags": [
+    	"Framework"
+    ],
+    "checked": true,
+    "podcastId": 92,
+    "description": "Easy & Flexible Alerting With ElasticSearch"
+  },
+  {
+    "link": "http://beust.com/kobalt/home/index.html",
+    "name": "Kobalt",
+    "tags": [],
+    "checked": true,
+    "podcastId": 92,
+    "description": "Kobalt is a build system heavily inspired from Gradle and entirely written in Kotlin"
+  },
+  {
+    "link": "http://www.capsule.io/",
+    "name": "Capsule",
+    "tags": [
+      "Java"
+    ],
+    "checked": true,
+    "podcastId": 96,
+    "description": "Dead-Simple Packaging and Deployment for JVM Apps"
+  },
+  {
+    "link": "https://github.com/sindresorhus/awesome",
+    "name": "Awesome",
+    "tags": [],
+    "checked": true,
+    "podcastId": 96,
+    "description": "A curated list of awesome lists"
   }
 ]
