@@ -868,5 +868,26 @@
     "checked": true,
     "podcastId": 87,
     "description": "Create interactive Android apps with Java Reactive Extensions, Learn Reactive Programming through real-life examples that you can use in your Android app."
-  }
+  },
+  {
+	"link": "http://emacs.sexy/img/How-to-Learn-Emacs-v2-Large.png",
+	"name": "Emacs - sexy",
+	"tags": [
+		"Emacs"
+	],
+	"checked": true,
+    "podcastId": 89,
+    "description": "Cheat sheet"
+  },
+  {
+    "link": "https://github.com/Froussios/Intro-To-RxJava",
+    "name": "Intro-To-RxJava",
+    "tags": [
+      "RxJava",
+      "Java"
+    ],
+    "checked": true,
+    "podcastId": 89,
+    "description": "An extensive tutorial on RxJava"
+  },
 ]
