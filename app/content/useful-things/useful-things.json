@@ -1088,5 +1088,150 @@
     "checked": true,
     "podcastId": 96,
     "description": "A curated list of awesome lists"
+  },
+  {
+    "link": "https://plumbr.eu/landing/handbook-java-lang-outofmemoryerror",
+    "name": "plumbr",
+    "tags": [
+      "Book",
+      "Java"
+    ],
+    "checked": true,
+    "podcastId": 97,
+    "description": "Handbook: Java OutOfMemoryErrors and the 8 Symptoms that cause them"
+  },
+  {
+    "link": "https://bugsnag.com/",
+    "name": "bugsnag",
+    "tags": null,
+    "checked": true,
+    "podcastId": 97,
+    "description": "Tools and workflow to fix every error in all your applications"
+  },
+  {
+    "link": "http://stefanbirkner.github.io/system-rules/",
+    "name": "stefanbirkner",
+    "tags": [
+      "JUnit",
+      "Java",
+      "Test"
+    ],
+    "checked": true,
+    "podcastId": 97,
+    "description": "A collection of JUnit rules for testing code that uses java.lang.System."
+  },
+  {
+    "link": "https://gist.github.com/valadan/3721450",
+    "name": "Latency numbers",
+    "tags": [
+      "GitHub",
+      "Article"
+    ],
+    "checked": true,
+    "podcastId": 97,
+    "description": "Latency numbers every programmer should know"
+  },
+  {
+    "link": "https://github.com/NARKOZ/hacker-scripts",
+    "name": "Hacker scripts",
+    "tags": null,
+    "checked": true,
+    "podcastId": 97,
+    "description": "Based on a true story"
+  },
+  {
+    "link": "https://cloudharmony.com/speedtest",
+    "name": "Cloud Network Test",
+    "tags": null,
+    "checked": true,
+    "podcastId": 97,
+    "description": "Test downlink, latency and dns from your connection to cloud services"
+  },
+  {
+    "link": "http://sonic-pi.net/",
+    "name": "Sonic Pi",
+    "tags": [
+      "Windows",
+      "Mac OSX"
+    ],
+    "checked": true,
+    "podcastId": 98,
+    "description": "A free live coding synth for everyone originally designed to support computing and music lessons within schools."
+  },
+  {
+    "link": "https://raft.github.io",
+    "name": "Raft",
+    "tags": null,
+    "checked": true,
+    "podcastId": 98,
+    "description": "Raft is a consensus algorithm that is designed to be easy to understand."
+  },
+  {
+    "link": "https://github.com/lukehutch/fast-classpath-scanner",
+    "name": "Fast Classpath Scanner",
+    "tags": [
+      "Java",
+      "Scala"
+    ],
+    "checked": true,
+    "podcastId": 98,
+    "description": "Uber-fast, ultra-lightweight Java classpath scanner."
+  },
+  {
+    "link": "http://www.hemingwayapp.com/",
+    "name": "Hemingway App",
+    "tags": null,
+    "checked": true,
+    "podcastId": 98,
+    "description": "Hemingway App makes your writing bold and clear."
+  },
+  {
+    "link": "https://github.com/blog/2047-language-trends-on-github",
+    "name": "Language Trends",
+    "tags": null,
+    "checked": true,
+    "podcastId": 98,
+    "description": "Language Trends on GitHub"
+  },
+  {
+    "link": "http://marked2app.com/",
+    "name": "Marked 2",
+    "tags": null,
+    "checked": true,
+    "podcastId": 98,
+    "description": "Marked is a previewer for Markdown files."
+  },
+  {
+    "link": "http://habrahabr.ru/company/luxoft/blog/256877/",
+    "name": "Java Collections",
+    "tags": [
+      "Article",
+      "Java"
+    ],
+    "checked": true,
+    "podcastId": 99,
+    "description": null
+  },
+  {
+    "link": "https://github.com/takari/maven-wrapper",
+    "name": "Maven Wrapper",
+    "tags": [
+      "Maven",
+      "Java"
+    ],
+    "checked": true,
+    "podcastId": 99,
+    "description": "The easiest way to integrate Maven into your project!"
+  },
+  {
+    "link": "https://github.com/ben-manes/caffeine",
+    "name": "caffeine",
+    "tags": [
+      "Java",
+      "Java 8"
+    ],
+    "checked": true,
+    "podcastId": 99,
+    "description": "A high performance caching library for Java 8"
   }
 ]
