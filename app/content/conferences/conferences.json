@@ -27,11 +27,10 @@
       "twitter": "https://twitter.com/geekout_ee",
       "facebook": "https://www.facebook.com/GeekOut.ee"
     },
-    "complete": false,
+    "complete": true,
     "joinUs": false
   },
   {
-
     "date": {
       "startDate": {
         "date": "May 22 2015",
@@ -91,7 +90,7 @@
       "twitter": "https://twitter.com/JavaDayUkraine",
       "facebook": "https://www.facebook.com/events/1414950945475379/"
     },
-    "complete": false,
+    "complete": true,
     "joinUs": false
   },
   {
@@ -155,7 +154,7 @@
       "twitter": "https://twitter.com/googledevs",
       "googleplus": "https://plus.google.com/+GoogleDevelopers"
     },
-    "complete": false,
+    "complete": true,
     "joinUs": false
   },
   {
@@ -184,6 +183,97 @@
     "checked": true,
     "socials": {
       "twitter": "https://twitter.com/springone2gx"
+    },
+    "complete": true,
+    "joinUs": true
+  },
+  {
+    "date": {
+      "startDate": {
+        "date": "Oct 16 2015",
+        "time": "09:00"
+      },
+      "endDate": {
+        "date": "Oct 17 2015",
+        "time": "14:15"
+      },
+      "timezone": "GMT+0300"
+    },
+    "name": "Jocker 2015",
+    "location": {
+      "city": "Saint Petersburg",
+      "country": "Russia"
+    },
+    "description": "Joker 2015 is a Java conference which is to become the largest Java related event of the year in Russia bringing together more than 600 developers.",
+    "promoCode": null,
+    "links": {
+      "website": "http://jokerconf.com/en/",
+      "schedule": null
+    },
+    "checked": true,
+    "socials": {
+      "twitter": "https://twitter.com/jugru",
+      "facebook": "https://www.facebook.com/jokerconf"
+    },
+    "complete": true,
+    "joinUs": false
+  },
+  {
+    "date": {
+      "startDate": {
+        "date": "Sep 28 2015",
+        "time": "09:00"
+      },
+      "endDate": {
+        "date": "Sep 28 2015",
+        "time": "18:00"
+      },
+      "timezone": "GMT+0300"
+    },
+    "name": "JET Conference 2015",
+    "location": {
+      "city": "Minsk",
+      "country": "Belarus"
+    },
+    "description": "Devoted to Java technologies and related fields.",
+    "promoCode": null,
+    "links": {
+      "website": "http://jetconf.by/",
+      "schedule": "http://jetconf.by/program"
+    },
+    "checked": true,
+    "socials": {
+      "twitter": "https://twitter.com/jetconf",
+      "facebook": "https://facebook.com/jetconf"
+    },
+    "complete": true,
+    "joinUs": true
+  },
+  {
+    "date": {
+      "startDate": {
+        "date": "May 19 2016",
+        "time": "09:00"
+      },
+      "endDate": {
+        "date": "May 20 2016",
+        "time": "18:00"
+      },
+      "timezone": "GMT+0100"
+    },
+    "name": "Spring I/O 2016",
+    "location": {
+      "city": "Barcelona",
+      "country": "Spain"
+    },
+    "description": "The perfect place to obtain critical skills to help you build, run and manage tomorrow's software solutions.",
+    "promoCode": null,
+    "links": {
+      "website": "www.springio.net"
+    },
+    "checked": true,
+    "socials": {
+      "twitter": "https://twitter.com/spring_io"
     },
     "complete": false,
     "joinUs": true
