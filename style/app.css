@@ -45,7 +45,7 @@ hr.style {
 div > h1 .header {
   margin-bottom: 0px
 }
-section {
+section:nth-child(1n+2) {
   padding-top: 40px;
 }
 .parallax .parallax-overlay {
@@ -77,13 +77,13 @@ nav {
 
 
 /*Header Section*/
-header {
+#header {
   background: url("image/header-background-final2.jpg") center fixed no-repeat;
   min-height: 500px;
   position: relative;
   background-size: cover;
 }
-header .parallax-overlay {
+#header .parallax-overlay {
   background-color: rgba(0,0,0,0.5) !important;
 }
 #content {
@@ -102,7 +102,7 @@ header .parallax-overlay {
 #header-main > div:first-child {
   text-align: center;
 }
-header .header {
+#header h1 {
   font-size: 70pt;
 }
 .header+span {
