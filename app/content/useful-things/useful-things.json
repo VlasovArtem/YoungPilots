@@ -1233,5 +1233,138 @@
     "checked": true,
     "podcastId": 99,
     "description": "A high performance caching library for Java 8"
+  },
+  {
+    "link": "http://projects.eclipse.org/projects/technology.collections",
+    "name": "Eclipse Collections",
+    "tags": ["Java", "Framework", "Collections"],
+    "checked": true,
+    "podcastId": 100,
+    "description": "Eclipse Collections is a collections framework for Java."
+  },
+  {
+    "link": "https://github.com/junegunn/fzf",
+    "name": "fzf",
+    "tags": [
+      "Go",
+      "bash"
+    ],
+    "checked": true,
+    "podcastId": 100,
+    "description": "A command-line fuzzy finder written in Go"
+  },
+  {
+    "link": "http://www.sortd.com/",
+    "name": "Sortd",
+    "tags": null,
+    "checked": true,
+    "podcastId": 100,
+    "description": "Sortd transforms your email into organized lists"
+  },
+  {
+    "link": "http://radar.oreilly.com/2015/10/swarm-v-fleet-v-kubernetes-v-mesos.html",
+    "name": "Swarm v. Fleet v. Kubernetes v. Mesos",
+    "tags": [
+      "Docker",
+      "Article",
+      "Book"
+    ],
+    "checked": true,
+    "podcastId": 100,
+    "description": "Comparing different orchestration tools."
+  },
+  {
+    "link": "http://app.programmingfonts.org/",
+    "name": "Fonts Tester",
+    "tags": null,
+    "checked": true,
+    "podcastId": 101,
+    "description": "What font looks best? Try over 40 free programming fonts and find out!"
+  },
+  {
+    "link": "https://atom.io/packages/fonts",
+    "name": "Fonts for Atom",
+    "tags": [
+      "GitHub",
+      "Atom"
+    ],
+    "checked": true,
+    "podcastId": 101,
+    "description": "Fonts package for Atom"
+  },
+  {
+    "link": "https://github.com/luin/medis",
+    "name": "medis",
+    "tags": [
+      "Mac OSX",
+      "Redis"
+    ],
+    "checked": true,
+    "podcastId": 102,
+    "description": "Medis is a beautiful, easy-to-use Mac database management application for Redis."
+  },
+  {
+    "link": "http://javaby.github.io/awesome-kotlin/",
+    "name": "Awesome-kotlin",
+    "tags": [
+      "Kotlin"
+    ],
+    "checked": true,
+    "podcastId": 102,
+    "description": "A curated list of awesome Kotlin related stuff Inspired by awesome-java."
+  },
+  {
+    "link": "https://github.com/Originate/git-town",
+    "name": "git-town",
+    "tags": [
+      "Git",
+      "GitHub"
+    ],
+    "checked": true,
+    "podcastId": 102,
+    "description": "Generic, high-level Git workflow support!"
+  },
+  {
+    "link": "https://libraries.io/",
+    "name": "libraries",
+    "tags": [
+      "Java",
+      "Web",
+      "Framework",
+      "Maven",
+      "JSON"
+    ],
+    "checked": true,
+    "podcastId": 102,
+    "description": "The Open Source Discovery Service."
+  },
+  {
+    "link": "https://github.com/VerbalExpressions/JavaVerbalExpressions",
+    "name": "JavaVerbalExpressions",
+    "tags": [
+      "Java",
+      "Regex"
+    ],
+    "checked": true,
+    "podcastId": 104,
+    "description": "Java regular expressions made easy."
+  },
+  {
+    "link": "https://github.com/p-e-w/maybe",
+    "name": "maybe",
+    "tags": null,
+    "checked": true,
+    "podcastId": 104,
+    "description": "See what a program does before deciding whether you really want it to happen."
+  },
+  {
+    "link": "https://github.com/rwos/gti",
+    "name": "gti",
+    "tags": [
+      "Git"
+    ],
+    "checked": true,
+    "podcastId": 104,
+    "description": "a git launcher :-)"
   }
 ]

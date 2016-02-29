@@ -277,5 +277,153 @@
     },
     "complete": false,
     "joinUs": true
+  },
+  {
+        "date": {
+      "startDate": {
+        "date": "Apr 22 2016",
+        "time": "09:00"
+      },
+      "endDate": {
+        "date": "Apr 23 2016",
+        "time": "18:00"
+      },
+      "timezone": "GMT+0300"
+    },
+    "name": "JPoint",
+    "location": {
+      "city": "Moscow",
+      "country": "Russia"
+    },
+    "description": "Java-конференция только для опытных Java-разработчиков и только про разработку.",
+    "promoCode": null,
+    "links": {
+      "website": "http://javapoint.ru/"
+    },
+    "checked": true,
+    "complete": false,
+    "joinUs": true
+  },
+  {
+        "date": {
+      "startDate": {
+        "date": "May 20 2016",
+        "time": "09:00"
+      },
+      "endDate": {
+        "date": "May 21 2016",
+        "time": "18:00"
+      },
+      "timezone": "GMT+0200"
+    },
+    "name": "JEEConf",
+    "location": {
+      "city": "Kiev",
+      "country": "Ukraine"
+    },
+    "description": "The largest Java conference in Eastern Europe",
+    "promoCode": null,
+    "links": {
+      "website": "http://jeeconf.com/",
+      "schedule": "http://jeeconf.com/program/"
+    },
+    "socials": {
+      "facebook" : "https://www.facebook.com/JEEConf",
+      "twitter" : "https://twitter.com/jeeconf",
+      "googleplus" : "https://plus.google.com/explore/jeeconf"
+    } 
+    "checked": true,
+    "complete": false,
+    "joinUs": false
+  },
+  {
+    "date": {
+      "startDate": {
+        "date": "June 9 2016",
+        "time": "09:00"
+      },
+      "endDate": {
+        "date": "June 10 2016",
+        "time": "17:30"
+      },
+      "timezone": "GMT+0300"
+    },
+    "name": "GeekOut",
+    "location": {
+      "city": "Tallinn",
+      "country": "Estonia"
+    },
+    "description": "GeekOut is a Java Technology Conference in Tallinn, Estonia. 2016 will see the 6th GeekOut.",
+    "promoCode": null,
+    "links": {
+      "website": "http://2016.geekout.ee/"
+    },
+    "checked": true,
+    "socials": {
+      "twitter": "https://twitter.com/GeekOutEE"
+    },
+    "complete": true,
+    "joinUs": true
+  },
+  {
+    "date": {
+      "startDate": {
+        "date": "Mar 19 2016",
+        "time": "09:00"
+      },
+      "endDate": {
+        "date": "Mar 19 2016",
+        "time": "20:00"
+      },
+      "timezone": "GMT+0600"
+    },
+    "name": "JBreak",
+    "location": {
+      "city": "Novosibirsk",
+      "country": "Russia"
+    },
+    "description": "Единственная Java‑конференция в Сибири",
+    "promoCode": null,
+    "links": {
+      "website": "http://jbreak.ru/",
+      "schedule": "http://jbreak.ru/schedule.html"
+    },
+    "checked": true,
+    "socials": {
+      "twitter": "https://twitter.com/JUGru",
+      "facebook": "https://www.facebook.com/JugRussia/"
+    },
+    "complete": true,
+    "joinUs": true
+  },{
+    "date": {
+      "startDate": {
+        "date": "Apr 24 2016",
+        "time": "13:30"
+      },
+      "endDate": {
+        "date": "Apr 25 2016",
+        "time": "18:30"
+      },
+      "timezone": "GMT+0300"
+    },
+    "name": "JET",
+    "location": {
+      "city": "Minsk",
+      "country": "Belarus"
+    },
+    "description": "LET'S FLY TO JAVA WORLD!",
+    "promoCode": null,
+    "links": {
+      "website": "http://jetconf.by/",
+      "schedule": "http://jetconf.by/#/program"
+    },
+    "checked": true,
+    "socials": {
+      "twitter": "https://twitter.com/jetconf",
+      "facebook": "https://facebook.com/jetconf"
+    },
+    "complete": true,
+    "joinUs": true
   }
 ]
