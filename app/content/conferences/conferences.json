@@ -398,7 +398,7 @@
   },{
     "date": {
       "startDate": {
-        "date": "Apr 24 2016",
+        "date": "Apr 2s4 2016",
         "time": "13:30"
       },
       "endDate": {
@@ -424,6 +424,6 @@
       "facebook": "https://facebook.com/jetconf"
     },
     "complete": true,
-    "joinUs": true
+    "joinUs": false
   }
 ]
