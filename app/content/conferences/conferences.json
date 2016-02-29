@@ -331,7 +331,7 @@
       "facebook" : "https://www.facebook.com/JEEConf",
       "twitter" : "https://twitter.com/jeeconf",
       "googleplus" : "https://plus.google.com/explore/jeeconf"
-    } 
+    },
     "checked": true,
     "complete": false,
     "joinUs": false
@@ -395,7 +395,8 @@
     },
     "complete": true,
     "joinUs": true
-  },{
+  },
+  {
     "date": {
       "startDate": {
         "date": "Apr 2s4 2016",
