@@ -1366,5 +1366,168 @@
     "checked": true,
     "podcastId": 104,
     "description": "a git launcher :-)"
+  },
+  {
+    "link": "http://http.jcabi.com/",
+    "name": "JCabi",
+    "tags": ["Java"],
+    "checked": true,
+    "podcastId": 105,
+    "description": "Fluent Java HTTP client"
+  },
+  {
+    "link": "http://www.annotatiomania.com/",
+    "name": "Annotatiomania",
+    "tags": null,
+    "checked": true,
+    "podcastId": 105,
+    "description": "Start using annotations today"
+  },
+  {
+    "link": "https://beta.docker.com/",
+    "name": "Beta Docker",
+    "tags": null,
+    "checked": true,
+    "podcastId": 106,
+    "description": "Explore a new kind of Docker"
+  },
+  {
+    "link": "http://pissed.pro/index.html",
+    "name": "Pissed",
+    "tags": null,
+    "checked": true,
+    "podcastId": 106,
+    "description": null
+  },
+  {
+    "link": "https://github.com/amaembo/streamex",
+    "name": "Streamex",
+    "tags": ["Java", "Java 8"],
+    "checked": true,
+    "podcastId": 106,
+    "description": "Enhancing Java 8 Streams"
+  },
+  {
+    "link": "https://github.com/aphyr/jepsen",
+    "name": "Jepsen",
+    "tags": [
+      "DB"
+    ],
+    "checked": true,
+    "podcastId": 107,
+    "description": "Call Me Maybe: simulating network partitions in DBs"
+  },
+  {
+    "link": "http://www.microservicesweekly.com/",
+    "name": "Microservices Weekly",
+    "tags": [
+      "Article"
+    ],
+    "checked": true,
+    "podcastId": 107,
+    "description": "Weekly Microservices news."
+  },
+  {
+    "link": "http://concourse.ci/",
+    "name": "Concourse",
+    "tags": [
+      "GO"
+    ],
+    "checked": true,
+    "podcastId": 107,
+    "description": "Concourse is a pipeline-based CI system written in Go."
+  },
+  {
+    "link": "http://deadlockempire.github.io/",
+    "name": "The Deadlock Empire",
+    "tags": null,
+    "checked": true,
+    "podcastId": 107,
+    "description": "The Deadlock Empire: Slay dragons, learn concurrency!"
+  },
+  {
+    "link": "https://keybase.io/",
+    "name": "Keybase",
+    "tags": null,
+    "checked": true,
+    "podcastId": 107,
+    "description": "A single repo for managing publicly recognized issues with the keybase client, installer, and website."
+  },
+  {
+    "link": "http://codepipes.com/presentations/spock-vs-junit.pdf",
+    "name": "Spock vs JUnit",
+    "tags": [
+      "Java",
+      "Unit Test",
+      "Article"
+    ],
+    "checked": true,
+    "podcastId": 109,
+    "description": "Spock versus JUnit by Kostis Kapelonis"
+  },
+  {
+    "link": "http://blog.jetbrains.com/kotlin/2016/03/kotlin-educational-plugin/",
+    "name": "Kotlin Educational Plugin",
+    "tags": [
+      "Kotlin",
+      "Article"
+    ],
+    "checked": true,
+    "podcastId": 109,
+    "description": null
+  },
+  {
+    "link": "https://www.clammr.com/",
+    "name": "Clammr",
+    "tags": [
+      "App"
+    ],
+    "checked": true,
+    "podcastId": 109,
+    "description": "Find/Share the best audio in 24 seconds or less."
+  },
+  {
+    "link": "http://mikepilone.blogspot.ru/2016/04/distributed-task-coordination-with.html",
+    "name": "mikepilone",
+    "tags": [
+      "Article"
+    ],
+    "checked": true,
+    "podcastId": 110,
+    "description": "Distributed Task Coordination with Hazelcast"
+  },
+  {
+    "link": "https://github.com/integrations/gitkraken",
+    "name": "GitKraken",
+    "tags": ["Git", "GitHub"],
+    "checked": true,
+    "podcastId": 110,
+    "description": "Axosoft's GitKraken is a free Git client for Windows, Mac, and Linux that integrates beautifully with GitHub."
+  },
+  {
+    "link": "https://github.com/kamranahmedse/git-standup",
+    "name": "git-standup",
+    "tags": ["Git"],
+    "checked": true,
+    "podcastId": 110,
+    "description": "Recall what you did on the last working day. Psst! or be nosy and find what someone else in your team did ;-)"
+  },
+  {
+    "link": "https://www.alfredapp.com/blog/announcements/alfred-3-is-here/",
+    "name": "Alfred 3",
+    "tags": [
+      "Mac OSX"
+    ],
+    "checked": true,
+    "podcastId": 110,
+    "description": "Search your Mac and the web, and be more productive with custom actions to control your Mac."
+  },
+  {
+    "link": "https://github.com/danieldiekmeier/textexpander-to-alfred3",
+    "name": "Textexpander to alfred3",
+    "tags": ["Mac OSX"],
+    "checked": true,
+    "podcastId": 110,
+    "description": "Convert your TextExpander snippets to Alfred 3 snippets."
   }
 ]
