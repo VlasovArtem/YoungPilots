@@ -426,5 +426,35 @@
     },
     "complete": true,
     "joinUs": false
+  },
+  {
+    "date": {
+      "startDate": {
+        "date": "Oct 14 2016",
+        "time": "13:30"
+      },
+      "endDate": {
+        "date": "Oct 15 2016",
+        "time": "18:30"
+      },
+      "timezone": "GMT+0300"
+    },
+    "name": "Joker",
+    "location": {
+      "city": "Saint Petersburg",
+      "country": "Russia"
+    },
+    "description": "Главная Java-конференция в России",
+    "promoCode": null,
+    "links": {
+      "website": "http://jokerconf.com/",
+      "schedule": "http://jokerconf.com/#talks"
+    },
+    "checked": true,
+    "socials": {
+      "facebook": "https://www.facebook.com/jokerconf"
+    },
+    "complete": false,
+    "joinUs": true
   }
 ]
