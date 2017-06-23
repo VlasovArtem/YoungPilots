@@ -772,5 +772,762 @@
     "checked": true,
     "podcastId": 85,
     "description": "Language Guide (proto3)"
+  },
+  {
+    "link": "http://jooby.org",
+    "name": "jooby",
+    "tags": [
+      "Java",
+      "Java 8"
+    ],
+    "checked": true,
+    "podcastId": 86,
+    "description": "A minimalist web framework for Java 8"
+  },
+  {
+    "link": "https://github.com/airlift/airlift",
+    "name": "airlift",
+    "tags": [
+    	"Java",
+    	"REST"
+    ],
+    "checked": true,
+    "podcastId": 86,
+    "description": "Airlift framework for building REST services"
+  },
+  {
+    "link": "http://kangax.github.io/compat-table/es6/",
+    "name": "kangax",
+    "tags": [
+      "ECMAScript"
+    ],
+    "checked": true,
+    "podcastId": 86,
+    "description": "ECMAScript compatibility table"
+  },
+  {
+    "link": "https://zarkzork.com/servasm.html",
+    "name": "zarkzork",
+    "tags": [
+      "Webserver",
+      "Assembly"
+    ],
+    "checked": true,
+    "podcastId": 86,
+    "description": "X86_64 Linux webserver in assembler"
+  },
+  {
+    "link": "http://www.javacodegeeks.com/2012/02/high-performance-libraries-in-java.html",
+    "name": "High performance libraries",
+    "tags": [
+      "Java",
+      "Article"
+    ],
+    "checked": true,
+    "podcastId": 87,
+    "description": "There is an increasing number of libraries which are described as high performance and have benchmarks to back that claim up. Here is a selection that I am aware of."
+  },
+  {
+    "link": "https://github.com/typicode/json-server",
+    "name": "json-server",
+    "tags": [
+    	"JSON",
+    	"REST"
+    ],
+    "checked": true,
+    "podcastId": 87,
+    "description": "Get a full fake REST API with zero coding in less than 30 seconds (seriously)"
+  },
+  {
+    "link": "https://github.com/square/leakcanary",
+    "name": "leakcanary",
+    "tags": [
+      "Android",
+      "Java"
+    ],
+    "checked": true,
+    "podcastId": 87,
+    "description": "A memory leak detection library for Android and Java."
+  },
+  {
+    "link": "http://shop.oreilly.com/product/0636920030713.do",
+    "name": "Java 8 Lambdas",
+    "tags": [
+      "Book"
+    ],
+    "checked": true,
+    "podcastId": 87,
+    "description": "You’ll learn through code examples, exercises, and fluid explanations how these anonymous functions will help you write simple, clean, library-level code that solves business problems."
+  },
+  {
+    "link": "http://www.amazon.com/RxJava-Essentials-Ivan-Morgillo/dp/1784399108/",
+    "name": "RxJava Essentials",
+    "tags": [
+      "Book"
+    ],
+    "checked": true,
+    "podcastId": 87,
+    "description": "Create interactive Android apps with Java Reactive Extensions, Learn Reactive Programming through real-life examples that you can use in your Android app."
+  },
+  {
+	"link": "http://emacs.sexy/img/How-to-Learn-Emacs-v2-Large.png",
+	"name": "Emacs - sexy",
+	"tags": [
+		"Emacs"
+	],
+	"checked": true,
+    "podcastId": 89,
+    "description": "Cheat sheet"
+  },
+  {
+    "link": "https://github.com/Froussios/Intro-To-RxJava",
+    "name": "Intro-To-RxJava",
+    "tags": [
+      "RxJava",
+      "Java"
+    ],
+    "checked": true,
+    "podcastId": 89,
+    "description": "An extensive tutorial on RxJava"
+  },
+  {
+    "link": "http://wiremock.org/java-usage.html#the-client",
+    "name": "Wiremock",
+    "tags": [
+      "Mock",
+      "Java"
+    ],
+    "checked": true,
+    "podcastId": 89,
+    "description": "A tool for mocking HTTP services"
+  },
+  {
+    "link": "http://macradar.ru/software/crax-commander-luchshaya-alternativa-total-commander-dlya-os-x/",
+    "name": "CRAX Commander",
+    "tags": [
+      "Mac OSX"
+    ],
+    "checked": true,
+    "podcastId": 89,
+    "description": "Total commander alternative on Mac OS"
+  },
+  {
+    "link": "http://bytecodeviewer.com",
+    "name": "Bytecode viewer",
+    "tags": [
+      "Java"
+    ],
+    "checked": true,
+    "podcastId": 89,
+    "description": "A Java 8 Jar & Android APK Reverse Engineering Suite (Decompiler, Editor, Debugger & More)"
+  },
+  {
+    "link": "https://msdn.microsoft.com/en-us/library/jj554200.aspx",
+    "name": "CQRS Journey",
+    "tags": [
+      "CQRS",
+      "Book"
+    ],
+    "checked": true,
+    "podcastId": 89,
+    "description": "Exploring CQRS and Event Sourcing"
+  },
+  {
+    "link": "http://binary-repositories-comparison.github.io/",
+    "name": "Binary repositories comparison",
+    "tags": [],
+    "checked": true,
+    "podcastId": 89,
+    "description": "Binary Repository Manager Feature Matrix"
+  },
+  {
+    "link": "https://github.com/nvbn/thefuck",
+    "name": "thefuck",
+    "tags": [
+      "Bash"
+    ],
+    "checked": true,
+    "podcastId": 89,
+    "description": "Magnificent app which corrects your previous console command."
+  },
+  {
+    "link": "http://dev.yorhel.nl/ncdu",
+    "name": "ncdu",
+    "tags": [
+      "Mac OSX"
+    ],
+    "checked": true,
+    "podcastId": 89,
+    "description": "NCurses Disk Usage"
+  },
+  {
+    "link": "https://openport.io",
+    "name": "Openport",
+    "tags": [
+      "SSH"
+    ],
+    "checked": true,
+    "podcastId": 89,
+    "description": "A free cloud-based reverse SSH service."
+  },
+  {
+    "link": "http://learnxinyminutes.com",
+    "name": "Learn X in Y minutes",
+    "tags": [],
+    "checked": true,
+    "podcastId": 90,
+    "description": "Take a whirlwind tour of your next favorite language. Community-driven!"
+  },
+  {
+    "link": "https://iterm2.com/shell_integration.html",
+    "name": "iTerm 2",
+    "tags": [
+      "Mac OSX"
+    ],
+    "checked": true,
+    "podcastId": 91,
+    "description": "iTerm2 is a terminal emulator for Mac OS X that does amazing things."
+  },
+  {
+    "link": "http://zeroturnaround.com/rebellabs/5-command-line-tools-you-should-be-using/",
+    "name": "5 command line tools",
+    "tags": [
+      "Mac OSX",
+      "Article"
+    ],
+    "checked": true,
+    "podcastId": 91,
+    "description": "5 command line tools you should be using"
+  },
+  {
+    "link": "https://github.com/yudai/gotty",
+    "name": "Gotty",
+    "tags": [
+      "Mac OSX"
+    ],
+    "checked": true,
+    "podcastId": 91,
+    "description": "Share your terminal as a web application"
+  },
+  {
+    "link": "https://asciinema.org/",
+    "name": "Asciinema",
+    "tags": [
+      "Terminal"
+    ],
+    "checked": true,
+    "podcastId": 91,
+    "description": "Record and share your terminal sessions, the right way"
+  },
+  {
+    "link": "http://gitup.co/",
+    "name": "GitUp",
+    "tags": [
+      "Open source",
+      "Mac OSX",
+      "Git"
+    ],
+    "checked": true,
+    "podcastId": 91,
+    "description": "The Git interface you've been missing all your life has finally arrived"
+  },
+  {
+    "link": "https://classroom.github.com/",
+    "name": "Github Classroom",
+    "tags": [
+      "Open source",
+      "Github"
+    ],
+    "checked": true,
+    "podcastId": 92,
+    "description": "Classroom for GitHub automates repository creation and access control."
+  },
+  {
+    "link": "https://github.com/JetBrains/gradle-intellij-plugin",
+    "name": "Gradle Intellij plugin",
+    "tags": [
+    	"Gradle",
+    	"Intellij Idea"
+    ],
+    "checked": true,
+    "podcastId": 92,
+    "description": "Plugin for building plugins for IntelliJ IDEs"
+  },
+  {
+    "link": "https://github.com/Yelp/elastalert",
+    "name": "elastalert",
+    "tags": [
+    	"Framework"
+    ],
+    "checked": true,
+    "podcastId": 92,
+    "description": "Easy & Flexible Alerting With ElasticSearch"
+  },
+  {
+    "link": "http://beust.com/kobalt/home/index.html",
+    "name": "Kobalt",
+    "tags": [],
+    "checked": true,
+    "podcastId": 92,
+    "description": "Kobalt is a build system heavily inspired from Gradle and entirely written in Kotlin"
+  },
+  {
+    "link": "http://www.capsule.io/",
+    "name": "Capsule",
+    "tags": [
+      "Java"
+    ],
+    "checked": true,
+    "podcastId": 96,
+    "description": "Dead-Simple Packaging and Deployment for JVM Apps"
+  },
+  {
+    "link": "https://github.com/sindresorhus/awesome",
+    "name": "Awesome",
+    "tags": [],
+    "checked": true,
+    "podcastId": 96,
+    "description": "A curated list of awesome lists"
+  },
+  {
+    "link": "https://plumbr.eu/landing/handbook-java-lang-outofmemoryerror",
+    "name": "plumbr",
+    "tags": [
+      "Book",
+      "Java"
+    ],
+    "checked": true,
+    "podcastId": 97,
+    "description": "Handbook: Java OutOfMemoryErrors and the 8 Symptoms that cause them"
+  },
+  {
+    "link": "https://bugsnag.com/",
+    "name": "bugsnag",
+    "tags": null,
+    "checked": true,
+    "podcastId": 97,
+    "description": "Tools and workflow to fix every error in all your applications"
+  },
+  {
+    "link": "http://stefanbirkner.github.io/system-rules/",
+    "name": "stefanbirkner",
+    "tags": [
+      "JUnit",
+      "Java",
+      "Test"
+    ],
+    "checked": true,
+    "podcastId": 97,
+    "description": "A collection of JUnit rules for testing code that uses java.lang.System."
+  },
+  {
+    "link": "https://gist.github.com/valadan/3721450",
+    "name": "Latency numbers",
+    "tags": [
+      "GitHub",
+      "Article"
+    ],
+    "checked": true,
+    "podcastId": 97,
+    "description": "Latency numbers every programmer should know"
+  },
+  {
+    "link": "https://github.com/NARKOZ/hacker-scripts",
+    "name": "Hacker scripts",
+    "tags": null,
+    "checked": true,
+    "podcastId": 97,
+    "description": "Based on a true story"
+  },
+  {
+    "link": "https://cloudharmony.com/speedtest",
+    "name": "Cloud Network Test",
+    "tags": null,
+    "checked": true,
+    "podcastId": 97,
+    "description": "Test downlink, latency and dns from your connection to cloud services"
+  },
+  {
+    "link": "http://sonic-pi.net/",
+    "name": "Sonic Pi",
+    "tags": [
+      "Windows",
+      "Mac OSX"
+    ],
+    "checked": true,
+    "podcastId": 98,
+    "description": "A free live coding synth for everyone originally designed to support computing and music lessons within schools."
+  },
+  {
+    "link": "https://raft.github.io",
+    "name": "Raft",
+    "tags": null,
+    "checked": true,
+    "podcastId": 98,
+    "description": "Raft is a consensus algorithm that is designed to be easy to understand."
+  },
+  {
+    "link": "https://github.com/lukehutch/fast-classpath-scanner",
+    "name": "Fast Classpath Scanner",
+    "tags": [
+      "Java",
+      "Scala"
+    ],
+    "checked": true,
+    "podcastId": 98,
+    "description": "Uber-fast, ultra-lightweight Java classpath scanner."
+  },
+  {
+    "link": "http://www.hemingwayapp.com/",
+    "name": "Hemingway App",
+    "tags": null,
+    "checked": true,
+    "podcastId": 98,
+    "description": "Hemingway App makes your writing bold and clear."
+  },
+  {
+    "link": "https://github.com/blog/2047-language-trends-on-github",
+    "name": "Language Trends",
+    "tags": null,
+    "checked": true,
+    "podcastId": 98,
+    "description": "Language Trends on GitHub"
+  },
+  {
+    "link": "http://marked2app.com/",
+    "name": "Marked 2",
+    "tags": null,
+    "checked": true,
+    "podcastId": 98,
+    "description": "Marked is a previewer for Markdown files."
+  },
+  {
+    "link": "http://habrahabr.ru/company/luxoft/blog/256877/",
+    "name": "Java Collections",
+    "tags": [
+      "Article",
+      "Java"
+    ],
+    "checked": true,
+    "podcastId": 99,
+    "description": null
+  },
+  {
+    "link": "https://github.com/takari/maven-wrapper",
+    "name": "Maven Wrapper",
+    "tags": [
+      "Maven",
+      "Java"
+    ],
+    "checked": true,
+    "podcastId": 99,
+    "description": "The easiest way to integrate Maven into your project!"
+  },
+  {
+    "link": "https://github.com/ben-manes/caffeine",
+    "name": "caffeine",
+    "tags": [
+      "Java",
+      "Java 8"
+    ],
+    "checked": true,
+    "podcastId": 99,
+    "description": "A high performance caching library for Java 8"
+  },
+  {
+    "link": "http://projects.eclipse.org/projects/technology.collections",
+    "name": "Eclipse Collections",
+    "tags": ["Java", "Framework", "Collections"],
+    "checked": true,
+    "podcastId": 100,
+    "description": "Eclipse Collections is a collections framework for Java."
+  },
+  {
+    "link": "https://github.com/junegunn/fzf",
+    "name": "fzf",
+    "tags": [
+      "Go",
+      "bash"
+    ],
+    "checked": true,
+    "podcastId": 100,
+    "description": "A command-line fuzzy finder written in Go"
+  },
+  {
+    "link": "http://www.sortd.com/",
+    "name": "Sortd",
+    "tags": null,
+    "checked": true,
+    "podcastId": 100,
+    "description": "Sortd transforms your email into organized lists"
+  },
+  {
+    "link": "http://radar.oreilly.com/2015/10/swarm-v-fleet-v-kubernetes-v-mesos.html",
+    "name": "Swarm v. Fleet v. Kubernetes v. Mesos",
+    "tags": [
+      "Docker",
+      "Article",
+      "Book"
+    ],
+    "checked": true,
+    "podcastId": 100,
+    "description": "Comparing different orchestration tools."
+  },
+  {
+    "link": "http://app.programmingfonts.org/",
+    "name": "Fonts Tester",
+    "tags": null,
+    "checked": true,
+    "podcastId": 101,
+    "description": "What font looks best? Try over 40 free programming fonts and find out!"
+  },
+  {
+    "link": "https://atom.io/packages/fonts",
+    "name": "Fonts for Atom",
+    "tags": [
+      "GitHub",
+      "Atom"
+    ],
+    "checked": true,
+    "podcastId": 101,
+    "description": "Fonts package for Atom"
+  },
+  {
+    "link": "https://github.com/luin/medis",
+    "name": "medis",
+    "tags": [
+      "Mac OSX",
+      "Redis"
+    ],
+    "checked": true,
+    "podcastId": 102,
+    "description": "Medis is a beautiful, easy-to-use Mac database management application for Redis."
+  },
+  {
+    "link": "http://javaby.github.io/awesome-kotlin/",
+    "name": "Awesome-kotlin",
+    "tags": [
+      "Kotlin"
+    ],
+    "checked": true,
+    "podcastId": 102,
+    "description": "A curated list of awesome Kotlin related stuff Inspired by awesome-java."
+  },
+  {
+    "link": "https://github.com/Originate/git-town",
+    "name": "git-town",
+    "tags": [
+      "Git",
+      "GitHub"
+    ],
+    "checked": true,
+    "podcastId": 102,
+    "description": "Generic, high-level Git workflow support!"
+  },
+  {
+    "link": "https://libraries.io/",
+    "name": "libraries",
+    "tags": [
+      "Java",
+      "Web",
+      "Framework",
+      "Maven",
+      "JSON"
+    ],
+    "checked": true,
+    "podcastId": 102,
+    "description": "The Open Source Discovery Service."
+  },
+  {
+    "link": "https://github.com/VerbalExpressions/JavaVerbalExpressions",
+    "name": "JavaVerbalExpressions",
+    "tags": [
+      "Java",
+      "Regex"
+    ],
+    "checked": true,
+    "podcastId": 104,
+    "description": "Java regular expressions made easy."
+  },
+  {
+    "link": "https://github.com/p-e-w/maybe",
+    "name": "maybe",
+    "tags": null,
+    "checked": true,
+    "podcastId": 104,
+    "description": "See what a program does before deciding whether you really want it to happen."
+  },
+  {
+    "link": "https://github.com/rwos/gti",
+    "name": "gti",
+    "tags": [
+      "Git"
+    ],
+    "checked": true,
+    "podcastId": 104,
+    "description": "a git launcher :-)"
+  },
+  {
+    "link": "http://http.jcabi.com/",
+    "name": "JCabi",
+    "tags": ["Java"],
+    "checked": true,
+    "podcastId": 105,
+    "description": "Fluent Java HTTP client"
+  },
+  {
+    "link": "http://www.annotatiomania.com/",
+    "name": "Annotatiomania",
+    "tags": null,
+    "checked": true,
+    "podcastId": 105,
+    "description": "Start using annotations today"
+  },
+  {
+    "link": "https://beta.docker.com/",
+    "name": "Beta Docker",
+    "tags": null,
+    "checked": true,
+    "podcastId": 106,
+    "description": "Explore a new kind of Docker"
+  },
+  {
+    "link": "http://pissed.pro/index.html",
+    "name": "Pissed",
+    "tags": null,
+    "checked": true,
+    "podcastId": 106,
+    "description": null
+  },
+  {
+    "link": "https://github.com/amaembo/streamex",
+    "name": "Streamex",
+    "tags": ["Java", "Java 8"],
+    "checked": true,
+    "podcastId": 106,
+    "description": "Enhancing Java 8 Streams"
+  },
+  {
+    "link": "https://github.com/aphyr/jepsen",
+    "name": "Jepsen",
+    "tags": [
+      "DB"
+    ],
+    "checked": true,
+    "podcastId": 107,
+    "description": "Call Me Maybe: simulating network partitions in DBs"
+  },
+  {
+    "link": "http://www.microservicesweekly.com/",
+    "name": "Microservices Weekly",
+    "tags": [
+      "Article"
+    ],
+    "checked": true,
+    "podcastId": 107,
+    "description": "Weekly Microservices news."
+  },
+  {
+    "link": "http://concourse.ci/",
+    "name": "Concourse",
+    "tags": [
+      "GO"
+    ],
+    "checked": true,
+    "podcastId": 107,
+    "description": "Concourse is a pipeline-based CI system written in Go."
+  },
+  {
+    "link": "http://deadlockempire.github.io/",
+    "name": "The Deadlock Empire",
+    "tags": null,
+    "checked": true,
+    "podcastId": 107,
+    "description": "The Deadlock Empire: Slay dragons, learn concurrency!"
+  },
+  {
+    "link": "https://keybase.io/",
+    "name": "Keybase",
+    "tags": null,
+    "checked": true,
+    "podcastId": 107,
+    "description": "A single repo for managing publicly recognized issues with the keybase client, installer, and website."
+  },
+  {
+    "link": "http://codepipes.com/presentations/spock-vs-junit.pdf",
+    "name": "Spock vs JUnit",
+    "tags": [
+      "Java",
+      "Unit Test",
+      "Article"
+    ],
+    "checked": true,
+    "podcastId": 109,
+    "description": "Spock versus JUnit by Kostis Kapelonis"
+  },
+  {
+    "link": "http://blog.jetbrains.com/kotlin/2016/03/kotlin-educational-plugin/",
+    "name": "Kotlin Educational Plugin",
+    "tags": [
+      "Kotlin",
+      "Article"
+    ],
+    "checked": true,
+    "podcastId": 109,
+    "description": null
+  },
+  {
+    "link": "https://www.clammr.com/",
+    "name": "Clammr",
+    "tags": [
+      "App"
+    ],
+    "checked": true,
+    "podcastId": 109,
+    "description": "Find/Share the best audio in 24 seconds or less."
+  },
+  {
+    "link": "http://mikepilone.blogspot.ru/2016/04/distributed-task-coordination-with.html",
+    "name": "mikepilone",
+    "tags": [
+      "Article"
+    ],
+    "checked": true,
+    "podcastId": 110,
+    "description": "Distributed Task Coordination with Hazelcast"
+  },
+  {
+    "link": "https://github.com/integrations/gitkraken",
+    "name": "GitKraken",
+    "tags": ["Git", "GitHub"],
+    "checked": true,
+    "podcastId": 110,
+    "description": "Axosoft's GitKraken is a free Git client for Windows, Mac, and Linux that integrates beautifully with GitHub."
+  },
+  {
+    "link": "https://github.com/kamranahmedse/git-standup",
+    "name": "git-standup",
+    "tags": ["Git"],
+    "checked": true,
+    "podcastId": 110,
+    "description": "Recall what you did on the last working day. Psst! or be nosy and find what someone else in your team did ;-)"
+  },
+  {
+    "link": "https://www.alfredapp.com/blog/announcements/alfred-3-is-here/",
+    "name": "Alfred 3",
+    "tags": [
+      "Mac OSX"
+    ],
+    "checked": true,
+    "podcastId": 110,
+    "description": "Search your Mac and the web, and be more productive with custom actions to control your Mac."
+  },
+  {
+    "link": "https://github.com/danieldiekmeier/textexpander-to-alfred3",
+    "name": "Textexpander to Alfred 3",
+    "tags": ["Mac OSX"],
+    "checked": true,
+    "podcastId": 110,
+    "description": "Convert your TextExpander snippets to Alfred 3 snippets."
   }
 ]
