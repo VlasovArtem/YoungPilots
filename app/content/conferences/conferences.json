@@ -456,5 +456,140 @@
     },
     "complete": false,
     "joinUs": true
+  },
+  {
+    "date": {
+      "startDate": {
+        "date": "Nov 03 2017"
+      },
+      "endDate": {
+        "date": "Nov 04 2017"
+      },
+      "timezone": "GMT+0300"
+    },
+    "name": "Jocker",
+    "location": {
+      "city": "Saint-Petersburg",
+      "country": "Russia"
+    },
+    "description": "Мы ориентируемся на участников, которые разбираются в Java. Сильные и сложные доклады гарантируют высокое качество аудитории.",
+    "promoCode": null,
+    "links": {
+      "website": "https://jokerconf.com/"
+    },
+    "checked": true,
+    "complete": false,
+    "joinUs": true
+  },
+  {
+    "date": {
+      "startDate": {
+        "date": "Nov 04 2017"
+      },
+      "endDate": {
+        "date": "Nov 05 2017"
+      },
+      "timezone": "GMT+0300"
+    },
+    "name": "JavaDay 2017",
+    "location": {
+      "city": "Kyiv",
+      "country": "Ukraine"
+    },
+    "description": "One of the Top 3 IT Conferences in Ukraine",
+    "promoCode": null,
+    "links": {
+      "website": "http://javaday.org.ua/"
+    },
+    "checked": true,
+    "socials": {
+      "twitter": "https://twitter.com/JavaDayUA",
+      "facebook": "https://www.facebook.com/javadayukraine/?fref=nf"
+    },
+    "complete": false,
+    "joinUs": true
+  },
+  {
+    "date": {
+      "startDate": {
+        "date": "Dec 04 2017"
+      },
+      "endDate": {
+        "date": "Dec 07 2017"
+      },
+      "timezone": "GMT-0700"
+    },
+    "name": "SpringOne Platform",
+    "location": {
+      "city": "San Francisco",
+      "country": "USA"
+    },
+    "description": "SpringOne Platform is the premier conference for those who build, deploy, and run cloud-native software.",
+    "promoCode": null,
+    "links": {
+      "website": "https://springoneplatform.io/"
+    },
+    "checked": true,
+    "socials": {
+      "twitter": "https://twitter.com/@s1p"
+    },
+    "complete": false,
+    "joinUs": false
+  },
+  {
+    "date": {
+      "startDate": {
+        "date": "Dec 08 2017"
+      },
+      "endDate": {
+        "date": "Dec 09 2017"
+      },
+      "timezone": "GMT+0300"
+    },
+    "name": "Гейзенбаг",
+    "location": {
+      "city": "Moscow",
+      "country": "Russia"
+    },
+    "description": "Гейзенбаг – большая техническая конференция, которая соберет более 500 специалистов в области тестирования.",
+    "promoCode": null,
+    "links": {
+      "website": "https://heisenbug-moscow.ru/"
+    },
+    "checked": true,
+    "socials": {
+      "twitter": "https://twitter.com/HeisenbugConf",
+      "facebook": "https://www.facebook.com/heisenbugconf/"
+    },
+    "complete": false,
+    "joinUs": false
+  },
+  {
+    "date": {
+      "startDate": {
+        "date": "Dec 10 2017"
+      },
+      "endDate": {
+        "date": "Dec 11 2017"
+      },
+      "timezone": "GMT+0300"
+    },
+    "name": "HolyJS",
+    "location": {
+      "city": "Moscow",
+      "country": "Russia"
+    },
+    "description": "HolyJS – единственная JavaScript-конференция в России. Не следует путать ее с многочисленными конференциями по фронтенду. Однако до этого года не было ни одной конференции по самому популярному в мире (по версии GitHub и RedMonk) языку программирования — JavaScript, который чаще всего ассоциируется с фронтендом.",
+    "promoCode": null,
+    "links": {
+      "website": "https://holyjs-moscow.ru/"
+    },
+    "checked": true,
+    "socials": {
+      "twitter": "https://twitter.com/HolyJSconf",
+      "facebook": "https://www.facebook.com/holyjs/"
+    },
+    "complete": false,
+    "joinUs": false
   }
 ]
