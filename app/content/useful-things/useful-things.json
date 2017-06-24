@@ -1402,7 +1402,7 @@
   {
     "link": "https://github.com/amaembo/streamex",
     "name": "Streamex",
-    "tags": ["Java", "Java 8"],
+    "tags": ["Java", "Java 8", "Stream API"],
     "checked": true,
     "podcastId": 106,
     "description": "Enhancing Java 8 Streams"
@@ -1529,5 +1529,619 @@
     "checked": true,
     "podcastId": 110,
     "description": "Convert your TextExpander snippets to Alfred 3 snippets."
+  },
+  {
+    "link": "https://blog.jetbrains.com/idea/2016/06/how-to-support-case-only-rename-in-git/?platform=hootsuite",
+    "name": "How to Support Case-only Rename in Git",
+    "tags": [
+      "Git",
+      "Article"
+    ],
+    "checked": true,
+    "podcastId": 112,
+    "description": "How to Support Case-only Rename in Git"
+  },
+  {
+    "link": "https://github.com/twitter/diffy",
+    "name": "Diffy",
+    "tags": [
+      "Bug"
+    ],
+    "checked": true,
+    "podcastId": 112,
+    "description": "Find potential bugs in your services with Diffy"
+  },
+  {
+    "link": "https://github.com/firehol/netdata",
+    "name": "Netdata",
+    "tags": null,
+    "checked": true,
+    "podcastId": 112,
+    "description": "Get control of your servers. Simple. Effective. Awesome!"
+  },
+  {
+    "link": "https://www.crowdsupply.com/ugl/ultimate-hacking-keyboard",
+    "name": "Ultimate Hacking Keyboard",
+    "tags": [
+      "Gadget",
+      "Device",
+      "Keyboard"
+    ],
+    "checked": true,
+    "podcastId": 112,
+    "description": "A fully programmable, impeccably built, open source, split mechanical keyboard - designed for extreme productivity and ergonomics."
+  },
+  {
+    "link": "http://geektimes.ru/post/246490/",
+    "name": "Создание Ultimate Hacking Keyboard ",
+    "tags": [
+      "Keyboard",
+      "Article"
+    ],
+    "checked": true,
+    "podcastId": 112,
+    "description": "Как я решил построить идеальную клавиатуру для разработчика с нуля"
+  },
+  {
+    "link": "http://geektimes.ru/p/264734/",
+    "name": "Знакомство с Ultimate Hacking Keyboard",
+    "tags": [
+      "Keyboard",
+      "Article"
+    ],
+    "checked": true,
+    "podcastId": 112,
+    "description": null
+  },
+  {
+    "link": "https://www.pluralsight.com/courses/hazelcast-getting-started",
+    "name": "Getting Started with Hazelcast",
+    "tags": [
+      "Java",
+      "Hazelcast",
+      "Course"
+    ],
+    "checked": true,
+    "podcastId": 112,
+    "description": "Learn the fundamentals of Hazelcast for distributed caching and processing."
+  },
+  {
+    "link": "http://shop.oreilly.com/product/0636920050872.do",
+    "name": "Docker for Java Developers",
+    "tags": [
+      "Java",
+      "Docker",
+      "O`Reilly",
+      "Book"
+    ],
+    "checked": true,
+    "podcastId": 112,
+    "description": "Package, Deploy, and Scale with Ease"
+  },
+  {
+    "link": "https://github.com/amaembo/streamex",
+    "name": "Streamex",
+    "tags": [
+      "Java",
+      "Java 8",
+      "Streams API"
+    ],
+    "checked": true,
+    "podcastId": 113,
+    "description": "Enhancing Java 8 Streams"
+  },
+  {
+    "link": "http://www.lcpsoft.com/",
+    "name": "Lcpsoft",
+    "tags": null,
+    "checked": true,
+    "podcastId": 113,
+    "description": "Cross-platform applications for password auditing and recovery."
+  },
+  {
+    "link": "https://github.com/spotify/apollo",
+    "name": "Spotify Apollo",
+    "tags": [
+      "Java",
+      "Spotify"
+    ],
+    "checked": true,
+    "podcastId": 114,
+    "description": "Java libraries for writing composable microservices"
+  },
+  {
+    "link": "https://github.com/spotify/helios",
+    "name": "Spotify Helios",
+    "tags": [
+      "Docker",
+      "Spotify"
+    ],
+    "checked": true,
+    "podcastId": 114,
+    "description": "Docker container orchestration platform"
+  },
+  {
+    "link": "https://github.com/spotify/luigi",
+    "name": "Spotify Luigi",
+    "tags": [
+      "Python",
+      "Spotify"
+    ],
+    "checked": true,
+    "podcastId": 114,
+    "description": "Luigi is a Python module that helps you build complex pipelines of batch jobs. It handles dependency resolution, workflow management, visualization etc. It also comes with Hadoop support built in."
+  },
+  {
+    "link": "https://labs.spotify.com/2016/03/25/managing-machines-at-spotify/",
+    "name": "Managing Machines at Spotify",
+    "tags": [
+      "Article",
+      "Spotify"
+    ],
+    "checked": true,
+    "podcastId": 114,
+    "description": "Managing Machines at Spotify"
+  },
+  {
+    "link": "http://shop.oreilly.com/product/0636920037545.do",
+    "name": "Learning Ratpack",
+    "tags": [
+      "Book",
+      "O`Reilly"
+    ],
+    "checked": true,
+    "podcastId": 114,
+    "description": "Simple, Lean, and Powerful Web Applications"
+  },
+  {
+    "link": "https://github.com/linkedin/ambry",
+    "name": "Ambry",
+    "tags": [
+      "Java",
+      "Java 8"
+    ],
+    "checked": true,
+    "podcastId": 114,
+    "description": "Distributed object store https://github.com/linkedin/ambry/wiki"
+  },
+  {
+    "link": "http://graphwalker.github.io/",
+    "name": "Graphwalker",
+    "tags": null,
+    "checked": true,
+    "podcastId": 114,
+    "description": "GraphWalker is an open source Model-based testing tool for test automation. It's designed to make it easy to design your tests using graphs."
+  },
+  {
+    "link": "https://www.google.com/chromecast/",
+    "name": "Google Chromecast",
+    "tags": [
+      "Google",
+      "Gadget",
+      "Device"
+    ],
+    "checked": true,
+    "podcastId": 114,
+    "description": null
+  },
+  {
+    "link": "http://github-awards.com/",
+    "name": "Github Awards",
+    "tags": [
+      "GitHub"
+    ],
+    "checked": true,
+    "podcastId": 114,
+    "description": "Discover your ranking on github."
+  },
+  {
+    "link": "https://github.com/tombujok/hazelcast-rxjava",
+    "name": "Hazelcast RxJava",
+    "tags": [
+      "Java",
+      "Hazelcast"
+    ],
+    "checked": true,
+    "podcastId": 114,
+    "description": "Hazelcast plugin that enables using Hazelcast over RxJava in a reactive way."
+  },
+  {
+    "link": "https://dzone.com/articles/how-to-take-thread-dumps-7-options",
+    "name": "8 Options for Capturing Thread Dumps",
+    "tags": [
+      "Java",
+      "Article"
+    ],
+    "checked": true,
+    "podcastId": 115,
+    "description": "Thread dumps are vital artifacts to diagnose CPU spikes, deadlocks, memory problems, unresponsive applications, poor response times, and other system problems."
+  },
+  {
+    "link": "http://www.java9countdown.xyz/",
+    "name": "Java 9 Countdown",
+    "tags": [
+      "Java",
+      "Jav 9"
+    ],
+    "checked": true,
+    "podcastId": 115,
+    "description": "Java 9 countdown"
+  },
+  {
+    "link": "https://blogs.oracle.com/OracleCoherence/entry/coherencerx_reactive_extensions_for_oracle",
+    "name": "Oracle Coherence",
+    "tags": [
+      "Oracle"
+    ],
+    "checked": true,
+    "podcastId": 115,
+    "description": "CoherenceRx: Reactive Extensions for Oracle Coherence"
+  },
+  {
+    "link": "https://www.youtube.com/watch?v=f4uXBpP_xxY&feature=share",
+    "name": "Как я перестал верить технологиям",
+    "tags": [
+      "Video",
+      "Youtube"
+    ],
+    "checked": true,
+    "podcastId": 116,
+    "description": "Алексей Симоненко — Как я перестал верить технологиям"
+  },
+  {
+    "link": "https://github.com/tsenart/vegeta",
+    "name": "Vegeta",
+    "tags": [
+      "HTTP"
+    ],
+    "checked": true,
+    "podcastId": 116,
+    "description": "HTTP load testing tool and library. It's over 9000!"
+  },
+  {
+    "link": "https://www.sitepoint.com/ultimate-guide-to-java-9",
+    "name": "The Ultimate Guide to Java 9",
+    "tags": [
+      "Java",
+      "Java 9"
+    ],
+    "checked": true,
+    "podcastId": 119,
+    "description": "The Ultimate Guide to Java 9"
+  },
+  {
+    "link": "https://github.com/julianhyde/sqlline",
+    "name": "SQLLine",
+    "tags": [
+      "SQL",
+      "Java",
+      "JDBC",
+      "Database"
+    ],
+    "checked": true,
+    "podcastId": 119,
+    "description": "Shell for issuing SQL to relational databases via JDBC"
+  },
+  {
+    "link": "http://mactracker.ca",
+    "name": "Mactracker",
+    "tags": [
+      "Mac OSX"
+    ],
+    "checked": true,
+    "podcastId": 119,
+    "description": "Mactracker provides detailed information on every Apple Macintosh, iPod, iPhone, and iPad"
+  },
+  {
+    "link": "https://manytricks.com/moom/",
+    "name": "Moom",
+    "tags": [
+      "Mac OSX"
+    ],
+    "checked": true,
+    "podcastId": 120,
+    "description": "Move and zoom windows"
+  },
+  {
+    "link": "https://github.com/lra/mackup",
+    "name": "Mackup",
+    "tags": [
+      "Mac OSX"
+    ],
+    "checked": true,
+    "podcastId": 120,
+    "description": "Keep your application settings in sync (OS X/Linux)"
+  },
+  {
+    "link": "http://rambox.pro",
+    "name": "Rambox",
+    "tags": [
+      "App"
+    ],
+    "checked": true,
+    "podcastId": 120,
+    "description": "Free and Open Source messaging and emailing app that combines common web applications into one."
+  },
+  {
+    "link": "https://blogs.msdn.microsoft.com/maoni/",
+    "name": "Maoni",
+    "tags": [
+      "Windows",
+      "Microsoft"
+    ],
+    "checked": true,
+    "podcastId": 121,
+    "description": "Maoni's WebLog CLR Garbage Collector"
+  },
+  {
+    "link": "https://www.jetbrains.com/rider/",
+    "name": "Rider",
+    "tags": [
+      "Jet Brains",
+      ".NET"
+    ],
+    "checked": true,
+    "podcastId": 121,
+    "description": "A cross-platform .NET IDE based on the IntelliJ platform and ReSharper"
+  },
+  {
+    "link": "https://github.com/quozd/awesome-dotnet",
+    "name": "Awesome .NET",
+    "tags": [
+      ".NET"
+    ],
+    "checked": true,
+    "podcastId": 121,
+    "description": "A collection of awesome .NET libraries, tools, frameworks and software"
+  },
+  {
+    "link": "http://nancyfx.org",
+    "name": "Nancy",
+    "tags": [
+      "HTTP",
+      ".NET"
+    ],
+    "checked": true,
+    "podcastId": 121,
+    "description": "Lightweight, low-ceremony, framework for building HTTP based services on .Net and Mono"
+  },
+  {
+    "link": "http://scalalaz.ru",
+    "name": "Scalalaz",
+    "tags": [
+      "Android",
+      "Scala",
+      "Podcast"
+    ],
+    "checked": true,
+    "podcastId": 123,
+    "description": "Android на Scala или Scala на Android"
+  },
+  {
+    "link": "https://www.youtube.com/watch?v=__PLkxx6Yko",
+    "name": "Scala performance для сомневающихся",
+    "tags": [
+      "Scala",
+      "Video",
+      "Youtube"
+    ],
+    "checked": true,
+    "podcastId": 123,
+    "description": "Scala performance для сомневающихся. Роман Гребенников"
+  },
+  {
+    "link": "https://www.expeditedssl.com/azure-in-plain-english",
+    "name": "Microsoft Azure in Plain English",
+    "tags": [
+      "Microsoft",
+      "Azure",
+      "Article"
+    ],
+    "checked": true,
+    "podcastId": 125,
+    "description": "Microsoft Azure in Plain English"
+  },
+  {
+    "link": "https://www.expeditedssl.com/aws-in-plain-english",
+    "name": "AWS in Plain English",
+    "tags": [
+      "Amazon",
+      "AWS",
+      "Article"
+    ],
+    "checked": true,
+    "podcastId": 125,
+    "description": "AWS in Plain English"
+  },
+  {
+    "link": "https://github.com/bsideup/gradle-maven-sync-plugin",
+    "name": "Gradle Maven sync lugin",
+    "tags": [
+      "Java",
+      "Gradle",
+      "Maven"
+    ],
+    "checked": true,
+    "podcastId": 125,
+    "description": "Sync your Gradle build with the dependencies from pom.xml"
+  },
+  {
+    "link": "https://www.youtube.com/watch?v=Vlb_Is-rRTQ",
+    "name": "Неадекватное Java-интервью",
+    "tags": [
+      "Java",
+      "Interview",
+      "Video",
+      "Youtube"
+    ],
+    "checked": true,
+    "podcastId": 126,
+    "description": "2017.01.31 Антон Архипов - Неадекватное Java-интервью"
+  },
+  {
+    "link": "http://blog.jevsejev.io/2017/02/19/java-libraries-you-cannot-miss-in-2017/?utm_source=ycombinator",
+    "name": "Java libraries 2017",
+    "tags": [
+      "Article",
+      "Java"
+    ],
+    "checked": true,
+    "podcastId": 131,
+    "description": "Java libraries you can't miss in 2017"
+  },
+  {
+    "link": "https://www.ozon.ru/context/detail/id/19379723/",
+    "name": "Драйв. Что на самом деле нас мотивирует",
+    "tags": [
+      "Book"
+    ],
+    "checked": true,
+    "podcastId": 133,
+    "description": "Это книга о мотивации. О том, что же на самом деле мотивирует людей к выдающимся результатам."
+  },
+  {
+    "link": "https://www.amazon.com/Hatching-Twitter-Story-Friendship-Betrayal/dp/1591847087",
+    "name": "Hatching Twitter",
+    "tags": [
+      "Book"
+    ],
+    "checked": true,
+    "podcastId": 133,
+    "description": "Hatching Twitter: A True Story of Money, Power, Friendship, and Betrayal"
+  },
+  {
+    "link": "https://www.amazon.com/dp/B003F3PKSQ/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1",
+    "name": "Getting More",
+    "tags": [
+      "Book"
+    ],
+    "checked": true,
+    "podcastId": 133,
+    "description": "Getting More: How You Can Negotiate to Succeed in Work and Life"
+  },
+  {
+    "link": "https://www.amazon.com/Difference-Between-God-Larry-Ellison/dp/0060008768",
+    "name": "The Difference Between God and Larry Ellison",
+    "tags": [
+      "Book"
+    ],
+    "checked": true,
+    "podcastId": 133,
+    "description": "The Difference Between God and Larry Ellison: *God Doesn't Think He's Larry Ellison"
+  },
+  {
+    "link": "https://www.amazon.com/Softwar-Intimate-Portrait-Ellison-Oracle/dp/0743225058",
+    "name": "Softwar",
+    "tags": [
+      "Book"
+    ],
+    "checked": true,
+    "podcastId": 133,
+    "description": "The Difference Between God and Larry Ellison: *God Doesn't Think He's Larry Ellison"
+  },
+  {
+    "link": "https://www.mann-ivanov-ferber.ru/books/dzhedajskie-texniki/",
+    "name": "Джедайские техники",
+    "tags": [
+      "Book"
+    ],
+    "checked": true,
+    "podcastId": 133,
+    "description": "Как воспитать свою обезьяну, опустошить инбокс и сберечь мыслетопливо"
+  },
+  {
+    "link": "https://try.crashlytics.com",
+    "name": "Crashlytics",
+    "tags": [
+      "App"
+    ],
+    "checked": true,
+    "podcastId": 134,
+    "description": "No More Sad Apps."
+  },
+  {
+    "link": "https://www.testcontainers.org",
+    "name": "TestContainers",
+    "tags": [
+      "Java",
+      "JUnit",
+      "Selenium",
+      "Docker"
+    ],
+    "checked": true,
+    "podcastId": 134,
+    "description": "TestContainers is a Java library that supports JUnit tests, providing lightweight, throwaway instances of common databases, Selenium web browsers, or anything else that can run in a Docker container."
+  },
+  {
+    "link": "https://github.com/arquillian/arquillian-cube",
+    "name": "Arquillian Cube",
+    "tags": [
+      "Docker"
+    ],
+    "checked": true,
+    "podcastId": 134,
+    "description": "Control (docker) containers in your tests with ease!"
+  },
+  {
+    "link": "https://github.com/shrinkwrap",
+    "name": "ShrinkWrap",
+    "tags": [
+      "Java",
+      "GitHub"
+    ],
+    "checked": true,
+    "podcastId": 134,
+    "description": "ShrinkWrap Repository"
+  },
+  {
+    "link": "http://seleniumcamp.com/talk/testng-vs-junit-5-battle",
+    "name": "TestNG vs JUnit 5 battle",
+    "tags": [
+      "Java",
+      "JUnit 5",
+      "TestNG",
+      "Article"
+    ],
+    "checked": true,
+    "podcastId": 134,
+    "description": "In this talk we will compare two most popular test frameworks."
+  },
+  {
+    "link": "https://www.getpostman.com",
+    "name": "Postman",
+    "tags": [
+      "REST"
+    ],
+    "checked": true,
+    "podcastId": 134,
+    "description": "A complete API Development Environment"
+  },
+  {
+    "link": "https://insights.stackoverflow.com/trends",
+    "name": "Stackoverflow Trends",
+    "tags": null,
+    "checked": true,
+    "podcastId": 134,
+    "description": "See how technologies have trended over time based on use of their tags since 2008, when Stack Overflow was founded. Enter up to 15 tags to compare growth and decline."
+  },
+  {
+    "link": "http://www.labirint.ru/books/365257/",
+    "name": "Настройка приложений баз данных",
+    "tags": [
+      "Book"
+    ],
+    "checked": true,
+    "podcastId": 137,
+    "description": "Описываются методы настройки баз данных и приложений, применяемые при создании высокоэффективных систем."
+  },
+  {
+    "link": "http://db.cs.berkeley.edu/papers/fntdb07-architecture.pdf",
+    "name": "Architecture of a Database System",
+    "tags": [
+      "Book"
+    ],
+    "checked": true,
+    "podcastId": 137,
+    "description": "Architecture of a Database System"
   }
 ]
