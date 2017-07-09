@@ -1761,7 +1761,7 @@
     "name": "Java 9 Countdown",
     "tags": [
       "Java",
-      "Jav 9"
+      "Java 9"
     ],
     "checked": true,
     "podcastId": 115,
@@ -2022,16 +2022,6 @@
   {
     "link": "https://www.amazon.com/Difference-Between-God-Larry-Ellison/dp/0060008768",
     "name": "The Difference Between God and Larry Ellison",
-    "tags": [
-      "Book"
-    ],
-    "checked": true,
-    "podcastId": 133,
-    "description": "The Difference Between God and Larry Ellison: *God Doesn't Think He's Larry Ellison"
-  },
-  {
-    "link": "https://www.amazon.com/Softwar-Intimate-Portrait-Ellison-Oracle/dp/0743225058",
-    "name": "Softwar",
     "tags": [
       "Book"
     ],
