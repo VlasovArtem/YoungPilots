@@ -3,7 +3,8 @@
     <div id="content" class="row">
         <nav class="navbar navbar-default main-nav-menu">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -16,6 +17,7 @@
                     <li><a href="http://razbor-poletov.com/" target="_blank">Разбор Полётов</a></li>
                     <li><a href="#useful">Полезняшки</a></li>
                     <li><a href="#conferences">Конференции</a></li>
+                    <li><a href="#cag">Разборчане</a></li>
                     <li><a href="#about">О Сайте</a></li>
                 </ul>
             </div>
@@ -25,7 +27,9 @@
                 <span class="header">Young Pilots</span>
             </div>
             <div class="col-md-offset-3 col-md-6 header-text">
-                Добрый день, Добрый вечер, Доброй ночи, Доброго утра, вас приветствует сайт-спутник популярного в узких кругах подкаста «Разбор Полётов». На сайте собраны самые полезные материалы, которыми создатели и гости проекта регулярно делятся со слушателями.
+                Добрый день, Добрый вечер, Доброй ночи, Доброго утра, вас приветствует сайт-спутник популярного в узких
+                кругах подкаста «Разбор Полётов». На сайте собраны самые полезные материалы, которыми создатели и гости
+                проекта регулярно делятся со слушателями.
             </div>
         </div>
         <div class="col-md-2 header-text" ng-if="broadcastData">
@@ -58,14 +62,20 @@
                 <input type="search" ng-model="filterText.text" ng-model-options="{debounce: 750}"
                        placeholder="Filter"
                        class="form-control filter"/>
-                <span class="glyphicon glyphicon-remove input-group-addon" ng-click="filterText = ''"></span>
+                <div class="ut-icon-container input-group-addon">
+                    <div class="icon-block">
+                        <i class="remove icon big" ng-click="filterText = ''"></i>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="col-md-12">
             <div id="useful"
                  ng-repeat="usefulThing in usefulThings| orderBy: 'podcastId' : true | utFilter: filterText | limitTo: utLimit">
-                <span ng-bind="::usefulThing.name"></span>
-                <a href="{{usefulThing.link}}" target="_blank">Link</a><br/>
+                <div>
+                    <span ng-bind="::usefulThing.name"></span>
+                    <a href="{{usefulThing.link}}" target="_blank">Link</a><br/>
+                </div>
                 <div class="description" ng-bind="::usefulThing.description" popup
                      popup-content="usefulThing.description">
                 </div>
@@ -115,7 +125,8 @@
             </div>
         </div>
         <div class="countdown"
-             ng-repeat="conference in conferences | orderBy: getDateMillis | filter: isComplete() | limitTo: 1" conf="conference">
+             ng-repeat="conference in conferences | orderBy: getDateMillis | filter: isComplete() | limitTo: 1"
+             conf="conference">
         </div>
         <!--date="conference.date.startDate" offset="conference.date.timezone"-->
     </div>
@@ -136,7 +147,7 @@
              class="col-md-4 col-xs-12 col-sm-6 hiding animated"
              data-animation="fadeInUp"
              data-appear-top-offset="-50">
-            <contacts ng-model="contact"></contacts>
+            <contacts contact="contact"></contacts>
         </div>
     </div>
 </section>
@@ -159,8 +170,9 @@
         <div class="col-md-11 col-sm-11 col-xs-11 footer-content">
             <div class="col-md-5 col-sm-5 col-xs-12">
                 <h3>О Сайте</h3>
-                YoungPilots - это сайт организатор, одного из лучших ИТ подкастов <a href="http://razbor-poletov.com/" target="_blank"
-                    >"Razbor Poletov"</a>. На этом сайте собраны
+                YoungPilots - это сайт организатор, одного из лучших ИТ подкастов <a href="http://razbor-poletov.com/"
+                                                                                     target="_blank"
+            >"Razbor Poletov"</a>. На этом сайте собраны
                 все самые
                 полезные ссылки, которыми делятся создатели и гости проекта. Один из разделов этого сайта посвящен
                 ИТ Конференциям по всему миру.
@@ -171,12 +183,14 @@
                         </a>
                     </li>
                     <li>
-                        <a href="https://github.com/razbor-poletov/razbor-poletov.github.com" class="navbar-brand" target="_blank">
+                        <a href="https://github.com/razbor-poletov/razbor-poletov.github.com" class="navbar-brand"
+                           target="_blank">
                             <img src="style/image/github-black.png" alt="Github"/>
                         </a>
                     </li>
                     <li>
-                        <a href="https://gitter.im/razbor-poletov/razbor-poletov.github.com" class="navbar-brand" target="_blank">
+                        <a href="https://gitter.im/razbor-poletov/razbor-poletov.github.com" class="navbar-brand"
+                           target="_blank">
                             <img class="img-circle"
                                  src="style/image/gitter-black.png"
                                  alt="Gitter"/>
@@ -217,23 +231,25 @@
                     <li><a href="http://razbor-poletov.com/broadcast.html" target="_blank">Broadcast Live</a></li>
                     <li><a href="http://feeds.feedburner.com/razbor-podcast" target="_blank">RSS</a></li>
                     <li><a href="https://plus.google.com/+Razbor-poletov/posts" target="_blank">Google +</a></li>
-                    <li><a href="https://play.google.com/store/apps/details?id=com.shonenfactory.razborpoletov" target="_blank">Google Play</a></li>
+                    <li><a href="https://play.google.com/store/apps/details?id=com.shonenfactory.razborpoletov"
+                           target="_blank">Google Play</a></li>
                 </ul>
             </div>
         </div>
-        <h4 class="copyright col-md-12 col-xs-12 col-sm-12"><span class="glyphicon glyphicon-copyright-mark"></span>2015 <a
-                href="https://github.com/VlasovArtem"
-                target="_blank">vlasovartem
-        </a></h4>
+        <h4 class="copyright col-md-12 col-xs-12 col-sm-12"><span class="glyphicon glyphicon-copyright-mark"></span>2015
+            <a
+                    href="https://github.com/VlasovArtem"
+                    target="_blank">vlasovartem
+            </a></h4>
     </div>
 </footer>
 <script>
-    $('.top-button').click(function() {
+    $('.top-button').click(function () {
         $('html, body').animate({scrollTop: 0}, 500);
     });
-    $(function() {
+    $(function () {
         $('.animated').appear();
-        $(document.body).on('appear', '.animated', function() {
+        $(document.body).on('appear', '.animated', function () {
             var element = $(this);
             var animation = element.data('animation');
             element.addClass(animation + " visible");
@@ -242,10 +258,17 @@
     });
 </script>
 <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
     ga('create', 'UA-63320340-1', 'auto');
     ga('send', 'pageview');
