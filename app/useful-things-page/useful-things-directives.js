@@ -28,20 +28,20 @@ app.directive('sort', ["$http", function($http) {
             var defaultData = null;
             var ascentClass = null;
             var descentClass = null;
-            $http.get('app/content/configuration.json').success(function(data) {
-                defaultData = data;
-                ascentClass = data.ascentClass;
-                descentClass = data.descentClass;
+            $http.get('app/content/configuration.json').then(function(response) {
+                defaultData = response.data;
+                ascentClass = defaultData.ascentClass;
+                descentClass = defaultData.descentClass;
                 if(attrs.init) {
                     index = 1;
                     scope.orderByTag = attrs.sort;
-                    scope.order = data.order.desc;
+                    scope.order = defaultData.order.desc;
                     element.addClass(descentClass);
                 }
             });
             function sort() {
                 index++;
-                if (index % 2 == 0) {
+                if (index % 2 === 0) {
                     scope.order = defaultData.order.asc;
                     element
                         .addClass(ascentClass)
@@ -56,7 +56,7 @@ app.directive('sort', ["$http", function($http) {
                 scope.$apply(sort);
             });
             scope.$watch('orderByTag', function(newValue) {
-                if(attrs.sort != newValue) {
+                if(attrs.sort !== newValue) {
                     index = 0;
                     element
                         .removeClass(ascentClass)
@@ -66,3 +66,23 @@ app.directive('sort', ["$http", function($http) {
         }
     }
 }]);
+
+app.directive('usefulTable', function () {
+   return {
+       restrict: 'C',
+       link: function (scope) {
+           scope.filterByTag = function(tag) {
+               scope.usefulThingsFilter = {
+                   "text": tag,
+                   "tag": true
+               };
+           };
+           scope.filterByPodcastNumber = function (podcastNumber) {
+               scope.usefulThingsFilter = {
+                   "text": parseInt(podcastNumber),
+                   "podcastNumber": true
+               };
+           }
+       }
+   }
+});

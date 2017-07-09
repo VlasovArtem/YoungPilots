@@ -1,18 +1,11 @@
-var app = angular.module('useful.controllers', []);
+var app = angular.module('useful.controllers', ['ngMaterial']);
 
-app.controller('UsefulThingsCtrl', ['usefulThings', '$scope',
-    function(usefulThings, $scope) {
+app.controller('UsefulThingsCtrl', ['usefulThings', '$scope', '$mdDialog',
+    function (usefulThings, $scope, $mdDialog) {
         $scope.usefulThings = usefulThings;
-        $scope.usefulThingsFilter = '';
-        if(window.innerWidth <= 490) {
+        if (window.innerWidth <= 490) {
             $scope.ignore = true
         }
-        $scope.usefulThingsFilter = '';
-        $scope.changeFilter = function(tag) {
-            $scope.usefulThingsFilter = {
-                "text": tag,
-                "tag": true
-            };
-        };
+        $scope.informationUrl = 'app/useful-things-page/additional/information/information.html';
     }
 ]);

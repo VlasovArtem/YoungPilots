@@ -1,10 +1,17 @@
 <div class="nav-menu" ng-include="'app/additional/navigation-menu.html'"></div>
-<div class="container-fluid" id="usefulThings-page" ng-cloak>
-    <div class="row">
-        <div class="col-md-offset-8 col-sm-offset-7 col-xs-offset-7 col-md-4 col-sm-5 col-xs-5 input-group">
-            <input type="search" ng-model="usefulThingsFilter.text" ng-model-options="{debounce: 750}" placeholder="Filter"
+<section class="container-fluid" id="usefulThings-page" ng-cloak>
+    <div class="row ut-row">
+        <information information-url="{{informationUrl}}"></information>
+        <p class="page-title">Полезняшки</p>
+        <div class="col-md-offset-1 col-md-4 col-sm-5 col-xs-5 input-group useful-things-filter">
+            <input type="search" ng-model="usefulThingsFilter.text" ng-value="usefulThingsFilter.text"
+                   ng-model-options="{debounce: 750}" placeholder="Filter (tag, description, name, podcast number)"
                    class="form-control filter"/>
-            <span class="glyphicon glyphicon-remove input-group-addon" ng-click="usefulThingsFilter = ''"></span>
+            <div class="ut-icon-container input-group-addon">
+                <div class="icon-block">
+                    <i class="remove icon big" ng-click="usefulThingsFilter = ''"></i>
+                </div>
+            </div>
         </div>
     </div>
     <div class="row">
@@ -23,21 +30,32 @@
                         <div class="useful-tags" ng-if="usefulThing.tags != null">
                             <span ng-repeat="tag in ::usefulThing.tags | orderBy: ''">
                                 <span ng-bind="::tag" class="label label-primary tag"
-                                    ng-click="changeFilter(tag)"></span>
+                                      ng-click="filterByTag(tag)"></span>
                             </span>
                         </div>
                     </td>
-                    <td ng-bind="::usefulThing.podcastId" ng-hide="ignore"></td>
+                    <td ng-hide="ignore">
+                        <span ng-bind="::usefulThing.podcastId" class="podcast-number"
+                              ng-click="filterByPodcastNumber(usefulThing.podcastId)"></span>
+                    </td>
                 </tr>
             </table>
         </div>
     </div>
-</div>
+</section>
+<footer ng-include="'app/additional/footer.html'" class="container-fluid additional-footer"></footer>
 <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
     ga('create', 'UA-63320340-1', 'auto');
     ga('send', 'pageview');
