@@ -1,36 +1,51 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html lang="en" ng-app="youngPilots" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html lang="en" ng-app="youngPilots" class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html lang="en" ng-app="youngPilots" class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en" ng-app="youngPilots" class="no-js"> <!--<![endif]-->
+<!--[if lt IE 7]>
+<html lang="en" ng-app="youngPilots" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html lang="en" ng-app="youngPilots" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html lang="en" ng-app="youngPilots" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" ng-app="youngPilots" class="no-js"> <!--<![endif]-->
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Young Pilots</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" type="image/x-icon" href="https://drive.google.com/uc?export=download&id=0BzInm4pFi1J9d2ZoVkpicFVKNlU"/>
-  <link rel="stylesheet" href="app/bower_components/html5-boilerplate/css/normalize.css">
-  <link rel="stylesheet" href="app/bower_components/html5-boilerplate/css/main.css">
-  <link rel="stylesheet" href="app/bower_components/bootstrap/dist/css/bootstrap.css"/>
-  <link rel="stylesheet" href="style/app.css">
-  <link rel="stylesheet" href="style/animate.css"/>
-  <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-  <script src="app/bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Young Pilots</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon"
+          href="https://drive.google.com/uc?export=download&id=0BzInm4pFi1J9d2ZoVkpicFVKNlU"/>
+    <link rel="stylesheet" href="app/bower_components/html5-boilerplate/css/normalize.css">
+    <link rel="stylesheet" href="app/bower_components/html5-boilerplate/css/main.css">
+    <link rel="stylesheet" href="app/bower_components/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="app/bower_components/semantic/dist/semantic.css"/>
+    <link rel="stylesheet" href="app/bower_components/angular-material/angular-material.css">
+    <link rel="stylesheet" href="style/app.css">
+    <link rel="stylesheet" href="style/useful-things.css">
+    <link rel="stylesheet" href="style/conferences.css">
+    <link rel="stylesheet" href="style/creators-and-guests.css">
+    <link rel="stylesheet" href="style/animate.css"/>
+    <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,cyrillic' rel='stylesheet'
+          type='text/css'>
+    <script src="app/bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
 <body>
-<div ng-view></div>
+<div ng-view class="angular-view"></div>
 </body>
 <script src="app/bower_components/jquery/dist/jquery.js"></script>
 <script src="app/bower_components/angular/angular.js"></script>
 <script src="app/bower_components/angular-route/angular-route.js"></script>
 <script src="app/bower_components/bootstrap/dist/js/bootstrap.js"></script>
 <script src="app/bower_components/angular-resource/angular-resource.js"></script>
+<script src="app/bower_components/angular-aria/angular-aria.js"></script>
+<script src="app/bower_components/angular-animate/angular-animate.js"></script>
+<script src="app/bower_components/angular-material/angular-material.js"></script>
 <script src="app/bower_components/underscore/underscore.js"></script>
 <script src="app/bower_components/angular-underscore-module/angular-underscore-module.js"></script>
 <script src="app/bower_components/angular-bootstrap/ui-bootstrap.js"></script>
 <script src="app/bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+<script src="app/bower_components/semantic/dist/semantic.js"></script>
 <script src="app/js/jquery.appear.js"></script>
 <script src="app/js/app.js"></script>
 <script src="app/main-page/main-controllers.js"></script>
@@ -44,4 +59,7 @@
 <script src="app/conferences-page/conferences-directives.js"></script>
 <script src="app/conferences-page/conferences-filters.js"></script>
 <script src="app/additional/additional-directives.js"></script>
+<script src="app/creators-and-guests/creators-and-guests-controllers.js"></script>
+<script src="app/creators-and-guests/creators-and-guests-filters.js"></script>
+<script src="app/creators-and-guests/creators-and-guests-directives.js"></script>
 </html>
