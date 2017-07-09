@@ -1,0 +1,15 @@
+<section class="search-data">
+    <div class="select-data">
+        <div class="ui fluid search selection dropdown">
+            <input type="hidden" name="country">
+            <i class="dropdown icon"></i>
+            <div class="default text">Выберите месяц</div>
+            <div class="menu">
+                <div ng-repeat="month in activeMonth" ng-click="setData('filteredMonth', month)" class="item">{{month.label}}</div>
+            </div>
+        </div>
+        <div class="icon-block">
+            <i class="remove icon big" ng-click="removeData('filteredMonth')"></i>
+        </div>
+    </div>
+</section>
