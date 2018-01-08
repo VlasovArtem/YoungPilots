@@ -8,8 +8,9 @@ var app = angular.module('youngPilots', [
     'cag.controllers', 'cag.filters', 'cag.directives',
     'additional.directives'
 ]);
-app.config(['$routeProvider',
-    function($routeProvider) {
+app.config(['$routeProvider', '$locationProvider',
+    function($routeProvider, $locationProvider) {
+        $locationProvider.hashPrefix('');
         $routeProvider.when('/', {
             templateUrl: 'app/main-page/main-page.html',
             controller: 'MainCtrl',
