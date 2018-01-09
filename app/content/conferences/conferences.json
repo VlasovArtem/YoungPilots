@@ -27,7 +27,7 @@
       "twitter": "https://twitter.com/geekout_ee",
       "facebook": "https://www.facebook.com/GeekOut.ee"
     },
-    "complete": false,
+    "complete":true,
     "joinUs": false
   },
   {
@@ -91,7 +91,7 @@
       "twitter": "https://twitter.com/JavaDayUkraine",
       "facebook": "https://www.facebook.com/events/1414950945475379/"
     },
-    "complete": false,
+    "complete":true,
     "joinUs": false
   },
   {
@@ -124,7 +124,7 @@
       "linkedin": "https://www.linkedin.com/groups/JavaOne-Conference-1749197",
       "blog": "https://blogs.oracle.com/javaone/"
     },
-    "complete": false,
+    "complete":true,
     "joinUs": true
   },
   {
@@ -155,7 +155,7 @@
       "twitter": "https://twitter.com/googledevs",
       "googleplus": "https://plus.google.com/+GoogleDevelopers"
     },
-    "complete": false,
+    "complete":true,
     "joinUs": false
   },
   {
@@ -185,7 +185,7 @@
     "socials": {
       "twitter": "https://twitter.com/springone2gx"
     },
-    "complete": false,
+    "complete":true,
     "joinUs": true
   },
   {
@@ -209,7 +209,7 @@
       "website": "https://jokerconf.com/"
     },
     "checked": true,
-    "complete": false,
+    "complete":true,
     "joinUs": true
   },
   {
@@ -237,7 +237,7 @@
       "twitter": "https://twitter.com/JavaDayUA",
       "facebook": "https://www.facebook.com/javadayukraine/?fref=nf"
     },
-    "complete": false,
+    "complete": true,
     "joinUs": true
   },
   {
@@ -264,7 +264,7 @@
     "socials": {
       "twitter": "https://twitter.com/@s1p"
     },
-    "complete": false,
+    "complete": true,
     "joinUs": false
   },
   {
@@ -292,7 +292,7 @@
       "twitter": "https://twitter.com/HeisenbugConf",
       "facebook": "https://www.facebook.com/heisenbugconf/"
     },
-    "complete": false,
+    "complete": true,
     "joinUs": false
   },
   {
@@ -320,7 +320,63 @@
       "twitter": "https://twitter.com/HolyJSconf",
       "facebook": "https://www.facebook.com/holyjs/"
     },
-    "complete": false,
+    "complete": true,
+    "joinUs": false
+  },
+  {
+    "date": {
+      "startDate": {
+        "date": "Apr 6 2018"
+      },
+      "endDate": {
+        "date": "Apr 7 2018"
+      },
+      "timezone": "GMT+0300"
+    },
+    "name": "JPoint",
+    "location": {
+      "city": "Moscow",
+      "country": "Russia"
+    },
+    "description": "JPoint — международная Java-конференция для опытных Java-разработчиков. 6-7 апреля 2018 года состоится шестой по счёту JPoint: с каждым годом он растёт, становится ещё больше, интереснее и хардкорнее. Ежегодно конференция собирает более 1000 участников.",
+    "promoCode": null,
+    "links": {
+      "website": "https://jpoint.ru/"
+    },
+    "checked": true,
+    "socials": {
+      "twitter": "https://twitter.com/JUGru",
+      "facebook": "https://www.facebook.com/jpointconf/"
+    },
+    "complete":false,
+    "joinUs": false
+  },
+  {
+    "date": {
+      "startDate": {
+        "date": "Mar 4 2018"
+      },
+      "endDate": {
+        "date": "Mar 4 2018"
+      },
+      "timezone": "GMT+0700"
+    },
+    "name": "JBreak",
+    "location": {
+      "city": "Novosibirsk",
+      "country": "Russia"
+    },
+    "description": "JBreak — единственная сибирская технологическая Java-конференция для опытных разработчиков.",
+    "promoCode": null,
+    "links": {
+      "website": "https://2018.jbreak.ru/"
+    },
+    "checked": true,
+    "socials": {
+      "twitter": "https://twitter.com/JUGru",
+      "facebook": "https://www.facebook.com/jbreakconf/"
+    },
+    "complete":false,
     "joinUs": false
   }
 ]
