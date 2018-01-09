@@ -1,0 +1,93 @@
+<div id="block" class="row">
+    <img src="style/image/top-button.png" class="top-button"/>
+    <div class="col-md-11 col-sm-11 col-xs-11 footer-content">
+        <div class="col-md-5 col-sm-5 col-xs-12">
+            <h3>О Сайте</h3>
+            YoungPilots - это сайт организатор, одного из лучших ИТ подкастов <a
+                href="http://razbor-poletov.com/"
+                target="_blank"
+        >"Razbor Poletov"</a>. На этом сайте собраны
+            все самые
+            полезные ссылки, которыми делятся создатели и гости проекта. Один из разделов этого сайта посвящен
+            ИТ Конференциям по всему миру.
+            <ul class="list-unstyled list-inline socials footer-socials">
+                <li>
+                    <a href="https://plus.google.com/+Razbor-poletov/posts" class="navbar-brand"
+                       target="_blank">
+                        <img src="style/image/google-plus-black.png" alt="Google+"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/razbor-poletov/razbor-poletov.github.com" class="navbar-brand"
+                       target="_blank">
+                        <img src="style/image/github-black.png" alt="Github"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://gitter.im/razbor-poletov/razbor-poletov.github.com" class="navbar-brand"
+                       target="_blank">
+                        <img class="img-circle"
+                             src="style/image/gitter-black.png"
+                             alt="Gitter"/>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-3 col-sm-3 col-xs-6 author">
+            <h3>Авторы подкаста</h3>
+            <ul class="list-unstyled">
+                <li>Виктор Гамов</li>
+                <li><a href="https://twitter.com/gamussa" target="_blank">Twitter</a></li>
+                <li><a href="https://github.com/gAmUssA" target="_blank">Github</a></li>
+                <li><a href="https://www.linkedin.com/in/vikgamov" target="_blank">Linkedin</a></li>
+            </ul>
+            <ul class="list-unstyled">
+                <li>Алексей Абашев</li>
+                <li><a href="https://twitter.com/a_abashev" target="_blank">Twitter</a></li>
+                <li><a href="https://github.com/abashev" target="_blank">Github</a></li>
+                <li><a href="https://www.linkedin.com/in/abashev/ru" target="_blank">Linkedin</a></li>
+            </ul>
+
+        </div>
+        <div class="col-md-2 col-sm-2 col-xs-6 author">
+            <h3>Автор сайта</h3>
+            <ul class="list-unstyled">
+                <li>Власов Артём</li>
+                <li><a href="https://twitter.com/" target="_blank">Twitter</a></li>
+                <li><a href="https://github.com/VlasovArtem" target="_blank">Github</a></li>
+                <li><a href="https://ua.linkedin.com/in/vlasovartem" target="_blank">Linkedin</a></li>
+            </ul>
+        </div>
+        <div class="col-md-2 col-sm-2 col-xs-6">
+            <h3>Links</h3>
+            <ul class="list-unstyled">
+                <li><a href="http://razbor-poletov.com/" target="_blank">Razbor Poletov</a></li>
+                <li><a href="http://razbor-poletov.com/blog/archives/" target="_blank">Podcasts Archive</a></li>
+                <li><a href="http://razbor-poletov.com/broadcast.html" target="_blank">Broadcast Live</a></li>
+                <li><a href="http://feeds.feedburner.com/razbor-podcast" target="_blank">RSS</a></li>
+                <li><a href="https://plus.google.com/+Razbor-poletov/posts" target="_blank">Google +</a></li>
+                <li><a href="https://play.google.com/store/apps/details?id=com.shonenfactory.razborpoletov"
+                       target="_blank">Google Play</a></li>
+            </ul>
+        </div>
+    </div>
+    <h4 class="copyright col-md-12 col-xs-12 col-sm-12"><span class="glyphicon glyphicon-copyright-mark"></span>2018
+        <a
+                href="https://github.com/VlasovArtem"
+                target="_blank">vlasovartem
+        </a></h4>
+</div>
+<script>
+    $('.top-button').click(function () {
+        $('html, body').animate({scrollTop: 0}, 500);
+    });
+    $(function () {
+        $('.animated').appear();
+        $(document.body).on('appear', '.animated', function () {
+            var element = $(this);
+            var animation = element.data('animation');
+            element.addClass(animation + " visible");
+            element.removeClass('hiding');
+        })
+    });
+</script>

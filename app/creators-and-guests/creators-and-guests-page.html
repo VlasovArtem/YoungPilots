@@ -1,0 +1,70 @@
+<div class="nav-menu" ng-include="'app/additional/navigation-menu.html'"></div>
+<section id="creators-and-guests-page" ng-cloak>
+    <div class="container-fluid creators-and-guests" ng-cloak>
+        <information information-url="{{informationUrl}}"></information>
+        <p class="page-title">Разборчане</p>
+        <div class="col-md-12 search-container">
+            <div class="col-md-offset-1">
+                <podcast-search></podcast-search>
+            </div>
+        </div>
+        <section class="col-sm-6 col-xs-12 cag col-cag-big-4 col-cag-small-6"
+                 ng-repeat="user in creatorsAndGuests | orderBy : ['-totalAppearance', 'episodeNumberOfTheFirstAppearance', 'name'] | filterUsers:selectedPodcastNumber">
+            <cag-contact selected-podcast-number="selectedPodcastNumber" podcast-links="podcastLinks"
+                         user="user" id="cag-contact"></cag-contact>
+        </section>
+    </div>
+</section>
+<footer ng-include="'app/additional/footer.html'" class="container-fluid additional-footer"></footer>
+<div style="visibility: hidden">
+    <div class="md-dialog-container" id="more-user-content">
+        <md-dialog>
+            <h2>Конференции</h2>
+            <article class="content">
+                <p>Каждый программист, хотя бы один раз в своей застольной жизни должен посетить IT конференцию, для
+                    новых знакомств, собственного удовлетворения или просто для галочки.</p>
+                <p>Мы постарались собрать все самые интересные конференции из IT мира, с "легким" уклоном на Java.</p>
+                <p>Многие из наших авторов и постоянных гостей являются частыми спикерами на различных конференциях и
+                    если у вас есть желание послушать их замечательные доклады ищите рядом с блоком конференции
+                    специальный лайбл "Join US".
+                    <img ng-src="style/image/conferences/join-us.png" class="img-circle join-us">
+                </p>
+            </article>
+            <article class="additional-information">
+                <h3>Полезная информация</h3>
+                <article>
+                    <div class="name">
+                        <strong>
+                            Используйте поиск по месяцам
+                        </strong>
+                    </div>
+                    <div class="description">
+                        Вы можете выбрать один месяцев, в которых доступны добавленные конференции, всю полезную
+                        информацию вы можете найти блоке конференции.
+                    </div>
+                    <div class="image">
+                        <img src="app/conferences-page/additional/information/Search-by-month.png"
+                             alt="Search by month">
+                    </div>
+                </article>
+            </article>
+        </md-dialog>
+    </div>
+</div>
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-63320340-1', 'auto');
+    ga('send', 'pageview');
+
+</script>

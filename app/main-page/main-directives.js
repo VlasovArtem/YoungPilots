@@ -1,23 +1,23 @@
 /**
  * Created by artemvlasov on 22/04/15.
  */
-var app = angular.module('main.directives',[]);
+var app = angular.module('main.directives', ['ngMaterial']);
 
-app.directive('broadcast', ["$timeout", "BroadcastLive", "$route", "Broadcast", "$filter", function($timeout, BroadcastLive, $route, Broadcast, $filter) {
+app.directive('broadcast', ["$timeout", "BroadcastLive", "$route", "Broadcast", "$filter", function ($timeout, BroadcastLive, $route, Broadcast, $filter) {
     return {
         restrict: 'A',
-        link: function(scope, element, attrs) {
+        link: function (scope, element, attrs) {
             var timeoutMillis = 60 * 1000;
             var broadcastUtcTime,
                 localUtcTime;
-            Broadcast.get(function(data) {
+            Broadcast.get(function (data) {
                 broadcastUtcTime = $filter('dateMillis')(data.date.startDate, data.date.timezone);
             });
-            var getUTCTime = function(time, offset) {
+            var getUTCTime = function (time, offset) {
                 return time + (offset * 60000)
             };
-            var dateDiff = function(returnFormat) {
-                if(_.isNull(broadcastUtcTime) || _.isUndefined(broadcastUtcTime)) {
+            var dateDiff = function (returnFormat) {
+                if (_.isNull(broadcastUtcTime) || _.isUndefined(broadcastUtcTime)) {
                     throw new Error("Broadcast date is undefined");
                 }
                 var formats = [
@@ -58,25 +58,25 @@ app.directive('broadcast', ["$timeout", "BroadcastLive", "$route", "Broadcast", 
                 return leftTime
             };
             var broadcastLiveTimeout = true;
-            var checkLeftTime = function() {
-                if(dateDiff('d') <= 1 && dateDiff('h') > 3) {
+            var checkLeftTime = function () {
+                if (dateDiff('d') <= 1 && dateDiff('h') > 3) {
                     timeoutMillis = 3 * 60 * 60 * 1000;
-                } else if(dateDiff('h') <= 3 && dateDiff('m') > 60) {
+                } else if (dateDiff('h') <= 3 && dateDiff('m') > 60) {
                     timeoutMillis = 60 * 60 * 1000;
-                } else if(dateDiff('m') <= 60 && dateDiff('m') > 10) {
+                } else if (dateDiff('m') <= 60 && dateDiff('m') > 10) {
                     timeoutMillis = 10 * 60 * 1000;
-                } else if(dateDiff('m') <= 10 && dateDiff('s') > 0) {
+                } else if (dateDiff('m') <= 10 && dateDiff('s') > 0) {
                     timeoutMillis = 60 * 1000;
-                } else if(dateDiff('s') <= 0) {
-                    BroadcastLive.get(function() {
+                } else if (dateDiff('s') <= 0) {
+                    BroadcastLive.get(function () {
                         element.addClass('live');
                         $timeout.cancel(timeout);
                         timeoutMillis = 60 * 1000;
                         broadcastLiveTimeout = false;
                         newBroadcastDateTimeout = $timeout(newBroadcastDate, 2 * 60 * 60 * 1000);
                         console.log(timeoutMillis + ' (default: 86400000');
-                    }, function() {
-                        if(dateDiff('m') < -60) {
+                    }, function () {
+                        if (dateDiff('m') < -60) {
                             broadcastUtcTime = null;
                             timeout = $timeout(newDate, 60 * 60 * 1000);
                             broadcastLiveTimeout = false;
@@ -87,17 +87,18 @@ app.directive('broadcast', ["$timeout", "BroadcastLive", "$route", "Broadcast", 
                     timeoutMillis = 24 * 60 * 60 * 1000;
                 }
             };
-            var newBroadcastDate = function() {
-                BroadcastLive.get(function() {}, function() {
+            var newBroadcastDate = function () {
+                BroadcastLive.get(function () {
+                }, function () {
                     $route.reload();
                 });
                 newBroadcastDateTimeout = $timeout(newBroadcastDate, 2 * 60 * 60 * 1000);
             };
             var newBroadcastDateTimeout = null;
-            var newDate = function() {
+            var newDate = function () {
                 var newDate = new Date();
                 localUtcTime = getUTCTime(newDate.getTime(), newDate.getTimezoneOffset());
-                if(broadcastUtcTime < localUtcTime) {
+                if (broadcastUtcTime < localUtcTime) {
                     scope.broadcastDate = null;
                     timeoutMillis = 2 * 60 * 60 * 1000;
                 } else {
@@ -109,10 +110,10 @@ app.directive('broadcast', ["$timeout", "BroadcastLive", "$route", "Broadcast", 
         }
     };
 }]);
-app.directive('countdown', ["$timeout", "$filter", function($timeout, $filter) {
+app.directive('countdown', ["$timeout", "$filter", function ($timeout, $filter) {
     return {
         restrict: 'C',
-        link: function(scope, element, attrs) {
+        link: function (scope, element, attrs) {
             var conference = scope.$eval(attrs.conf);
             var futureUTCTime = $filter('convertDate')(conference.date.startDate, conference.date.timezone);
             var currentUTCTime = new Date();
@@ -123,7 +124,7 @@ app.directive('countdown', ["$timeout", "$filter", function($timeout, $filter) {
                 hourMillis = 60 * 60 * 1000,
                 minuteMillis = 60 * 1000,
                 secondMillis = 1000;
-            var updateCountdown = function() {
+            var updateCountdown = function () {
                 var diff = futureUTCTime - currentUTCTime;
                 var leftDays = Math.floor(diff / dayMillis),
                     leftHours = Math.floor((diff - (leftDays * dayMillis)) / hourMillis),
@@ -136,10 +137,10 @@ app.directive('countdown', ["$timeout", "$filter", function($timeout, $filter) {
                     "second": leftSeconds
                 };
             };
-            var countdown = function() {
+            var countdown = function () {
                 updateDate();
                 updateCountdown();
-                if(futureUTCTime < currentUTCTime) {
+                if (futureUTCTime < currentUTCTime) {
                     scope.setComplete(conference);
                 }
                 countdownTimeout = $timeout(countdown, secondMillis);
@@ -153,17 +154,18 @@ app.directive('countdown', ["$timeout", "$filter", function($timeout, $filter) {
         '</span>'
     }
 }]);
-app.directive('popup', function() {
+
+app.directive('popup', function () {
     return {
         restrict: 'A',
         scope: {
             popupContent: '=',
             textContent: '@'
         },
-        link: function(scope, element, attrs) {
-            if(!angular.isUndefined(scope.popupContent) || !angular.isUndefined(scope.textContent)) {
-                var data = scope.popupContent != null && (scope.popupContent.length > 110 || !angular.isUndefined(scope.textContent)) ? scope.popupContent : scope.textContent;
-                if(!angular.isUndefined(data)) {
+        link: function (scope, element, attrs) {
+            if (!angular.isUndefined(scope.popupContent) || !angular.isUndefined(scope.textContent)) {
+                var data = scope.popupContent !== null && (scope.popupContent.length > 110 || !angular.isUndefined(scope.textContent)) ? scope.popupContent : scope.textContent;
+                if (!angular.isUndefined(data)) {
                     var options = {
                         content: data,
                         trigger: 'hover',
@@ -176,43 +178,70 @@ app.directive('popup', function() {
         }
     }
 });
-app.directive('contacts', function() {
+
+app.directive('contacts', function () {
     return {
         restrict: 'E',
-        require: '^ngModel',
-        link: function(scope, element, attrs) {
-            var contact = scope.$eval(attrs.ngModel);
+        scope: {
+            contact: '='
+        },
+        link: function (scope) {
             var socialIcons = {
                 "github": "style/image/socials/github.png",
                 "twitter": "style/image/socials/twitter.png",
                 "linkedin": "style/image/socials/linkedin.png"
             };
-            scope.personalData = contact.lastname != null ? (contact.firstname + ", " + contact.lastname) : contact.firstname;
+            scope.personalData = scope.contact.lastname !== null ? (scope.contact.firstname + ", " + scope.contact.lastname) : scope.contact.firstname;
             scope.contactSocials = {};
-            _.each(contact.socials, function(value, key) {
+            _.each(scope.contact.socials, function (value, key) {
                 scope.contactSocials[socialIcons[key]] = value;
             })
         },
-        template:
-        '<div class="main-data">' +
-        '<div class="outer-contact-block">' +
-        '<div class="contact-block"> ' +
-        '<img ng-src="{{contact.img}}" class="contact-img img-circle"/> ' +
-        '<div> ' +
-        '<span ng-if="personalData" ng-bind="personalData" class="contact-personal-data"></span><br/> ' +
-        '<span class="glyphicon glyphicon-map-marker"></span><span ng-bind="contact.info.location"></span>' +
-        '<hr class="style"/> ' +
-        '<span>{{contact.info.position}} at <a href="{{contact.info.jobWebSite}}">{{contact.info.job}}</a></span> ' +
-        '</div> ' +
-        '</div> ' +
-        '<p ng-if="contact.info.webSite"><span class="glyphicon glyphicon-link"></span><a href="{{contact.info.webSite}}">{{contact.info.webSite}}</a></p>' +
-        '</div>' +
-        '<p class="note" ng-if="contact.info.note && !mobile">{{contact.info.note}}</p> ' +
-        '</div> ' +
-        '<div class="socials"> ' +
-        '<span ng-repeat="(key, value) in contactSocials"> ' +
-        '<a href="{{value}}" target="_blank"><img ng-src="{{key}}"/></a> ' +
-        '</span> ' +
-        '</div>'
+        templateUrl: 'app/main-page/directive/main-page-contact.html'
     }
 });
+
+app.directive('searchData', ['$timeout', function ($timeout) {
+    return {
+        restrict: 'C',
+        link: function (scope, elm) {
+            scope.removeData = function (contentName) {
+                $('.ui.dropdown', elm).dropdown('clear');
+                scope[contentName] = undefined;
+            };
+            scope.setData = function (contentName, data) {
+                scope[contentName] = data;
+            };
+            $timeout(function () {
+                $('.ui.dropdown', elm).dropdown();
+            }, 0);
+        }
+    }
+}]);
+
+app.directive('information', ['$mdDialog', function ($mdDialog) {
+    return {
+        restrict: 'E',
+        required: 'informationUrl',
+        scope: {
+            informationUrl: '@'
+        },
+        replace: true,
+        link: function (scope, elm) {
+            scope.openInfo = function (ev) {
+                console.log('Open info directive');
+                console.log(scope.informationUrl);
+                $mdDialog.show({
+                    templateUrl: scope.informationUrl,
+                    parent: angular.element(document.body),
+                    targetEvent: ev,
+                    clickOutsideToClose: true
+                });
+            }
+        },
+        templateUrl: 'app/main-page/directive/information.html'
+    }
+}]);
+
+
+

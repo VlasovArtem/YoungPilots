@@ -1,0 +1,29 @@
+<div class="col-md-4">
+    <a ng-href="{{user.twitterAccountUrl}}">
+        <img ng-src="{{user.twitterImgUrl}}" alt="{{::user.twitterImgUrl}}" class="cag-image">
+    </a>
+</div>
+<div class="col-md-8 cag-info">
+    <p ng-bind="::user.name" class="cag-name"></p>
+    <p ng-hide="user.bio != ''" class="cag-bio-stub"></p>
+    <p ng-show="user.bio != ''" ng-bind="::user.bio" class="cag-bio" popup popup-content="user.bio"></p>
+    <p>
+        <b>Первый подкаст:</b>
+        <a ng-href="{{user.episodeNumberOfTheFirstAppearance | filterLink:podcastLinks}}"
+           class="pointer firstPodcast badge podcastNumber">{{::user.episodeNumberOfTheFirstAppearance}}</a>
+    </p>
+    <p><b>Появился в подкастах:</b> {{::user.totalAppearance}} {{::totalAppearanceAppender}}</p>
+    <p ng-show="user.location != ''"><b>Location:</b> {{::user.location}}</p>
+</div>
+<div class="col-md-12">
+    <p class="episode-title">Эпизоды</p>
+    <div class="episode-data">
+        <span class="episodes">
+            <span ng-repeat="podcastNumber in user.appearanceEpisodeNumbers | filterSelectedPodcastNumber:selectedPodcastNumber | limitTo: podcastLinksLimit">
+                <a ng-href="{{ podcastNumber | filterLink:podcastLinks }}" class="pointer badge podcastNumber"
+                   ng-class="setCheckSelectedPodcastNumberClass()" target="_blank">{{::podcastNumber}}</a>
+            </span>
+        </span>
+        <span ng-if="user.totalAppearance > podcastLinksLimit" class="more-podcasts" ng-click="showMore($event)">More</span>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+<section class="search-data">
+    <div class="select-data">
+        <div class="ui fluid search selection dropdown">
+            <input type="hidden" name="country">
+            <i class="dropdown icon"></i>
+            <div class="default text">Выберите подкаст</div>
+            <div class="menu">
+                <div ng-repeat="i in [] | range: lastPodcast" ng-click="setData('selectedPodcastNumber', i)" class="item">{{i}}</div>
+            </div>
+        </div>
+        <div class="icon-block">
+            <i class="remove icon big" ng-click="removeData('selectedPodcastNumber')"></i>
+        </div>
+    </div>
+</section>

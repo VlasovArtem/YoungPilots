@@ -2,6 +2,7 @@
  * Created by artemvlasov on 04/05/15.
  */
 var app = angular.module('conference.directives',[]);
+
 app.directive('socials', function() {
     return {
         restrict: 'A',
@@ -16,11 +17,12 @@ app.directive('socials', function() {
         '</div>'
     }
 });
-app.directive('searchForm', ["$filter", function($filter) {
+app.directive('searchConferenceForm', ["$filter", function($filter) {
     return {
         restrict: 'E',
+        transclude: true,
         replace: true,
-        link: function(scope, element, attrs) {
+        link: function(scope) {
             var fullMonth = [
                 {"label": "January", "value": "Jan"},
                 {"label": "February", "value": "Feb"},
@@ -32,7 +34,7 @@ app.directive('searchForm', ["$filter", function($filter) {
                 {"label": "August", "value": "Aug"},
                 {"label": "September", "value": "Sep"},
                 {"label": "October", "value": "Oct"},
-                {"label": "November", "value": "Mov"},
+                {"label": "November", "value": "Nov"},
                 {"label": "December", "value": "Dec"}
             ];
             scope.activeMonth = [];
@@ -47,13 +49,6 @@ app.directive('searchForm', ["$filter", function($filter) {
                 })
             });
         },
-        template:
-        '<form class="form-inline col-md-offset-1 col-md-10" id="search"> ' +
-        '<div class="form-group"> ' +
-        '<label for="month-search">Search by month:</label> ' +
-        '<select id="month-search" ng-options="month.label for month in activeMonth" ng-model="filteredMonth" class="form-control"></select> ' +
-        '<span class="glyphicon glyphicon-remove reset-month" ng-click="filteredMonth = undefined"></span> ' +
-        '</div> ' +
-        '</form>'
+        templateUrl: 'app/conferences-page/additional/search-conference-form.html'
     }
 }]);

@@ -1,0 +1,105 @@
+.conference {
+    border: 1px solid silver;
+    -webkit-box-shadow: 1px 1px 1px rgba(186, 165, 185, .6);
+    -moz-box-shadow: 1px 1px 1px rgba(186, 165, 185, .6);
+    box-shadow: 1px 1px 1px rgba(186, 165, 185, .6);
+    /*min-height: 400px;*/
+    padding: 0 10px 20px 10px;
+    margin-bottom: 30px;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+}
+
+.md-dialog-is-showing #conferences .ui.search.dropdown > input.search {
+    z-index: -1;
+}
+
+#conf-content {
+    height: 170px;
+}
+
+#conf-content #description {
+    height: 140px;
+    overflow: hidden;
+}
+
+#conf-content #description > h4 {
+    text-align: center;
+    font-size: large;
+    font-weight: 700;
+}
+
+#conf-content #description > p {
+    text-align: justify;
+    font-size: medium;
+    overflow: hidden;
+    max-height: 90px;
+}
+
+#conf-content > p {
+    font-size: large;
+}
+
+#bottom {
+    position: absolute;
+    bottom: 1px;
+    color: grey;
+    opacity: .2;
+    font-size: xx-small;
+}
+
+div[socials] {
+    min-height: 50px;
+}
+
+.conf-socials {
+    display: inline;
+    min-height: 50px;
+}
+
+.conf-socials > a > img {
+    width: 50px;
+    height: 50px;
+    margin: 0 15px 0 0;
+}
+
+.links > a > span {
+    font-size: x-large;
+}
+
+.links > a {
+    text-decoration: none;
+}
+
+.conference > img {
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    width: 50px;
+    height: 50px;
+}
+
+.conference > h2 {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 35px
+}
+
+.conf-grid #where-and-when {
+    font-weight: 400;
+}
+
+#conferences-content .content img {
+    width: 50px;
+    height: 50px;
+}
+
+.search-data > .select-data {
+    width: 210px;
+}
+
+.search-data {
+    padding-bottom: 40px;
+}

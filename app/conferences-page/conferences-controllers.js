@@ -2,10 +2,10 @@
 /**
  * Created by artemvlasov on 04/05/15.
  */
-var app = angular.module('conference.controllers', []);
+var app = angular.module('conference.controllers', ['ngMaterial']);
 
-app.controller('ConferenceCtrl', ['conferences', '$scope', '$filter',
-    function(conferences, $scope, $filter) {
+app.controller('ConferenceCtrl', ['conferences', '$scope', '$filter', '$mdDialog',
+    function(conferences, $scope, $filter, $mdDialog) {
         $scope.conferences = $filter("complete")(conferences);
         $scope.socialsImg = {
             "twitter": "style/image/socials/conference-socials/twitter-icon.png",
@@ -17,5 +17,6 @@ app.controller('ConferenceCtrl', ['conferences', '$scope', '$filter',
         $scope.getDateMillis = function(conf) {
             return $filter('dateMillis')(conf.date.startDate, conf.date.timezone);
         };
+        $scope.informationUrl = 'app/conferences-page/additional/information/information.html';
     }
 ]);

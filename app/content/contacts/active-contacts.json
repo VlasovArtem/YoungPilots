@@ -9,8 +9,8 @@
     },
     "info": {
       "position": "Solutions Architect",
-      "job": "Hazelcast",
-      "jobWebSite": "http://hazelcast.com/",
+      "job": "ConfluentInc",
+      "jobWebSite": "https://twitter.com/ConfluentInc",
       "webSite": "http://next.javaheadbrain.com/",
       "location": "NY, USA",
       "note": "Creator and one of the mastermind of podcast 'Razbor Poletov'. Master of contribution on Github. I develop the software that helps people to run their business."
@@ -46,7 +46,7 @@
       "linkedin": "https://www.linkedin.com/in/dmitrychurbanov"
     },
     "info": {
-      "position": "Senior Software Engineer",
+      "position": "Staff Software Engineer",
       "job": "Google",
       "jobWebSite": "https://www.google.com/",
       "webSite": "http://www.churbanov.com/blog/",
@@ -65,9 +65,9 @@
       "linkedin": "http://ee.linkedin.com/in/antonarhipov"
     },
     "info": {
-      "position": "Product manager",
-      "job": "ZeroTurnaround",
-      "jobWebSite": "http://zeroturnaround.com/",
+      "position": "Developer Advocate",
+      "job": "JetBrains",
+      "jobWebSite": "https://www.jetbrains.com/",
       "webSite": "arhipov.blogspot.com",
       "location": "Tallinn, Estonia",
       "note": "Java Champion since 2014. Working on JRebel and XRebel tools as a product manager. In the spare time I'm involved with Devclub developers community."
