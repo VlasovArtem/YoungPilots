@@ -4,7 +4,7 @@
 var app = angular.module('cag.directives', ['ngMaterial']);
 
 
-app.directive('cagContact', [ '$mdDialog', function ($mdDialog) {
+app.directive('cagContact', [ '$mdDialog', '$rootScope', '$timeout', function ($mdDialog, $rootScope, $timeout) {
     return {
         restrict: 'E',
         scope: {
@@ -13,15 +13,13 @@ app.directive('cagContact', [ '$mdDialog', function ($mdDialog) {
             podcastLinks: '=',
             showFullData: '='
         },
-        link: function (scope, element) {
+        link: function (scope) {
             if (scope.showFullData === undefined || !scope.showFullData)
                 scope.podcastLinksLimit = calculatePodcastLinksLimit(24.48, 6.85);
             else {
                 var htmlElement = document.getElementsByTagName("html");
-                // elementsByName.style(elementsByName, "overflow-x", "auto", null);
                 var attributeNode = htmlElement[0].getAttributeNode("style");
                 attributeNode.value = attributeNode.value.replace("overflow-y: scroll;", "");
-                console.log(attributeNode);
                 htmlElement[0].setAttributeNode(attributeNode);
                 scope.podcastLinksLimit = scope.user.totalAppearance;
             }
@@ -72,6 +70,31 @@ app.directive('cagContact', [ '$mdDialog', function ($mdDialog) {
                 //padding 30px more link 40px
                 return componentWidth - 30 - 40;
             }
+
+            scope.setSelectedPodcastNumber = function (number) {
+                var elementById = document.getElementById("podcast_search_bar");
+                var attribute = elementById.getAttributeNode("value");
+                if (!attribute)
+                    attribute = document.createAttribute("value");
+                attribute.value = number;
+                elementById.setAttributeNode(attribute);
+                var searchData = document.getElementById("search-data");
+                var text = searchData.getElementsByClassName("text");
+                text[0].classList.remove("default");
+                text[0].innerText = number;
+                var menu = searchData.getElementsByClassName("menu");
+                var values = menu[0].getElementsByTagName("div");
+                _.each(values, function (value) {
+                    if (value.classList.contains("selected")) {
+                        value.classList.remove("selected", "active");
+                    } else if (_.isEqual(parseInt(value.innerText), number)) {
+                        value.classList.add("selected", "active");
+                        $timeout(function () {
+                            angular.element(value).triggerHandler("click");
+                        });
+                    }
+                });
+            };
 
             scope.setCheckSelectedPodcastNumberClass = function () {
                 if (scope.selectedPodcastNumber === '' || _.isUndefined(scope.selectedPodcastNumber)) {

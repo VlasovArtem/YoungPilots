@@ -10,7 +10,7 @@
     <p>
         <b>Первый подкаст:</b>
         <a ng-href="{{user.episodeNumberOfTheFirstAppearance | filterLink:podcastLinks}}"
-           class="pointer firstPodcast badge podcastNumber">{{::user.episodeNumberOfTheFirstAppearance}}</a>
+           class="pointer firstPodcast badge podcastNumber" target="_blank" ng-click="setSelectedPodcastNumber(user.episodeNumberOfTheFirstAppearance)">{{::user.episodeNumberOfTheFirstAppearance}}</a>
     </p>
     <p><b>Появился в подкастах:</b> {{::user.totalAppearance}} {{::totalAppearanceAppender}}</p>
     <p ng-show="user.location != ''"><b>Location:</b> {{::user.location}}</p>
@@ -21,9 +21,9 @@
         <span class="episodes">
             <span ng-repeat="podcastNumber in user.appearanceEpisodeNumbers | filterSelectedPodcastNumber:selectedPodcastNumber | limitTo: podcastLinksLimit">
                 <a ng-href="{{ podcastNumber | filterLink:podcastLinks }}" class="pointer badge podcastNumber"
-                   ng-class="setCheckSelectedPodcastNumberClass()" target="_blank">{{::podcastNumber}}</a>
+                   ng-class="setCheckSelectedPodcastNumberClass()" ng-click="setSelectedPodcastNumber(podcastNumber)" target="_blank">{{::podcastNumber}}</a>
             </span>
         </span>
-        <span ng-if="user.totalAppearance > podcastLinksLimit" class="more-podcasts" ng-click="showMore($event)">More</span>
+        <span ng-if="user.totalAppearance > podcastLinksLimit && !selectedPodcastNumber" class="more-podcasts" ng-click="showMore($event)">More</span>
     </div>
 </div>
