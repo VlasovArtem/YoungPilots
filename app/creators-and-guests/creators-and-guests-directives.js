@@ -16,8 +16,15 @@ app.directive('cagContact', [ '$mdDialog', function ($mdDialog) {
         link: function (scope, element) {
             if (scope.showFullData === undefined || !scope.showFullData)
                 scope.podcastLinksLimit = calculatePodcastLinksLimit(24.48, 6.85);
-            else
+            else {
+                var htmlElement = document.getElementsByTagName("html");
+                // elementsByName.style(elementsByName, "overflow-x", "auto", null);
+                var attributeNode = htmlElement[0].getAttributeNode("style");
+                attributeNode.value = attributeNode.value.replace("overflow-y: scroll;", "");
+                console.log(attributeNode);
+                htmlElement[0].setAttributeNode(attributeNode);
                 scope.podcastLinksLimit = scope.user.totalAppearance;
+            }
             scope.totalAppearanceAppender = getTotalAppearanceAppender();
             function calculatePodcastLinksLimit(defaultBadgeWidth, incrementBadgeWidthStep) {
                 var elementWidthForCalculation = getElementWidth();
